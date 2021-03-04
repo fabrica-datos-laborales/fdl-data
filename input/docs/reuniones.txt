@@ -1,0 +1,24 @@
+## Reuniones
+
+# 04-03-2021
+
+- Tabla
+1. Ver planificación
+
+2. Productos
+
+- Producción libre y reproducible
+- Base de datos: unidad de análisis y variables
+- Manual metodológico
+- Libro de códigos
+- Sitio para descargar la base
+
+2. Tareas
+
+  - Generic Statistical Business Process Model 
+  - Sintaxis de webscrapping
+  - Afiliación sindical y cobertura negociación colectiva
+  - Confianza en sindicatos y empresarios.
+  - Revisión fuentes (asimilación). Están indicadas en Planificacion
+  
+- Ejemplo
