@@ -15,7 +15,8 @@
 
 2. Tareas
 
-  - Generic Statistical Business Process Model 
+  - Generic Statistical Business Process Model
+  - https://franciscomeneses.github.io/CADIS/principios-fair-datos-metadatos-e-infraestructura-digital-.html
   - Sintaxis de webscrapping
   - Afiliación sindical y cobertura negociación colectiva
   - Confianza en sindicatos y empresarios.
