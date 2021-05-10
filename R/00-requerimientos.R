@@ -2,7 +2,7 @@
 
 if (!require("remotes")) install.packages("remotes")
 
-if (!require("OCDE")) remotes::install_github("expersso/OECD")
+if (!require("OECD")) remotes::install_github("expersso/OECD")
 
 if (!require("Rilostat")) remotes::install_github("ilostat/Rilostat", force = TRUE)
 
