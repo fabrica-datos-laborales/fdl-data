@@ -42,7 +42,9 @@ wdi_dat <- WDI(indicator = c("NY.GDP.MKTP.KD.ZG",
 
 
 # 4. Recode ---------------------------------------------------------------
-
+datos$variable <- car::recode(datos$variable_vieja, 
+                              c("1 = 'Yes';2 = 'No'"), as.factor = T,
+                              levels = c("Yes", "No"))
 # 5. Rename ---------------------------------------------------------------
 
 # 6. Label ----------------------------------------------------------------
