@@ -12,6 +12,10 @@ rmw <- OECD::get_dataset("RMW",
                          filter = "AUS+BEL+CAN+CHL+CZE+EST+FRA+DEU+GRC+HUN+IRL+ISR+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+POL+PRT+SVK+SVN+ESP+TUR+GBR+USA+CRI+BRA+RUS+COL.PPP.A", 
                          pre_formatted = TRUE)
 
+rmw <- rmw %>%
+  select(iso3c=COUNTRY,year=Time, rmw=ObsValue) %>% 
+  mutate(rmw = as.numeric(rmw))
+
 
 # Anual avergaes ----------------------------------------------------------
 # aww <- OECD::get_dataset("AC_AN_WAGE",
@@ -30,7 +34,7 @@ emp <- OECD::get_dataset("ALFS_EMP",
                           filter = "AUS+AUT+BEL+CAN+CHL+COL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+BRA+CRI+RUS.YA994TL1_ST+YA994AL1_ST+YA994IL1_ST+YA994SL1_ST+YA99A4L1_ST+YA99B4L1_ST+YA99C4L1_ST+YA99D4L1_ST+YA99E4L1_ST+YA99F4L1_ST+YA99G4L1_ST+YA99H4L1_ST+YA99I4L1_ST+YA99J4L1_ST+YA99K4L1_ST+YA99L4L1_ST+YA99M4L1_ST+YA99N4L1_ST+YA99O4L1_ST+YA99P4L1_ST+YA99Q4L1_ST+YA99X4L1_ST+YA99S4L1_ST+YA99T4L1_ST+YA99U4L1_ST.MA+FE+TT.A", 
                           pre_formatted = TRUE)
 
-alfs$sector <- car::recode(emp$SUBJECT,
+emp$sector <- car::recode(emp$SUBJECT,
 recodes = "'YA994TL1_ST' = 'total_emp';
 'YA994AL1_ST' = 'emp_agr';
 'YA994IL1_ST' = 'emp_ind';
@@ -64,7 +68,6 @@ emp <- emp %>%
 
 # Labour Force, Employment and Unemployment -------------------------------
 get_data_structure("LFS_SEXAGE_I_R")
-OECD::
 lfs <- OECD::get_dataset("LFS_SEXAGE_I_R",
                           filter = "AUS+AUT+BEL+CAN+CHL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OECD+COL+CRI+LTU+BRA+CHN+IND+IDN+RUS+ZAF.MEN+WOMEN+MW.900000.EPR+LFPR+UR.A", 
                           pre_formatted = TRUE)
@@ -152,7 +155,6 @@ gwg <- gwg %>%
 # 4. Recode ---------------------------------------------------------------
 
 # 5. Rename and select ---------------------------------------------------------------
-rmw <- rmw %>% select(iso3c=COUNTRY, year = obsTime, rmw=obsValue) 
 
 # 6. Label ----------------------------------------------------------------
 
