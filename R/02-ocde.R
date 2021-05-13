@@ -1,9 +1,15 @@
 # Code OCDE ---------------------------------------------------------------
-pacman::p_load(OECD, tidyverse)
-
 # 1. Load packages --------------------------------------------------------
+pacman::p_load(OECD, tidyverse, googlesheets4)
 
 # 2. Load data ------------------------------------------------------------
+
+# Etiquetas
+labels <- read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+           range = "B217:C279", col_names = F) %>% 
+  select(variables = 1, etiquetas = 2)
+
+# fila 217-280
 
 # Real Minimun Wages (rmw) ------------------------------------------------------
 
@@ -193,8 +199,8 @@ wise <- wise %>%
          gni=NY_GNP_PCAP_PP_CD_T, tradeopen=BG_GSR_NFSV_GD_ZS_T, hdi=HUM_DEV_IND_T,
          pop=SP_POP_TOTL_T, pop_fem=SP_POP_TOTL_FE_ZS_T, gdp_growth=NY_GDP_MKTP_KD_ZG_T,
          lp=GDP_EMPL_T, hrs_lp=GDP_HOUR_T, gini=SI_POV_GINI_T) %>%
-  mutate(emp_sh_agr=as.numeric(emp_sh_agr)) %>%
-  mutate(emp_sh_mc=as.numeric(emp_sh_mc)) %>%
+  mutate(emp_sh_agr=as.numeric(emp_sh_agr),
+         emp_sh_mc=as.numeric(emp_sh_mc)) %>%
   mutate(emp_sh_ind=as.numeric(emp_sh_ind)) %>%
   mutate(emp_sh_serv=as.numeric(emp_sh_serv)) %>%
   mutate(gdp=as.numeric(gdp)) %>%
@@ -207,7 +213,9 @@ wise <- wise %>%
   mutate(lp=as.numeric(lp)) %>%
   mutate(hrs_lp=as.numeric(hrs_lp)) %>%
   mutate(gini=as.numeric(gini)) 
-  
+
+# mutate_at(vars(2:389), funs(as.numeric(.)))
+# mutate_at(vars(start_with("ola")), funs(cars::recode(., recodes= c(balabala)))
 
 # Productivity (gdp) ------------------------------------------------------------
 #https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/PDB_LV/AUS+AUT+BEL+CAN+CHL+COL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LTU+LVA+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+EA19+EU27_2020+G-7+OECD+NMEC+BRA+CHN+IND+IDN+RUS+ZAF+BRIICS.T_GDPPOP.CPC/all?startTime=1970&endTime=2020
@@ -256,14 +264,10 @@ oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
                                    all = T),
                list(rmw, mrw, emp, lfs, pt, hrs,wise,gdp, growth,gwg))
 
-# 4. Recode ---------------------------------------------------------------
-
-# 5. Rename and select ---------------------------------------------------------------
-
-# 6. Label ----------------------------------------------------------------
+# 4. Label ----------------------------------------------------------------
 
 
-# 7. Save -----------------------------------------------------------------
+# 5. Save -----------------------------------------------------------------
 
 
 
