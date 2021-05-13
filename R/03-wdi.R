@@ -1,10 +1,7 @@
 # Code: World Bank --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
 pacman::p_load(WDI, tidyverse)
-install.packages("WDI")
-install.packages("tidyverse")
-library(WDI)
-library(tidyverse)
+
 # 2. Search ---------------------------------------------------------------
 WDIsearch("part time") # Permite buscar
 #NY.GDP.MKTP.KD.ZG # GDP growth (annual %)
@@ -81,7 +78,7 @@ wdi_dat <- wdi_dat %>% rename("gdp_growth_wbi"= NY.GDP.MKTP.KD.ZG,
                                    "db_wbi" = IC.BUS.DFRN.XQ,
                                    "db_index_wbi" = IC.BUS.EASE.XQ)
 
-#gdp_percapita_wb estaba en el libro de códigos, pero no en la base
+#gdp_percapita_wb estaba en el libro de c?digos, pero no en la base
 
 
 # 6. Label ----------------------------------------------------------------
