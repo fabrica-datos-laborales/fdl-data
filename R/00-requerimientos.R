@@ -8,7 +8,7 @@ if (!require("Rilostat")) remotes::install_github("ilostat/Rilostat", force = TR
 
 # CRAN
 paquetes <- c("tidyverse", "WDI","haven", "rvest", "kableExtra", "sjlabelled",
-              "pdftools", "ggsci", "readxl", "readsdmx")
+              "pdftools", "ggsci", "readxl", "readsdmx", "googlesheets4")
 
 for(p in paquetes) {
   
