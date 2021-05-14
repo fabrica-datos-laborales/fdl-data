@@ -72,34 +72,35 @@ emp <- emp %>%
   select(iso3c, year, emp_serv=emp_serv_TT, emp_agr=emp_agr_TT, emp_ind=emp_ind_TT, emp=total_emp_TT,
          empA=empA_TT, empB=empB_TT, empC=empC_TT, empD=empD_TT, empE=empE_TT, empF=empF_TT, empG=empG_TT, empH=empH_TT, empI=empI_TT, empJ=empJ_TT, 
          empK=empK_TT, empL=empL_TT, empM=empM_TT, empN=empN_TT, empO=empO_TT, empP=empP_TT, empQ=empQ_TT, empR=empR_TT, empS=empS_TT, empT=empT_TT, empU=empU_TT) %>%
-  mutate(emp_serv=as.numeric(emp_serv)) %>%
-  mutate(emp_agr=as.numeric(emp_agr)) %>%
-  mutate(emp_ind=as.numeric(emp_ind)) %>%
-  mutate(emp=as.numeric(emp)) %>%
-  mutate(empA=as.numeric(empA)) %>%
-  mutate(empB=as.numeric(empB)) %>%
-  mutate(empC=as.numeric(empC)) %>%
-  mutate(empD=as.numeric(empD)) %>%
-  mutate(empE=as.numeric(empE)) %>%
-  mutate(empF=as.numeric(empF)) %>%
-  mutate(empG=as.numeric(empG)) %>%
-  mutate(empH=as.numeric(empH)) %>%
-  mutate(empI=as.numeric(empI)) %>%
-  mutate(empJ=as.numeric(empJ)) %>%
-  mutate(empK=as.numeric(empK)) %>%
-  mutate(empL=as.numeric(empL)) %>%
-  mutate(empM=as.numeric(empM)) %>%
-  mutate(empN=as.numeric(empN)) %>%
-  mutate(empO=as.numeric(empO)) %>%
-  mutate(empP=as.numeric(empP)) %>%
-  mutate(empQ=as.numeric(empQ)) %>%
-  mutate(empR=as.numeric(empR)) %>%
-  mutate(empS=as.numeric(empS)) %>%
-  mutate(empT=as.numeric(empT)) %>%
-  mutate(empU=as.numeric(empU)) 
+  mutate(emp_serv=as.numeric(emp_serv), 
+         emp_agr=as.numeric(emp_agr), 
+         emp_ind=as.numeric(emp_ind),
+  emp=as.numeric(emp),
+  empA=as.numeric(empA), 
+  empB=as.numeric(empB), 
+  empC=as.numeric(empC), 
+  empD=as.numeric(empD),
+  empE=as.numeric(empE),
+  empF=as.numeric(empF),
+  empG=as.numeric(empG),
+  empH=as.numeric(empH),
+  empI=as.numeric(empI),
+  empJ=as.numeric(empJ),
+  empK=as.numeric(empK),
+  empL=as.numeric(empL),
+  empM=as.numeric(empM),
+  empN=as.numeric(empN),
+  empO=as.numeric(empO),
+  empP=as.numeric(empP),
+  empQ=as.numeric(empQ),
+  empR=as.numeric(empR),
+  empS=as.numeric(empS),
+  empT=as.numeric(empT),
+  empU=as.numeric(empU)) 
 
 
 # Labour Force, Employment and Unemployment (lfs) -------------------------------
+
 get_data_structure("LFS_SEXAGE_I_R")
 lfs <- OECD::get_dataset("LFS_SEXAGE_I_R",
                           filter = "AUS+AUT+BEL+CAN+CHL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OECD+COL+CRI+LTU+BRA+CHN+IND+IDN+RUS+ZAF.MEN+WOMEN+MW.900000.EPR+LFPR+UR.A", 
@@ -112,14 +113,14 @@ lfs <- lfs %>%
 lfs <- lfs %>% 
   select(iso3c, year, emp_fem= EPR_WOMEN, emp_male= EPR_MEN, lfp=LFPR_MW, lfp_fem=LFPR_WOMEN, lfp_male=LFPR_MEN,
          unemp=UR_MW, unemp_fem=UR_WOMEN, unemp_male=UR_MEN) %>%
-  mutate(emp_fem=as.numeric(emp_fem)) %>%
-  mutate(emp_male=as.numeric(emp_male)) %>%
-  mutate(lfp=as.numeric(lfp)) %>%
-  mutate(lfp_fem=as.numeric(lfp_fem)) %>%
-  mutate(lfp_male=as.numeric(lfp_male)) %>%
-  mutate(unemp=as.numeric(unemp)) %>%
-  mutate(unemp_fem=as.numeric(unemp_fem)) %>%
-  mutate(unemp_male=as.numeric(unemp_male)) 
+  mutate(emp_fem=as.numeric(emp_fem),
+  emp_male=as.numeric(emp_male),
+  lfp=as.numeric(lfp),
+  lfp_fem=as.numeric(lfp_fem),
+  lfp_male=as.numeric(lfp_male),
+  unemp=as.numeric(unemp),
+  unemp_fem=as.numeric(unemp_fem),
+  unemp_male=as.numeric(unemp_male)) 
 
 
 # Part time employment (pt) ----------------------------------------------------
@@ -136,14 +137,14 @@ pt <- pt %>%
   select(iso3c, year, pt_emp_te=PT_MW_TE, pt_emp_de=PT_MW_DE, pt_emp_fem_te=PT_WOMEN_TE, 
          pt_emp_fem_de=PT_WOMEN_DE, pt_emp_male_te=PT_MEN_TE, pt_emp_male_de=PT_MEN_DE, 
          pt_sh_fem_te=SH_PT_WOMEN_TE, pt_sh_fem_de=SH_PT_WOMEN_DE)%>%
-  mutate(pt_emp_te=as.numeric(pt_emp_te)) %>%
-  mutate(pt_emp_de=as.numeric(pt_emp_de)) %>%
-  mutate(pt_emp_fem_te=as.numeric(pt_emp_fem_te)) %>%
-  mutate(pt_emp_fem_de=as.numeric(pt_emp_fem_de)) %>%
-  mutate(pt_emp_male_te=as.numeric(pt_emp_male_te)) %>%
-  mutate(pt_emp_male_de=as.numeric(pt_emp_male_de)) %>%
-  mutate(pt_sh_fem_te=as.numeric(pt_sh_fem_te)) %>%
-  mutate(pt_sh_fem_de=as.numeric(pt_sh_fem_de)) 
+  mutate(pt_emp_te=as.numeric(pt_emp_te),
+  pt_emp_de=as.numeric(pt_emp_de),
+  pt_emp_fem_te=as.numeric(pt_emp_fem_te),
+  pt_emp_fem_de=as.numeric(pt_emp_fem_de),
+  pt_emp_male_te=as.numeric(pt_emp_male_te),
+  pt_emp_male_de=as.numeric(pt_emp_male_de),
+  pt_sh_fem_te=as.numeric(pt_sh_fem_te),
+  pt_sh_fem_de=as.numeric(pt_sh_fem_de)) 
 
 
 # Average hours worker per worker (hrs) -----------------------------------------
@@ -158,8 +159,7 @@ hrs <- hrs %>%
 
 hrs <- hrs %>%
   select(iso3c, year, hrs_work_te=TE, hrs_work_de=DE) %>%
-  mutate(hrs_work_te =as.numeric(hrs_work_te)) %>%
-  mutate(hrs_work_de = as.numeric(hrs_work_de))
+  mutate(hrs_work_te =as.numeric(hrs_work_te),hrs_work_de = as.numeric(hrs_work_de))
 
 # GDP  (wise) ---------------------------------------------------------------------
 #https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/WSDB/AUS+AUT+BEL+CAN+CHL+COL+CRI+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+AFG+ALB+DZA+ASM+AND+AGO+AIA+ATG+ARG+ARM+ABW+AZE+BHS+BHR+BGD+BRB+BLR+BLZ+BEN+BMU+BTN+BOL+BIH+BWA+BRA+VGB+BRN+BGR+BFA+BDI+KHM+CMR+CPV+CYM+CAF+TCD+CHN+COM+COG+COD+COK+CIV+HRV+CUB+CYP+CUW+DJI+DMA+DOM+ECU+EGY+SLV+GNQ+ERI+ETH+FRO+FJI+GUF+MKD+PYF+GAB+GMB+GEO+GHA+GIB+GRL+GRD+GLP+GUM+GTM+GIN+GNB+GUY+HTI+HND+HKG+IND+IDN+IRN+IRQ+IMN+JAM+JOR+KAZ+KEN+PRK+KIR+KWT+XKO+KGZ+LAO+LBN+LSO+LBR+LBY+LIE+MAC+MDG+MWI+MYS+MDV+MLI+MLT+MHL+MTQ+MRT+MUS+MYT+FSM+MDA+MCO+MNG+MNE+MSR+MAR+MOZ+MMR+NAM+NRU+NPL+ANT+NCL+NIC+NER+NGA+NIU+MNP+PSE+OMN+PAK+PLW+PAN+PNG+PRY+PER+PHL+PRI+QAT+REU+ROU+RUS+RWA+SHN+KNA+LCA+SXM+VCT+WSM+SMR+STP+SAU+SEN+SCG+SRB+SYC+SLE+SGP+SLB+SOM+ZAF+LKA+SDN+SUR+SSD+SWZ+SYR+TWN+TJK+TZA+THA+TLS+TGO+TKL+TON+TTO+TUN+TKM+TCA+TUV+UGA+UKR+ARE+URY+UZB+VUT+VEN+VNM+VIR+YEM+ZMB+ZWE.CONTEXT+NY_GDP_MKTP_CD+NY_GNP_PCAP_PP_CD+EMPL_SECT+EMPL_AGRI+EMPL_MINCON+EMPL_INDU+EMPL_SERV+EMPL_SECTX+BG_GSR_NFSV_GD_ZS+HUM_DEV_IND+SP_POP_TOTL+SP_POP_TOTL_FE_ZS+YTH_POP_REL+SP_URB_TOTL_IN_ZS+SH_STA_MALN+MOTH_EATT+MOTH_EATT_LS+MOTH_EATT_MS+MOTH_EATT_HS+IT_NET_USER_P2+IT_CEL_SETS_P2+XGDP_FSGOV+PTRHC+PTRHC_1+PTRHC_2+PTRHC_3+EMPL_INF_SECT+IC_BUS_EASE_XQ+SKILL_ACQ+ADU_EATT+ADU_EATT_ISCED0+ADU_EATT_ISCEDN+ADU_EATT_ISCED1+ADU_EATT_ISCED2+ADU_EATT_ISCED3+ADU_EATT_ISCED4+ADU_EATT_ISCED5_6+ADU_EATT_ISCEDX+LR_AG15T24+LR_AG15T99+COGN_SKIL_ADU+COGN_SKIL_STEP+GER_1+NER_1+SR_1_GLAST+GER_23+NER_23+SR_2_GPV_GLAST+GTVP_3_V+GER_56+NER_YADU+GRADU_STEM+ENRL_STEM+APPRENT+ADU_EDU_LFS+ADU_EDU_AES+ADU_EDU_EMP_LFS+ADU_EDU_EMP_AES+SKILL_REQ+EMPL_EATT+EMPL_EATT_ISCED0+EMPL_EATT_ISCED1+EMPL_EATT_ISCED2+EMPL_EATT_ISCED3+EMPL_EATT_ISCED4+EMPL_EATT_ISCED5+EMPL_EATT_ISCED6+EMPL_EATT_ISCEDX+EMPL_SHARE+EMPL_SHARE_ISCO01+EMPL_SHARE_ISCO02+EMPL_SHARE_ISCO03+EMPL_SHARE_ISCO04+EMPL_SHARE_ISCO05+EMPL_SHARE_ISCO06+EMPL_SHARE_ISCO07+EMPL_SHARE_ISCO08+EMPL_SHARE_ISCO09+EMPL_SHARE_ISCO00+EMPL_SHARE_ISCO0X+SELF_EMPL+WORK_SKIL+WORK_SKIL_READ+WORK_SKIL_WRIT+WORK_SKIL_NUM+WORK_SKIL_IT+WORK_SKIL_COMM+WORK_SKIL_TEAM+WORK_SKIL_NEW+WORK_SKIL_PHYS+WORK_SKIL_DEXT+WORK_SKIL_READ_STEP_NU+WORK_SKIL_READ_STEP_LU+WORK_SKIL_READ_STEP_MU+WORK_SKIL_READ_STEP_HU+WORK_SKIL_WRIT_STEP_NU+WORK_SKIL_WRIT_STEP_LU+WORK_SKIL_WRIT_STEP_MU+WORK_SKIL_WRIT_STEP_HU+WORK_SKIL_NUM_STEP_NU+WORK_SKIL_NUM_STEP_LU+WORK_SKIL_NUM_STEP_MU+WORK_SKIL_NUM_STEP_HU+WORK_SKIL_IT_STEP_NU+WORK_SKIL_IT_STEP_LU+WORK_SKIL_IT_STEP_MU+WORK_SKIL_IT_STEP_HU+JOB_REQ+JOB_REQ_NOE+JOB_REQ_LS+JOB_REQ_MS+JOB_REQ_HS+MATCHING+QUAL+OVERQUAL+UNDERQUAL+WELLM+SKIL_GAP+CHNG_EARN+CHNG_EARN_LS+CHNG_EARN_MS+CHNG_EARN_HS+CHNG_EARN_ISCO01+CHNG_EARN_ISCO02+CHNG_EARN_ISCO03+CHNG_EARN_ISCO04+CHNG_EARN_ISCO05+CHNG_EARN_ISCO06+CHNG_EARN_ISCO07+CHNG_EARN_ISCO08+CHNG_EARN_ISCO09+CHNG_UNEMP+CHNG_UNEMP_LS+CHNG_UNEMP_MS+CHNG_UNEMP_HS+OUTCOMES+NY_GDP_MKTP_KD_ZG+GDP_EMPL+GDP_EMPL_GROW+GDP_HOUR+GDP_HOUR_GROW+EMPL+EMPL_LS+EMPL_MS+EMPL_HS+ADU_EMPL+ADU_EMPL_LS+ADU_EMPL_MS+ADU_EMPL_HS+15_19_EMPL+15_19_EMPL_LS+15_19_EMPL_MS+15_19_EMPL_HS+20_24_EMPL+20_24_EMPL_LS+20_24_EMPL_MS+20_24_EMPL_HS+25_29_EMPL+25_29_EMPL_LS+25_29_EMPL_MS+25_29_EMPL_HS+EMPL_INF+EMPL_INF_EDU+EMPL_INF_NS+EMPL_INF_LS+EMPL_INF_MS+EMPL_INF_HS+EMPL_TEMP+EMPL_TEMP_LS+EMPL_TEMP_MS+EMPL_TEMP_HS+UNEMP+UNEMP_LS+UNEMP_MS+UNEMP_HS+ADU_UNEMP+ADU_UNEMP_LS+ADU_UNEMP_MS+ADU_UNEMP_HS+YTH_UNEMP+YTH_UNEMP_LS+YTH_UNEMP_MS+YTH_UNEMP_HS+NEET+NEET_PSY+NEET_PSN+EARN+EARN_LS+EARN_MS+EARN_HS+EARN_ISCO01+EARN_ISCO02+EARN_ISCO03+EARN_ISCO04+EARN_ISCO05+EARN_ISCO06+EARN_ISCO07+EARN_ISCO08+EARN_ISCO09+SI_POV_GINI+SI_POV_2DAY.W+M+T/all?startTime=2003&endTime=2014
@@ -193,20 +193,20 @@ wise <- wise %>%
          gni=NY_GNP_PCAP_PP_CD_T, tradeopen=BG_GSR_NFSV_GD_ZS_T, hdi=HUM_DEV_IND_T,
          pop=SP_POP_TOTL_T, pop_fem=SP_POP_TOTL_FE_ZS_T, gdp_growth=NY_GDP_MKTP_KD_ZG_T,
          lp=GDP_EMPL_T, hrs_lp=GDP_HOUR_T, gini=SI_POV_GINI_T) %>%
-  mutate(emp_sh_agr=as.numeric(emp_sh_agr)) %>%
-  mutate(emp_sh_mc=as.numeric(emp_sh_mc)) %>%
-  mutate(emp_sh_ind=as.numeric(emp_sh_ind)) %>%
-  mutate(emp_sh_serv=as.numeric(emp_sh_serv)) %>%
-  mutate(gdp=as.numeric(gdp)) %>%
-  mutate(gni=as.numeric(gni)) %>%
-  mutate(tradeopen=as.numeric(tradeopen)) %>%
-  mutate(hdi=as.numeric(hdi)) %>%
-  mutate(pop=as.numeric(pop)) %>%
-  mutate(pop_fem=as.numeric(pop_fem)) %>%
-  mutate(gdp_growth=as.numeric(gdp_growth)) %>%
-  mutate(lp=as.numeric(lp)) %>%
-  mutate(hrs_lp=as.numeric(hrs_lp)) %>%
-  mutate(gini=as.numeric(gini)) 
+  mutate(emp_sh_agr=as.numeric(emp_sh_agr),
+  emp_sh_mc=as.numeric(emp_sh_mc),
+  emp_sh_ind=as.numeric(emp_sh_ind),
+  emp_sh_serv=as.numeric(emp_sh_serv),
+  gdp=as.numeric(gdp),
+  gni=as.numeric(gni),
+  tradeopen=as.numeric(tradeopen),
+  hdi=as.numeric(hdi),
+  pop=as.numeric(pop),
+  pop_fem=as.numeric(pop_fem),
+  gdp_growth=as.numeric(gdp_growth),
+  lp=as.numeric(lp),
+  hrs_lp=as.numeric(hrs_lp),
+  gini=as.numeric(gini)) 
   
 
 # Productivity (gdp) ------------------------------------------------------------
