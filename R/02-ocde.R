@@ -1,5 +1,5 @@
 # Code OCDE ---------------------------------------------------------------
-pacman::p_load(OECD, tidyverse)
+pacman::p_load(OECD, tidyverse, googlesheet4)
 
 # 1. Load packages --------------------------------------------------------
 
@@ -261,6 +261,13 @@ oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
 # 5. Rename and select ---------------------------------------------------------------
 
 # 6. Label ----------------------------------------------------------------
+
+# Etiquetas
+labels <- read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                     range = "B217:C279", col_names = F) %>% 
+  select(variables = 1, etiquetas = 2)
+
+# fila 217-280
 
 
 # 7. Save -----------------------------------------------------------------
