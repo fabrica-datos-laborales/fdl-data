@@ -1,27 +1,21 @@
 # Code OCDE ---------------------------------------------------------------
-pacman::p_load(OECD, tidyverse, googlesheet4)
-
 # 1. Load packages --------------------------------------------------------
+pacman::p_load(OECD, tidyverse, googlesheets4, Hmisc)
 
 # 2. Load data ------------------------------------------------------------
 
 # Real Minimun Wages (rmw) ------------------------------------------------------
-
-
 rmw <- OECD::get_dataset("RMW",
                          filter = "AUS+BEL+CAN+CHL+CZE+EST+FRA+DEU+GRC+HUN+IRL+ISR+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+POL+PRT+SVK+SVN+ESP+TUR+GBR+USA+CRI+BRA+RUS+COL.PPP.A", 
                          pre_formatted = TRUE)
-
 rmw <- rmw %>%
   select(iso3c=COUNTRY,year=Time, rmw=ObsValue) %>% 
   mutate(rmw = as.numeric(rmw))
-
 
 # Anual avergaes (aww) ----------------------------------------------------------
 # aww <- OECD::get_dataset("AC_AN_WAGE",
 #                          filter = "AUS+AUT+BEL+CAN+CHL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+GBR+USA.CPNCU+CNPNCU+USDPPP", 
 #                          pre_formatted = TRUE)
-
 
 # Median real wages (mrw) -------------------------------------------------------
 mrw <- OECD::get_dataset("MIN2AVE",
@@ -98,9 +92,7 @@ emp <- emp %>%
   empT=as.numeric(empT),
   empU=as.numeric(empU)) 
 
-
 # Labour Force, Employment and Unemployment (lfs) -------------------------------
-
 get_data_structure("LFS_SEXAGE_I_R")
 lfs <- OECD::get_dataset("LFS_SEXAGE_I_R",
                           filter = "AUS+AUT+BEL+CAN+CHL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OECD+COL+CRI+LTU+BRA+CHN+IND+IDN+RUS+ZAF.MEN+WOMEN+MW.900000.EPR+LFPR+UR.A", 
@@ -145,7 +137,6 @@ pt <- pt %>%
   pt_emp_male_de=as.numeric(pt_emp_male_de),
   pt_sh_fem_te=as.numeric(pt_sh_fem_te),
   pt_sh_fem_de=as.numeric(pt_sh_fem_de)) 
-
 
 # Average hours worker per worker (hrs) -----------------------------------------
 #https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/ANHRS/AUS+AUT+BEL+CAN+CHL+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OECD+CRI+RUS.DE+TE.A/all?startTime=2000&endTime=2019
@@ -236,7 +227,6 @@ growth <- growth %>%
   select(iso3c, year, ulc = T_ULCH) %>%
   mutate(ulc = as.numeric(ulc)) 
  
-
 # Gender wage gap (gwg)---------------------------------------------------------
 #https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/GENDER_EMP/AUS+AUT+BEL+CAN+CHL+COL+CRI+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OAVG+NMEC+BRA+CHN+IND+IDN+RUS+ZAF.EMP9+EMP9_5+EMP9_1+EMP9_9.ALL_PERSONS.TOTAL.2000+2005+2010+2011+2012+2013+2014+2015+2016+2017+2018+2019+LATEST_YEAR+Q1-2007+Q2-2007+Q3-2007+Q4-2007+Q1-2008+Q2-2008+Q3-2008+Q4-2008+Q1-2009+Q2-2009+Q3-2009+Q4-2009+Q1-2010+Q2-2010+Q3-2010+Q4-2010+Q1-2011+Q2-2011+Q3-2011+Q4-2011+Q1-2012+Q2-2012+Q3-2012+Q4-2012+Q1-2013+Q2-2013+Q3-2013+Q4-2013+999999+Q1-2014+Q2-2014+Q3-2014+Q4-2014+Q1-2015+Q2-2015+Q3-2015+Q4-2015+Q1-2016+Q2-2016+Q3-2016+Q4-2016+Q1-2017+Q2-2017+Q3-2017+Q4-2017+Q1-2018+Q2-2018+Q3-2018+Q4-2018/all?
 gwg <- OECD::get_dataset("GENDER_EMP",
@@ -250,7 +240,6 @@ gwg <- gwg %>%
   select(iso3c, year, gwg= EMP9_5) %>%
   mutate(gwg=as.numeric(gwg))
 
-
 # 3. Merge al data --------------------------------------------------------
 oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
                                    all = T),
@@ -263,12 +252,17 @@ oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
 # 6. Label ----------------------------------------------------------------
 
 # Etiquetas
-labels <- read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
                      range = "B217:C279", col_names = F) %>% 
   select(variables = 1, etiquetas = 2)
 
-# fila 217-280
+labs <- labels %>% mutate(etiquetas = paste0("'",etiquetas,"'")) %>% 
+  unite(labels,c("variables", "etiquetas"), sep = " = ") %$%
+  as.vector(labels)
 
+data <- Hmisc::upData(oecd, labels = labs)
+
+label(data) = as.list(var.labels[match(names(data), names(labs))])
 
 # 7. Save -----------------------------------------------------------------
 

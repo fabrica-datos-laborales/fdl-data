@@ -9,7 +9,7 @@ if (!require("Rilostat")) remotes::install_github("ilostat/Rilostat", force = TR
 if (!require("vdemdata")) devtools::install_github("vdeminstitute/vdemdata")
 
 # CRAN
-paquetes <- c("tidyverse","readr", "WDI","haven", "rvest", "kableExtra", "sjlabelled",
+paquetes <- c("tidyverse","Hmisc","readr", "WDI","haven", "rvest", "kableExtra", "sjlabelled",
               "pdftools", "ggsci", "readxl", "readsdmx", "googlesheets4")
 
 for(p in paquetes) {
