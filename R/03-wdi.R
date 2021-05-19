@@ -42,52 +42,43 @@ wdi_dat <- WDI(indicator = c("NY.GDP.MKTP.KD.ZG",
 
 
 # 4. Recode ---------------------------------------------------------------
-wdi_dat$country
-datos$variable <- car::recode(datos$variable_vieja, 
-                              c("1 = 'Yes';2 = 'No'"), as.factor = T,
-                              levels = c("Yes", "No"))
+
 # 5. Rename ---------------------------------------------------------------
-
-wdi_dat <- wdi_dat %>% rename("gdp_growth_wbi"= NY.GDP.MKTP.KD.ZG, 
-                                   "gni_per_capita_wbi"= NY.GNP.PCAP.CD, 
-                                   "gni_per_capita_ppp_wbi"= NY.GNP.PCAP.PP.CD,
-                                   "population_wbi"= SP.POP.TOTL,
-                                   "emp_agr_wbi" = SL.AGR.EMPL.ZS,
-                                   "emp_ind_wbi" = SL.IND.EMPL.ZS,
-                                   "emp_serv_wbi" = SL.SRV.EMPL.ZS,
-                                   "emp_pop_wbi" = SL.EMP.TOTL.SP.ZS,
-                                   "gini_in_wbi" = SI.POV.GINI,
-                                   "income_sh_wbi" = SI.DST.10TH.10,
-                                   "lfp_wbi" = SL.TLF.CACT.NE.ZS,
-                                   "lfp_64_wbi" = SL.TLF.ACTI.ZS,
-                                   "lf_educ_wbi" = SL.TLF.ADVN.ZS,
-                                   "emp_self_wbi" = SL.EMP.SELF.ZS,
-                                   "unemp_wbi" = SL.UEM.TOTL.NE.ZS,
-                                   "unemp_e_wbi" = SL.UEM.TOTL.ZS,
-                                   "emp_salaried_wbi" = SL.EMP.WORK.ZS,
-                                   "emp_vulnerable_wbi" = SL.EMP.VULN.ZS,
-                                   "emp_pt_wbi" = SL.TLF.PART.ZS,
-                                   "emp_fem_pt_wbi" = SL.TLF.PART.FE.ZS,
-                                   "emp_male_pt_wbi" = SL.TLF.PART.MA.ZS,
-                                   "emp_mat_wbi" = SH.MMR.WAGE.ZS,
-                                   "emp_sexratio_wbi" = SL.TLF.CACT.FM.NE.ZS,
-                                   "emp_sexratio_e_wbi" = SL.TLF.CACT.FM.ZS,
-                                   "emp_fem_serv_wbi" = SL.SRV.EMPL.FE.ZS,
-                                   "emp_male_serv_wbi" = SL.SRV.EMPL.MA.ZS,
-                                   "db_1720_wbi" = IC.BUS.EASE.DFRN.XQ.DB1719,
-                                   "db_wbi" = IC.BUS.DFRN.XQ,
-                                   "db_index_wbi" = IC.BUS.EASE.XQ)
-
-#gdp_percapita_wb estaba en el libro de c?digos, pero no en la base
-
+wdi_dat <- wdi_dat %>% rename("gdp_growth_wdi"= NY.GDP.MKTP.KD.ZG, 
+                                   "gni_per_capita_wdi"= NY.GNP.PCAP.CD, 
+                                   "gni_per_capita_ppp_wdi"= NY.GNP.PCAP.PP.CD,
+                                   "population_wdi"= SP.POP.TOTL,
+                                   "emp_agr_wdi" = SL.AGR.EMPL.ZS,
+                                   "emp_ind_wdi" = SL.IND.EMPL.ZS,
+                                   "emp_serv_wdi" = SL.SRV.EMPL.ZS,
+                                   "emp_pop_wdi" = SL.EMP.TOTL.SP.ZS,
+                                   "gini_in_wdi" = SI.POV.GINI,
+                                   "income_sh_wdi" = SI.DST.10TH.10,
+                                   "lfp_wdi" = SL.TLF.CACT.NE.ZS,
+                                   "lfp_64_wdi" = SL.TLF.ACTI.ZS,
+                                   "lf_educ_wdi" = SL.TLF.ADVN.ZS,
+                                   "emp_self_wdi" = SL.EMP.SELF.ZS,
+                                   "unemp_wdi" = SL.UEM.TOTL.NE.ZS,
+                                   "unemp_e_wdi" = SL.UEM.TOTL.ZS,
+                                   "emp_salaried_wdi" = SL.EMP.WORK.ZS,
+                                   "emp_vulnerable_wdi" = SL.EMP.VULN.ZS,
+                                   "emp_pt_wdi" = SL.TLF.PART.ZS,
+                                   "emp_fem_pt_wdi" = SL.TLF.PART.FE.ZS,
+                                   "emp_male_pt_wdi" = SL.TLF.PART.MA.ZS,
+                                   "emp_mat_wdi" = SH.MMR.WAGE.ZS,
+                                   "emp_sexratio_wdi" = SL.TLF.CACT.FM.NE.ZS,
+                                   "emp_sexratio_e_wdi" = SL.TLF.CACT.FM.ZS,
+                                   "emp_fem_serv_wdi" = SL.SRV.EMPL.FE.ZS,
+                                   "emp_male_serv_wdi" = SL.SRV.EMPL.MA.ZS,
+                                   "db_1720_wdi" = IC.BUS.EASE.DFRN.XQ.DB1719,
+                                   "db_wdi" = IC.BUS.DFRN.XQ,
+                                   "db_index_wdi" = IC.BUS.EASE.XQ)
 
 # 6. Label ----------------------------------------------------------------
 
 # 7. Select ------------------------------------------------------
+wdi_dat <- wdi_dat %>% filter(!is.na(region), region != "Aggregates")
+wdi_dat <- wdi_dat %>% select(-c(region, capital,longitude,latitude,income,lending))
 
 # 8. Save -----------------------------------------------------------------
-
-
-# ruta: output/data/proc
-
-
+saveRDS(wdi_dat, file = "C:/Users/genaro cuadros/Desktop/Github/fdl-data/R/wdi.rds")
