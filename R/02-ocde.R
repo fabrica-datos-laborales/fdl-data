@@ -178,6 +178,7 @@ wise <- wise %>%
   select(iso3c=LOCATION, sex=SEX, year=Time, ObsValue, series=VAR) %>%
   pivot_wider(names_from = c("series", "sex"), values_from = "ObsValue")
 
+# Achicar
 wise <- wise %>%
   select(iso3c, year, emp_sh_agr=EMPL_AGRI_T, emp_sh_mc=EMPL_MINCON_T, 
          emp_sh_ind=EMPL_INDU_T, emp_sh_serv=EMPL_SERV_T, gdp=NY_GDP_MKTP_CD_T,
@@ -266,7 +267,7 @@ label(data) = as.list(var.labels[match(names(data), names(labs))])
 
 # 7. Save -----------------------------------------------------------------
 
-saveRDS(oecd, file="oecd.rds")
+saveRDS(oecd, file="output/data/proc/oecd.rds")
 
 
 
