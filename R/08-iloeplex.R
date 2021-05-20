@@ -1,7 +1,7 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
 pacman::p_load(Rilostat, tidyverse,rvest, car)
-
+#
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
   html_node('.table') %>% 
