@@ -1,6 +1,6 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(Rilostat, tidyverse,rvest, car)
+pacman::p_load(tidyverse,rvest, car)
 #
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
@@ -26,15 +26,17 @@ spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-agai
 
 vd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>% 
   html_node('.table') %>% 
-  html_table() %>% 
+  html_table() %>%
   select(year = "Year(s)", country_name = 3,
          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
+#Ojo
 
-# pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>% 
-#   html_node('.table,2') %>%  
-#   html_table() %>% 
-#   select(year = "Year(s)", country_name = 3,
-#          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
+pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
+  html_nodes('.table')  %>% 
+  html_table()
+pd <- pd[[2]] %>% 
+  select(year = "Year(s)", country_name = 3,
+         ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
 
 
 ## repetir proceso
@@ -108,6 +110,9 @@ spd$spd_occ_dis <-  factor(spd$spd_occ_dis,
 
 # %>%
 #   mutate_at(vars(fct_valid,fct_max_nocum), funs(as_factor(.))))
+
+# mutate_at(vars(starts_with("sp")), funs(car::recode(., c("'Y'='Yes';'N'='No'"), as.factor= T, levels = c("Yes","No")))))
+
 
 ## recode country_name https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
