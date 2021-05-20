@@ -9,13 +9,22 @@ ud_ilostat <- Rilostat::get_ilostat("ILR_TUMT_NOC_RT_A") %>%
 cbc_ilostat <- Rilostat::get_ilostat("ILR_CBCT_NOC_RT_A")  %>% 
   select(iso3c = ref_area, year=time, cbc= obs_value) #Collective bargaining coverage rate (%)
 
-hour_earn_ilostat <- Rilostat::get_ilostat("EAR_4HRL_SEX_OCU_CUR_NB_A") %>% 
-  select(iso3c = ref_area, year=time, hour_earn= obs_value, sex, classif1) #Mean nominal hourly earning of employees (U.S. dollars)
+
+# Mean nominal hourly earning of employees (U.S. dollars) -----------------
+hour_earn_ilostat <- Rilostat::get_ilostat("EAR_4HRL_SEX_OCU_CUR_NB_A") %>%
+  filter(classif2 == "CUR_TYPE_PPP") %>% 
+  select(iso3c = ref_area, year=time, hour_earn= obs_value, sex, classif1) %>% 
+  pivot_wider(names_from = c("sex", "classif1"), values_from = "hour_earn" ) %>% 
+  mutate(year = as.numeric(year)) %>%
+#  select(comoquieroquesellame =como se llama)
+
+#Mean nominal hourly earning of employees (U.S. dollars)
 table(hour_earn_ilostat$sex) #Hay tres sexos (F, M y T)
+
 
 month_earn_ilostat <- Rilostat::get_ilostat("EAR_XEES_SEX_ECO_NB_M") %>% 
   select(iso3c = ref_area, year=time, month_earn= obs_value, sex, classif1) #Mean nominal monthly earning of employees (U.S. dollars)
-#Los años están separados en meses, ¿juntar todos los meses de un mismo año?
+#Los a?os est?n separados en meses, ?juntar todos los meses de un mismo a?o?
 
 labor_inc_share_ilostat	<- Rilostat::get_ilostat("LAP_2GDP_NOC_RT_A") %>% 
   select(iso3c = ref_area, year=time, labor_inc_share= obs_value) #Labour income share as a percent of GDP
