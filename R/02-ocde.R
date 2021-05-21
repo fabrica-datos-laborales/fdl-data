@@ -211,8 +211,8 @@ gdp <- gdp %>%
   pivot_wider(names_from = c("series"), values_from = "ObsValue")
 
 gdp <- gdp %>%
-  select(iso3c, year, gdp=T_GDPPOP) %>%
-  mutate(gdp = as.numeric(gdp))
+  select(iso3c, year, lp=T_GDPPOP) %>%
+  mutate(lp = as.numeric(lp))
 
 # Growth ULC y GDP (growth) --------------------------------------------------------------
 # https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/PDB_GR/AUS+AUT+BEL+CAN+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+KOR+LVA+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+GBR+USA+EA19+EU27_2020.T_GDPHRS_V+T_LCHRS+T_ULCH.GRW/all?startTime=1995&endTime=2020
@@ -225,8 +225,8 @@ growth <- growth %>%
   pivot_wider(names_from = c("series"), values_from = "ObsValue")
 
 growth <- growth %>% 
-  select(iso3c, year, ulc = T_ULCH) %>%
-  mutate(ulc = as.numeric(ulc)) 
+  select(iso3c, year, ulc = T_ULCH, gdp_growth_pc =T_GDPHRS_V) %>%
+  mutate_at(vars(3:4), funs(as.numeric(.)))
  
 # Gender wage gap (gwg)---------------------------------------------------------
 #https://stats.oecd.org/restsdmx/sdmx.ashx/GetData/GENDER_EMP/AUS+AUT+BEL+CAN+CHL+COL+CRI+CZE+DNK+EST+FIN+FRA+DEU+GRC+HUN+ISL+IRL+ISR+ITA+JPN+KOR+LVA+LTU+LUX+MEX+NLD+NZL+NOR+POL+PRT+SVK+SVN+ESP+SWE+CHE+TUR+GBR+USA+OAVG+NMEC+BRA+CHN+IND+IDN+RUS+ZAF.EMP9+EMP9_5+EMP9_1+EMP9_9.ALL_PERSONS.TOTAL.2000+2005+2010+2011+2012+2013+2014+2015+2016+2017+2018+2019+LATEST_YEAR+Q1-2007+Q2-2007+Q3-2007+Q4-2007+Q1-2008+Q2-2008+Q3-2008+Q4-2008+Q1-2009+Q2-2009+Q3-2009+Q4-2009+Q1-2010+Q2-2010+Q3-2010+Q4-2010+Q1-2011+Q2-2011+Q3-2011+Q4-2011+Q1-2012+Q2-2012+Q3-2012+Q4-2012+Q1-2013+Q2-2013+Q3-2013+Q4-2013+999999+Q1-2014+Q2-2014+Q3-2014+Q4-2014+Q1-2015+Q2-2015+Q3-2015+Q4-2015+Q1-2016+Q2-2016+Q3-2016+Q4-2016+Q1-2017+Q2-2017+Q3-2017+Q4-2017+Q1-2018+Q2-2018+Q3-2018+Q4-2018/all?
@@ -246,27 +246,21 @@ oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
                                    all = T),
                list(rmw, mrw, emp, lfs, pt, hrs,wise,gdp, growth,gwg))
 
-# 4. Recode ---------------------------------------------------------------
-## Hacer save
-# 5. Rename and select ---------------------------------------------------------------
 
 # 6. Label ----------------------------------------------------------------
-
-# Etiquetas
+# Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                     range = "B217:C279", col_names = F) %>% 
+                     range = c("B5:C279"), col_names = F) %>%
+  slice(c(1,2,213:275)) %>%
   select(variables = 1, etiquetas = 2)
-
-labs <- labels %>% mutate(etiquetas = paste0("'",etiquetas,"'")) %>% 
-  unite(labels,c("variables", "etiquetas"), sep = " = ") %$%
-  as.vector(labels)
-
-data <- Hmisc::upData(oecd, labels = labs)
-
-label(data) = as.list(var.labels[match(names(data), names(labs))])
+## Tranformar a vectornames
+var.labels <- as.character(labels$etiquetas)
+names(var.labels) <- labels$variables
+## Etiquetar
+label(oecd) = as.list(var.labels[match(names(oecd), names(oecd))])
 
 # 7. Save -----------------------------------------------------------------
-
+rm(list = ls(pattern = "wl|b|p|h"))#remover lo que no sirve
 saveRDS(oecd, file="output/data/proc/oecd.rds")
 
 
