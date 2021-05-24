@@ -14,6 +14,7 @@ cbc <- Rilostat::get_ilostat("ILR_CBCT_NOC_RT_A")  %>%
   mutate(year = as.numeric(year)) 
 
 # Mean nominal hourly earning of employees (U.S. dollars) -----------------
+#isco08_2
 hour_earn <- Rilostat::get_ilostat("EAR_4HRL_SEX_OCU_CUR_NB_A") %>%
   filter(classif2 == "CUR_TYPE_PPP") %>% 
   select(iso3c = ref_area, year=time, hour_earn= obs_value, sex, classif1) %>% 
@@ -41,7 +42,7 @@ hour_earn <- Rilostat::get_ilostat("EAR_4HRL_SEX_OCU_CUR_NB_A") %>%
          SEX_F_OCU_ISCO88_X) #Que hago con los 88
     
 
-#sexo_total/masculino/femenino_ocupaciónNúmero_(total)
+#sexo_total/masculino/femenino_ocupaci?nN?mero_(total)
 #X Not elsewhere classified
 #0 Armed forces occupations
 #1 Managers
@@ -66,19 +67,27 @@ month_earn <- Rilostat::get_ilostat("EAR_XEES_SEX_ECO_NB_M") %>%
          SEX_M_ECO_SECTOR_NAG, SEX_F_ECO_SECTOR_NAG) #Se filtraron aquellas variables agregadas
 
 # Labour income share as a percent of GDP -----------------
-labor_inc_share	<- Rilostat::get_ilostat("LAP_2GDP_NOC_RT_A") %>% 
-  select(iso3c = ref_area, year=time, labor_inc_share= obs_value) %>% 
-  mutate(year = as.numeric(year)) #Obs_status tiene dos posibilidades, no cacho que es
+labor_inc_share	<- Rilostat::get_ilostat("LAP_2GDP_NOC_RT_A") %>%
+  select(iso3c = ref_area, year=time, labor_inc_share= obs_value, obs_status) %>%
+  pivot_wider(names_from = c("obs_status"), values_from = "labor_inc_share") %>%
+  group_by(iso3c, year) %>%
+  select(G=4, everything()) %>% 
+  mutate(labor_inc_share = if_else(is.na(I)&is.na(M), G,
+                                   if_else(is.na(I)&is.na(G), M,
+                                   if_else(is.na(M)&is.na(G), I, G)))) %>% 
+  select(iso3c, year, labor_inc_share)
+## Poner en definicion que datos provienen de datos administrativos o imputados o modelos
 
 # Employment by sex and institutional sector (thousands) -----------------
-emp_inst <- Rilostat::get_ilostat("EMP_TEMP_SEX_INS_NB_A") %>% 
-  select(iso3c = ref_area, year=time, emp_inst= obs_value, sex, classif1) %>% 
+emp_inst <- Rilostat::get_ilostat("EMP_TEMP_SEX_INS_NB_A") %>%
+  filter(obs_status != "U") %>% 
+  select(iso3c = ref_area, year=time, emp_inst= obs_value,sex, classif1) %>% 
   pivot_wider(names_from = c("sex", "classif1"), values_from = "emp_inst") %>% 
   select(iso3c, year, total_sec_total=SEX_T_INS_SECTOR_TOTAL, total_pub=SEX_T_INS_SECTOR_PUB, 
          total_pri=SEX_T_INS_SECTOR_PRI, masc_sec_total=SEX_M_INS_SECTOR_TOTAL, 
          masc_pub=SEX_M_INS_SECTOR_PUB, masc_pri=SEX_M_INS_SECTOR_PRI, 
          fem_sec_total=SEX_F_INS_SECTOR_TOTAL, fem_pub=SEX_F_INS_SECTOR_PUB, 
-         fem_pri=SEX_F_INS_SECTOR_PRI) #Acá me salen todas las variables como listas y no logré cambiarlas
+         fem_pri=SEX_F_INS_SECTOR_PRI) #Ac? me salen todas las variables como listas y no logr? cambiarlas
 
 # Employment by sex and status in employment -----------------
 emp_status <- Rilostat::get_ilostat("EMP_2EMP_SEX_STE_NB_A") %>% 
@@ -98,9 +107,12 @@ emp_status <- Rilostat::get_ilostat("EMP_2EMP_SEX_STE_NB_A") %>%
 #5 Contributing family workers
 
 # Number of strikes and lockouts by economic activity -----------------
-nstrikes_act <- Rilostat::get_ilostat("STR_TSTR_ECO_NB_A") %>% 
-  select(iso3c = ref_area, year=time, nstrikes_act= obs_value, activity=classif1) %>% 
-  pivot_wider(names_from = "activity", values_from = "nstrikes_act") %>% 
+nstrikes_act <- Rilostat::get_ilostat("STR_TSTR_ECO_NB_A") %>%
+  select(iso3c = ref_area, year=time, nstrikes_act= obs_value, obs_status,  activity=classif1) %>%
+  group_by(iso3c, year) %>% 
+  mutate(obs_status = NA)%>% 
+  ungroup()  %>% 
+  pivot_wider(names_from = c("activity"), values_from = "nstrikes_act") 
   mutate(year = as.numeric(year)) %>% 
   select(iso3c, year, ECO_ISIC3_TOTAL, ECO_ISIC3_D, ECO_ISIC3_E, ECO_ISIC3_F, ECO_ISIC3_G,
          ECO_ISIC3_H, ECO_ISIC3_I, ECO_ISIC3_J, ECO_ISIC3_N, ECO_ISIC3_X, ECO_SECTOR_TOTAL, ECO_ISIC3_K,        
