@@ -10,11 +10,13 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
 
 lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>% 
-  html_node('.table') #%>% 
-  # html_table() %>% 
+  html_node('.table') %>% 
+  html_table() %>% 
   # select(year = "Year(s)", country_name = 3,
   #        ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16) 
 
+## AVISAR LO DE LOS NUMEROS
+  
 spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-against-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>% 
