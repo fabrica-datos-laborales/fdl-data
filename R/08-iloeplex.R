@@ -67,7 +67,7 @@ ftc <- ftc %>% mutate_at(vars(ends_with("valid")|ends_with("nocum")),
 
 ftc$ftc_reg <-  recode(ftc$ftc_reg, "'Y'=1; 'N'=2") 
 ftc$ftc_reg <-  factor(ftc$ftc_reg, 
-                labels = c("Y", "N"))
+                labels = c("Yes", "No"))
 
 ftc$ftc_max <- recode(ftc$ftc_max, "'no limitation'=0")
 
@@ -77,7 +77,7 @@ lc <- lc %>% mutate_at(vars(starts_with("lc")),
                         funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
              mutate_at(vars(starts_with("lc")),
              funs(factor(., levels = c(1, 2),
-                        labels = c('Y', 'N'))))
+                        labels = c('Yes', 'No'))))
 
 ##Special protection dismissal
 
@@ -85,7 +85,7 @@ spd <- spd %>% mutate_at(vars(starts_with("spd")),
                          funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
                mutate_at(vars(starts_with("spd")),
                          funs(factor(., levels = c(1, 2),
-                                     labels = c('Y', 'N'))))
+                                     labels = c('Yes', 'No'))))
 
 
 ##Valid grounds for dismissal
@@ -94,7 +94,7 @@ vd <- vd %>% mutate_at(vars(starts_with("vd")),
                          funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
              mutate_at(vars(starts_with("vd")),
                          funs(factor(., levels = c(1, 2),
-                                     labels = c('Y', 'N'))))
+                                     labels = c('Yes', 'No'))))
 
 ## Prohibited grounds for dismissal
 
@@ -102,14 +102,14 @@ pd <- pd %>% mutate_at(vars(starts_with("pd")),
                        funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
   mutate_at(vars(starts_with("pd")),
             funs(factor(., levels = c(1, 2),
-                        labels = c('Y', 'N'))))
+                        labels = c('Yes', 'No'))))
 
 
 ## recode country_name https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 
 # 4. Merge al data --------------------------------------------------------
-iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("year", "country_name"),
+iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("country_name", "year"),
                                    all = T),
                list(vd, spd, pd, lc, ftc))
 
@@ -127,5 +127,5 @@ names(var.labels) <- labels$variables
 label(iloeplex) = as.list(var.labels[match(names(iloeplex), names(iloeplex))])
 
 # 7. Save -----------------------------------------------------------------
-rm(list = ls(pattern = "wl|b|p|h"))#remover lo que no sirve
+rm(list = ls(pattern = "s|v|f|d|c"))#remover lo que no sirve
 saveRDS(iloeplex, file="output/data/proc/iloeplex.rds")
