@@ -1,6 +1,6 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, car)
+pacman::p_load(tidyverse,rvest, car, readxl, janitor)
 #
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
@@ -9,9 +9,18 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
   select(year = "Year(s)", country_name = 3,
          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
 
-lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>% 
-  html_node('.table') %>% 
-  html_table() %>% 
+#Legal Coverage: por mientras
+lc <- read_excel("C:/Users/nicol/OneDrive/Documentos/GitHub/fdl-data/input/data/ILO-EPLex Legal Coverage.xlsx")
+
+lc <- lc %>%
+  row_to_names(row_number = 1) %>%
+  select(year = 'Year(s)', country_name = 'Country', lc_bcollar = `blue-collar workers`, lc_civilser = `civil/public servants`,
+         lc_domestic = `domestic workers`, lc_coopmembers = `members of cooperatives`,
+         lc_managerial = `managerial / executive positions`, lc_admin = `administrative body`)
+  
+  # lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>% 
+#   html_node('.table') %>% 
+#   html_table() %>% 
   # select(year = "Year(s)", country_name = 3,
   #        ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16) 
 
@@ -60,11 +69,16 @@ ftc$ftc_reg <-  recode(ftc$ftc_reg, "'Y'=1; 'N'=2")
 ftc$ftc_reg <-  factor(ftc$ftc_reg, 
                 labels = c("Y", "N"))
 
-
 ftc$ftc_max <- recode(ftc$ftc_max, "'no limitation'=0")
 
 ##Legal coverage
  
+lc <- lc %>% mutate_at(vars(starts_with("lc")), 
+                        funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
+             mutate_at(vars(starts_with("lc")),
+             funs(factor(., levels = c(1, 2),
+                        labels = c('Y', 'N'))))
+
 ##Special protection dismissal
 
 spd <- spd %>% mutate_at(vars(starts_with("spd")), 
@@ -94,25 +108,24 @@ pd <- pd %>% mutate_at(vars(starts_with("pd")),
 ## recode country_name https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 
-# 4. Merge ----------------------------------------------------------------
+# 4. Merge al data --------------------------------------------------------
+iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("year", "country_name"),
+                                   all = T),
+               list(vd, spd, pd, lc, ftc))
 
-## Merge all EPLEx------------------------------------
-data_ilo <- lapply(ls(),get)
-data_ilo <- Reduce(function(x,y) merge (x, y, by = c("country_name", "year")))
 
-## Merge and scrap with iso ----------------------------
-iso <- read_html('https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2') %>% 
-  html_node('.wikitable.sortable') %>% 
-  html_table() %>%
-  group_by(Code) %>% 
-  filter(Year == max(Year)) %>% 
-  select(iso2c=Code, country_name = "Country name (using title case)")
+# 6. Label ----------------------------------------------------------------
+# Llamar etiquetas (en slice se indican los tramos)
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                                    range = c("B2:C352"), col_names = F) %>%
+  slice(c(1,5,326:351)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  select(variables = 1, etiquetas = 2)
+## Tranformar a vectornames
+var.labels <- as.character(labels$etiquetas)
+names(var.labels) <- labels$variables
+## Etiquetar
+label(iloeplex) = as.list(var.labels[match(names(iloeplex), names(iloeplex))])
 
-data_iloeplx <- merge(data_ilo, iso,
-                  by = "country_name")
-
-# 5. Label ----------------------------------------------------------------
-
-# 6. Select ------------------------------------------------------
-
-# 8. Save -----------------------------------------------------------------
+# 7. Save -----------------------------------------------------------------
+rm(list = ls(pattern = "wl|b|p|h"))#remover lo que no sirve
+saveRDS(iloeplex, file="output/data/proc/iloeplex.rds")
