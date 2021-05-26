@@ -10,13 +10,21 @@ dpi <- readr::read_csv("https://mydata.iadb.org/api/views/938i-s2bw/rows.csv?acc
 # 3. Recode and rename ---------------------------------------------------------------
 ## Fijense en como estan codificados NA (999, -999, etc)
 dpi <- dpi %>% select(country_name = countryname, year,  elec_sys = system, if_military = military, exec_party = execme,
-                      exec_party_rel = execrel, exec_party_maj = allhouse, oppo_party_sen = oppmajs, 
+                      exec_party_or = execrlc, exec_party_rel = execrel, exec_party_maj = allhouse, oppo_party_sen = oppmajs, 
                       oppo_party_h = oppmajh, plural = pluralty, prop = pr, dhondt) %>% 
   mutate_at(vars(if_military, exec_party_rel, exec_party_maj, oppo_party_sen, oppo_party_h,
                  plural, prop, dhondt), funs(car::recode(.,c("'-999' = NA; 0 = 2")))) %>% 
-  mutate_at(vars(if_military, exec_party_rel, exec_party_maj, oppo_party_sen, oppo_party_h,
+  mutate_at(vars(if_military, exec_party_maj, oppo_party_sen, oppo_party_h,
                  plural, prop, dhondt), funs(factor(.,levels = c(1, 2),
-                                                      labels = c('Yes', 'No'))))
+                                                      labels = c('Yes', 'No')))) %>% 
+  mutate_at(vars(exec_party_rel), funs(factor(.,levels = c(0, 1, 2, 3, 4, 5, 6),
+                                                    labels = c('Otherwise', 'Christian','Catholic',
+                                                               'Islamic', 'Hindu', 'Buddhist', 'Jewish')))) %>% 
+  mutate_at(vars(exec_party_or), funs(factor(.,levels = c(0, 1, 2, 3),
+                                              labels = c('No information or category',
+                                                         'Right', 'Center', 'Left'))))
+
+
 
 # 4. Merge -----------------------------------------------------------------
 
@@ -38,7 +46,7 @@ data_dpi <- merge(dpi, iso,
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
                                       range = c("B4:C324"), col_names = F) %>%
-  slice(c(1,3,313:323)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  slice(c(1,3,311:321)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
   select(variables = 1, etiquetas = 2)
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
