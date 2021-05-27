@@ -6,7 +6,6 @@ pacman::p_load(WDI, tidyverse)
 WDIsearch("part time") # Permite buscar
 #NY.GDP.MKTP.KD.ZG # GDP growth (annual %)
 
-
 # 3. Scrapping ------------------------------------------------------------
 wdi_dat <- WDI(indicator = c("NY.GDP.MKTP.KD.ZG",
                              "NY.GNP.PCAP.CD",
@@ -41,10 +40,8 @@ wdi_dat <- WDI(indicator = c("NY.GDP.MKTP.KD.ZG",
                start = 1960, end = 2021, extra = TRUE) 
 
 
-# 4. Recode ---------------------------------------------------------------
-
-# 5. Rename ---------------------------------------------------------------
-wdi_dat <- wdi_dat %>% rename("gdp_growth_wdi"= NY.GDP.MKTP.KD.ZG, 
+# 4. Rename ---------------------------------------------------------------
+wdi <- wdi_dat %>% rename("gdp_growth_wdi"= NY.GDP.MKTP.KD.ZG, 
                                    "gni_per_capita_wdi"= NY.GNP.PCAP.CD, 
                                    "gni_per_capita_ppp_wdi"= NY.GNP.PCAP.PP.CD,
                                    "population_wdi"= SP.POP.TOTL,
@@ -74,11 +71,19 @@ wdi_dat <- wdi_dat %>% rename("gdp_growth_wdi"= NY.GDP.MKTP.KD.ZG,
                                    "db_wdi" = IC.BUS.DFRN.XQ,
                                    "db_index_wdi" = IC.BUS.EASE.XQ)
 
-# 6. Label ----------------------------------------------------------------
 
 # 7. Select ------------------------------------------------------
-wdi_dat <- wdi_dat %>% filter(!is.na(region), region != "Aggregates")
-wdi_dat <- wdi_dat %>% select(-c(region, capital,longitude,latitude,income,lending))
+wdi <- wdi %>% filter(!is.na(region), region != "Aggregates")%>%
+  select(-c(region, capital,longitude,latitude,income,lending))
 
-# 8. Save -----------------------------------------------------------------
-saveRDS(wdi_dat, file = "C:/Users/genaro cuadros/Desktop/Github/fdl-data/R/wdi.rds")
+# 8. ISO3C ----------------------------------------------------------------
+wdi <- wdi %>%
+  mutate(iso3c = countrycode(iso2c, "iso2c", "iso3c")) %>% 
+  select(iso3c, everything(), -iso2c)
+
+# 9. Label ----------------------------------------------------------------
+label(wdi$iso3c) <- "Country code ISO3"
+label(wdi$year) <- "Year"
+
+# 10. Save -----------------------------------------------------------------
+saveRDS(wdi, file = "output/data/proc/wdi.rds")
