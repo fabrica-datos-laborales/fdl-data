@@ -1,6 +1,6 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode)
+pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode, janitor)
 #
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
@@ -114,7 +114,7 @@ pd <- pd %>% mutate_at(vars(starts_with("pd")),
 # 4. Merge al data --------------------------------------------------------
 iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("country_name", "year"),
                                    all = T),
-               list(vd, spd, pd, lc, ftc))
+               list(ftc,lc,spd,vd,pd))
 
 # 5. ISO3C ----------------------------------------------------------------
 iloeplex <- iloeplex %>% 

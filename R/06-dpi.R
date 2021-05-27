@@ -17,6 +17,10 @@ dpi <- dpi %>% select(country_name = countryname, year,  elec_sys = system, if_m
   mutate_at(vars(if_military, exec_party_maj, oppo_party_sen, oppo_party_h,
                  plural, prop, dhondt), funs(factor(.,levels = c(1, 2),
                                                       labels = c('Yes', 'No')))) %>% 
+  mutate_at(vars(elec_sys), funs(factor(.,levels = c(0, 1, 2),
+                                        labels = c('Presidential',
+                                                   'Assembly-elected president', 'Parlamentary')))) %>% 
+  mutate_at(vars(elec_sys), funs(car::recode(.,"'-999' = NA"))) %>% 
   mutate_at(vars(exec_party_rel), funs(factor(.,levels = c(0, 1, 2, 3, 4, 5, 6),
                                                     labels = c('Otherwise', 'Christian','Catholic',
                                                                'Islamic', 'Hindu', 'Buddhist', 'Jewish')))) %>% 
