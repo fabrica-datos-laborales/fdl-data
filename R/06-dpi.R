@@ -24,30 +24,18 @@ dpi <- dpi %>% select(country_name = countryname, year,  elec_sys = system, if_m
                                               labels = c('No information or category',
                                                          'Right', 'Center', 'Left'))))
 
+# 5. ISO3C ----------------------------------------------------------------
+data_dpi <- dpi %>% 
+  mutate(iso3c = countrycode(country_name, "country.name", "iso3c")) %>% 
+  select(iso3c, everything(), -country_name)
 
-
-# 4. Merge -----------------------------------------------------------------
-
-## Merge and scrap with iso ----------------------------
-iso <- read_html('https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2') %>% 
-  html_node('.wikitable.sortable') %>% 
-  html_table() %>%
-  group_by(Code) %>% 
-  filter(Year == max(Year)) %>% 
-  select(iso2c=Code, country_name = "Country name (using title case)") 
-
-data_dpi <- merge(dpi, iso,
-                      by = "country_name") %>% 
-  select(iso2c, everything(), -country_name)
-#SCRAPPING NOMBRES
-
-#5. Label -------------------------------------------------------------------
-
+# 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                      range = c("B4:C324"), col_names = F) %>%
-  slice(c(1,3,311:321)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
-  select(variables = 1, etiquetas = 2)
+                                      range = c("B5:C324"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_dpi|year|iso3c", variables))
+
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
@@ -55,7 +43,8 @@ names(var.labels) <- labels$variables
 ## Etiquetar
 label(data_dpi) = as.list(var.labels[match(names(data_dpi), names(data_dpi))])
 
+
 # 7. Save -----------------------------------------------------------------
-rm(list = ls(pattern = "s"))#remover lo que no sirve
+rm(list = ls(pattern = "s"))
 saveRDS(data_dpi, file="output/data/proc/dpi.rds")
 
