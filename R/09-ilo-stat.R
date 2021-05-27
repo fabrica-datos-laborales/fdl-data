@@ -45,17 +45,21 @@ hour_earn <- Rilostat::get_ilostat("EAR_4HRL_SEX_OCU_CUR_NB_A") %>%
          masc_isco88_X=SEX_M_OCU_ISCO88_X, fem_isco88_X=SEX_F_OCU_ISCO88_X) 
 
 # Mean nominal monthly earning of employees (U.S. dollars) ----------------- 
-# month_earn <- Rilostat::get_ilostat("EAR_XEES_SEX_ECO_NB_M") %>% 
-#   select(iso3c = ref_area, year=time, month_earn= obs_value, sex, classif1, obs_status) %>% 
-#   pivot_wider(names_from = c("obs_status"), values_from = "month_earn") %>%
-#   group_by(iso3c, year) %>%
-#   select(G=5, everything()) %>% 
-#   mutate(month_earn = if_else(is.na(G)& is.na(B), U, 
-#                               if_else(is.na(G)&is.na(U), B, G))) %>% 
-#   select(iso3c, year, month_earn)
+month_earn <- Rilostat::get_ilostat("EAR_XEES_SEX_ECO_NB_M") %>%
+  select(iso3c = ref_area, year=time, month_earn= obs_value, sex, classif1, obs_status) %>%
+  pivot_wider(names_from = c("obs_status"), values_from = "month_earn") %>%
+  group_by(iso3c, year) %>%
+  select(G=5, everything()) %>%
+  mutate(month_earn = if_else(is.na(G)& is.na(B), U,
+                              if_else(is.na(G)&is.na(U), B, G))) %>%
+  select(iso3c, year, month_earn) %>%
+  mutate(year = str_replace(year, "M", "-")) %>%
+  separate(year, c("year", "month"), sep = "-") %>% 
+  group_by(iso3c, year) %>%
+  summarise(month_earn = mean(month_earn))
 
 #Se filtraron aquellas variables agregadas, los datos son poco fiables y de ruptura de serie
-
+# Se saca un promedio mensual por país y año
 
 # Labour income share as a percent of GDP -----------------
 labor_inc_share	<- Rilostat::get_ilostat("LAP_2GDP_NOC_RT_A") %>%
@@ -172,15 +176,15 @@ unemployment_rate	<- Rilostat::get_ilostat("SDG_0852_SEX_AGE_RT_A") %>%
          other_15="AGE_YTHADULT_YGE15_SEX_O", other_1524="AGE_YTHADULT_Y15-24_SEX_O", 
          other_25="AGE_YTHADULT_YGE25_SEX_O")
 
-
 # 3. Recode and rename---------------------------------------------------------------
 ## Similar a ocde02
 
 # 4. Merge ----------------------------------------------------------------
 data_ilo <- lapply(ls(),get)
 data_ilo <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"), all = T), 
-                   list(ud, cbc, hour_earn, labor_inc_share, emp_inst, emp_status, nstrikes_act, 
-                        ndays_strikes, nworkers_strikes, unemployment_rate))
+                   list(ud, cbc, hour_earn, month_earn, labor_inc_share, emp_inst, emp_status, nstrikes_act, 
+                        ndays_strikes, nworkers_strikes, unemployment_rate)) %>% 
+  mutate(year = as.numeric(year))
 
 # 5. Label ----------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
@@ -188,6 +192,7 @@ labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_
                                     range = c("B5:C637"), col_names = F) %>%
   slice(c(1,2,349:632)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
   select(variables = 1, etiquetas = 2)
+
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
@@ -195,5 +200,5 @@ names(var.labels) <- labels$variables
 label(data_ilo) = as.list(var.labels[match(names(data_ilo), names(data_ilo))])
 
 # 6. Save -----------------------------------------------------------------
-## save data_ilo.rds
-saveRDS(data_ilo, file = "C:/Users/genaro cuadros/Desktop/Github/fdl-data/R/data_ilo.rds")
+## save ilo-stat.rds
+saveRDS(data_ilo, file = "output/data/proc/ilo-stat.rds")
