@@ -1,6 +1,6 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, car, readxl, janitor)
+pacman::p_load(tidyverse,rvest, car, readxl, countrycode)
 #
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
@@ -9,7 +9,8 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
   select(year = "Year(s)", country_name = 3,
          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
 
-#Legal Coverage: por mientras
+
+# 2.2 Legal Coverage: por mientras ----------------------------------------
 lc <- read_excel("C:/Users/nicol/OneDrive/Documentos/GitHub/fdl-data/input/data/ILO-EPLex Legal Coverage.xlsx")
 
 lc <- lc %>%
@@ -26,6 +27,8 @@ lc <- lc %>%
 
 ## AVISAR LO DE LOS NUMEROS
   
+
+# Spd ---------------------------------------------------------------------
 spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-against-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>% 
@@ -35,13 +38,15 @@ spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-agai
          spd_disab=20, spd_occ_dis=26, 
          spd_longperiod=38)
 
+
+# vd ----------------------------------------------------------------------
 vd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>%
   select(year = "Year(s)", country_name = 3,
          vd_conduct = 11, vd_capacity = 14, vd_economic = 17)
-#Ojo
 
+# pd ----------------------------------------------------------------------
 pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
   html_nodes('.table')  %>% 
   html_table()
@@ -49,8 +54,6 @@ pd <- pd[[2]] %>%
   select(year = "Year(s)", country_name = 3,
          pd_tum = 44, pd_strike = 31, pd_pol_op = 28, pd_pregnant = 27,
          pd_disab = 16, pd_complain = 15)
-
-
 
 # 3. Recode and rename---------------------------------------------------------------
 ##Instrucciones: Similar a ocde02
@@ -113,13 +116,21 @@ iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("country_name", "yea
                                    all = T),
                list(vd, spd, pd, lc, ftc))
 
+# 5. ISO3C ----------------------------------------------------------------
+iloeplex <- iloeplex %>% 
+  mutate(iso3c = countrycode(country_name, "country.name", "iso3c")) %>% 
+  select(iso3c, everything()) %>% filter(!is.na(iso3c))
+
 
 # 6. Label ----------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
                                     range = c("B2:C352"), col_names = F) %>%
-  slice(c(1,5,326:351)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
-  select(variables = 1, etiquetas = 2)
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_eplex|year|iso3c", variables))
+
+# problemas con orden de etiquetas
+
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
