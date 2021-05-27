@@ -196,4 +196,4 @@ label(data_ilo) = as.list(var.labels[match(names(data_ilo), names(data_ilo))])
 
 # 6. Save -----------------------------------------------------------------
 ## save data_ilo.rds
-saveRDS(wdi_dat, file = "C:/Users/genaro cuadros/Desktop/Github/fdl-data/R/data_ilo.rds")
+saveRDS(data_ilo, file = "C:/Users/genaro cuadros/Desktop/Github/fdl-data/R/data_ilo.rds")
