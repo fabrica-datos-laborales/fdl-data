@@ -1,6 +1,6 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, car, readxl, countrycode)
+pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode)
 #
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
@@ -11,7 +11,7 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
 
 
 # 2.2 Legal Coverage: por mientras ----------------------------------------
-lc <- read_excel("C:/Users/nicol/OneDrive/Documentos/GitHub/fdl-data/input/data/ILO-EPLex Legal Coverage.xlsx")
+lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx")
 
 lc <- lc %>%
   row_to_names(row_number = 1) %>%
@@ -119,7 +119,7 @@ iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("country_name", "yea
 # 5. ISO3C ----------------------------------------------------------------
 iloeplex <- iloeplex %>% 
   mutate(iso3c = countrycode(country_name, "country.name", "iso3c")) %>% 
-  select(iso3c, everything()) %>% filter(!is.na(iso3c))
+  select(iso3c, everything(), -country_name) %>% filter(!is.na(iso3c))
 
 
 # 6. Label ----------------------------------------------------------------
@@ -130,8 +130,8 @@ labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_
   filter(grepl("_eplex|year|iso3c", variables))
 
 # problemas con orden de etiquetas
-
 ## Tranformar a vectornames
+
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
 ## Etiquetar

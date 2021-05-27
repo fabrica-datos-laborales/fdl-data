@@ -41,7 +41,7 @@ var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
 
 ## Etiquetar
-label(data_dpi) = as.list(var.labels[match(names(data_dpi), names(data_dpi))])
+Hmisc::label(data_dpi) = as.list(var.labels[match(names(data_dpi), names(data_dpi))])
 
 
 # 7. Save -----------------------------------------------------------------
