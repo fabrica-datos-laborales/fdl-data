@@ -11,22 +11,31 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
 
 
 # 2.2 Legal Coverage: por mientras ----------------------------------------
-lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx", skip = 1)
-
-lc <- lc %>%
-  row_to_names(row_number = 1) %>%
-  select(year = 'Year(s)', country_name = 'Country', lc_bcollar = `blue-collar workers`, lc_civilser = `civil/public servants`,
-         lc_domestic = `domestic workers`, lc_coopmembers = `members of cooperatives`,
-         lc_managerial = `managerial / executive positions`, lc_admin = `administrative body`)
+# lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx", skip = 1)
+# 
+# lc <- lc %>%
+#   row_to_names(row_number = 1) %>%
+#   select(year = 'Year(s)', country_name = 'Country', lc_bcollar = `blue-collar workers`, lc_civilser = `civil/public servants`,
+#          lc_domestic = `domestic workers`, lc_coopmembers = `members of cooperatives`,
+#          lc_managerial = `managerial / executive positions`, lc_admin = `administrative body`)
   
-  # lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>% 
-#   html_node('.table') %>% 
-#   html_table() %>% 
-  # select(year = "Year(s)", country_name = 3,
-  #        ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16) 
+lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>%
+  html_node('.table#employment-protection-table') %>%
+  html_table() 
+
+lc <- lc %>% select(year = 'Year(s)', country_name = 'Country', lc_bcollar = 19, lc_civilser = 22,
+                lc_domestic = 31, lc_coopmembers = 40,
+                lc_managerial = 97, lc_admin = 118)
 
 ## AVISAR LO DE LOS NUMEROS
   
+pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
+  html_nodes('.table')  %>% 
+  html_table()
+pd <- pd[[2]] %>% 
+  select(year = "Year(s)", country_name = 3,
+         pd_tum = 44, pd_strike = 31, pd_pol_op = 28, pd_pregnant = 27,
+         pd_disab = 16, pd_complain = 15)
 
 # Spd ---------------------------------------------------------------------
 spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-against-dismissal/') %>% 
