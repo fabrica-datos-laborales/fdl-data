@@ -10,7 +10,7 @@ if (!require("vdemdata")) devtools::install_github("vdeminstitute/vdemdata")
 
 # CRAN
 paquetes <- c("tidyverse","Hmisc","readr", "WDI","haven", "rvest", "kableExtra", "sjlabelled",
-              "pdftools", "ggsci", "readxl", "readsdmx", "googlesheets4", "countrycode")
+              "pdftools", "ggsci", "readxl", "readsdmx", "googlesheets4", "countrycode", "survey", "srvyr")
 
 for(p in paquetes) {
   
