@@ -1,7 +1,7 @@
 # Code: ILOEPLX --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode, janitor)
-#
+pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode)
+
 # 2. Scrapping variables ------------------------------------------------------------
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
   html_node('.table') %>% 
@@ -11,7 +11,7 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
 
 
 # 2.2 Legal Coverage: por mientras ----------------------------------------
-lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx")
+lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx", skip = 1)
 
 lc <- lc %>%
   row_to_names(row_number = 1) %>%
