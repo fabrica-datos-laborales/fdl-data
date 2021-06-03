@@ -3,6 +3,9 @@
 pacman::p_load(tidyverse,rvest, car, readxl,Hmisc, countrycode)
 
 # 2. Scrapping variables ------------------------------------------------------------
+
+# 2.1 Fixed-term contracts (FTCs) 
+
 ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>% 
   html_node('.table') %>% 
   html_table() %>% 
@@ -11,33 +14,18 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
 
 
 # 2.2 Legal Coverage: por mientras ----------------------------------------
-# lc <- read_excel("input/data/ILO-EPLex Legal Coverage.xlsx", skip = 1)
-# 
-# lc <- lc %>%
-#   row_to_names(row_number = 1) %>%
-#   select(year = 'Year(s)', country_name = 'Country', lc_bcollar = `blue-collar workers`, lc_civilser = `civil/public servants`,
-#          lc_domestic = `domestic workers`, lc_coopmembers = `members of cooperatives`,
-#          lc_managerial = `managerial / executive positions`, lc_admin = `administrative body`)
-  
+
 lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>%
   html_node('.table#employment-protection-table') %>%
-  html_table() 
-
-lc <- lc %>% select(year = 'Year(s)', country_name = 'Country', lc_bcollar = 19, lc_civilser = 22,
-                lc_domestic = 31, lc_coopmembers = 40,
-                lc_managerial = 97, lc_admin = 118)
-
-## AVISAR LO DE LOS NUMEROS
+  html_table()%>% 
+  select(year = 'Year(s)', country_name = 3, 
+                lc_mine = 52, lc_bcollar = 13, lc_civilser = 19,
+                lc_domestic = 22, lc_dockers = 79, lc_managerial = 61,
+                lc_agric = 31, lc_teachers = 70)
   
-pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
-  html_nodes('.table')  %>% 
-  html_table()
-pd <- pd[[2]] %>% 
-  select(year = "Year(s)", country_name = 3,
-         pd_tum = 44, pd_strike = 31, pd_pol_op = 28, pd_pregnant = 27,
-         pd_disab = 16, pd_complain = 15)
 
 # Spd ---------------------------------------------------------------------
+
 spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-against-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>% 
@@ -49,6 +37,7 @@ spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-agai
 
 
 # vd ----------------------------------------------------------------------
+
 vd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>%
@@ -56,6 +45,7 @@ vd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissa
          vd_conduct = 11, vd_capacity = 14, vd_economic = 17)
 
 # pd ----------------------------------------------------------------------
+
 pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
   html_nodes('.table')  %>% 
   html_table()
@@ -75,7 +65,8 @@ ftc <- ftc %>% mutate_at(vars(ends_with("valid")|ends_with("nocum")),
                mutate_at(vars(ends_with("valid")|ends_with("nocum")), 
                          funs(factor(., levels = c(0, 1, 2), 
                                      labels = c('No limitation', 'No limitation on first FTC', 
-                                     'Objective and material reasons'))))
+                                     'Objective and material reasons'))))%>% 
+               transform(year = as.numeric(year))
 
 ftc$ftc_reg <-  recode(ftc$ftc_reg, "'Y'=1; 'N'=2") 
 ftc$ftc_reg <-  factor(ftc$ftc_reg, 
@@ -89,7 +80,8 @@ lc <- lc %>% mutate_at(vars(starts_with("lc")),
                         funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
              mutate_at(vars(starts_with("lc")),
              funs(factor(., levels = c(1, 2),
-                        labels = c('Yes', 'No'))))
+                        labels = c('Yes', 'No')))) %>% 
+             transform(year = as.numeric(year))
 
 ##Special protection dismissal
 
@@ -97,7 +89,8 @@ spd <- spd %>% mutate_at(vars(starts_with("spd")),
                          funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
                mutate_at(vars(starts_with("spd")),
                          funs(factor(., levels = c(1, 2),
-                                     labels = c('Yes', 'No'))))
+                                     labels = c('Yes', 'No'))))%>% 
+               transform(year = as.numeric(year))
 
 
 ##Valid grounds for dismissal
@@ -106,26 +99,31 @@ vd <- vd %>% mutate_at(vars(starts_with("vd")),
                          funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
              mutate_at(vars(starts_with("vd")),
                          funs(factor(., levels = c(1, 2),
-                                     labels = c('Yes', 'No'))))
+                                     labels = c('Yes', 'No'))))%>% 
+             transform(year = as.numeric(year))
 
 ## Prohibited grounds for dismissal
 
 pd <- pd %>% mutate_at(vars(starts_with("pd")), 
                        funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
-  mutate_at(vars(starts_with("pd")),
-            funs(factor(., levels = c(1, 2),
-                        labels = c('Yes', 'No'))))
+             mutate_at(vars(starts_with("pd")),
+             funs(factor(., levels = c(1, 2),
+                        labels = c('Yes', 'No'))))%>% 
+             transform(year = as.numeric(year))
+
 
 
 ## recode country_name https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
 
 # 4. Merge al data --------------------------------------------------------
+
 iloeplex <- Reduce(function(x,y) merge(x = x, y = y, by = c("country_name", "year"),
                                    all = T),
                list(ftc,lc,spd,vd,pd))
 
 # 5. ISO3C ----------------------------------------------------------------
+
 iloeplex <- iloeplex %>% 
   mutate(iso3c = countrycode(country_name, "country.name", "iso3c")) %>% 
   select(iso3c, everything(), -country_name) %>% filter(!is.na(iso3c))
@@ -133,17 +131,20 @@ iloeplex <- iloeplex %>%
 
 # 6. Label ----------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
+
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                    range = c("B2:C352"), col_names = F) %>%
+                                    range = c("B2:C354"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_eplex|year|iso3c", variables))
 
-# problemas con orden de etiquetas
+
 ## Tranformar a vectornames
 
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
+
 ## Etiquetar
+
 label(iloeplex) = as.list(var.labels[match(names(iloeplex), names(iloeplex))])
 
 # 7. Save -----------------------------------------------------------------
