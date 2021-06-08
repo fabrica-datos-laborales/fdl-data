@@ -20,11 +20,37 @@ wvs_dat <- wvs %>%  select(id = "S007", iso1c = "S003", year = "S020",
   select(iso3c, everything(), -iso1c)
 
 # 5. Group ----------------------------------------------------------------
-lc <- wvs_dat %>%
+wvs_dat <- wvs_dat %>%
   pivot_longer(cols = contains("u"), names_to = "variable", values_to = "value") %>%
   filter(!is.na(value)) %>% 
   as_survey_design(ids = 1, weights = weight_eq) %>%
   group_by(iso3c, year, variable, value) %>% 
   summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE),
-            total = survey_total(vartype = "ci",na.rm = TRUE))
+            total = survey_total(vartype = "ci",na.rm = TRUE)) %>% 
+  mutate(prop = prop*100)
 
+# Pivot wider ------------------------------------------------------------------
+wvs <- wvs_dat %>% 
+  select(1:prop) %>% 
+  mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
+  mutate(value = str_replace_all(tolower(value), "a_", ""),
+         value = str_replace_all(tolower(value), "at_a", "a")) %>% 
+  pivot_wider(names_from = c("variable", "value"),
+              values_from = "prop")
+
+# 6. Label -------------------------------------------------------------------
+# Llamar etiquetas (en slice se indican los tramos)
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                                    range = c("B5:C800"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_wvs|year|iso3c", variables))
+
+## Tranformar a vectornames
+var.labels <- as.character(labels$etiquetas)
+names(var.labels) <- labels$variables
+
+## Etiquetar
+Hmisc::label(wvs) = as.list(var.labels[match(names(wvs), names(wvs))])
+
+# 7. Save -----------------------------------------------------------------
+saveRDS(wvs, file="output/data/proc/wvs.rds")
