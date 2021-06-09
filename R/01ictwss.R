@@ -1,7 +1,7 @@
 # Code 1: Process ICTWSS ---------------------------------------------------------
 
 # 1. Load packages  -------------------------------------------------------
-pacman::p_load(tidyverse, haven, rvest, countrycode)
+pacman::p_load(tidyverse, haven, rvest, countrycode, Hmisc)
 
 # 2. Load data base -------------------------------------------------------
 ictwss <- haven::read_dta(url("https://aias.s3.eu-central-1.amazonaws.com/website/uploads/ICTWSS_v6_1_Stata_release.dta"))
