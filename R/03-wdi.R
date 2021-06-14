@@ -1,6 +1,6 @@
 # Code: World Bank --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(WDI, tidyverse)
+pacman::p_load(WDI, tidyverse, Hmisc)
 
 # 2. Search ---------------------------------------------------------------
 WDIsearch("part time") # Permite buscar
