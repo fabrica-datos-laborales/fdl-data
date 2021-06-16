@@ -7,7 +7,7 @@ vdemdata::find_var("polyarchy")
 vdem <- vdemdata::vdem
 #vparty <- vdemdata::vparty
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                  range = c("A5:C803"), col_names = F) %>% 
+                                  range = c("A5:C810"), col_names = F) %>% 
   select(variables_original = 1, variables = 2, etiquetas = 3) %>% 
   filter(grepl("_vdem", variables))
 
@@ -22,7 +22,7 @@ vdem <- vdem %>%
 vdem <- vdem %>% 
   mutate_at(vars(v2elcomvot:v2x_regime,e_boix_regime), funs(as_factor(.))) %>% 
   mutate(e_boix_regime = car::recode(e_boix_regime, c("0='No';1='Yes'"), as.factor = T,
-                                     levels = c("Yes", "No")))
+                                     levels = c("No", "Yes")))
 # ISO3C ----------------------------------------------------------------
 # x <- vdem %>%
 #   mutate(iso3c = countrycode(country_id, "vdem", "iso3c")) %>% 

@@ -13,14 +13,14 @@ dpi <- dpi %>% select(country_name = countryname, year,  elec_sys = system, if_m
                       exec_party_or = execrlc, exec_party_rel = execrel, exec_party_maj = allhouse, oppo_party_sen = oppmajs, 
                       oppo_party_h = oppmajh, plural = pluralty, prop = pr, dhondt) %>% 
   mutate_at(vars(if_military, exec_party_rel, exec_party_maj, oppo_party_sen, oppo_party_h,
-                 plural, prop, dhondt), funs(car::recode(.,c("'-999' = NA; 0 = 2")))) %>% 
+                 plural, prop, dhondt), funs(car::recode(.,c("-999 = NA; 0 = 2")))) %>% 
   mutate_at(vars(if_military, exec_party_maj, oppo_party_sen, oppo_party_h,
                  plural, prop, dhondt), funs(factor(.,levels = c(1, 2),
                                                       labels = c('Yes', 'No')))) %>% 
   mutate_at(vars(elec_sys), funs(factor(.,levels = c(0, 1, 2),
                                         labels = c('Presidential',
                                                    'Assembly-elected president', 'Parlamentary')))) %>% 
-  mutate_at(vars(elec_sys), funs(car::recode(.,"'-999' = NA"))) %>% 
+  mutate_at(vars(elec_sys), funs(car::recode(.,"-999 = NA"))) %>% 
   mutate_at(vars(exec_party_rel), funs(factor(.,levels = c(0, 1, 2, 3, 4, 5, 6),
                                                     labels = c('Otherwise', 'Christian','Catholic',
                                                                'Islamic', 'Hindu', 'Buddhist', 'Jewish')))) %>% 
@@ -36,7 +36,7 @@ data_dpi <- dpi %>%
 # 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                      range = c("B5:C324"), col_names = F) %>%
+                                      range = c("B5:C320"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_dpi|year|iso3c", variables))
 

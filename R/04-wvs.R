@@ -1,7 +1,7 @@
 # Code 4 : World Value Survey ---------------------------------------------------------------
 
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, Hmisc, countrycode, survey, srvyr)
+pacman::p_load(tidyverse,rvest, Hmisc, countrycode, survey, srvyr, Hmisc)
 
 # 2. Read rds WVS ---------------------------------------------------------
 wvs <- readRDS("input/data/wvs/WVS_TimeSeries_R_v1_6.rds")
@@ -41,7 +41,7 @@ wvs <- wvs_dat %>%
 # 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                    range = c("B5:C800"), col_names = F) %>%
+                                    range = c("B5:C637"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_wvs|year|iso3c", variables))
 

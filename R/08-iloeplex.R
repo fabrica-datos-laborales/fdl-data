@@ -13,7 +13,7 @@ ftc <- read_html('https://eplex.ilo.org/fixed-term-contracts-ftcs/') %>%
          ftc_reg = 7, ftc_valid = 10, ftc_max_nocum = 13, ftc_max = 16)
 
 
-# 2.2 Legal Coverage: por mientras ----------------------------------------
+# 2.2 Legal Coverage ----------------------------------------
 
 lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>%
   html_node('.table#employment-protection-table') %>%
@@ -22,29 +22,27 @@ lc <- read_html('https://eplex.ilo.org/legal-coverage/') %>%
                 lc_mine = 52, lc_bcollar = 13, lc_civilser = 19,
                 lc_domestic = 22, lc_dockers = 79, lc_managerial = 61,
                 lc_agric = 31, lc_teachers = 70)
-  
 
-# Spd ---------------------------------------------------------------------
+# 2.3 Wrokers Enjoying Special Protection Against Dismissal ---------------------------------------------------------------------
 
 spd <- read_html('https://eplex.ilo.org/workers-enjoying-special-protection-against-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>% 
-  select(year = "Year(s)", country_name = 3,
+  select(year = "Year(s)", country_name = 2,
          spd_pregnant = 5, spd_familyresp = 8, 
          spd_older = 17, spd_wrep = 11,
          spd_disab=20, spd_occ_dis=26, 
          spd_longperiod=38)
 
-
-# vd ----------------------------------------------------------------------
+# 2.4 Valid Grounds for Dismissal ----------------------------------------------------------------------
 
 vd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>% 
   html_node('.table') %>% 
   html_table() %>%
-  select(year = "Year(s)", country_name = 3,
+  select(year = "Year(s)", country_name = 2,
          vd_conduct = 11, vd_capacity = 14, vd_economic = 17)
 
-# pd ----------------------------------------------------------------------
+# 2.5 Prohibited Grounds for Dismissal  ----------------------------------------------------------------------
 
 pd <- read_html('https://eplex.ilo.org/valid-and-prohibited-grounds-for-dismissal/') %>%
   html_nodes('.table')  %>% 
@@ -59,20 +57,29 @@ pd <- pd[[2]] %>%
 
 ##FTCs
 
-ftc <- ftc %>% mutate_at(vars(ends_with("valid")|ends_with("nocum")), 
-                         funs(car::recode(., c("'no limitation' = 0; 'no limitation on first FTC' = 1; 
-                                               'objective and material reasons' = 2")))) %>% 
-               mutate_at(vars(ends_with("valid")|ends_with("nocum")), 
-                         funs(factor(., levels = c(0, 1, 2), 
-                                     labels = c('No limitation', 'No limitation on first FTC', 
-                                     'Objective and material reasons'))))%>% 
-               transform(year = as.numeric(year))
+ftc$ftc_max_nocum <- car::recode(ftc$ftc_max_nocum, c("'no limitation' = 0; 
+                                               'no limitation on first FTC' = 1; 
+                                               'objective and material reasons' = 2")) %>%  
+                                         factor(ftc$ftc_max_nocum, levels = c(0:2), labels = 
+                                                                      c('No limitation',
+                                                                     'No limitation on first FTC',
+                                                                     'Objective and material reasons')) 
+
+ftc$ftc_valid <- car::recode(ftc$ftc_valid, c("'no limitation' = 0; 
+                                               'no limitation on first FTC' = 1; 
+                                               'objective and material reasons' = 2")) %>%  
+  factor(ftc$ftc_valid, levels = c(0:2), labels = 
+           c('No limitation',
+             'No limitation on first FTC',
+             'Objective and material reasons')) 
 
 ftc$ftc_reg <-  recode(ftc$ftc_reg, "'Y'=1; 'N'=2") 
 ftc$ftc_reg <-  factor(ftc$ftc_reg, 
                 labels = c("Yes", "No"))
 
 ftc$ftc_max <- recode(ftc$ftc_max, "'no limitation'=0")
+
+ftc$year <- as.numeric(ftc$year)
 
 ##Legal coverage
  
@@ -133,7 +140,7 @@ iloeplex <- iloeplex %>%
 # Llamar etiquetas (en slice se indican los tramos)
 
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                    range = c("B2:C354"), col_names = F) %>%
+                                    range = c("B2:C350"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_eplex|year|iso3c", variables))
 
