@@ -117,7 +117,7 @@ issp <- bind_rows(list(
   select(iso3c = c_alphan_2015, ess = TOPBOT_2015, conflict = v42_2015, weight = WEIGHT_2015) %>% 
   mutate_at(vars(-iso3c), ~as.numeric(.)) %>%
   mutate(iso3c= car::recode(.$iso3c,c("'GB-GBN'='GB'")),
-         ess = car::recode(.$ess,c("c(97,98,99)=NA")),
+         ess = car::recode(.$ess,c("c(0,97,98,99)=NA")),
          conflict = car::recode(.$conflict,c("c(5,4)='Very Strong and strong conflicts';c(3,1,2)='Not very and no conflicts'; c(7,8,9)=NA"), as.factor = T,
                                 levels = c("Very Strong and strong conflicts", "Not very and no conflicts")),
          year = 2015) %>% 
