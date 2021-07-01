@@ -84,41 +84,32 @@ ftc$year <- as.numeric(ftc$year)
 ##Legal coverage
  
 lc <- lc %>% mutate_at(vars(starts_with("lc")), 
-                        funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
-             mutate_at(vars(starts_with("lc")),
-             funs(factor(., levels = c(1, 2),
-                        labels = c('Yes', 'No')))) %>% 
-             transform(year = as.numeric(year))
+                        funs(car::recode(., c("'Y' = 'Yes'; '' = 'No'"),
+                                         as.factor = T, levels = c('Yes', 'No')))) %>% 
+                        mutate(year = as.numeric(year))
 
 ##Special protection dismissal
 
 spd <- spd %>% mutate_at(vars(starts_with("spd")), 
-                         funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
-               mutate_at(vars(starts_with("spd")),
-                         funs(factor(., levels = c(1, 2),
-                                     labels = c('Yes', 'No'))))%>% 
-               transform(year = as.numeric(year))
+                         funs(car::recode(., c("'Y' = 'Yes'; 'N' = 'No'"),
+                                          as.factor = T, levels = c('Yes', 'No')))) %>% 
+                         mutate(year = as.numeric(year))
 
 
 ##Valid grounds for dismissal
 
 vd <- vd %>% mutate_at(vars(starts_with("vd")), 
-                         funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
-             mutate_at(vars(starts_with("vd")),
-                         funs(factor(., levels = c(1, 2),
-                                     labels = c('Yes', 'No'))))%>% 
-             transform(year = as.numeric(year))
+                         funs(car::recode(., c("'Y' = 'Yes'; 'N' = 'No'"),
+                                          as.factor = T, levels = c('Yes', 'No')))) %>% 
+                         mutate(year = as.numeric(year))
 
 ## Prohibited grounds for dismissal
 
 pd <- pd %>% mutate_at(vars(starts_with("pd")), 
-                       funs(car::recode(., c("'Y' = 1; 'N' = 2")))) %>% 
-             mutate_at(vars(starts_with("pd")),
-             funs(factor(., levels = c(1, 2),
-                        labels = c('Yes', 'No'))))%>% 
-             transform(year = as.numeric(year))
-
-
+                       funs(car::recode(., c("'Y' = 'Yes'; '' = 'No'"), 
+                                        as.factor = T, levels = c('Yes','No')))) %>%
+             mutate(year = as.numeric(year))
+ 
 
 ## recode country_name https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 

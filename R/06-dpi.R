@@ -1,6 +1,6 @@
 # Code: DPI ----------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse, readr, dplyr, car, googlesheets4, rvest, Hmisc)
+pacman::p_load(tidyverse, readr, dplyr, car, googlesheets4, rvest, Hmisc, countrycode)
 
 # 2. Scrapp dpi --------------------------------------------------------------
 # https://mydata.iadb.org/Reform-Modernization-of-the-State/Database-of-Political-Institutions-2017/938i-s2bw/data
@@ -26,7 +26,8 @@ dpi <- dpi %>% select(country_name = countryname, year,  elec_sys = system, if_m
                                                                'Islamic', 'Hindu', 'Buddhist', 'Jewish')))) %>% 
   mutate_at(vars(exec_party_or), funs(factor(.,levels = c(0, 1, 2, 3),
                                               labels = c('No information or category',
-                                                         'Right', 'Center', 'Left'))))
+                                                         'Right', 'Center', 'Left')))) %>% 
+  mutate_at(vars(exec_party), funs(car::recode(.,"'independent' = 'Independent'")))
 
 # 5. ISO3C ----------------------------------------------------------------
 data_dpi <- dpi %>% 
