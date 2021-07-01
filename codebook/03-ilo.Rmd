@@ -1,0 +1,46 @@
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+pacman::p_load(tidyverse,
+               kableExtra)
+```
+
+# ILOSTAT
+
+inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline
+
+```{r ilo}
+#ilostat
+labels1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B5:C629"), col_names = F) %>%
+  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  select(Variables = 1, Labels = 2)
+labels2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E5:G629"), col_names = F) %>%
+  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  select(Definition = 1, Values = 2, Class = 3)
+table_ilo <- c(labels1, labels2) 
+ilo <- data.frame(matrix(unlist(table_ilo), nrow=280)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+knitr::kable(ilo, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) %>%
+  pack_rows("Mean Nominal Hourly Earning (ISCO08 classification)", 5, 40, bold = T) %>%
+  pack_rows("Mean Nominal Hourly Earning (ISCO88 classification)", 41, 73, bold = T) %>%
+  pack_rows("Employment by sex and institutional sector", 76, 84, bold = T) %>%
+  pack_rows("Employment by sex and status in employment", 85, 99, bold = T) %>%
+  pack_rows("Number of strikes and lockouts by economic activity", 100, 153, bold = T) %>%
+  pack_rows("Days not worked due to strikes and lockouts by economic activity", 154, 213, bold = T) %>%
+  pack_rows("Workers involved in strikes and lockouts by economic activity", 214, 265, bold = T) %>%
+  pack_rows("Unemployment rate (%)", 266, 280, bold = T) 
+```
+
+
+
+## ILO-EPLEX
+```{r iloeplex, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+#ilo-eplex
+labels_eplex1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:C350"), col_names = F) 
+labels_eplex2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E323:G350"), col_names = F) 
+table_eplex <- c(labels_eplex1, labels_eplex2) 
+eplex <- data.frame(matrix(unlist(table_eplex), nrow=28)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+knitr::kable(eplex, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) 
+```
+

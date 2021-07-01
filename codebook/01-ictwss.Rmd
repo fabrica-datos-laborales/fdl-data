@@ -1,0 +1,18 @@
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+pacman::p_load(tidyverse,
+               kableExtra)
+```
+
+# ICTWSS
+
+The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019.
+
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B4:G216"), col_names = F) %>%
+  slice(c(4:216)) %>% 
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6) %>% 
+  knitr::kable(.) %>%
+pack_rows("Type of Pacts Agreements", 38, 53, bold = T)
+
+```
+

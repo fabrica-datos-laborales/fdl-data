@@ -1,0 +1,14 @@
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+pacman::p_load(tidyverse,
+               kableExtra)
+```
+
+# OECD
+
+```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:G279"), col_names = F)  %>% 
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6) %>%
+#filter(grepl("_oecd|_wise", Variable))  %>% 
+knitr::kable(.)
+```
+
