@@ -1,0 +1,175 @@
+---
+title: "Libro de Códigos Fábrica de Datos Laborales"
+author: "Valentina Andrade, Nicolás Godoy y Emilia Cuadros"
+output: html_document
+---
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+#Preparación de Datos
+install.packages("pacman")
+library(pacman)
+devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0") #para collapse rows
+pacman::p_load(haven,   # para cargar bases de datos en .sav o .dta
+               sjPlot,  # para generar codebook
+               pagedown,# exportar a pdf (a)
+               webshot, # exportar a pdf (b)
+               sjmisc,
+               kableExtra, 
+               kable,
+               dplyr)
+install.packages("kable")
+library(kable)
+
+
+```
+
+# Description
+
+This codebook was made with the variables and data bases that were used in "name investigation". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, Eurobarometer, Latinobarometer. The variables year and country were used in every single one of the data bases but won´t be listed in every item. For country, we use iso3c classification, in which every code means:
+
+"webscrapping de wikipedia"
+
+## ICTWSS
+
+The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019.
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+#ictwss
+labels_ictwss1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B4:C216"), col_names = F) %>%
+  slice(c(4:216)) %>% 
+  select(Variables = 1, Labels = 2)
+
+labels_ictwss2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E4:G216"), col_names = F) %>%
+  slice(c(4:216)) %>% 
+  select(Definition = 1, Values = 2, Class = 3)
+
+table_ictwss <- c(labels_ictwss1, labels_ictwss2) 
+ictwss <- data.frame(matrix(unlist(table_ictwss), nrow=210)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(ictwss, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T)   %>%
+pack_rows("Type of Pacts Agreements", 38, 53, bold = T)
+
+
+```
+
+## OECD
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+#oecde
+labels_oecd1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:C279"), col_names = F)
+
+labels_oecd2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E217:G279"), col_names = F) 
+
+table_oecd <- c(labels_oecd1, labels_oecd2) 
+oecd <- data.frame(matrix(unlist(table_oecd), nrow=63)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) #tengo que eliminar las variables que no son oecd
+
+knitr::kable(oecd, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T)  
+
+
+```
+
+## ILOSTAT
+
+inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
+#ilostat
+labels1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B5:C629"), col_names = F) %>%
+  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  select(Variables = 1, Labels = 2)
+
+labels2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E5:G629"), col_names = F) %>%
+  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
+  select(Definition = 1, Values = 2, Class = 3)
+
+table_ilo <- c(labels1, labels2) 
+ilo <- data.frame(matrix(unlist(table_ilo), nrow=280)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(ilo, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) %>%
+  pack_rows("Mean Nominal Hourly Earning (ISCO08 classification)", 5, 40, bold = T) %>%
+  pack_rows("Mean Nominal Hourly Earning (ISCO88 classification)", 41, 73, bold = T) %>%
+  pack_rows("Employment by sex and institutional sector", 76, 84, bold = T) %>%
+  pack_rows("Employment by sex and status in employment", 85, 99, bold = T) %>%
+  pack_rows("Number of strikes and lockouts by economic activity", 100, 153, bold = T) %>%
+  pack_rows("Days not worked due to strikes and lockouts by economic activity", 154, 213, bold = T) %>%
+  pack_rows("Workers involved in strikes and lockouts by economic activity", 214, 265, bold = T) %>%
+  pack_rows("Unemployment rate (%)", 266, 280, bold = T) 
+
+
+```
+
+
+
+## World Bank
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
+#world bank
+labels_wb1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B280:C309"), col_names = F) 
+
+labels_wb2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E280:G309"), col_names = F) 
+
+table_wb <- c(labels_wb1, labels_wb2) 
+wb <- data.frame(matrix(unlist(table_wb), nrow=30)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(wb, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) 
+
+```
+
+
+## DPI
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
+#dpi
+labels_dpi1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B310:C320"), col_names = F) 
+
+labels_dpi2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E310:G320"), col_names = F) 
+
+table_dpi <- c(labels_dpi1, labels_dpi2) 
+dpi <- data.frame(matrix(unlist(table_dpi), nrow=11)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(dpi, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) 
+
+
+```
+
+## ILO-EPLEX
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
+#ilo-eplex
+labels_eplex1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:C350"), col_names = F) 
+
+labels_eplex2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E323:G350"), col_names = F) 
+
+table_eplex <- c(labels_eplex1, labels_eplex2) 
+eplex <- data.frame(matrix(unlist(table_eplex), nrow=28)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(eplex, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) 
+
+```
+
+## Varietys of Democracy
+```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
+#vdem
+labels_vdem1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B755:C810"), col_names = F) 
+
+labels_vdem2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E755:G810"), col_names = F) 
+
+table_vdem <- c(labels_vdem1, labels_vdem2) 
+vdem <- data.frame(matrix(unlist(table_vdem), nrow=56)) %>%
+  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
+
+knitr::kable(vdem, booktabs = T) %>% 
+  kable_styling(latex_options = "striped", fixed_thead = T) 
+
+```
+
