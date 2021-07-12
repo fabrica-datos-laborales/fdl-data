@@ -16,3 +16,4 @@ pack_rows("Type of Pacts Agreements", 38, 53, bold = T)
 
 ```
 
+- Cobetura geográfica. 

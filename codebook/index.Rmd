@@ -49,4 +49,4 @@ Por ello el **proyecto** se ha propuesto la construcción de una **base de datos
 
 (Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
 
-(Como citar )
+(Como citar la base de datos )

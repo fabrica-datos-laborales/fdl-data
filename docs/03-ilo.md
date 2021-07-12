@@ -17,8 +17,8 @@ labels1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw
 ```
 
 ```
-##   To suppress this message, modify your code or options to clearly consent to the
-##     use of a cached token
+##   To suppress this message, modify your code or options to clearly consent to
+##   the use of a cached token
 ```
 
 ```
@@ -31,7 +31,7 @@ labels1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw
 
 ```
 ## > The googlesheets4 package is using a cached token for
-##   valentinaandrade@uchile.cl
+## 'valentinaandrade@uchile.cl'
 ```
 
 ```

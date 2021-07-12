@@ -1,5 +1,3 @@
-presentation
-presentación
 ictwss
 oecd
 ilostat

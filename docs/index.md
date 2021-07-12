@@ -2,7 +2,7 @@
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Libro de Códigos</center>"
 author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy"
-date: "01 julio 2021"
+date: "12 julio 2021"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib] #packages.bib
@@ -42,4 +42,4 @@ Por ello el **proyecto** se ha propuesto la construcción de una **base de datos
 
 (Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
 
-(Como citar )
+(Como citar la base de datos )

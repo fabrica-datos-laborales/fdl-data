@@ -1489,3 +1489,4 @@ The following variables are from the Institutional Characteristics of Trade Unio
 </tbody>
 </table>
 
+- Cobetura geográfica. 
