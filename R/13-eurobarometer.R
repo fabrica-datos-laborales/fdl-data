@@ -33,11 +33,10 @@ list2env(list_eu, envir=.GlobalEnv)
 
 euro1970 <- read_sav("input/data/euro/euro1970.sav")
 euro1973 <- read_sav("input/data/euro/euro1973.sav")
-euro1974 <- read_sav("input/data/euro/euro1974.sav")
 euro1975 <- read_sav("input/data/euro/euro1975.sav")
 euro1976 <- read_sav("input/data/euro/euro1976.sav")
 euro1977 <- read_sav("input/data/euro/euro1977.sav")
-euro1978 <- read_sav("input/data/euro/euro1978.sav")
+#euro1978 <- read_sav("input/data/euro/euro1978.sav")
 euro1979 <- read_sav("input/data/euro/euro1979.sav")
 euro1980 <- read_sav("input/data/euro/euro1980.sav")
 euro1981 <- read_sav("input/data/euro/euro1981.sav")
@@ -51,90 +50,253 @@ euro1988 <- read_sav("input/data/euro/euro1988.sav")
 euro1989 <- read_sav("input/data/euro/euro1989.sav")
 euro1990 <- read_sav("input/data/euro/euro1990.sav")
 euro1991 <- read_sav("input/data/euro/euro1991.sav")
-euro1996 <- read_sav("input/data/euro/euro1996.sav")
+#euro1996 <- read_sav("input/data/euro/euro1996.sav")
 
 # 4. Merge and recode d.f -----------------------------------------------------------
 euro <- bind_rows(list(
   # 1970 ----------------------------------------------------------
   (`euro1970` %>% 
      select(iso2c = isocntry, value_post_mat = v118) %>% 
-     mutate(value_post_mat, car::recode(., recodes = '9=NA',
-                                        as.factor=T, 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '9=NA',
+                                        as.factor = T, 
                                         levels = c('Materialist',
                                                    'Mixed/Neither',
                                                    'Post-Materialist')),
             year = 1970)),
+  
 # 1973 ----------------------------------------------------------------
-  (`1973` %>%
+  (`euro1973` %>%
      select(iso2c = isocntry, value_post_mat = v128) %>% 
-     mutate(value_post_mat, car::recode(., recodes = '0=NA',
-                                        as.factor=T, 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor = T, 
                                         levels = c('Materialist',
                                                    'Mixed/Neither',
                                                    'Post-Materialist')),
             year = 1973)),
+
   # 1976 ----------------------------------------------------------------
-  (`1976` %>% select(iso2c = isocntry, value_post_mat = v185, weight = v3) %>% 
-     mutate(value_post_mat, car::recode(., recodes = '0=NA',
-                                        as.factor=T, 
+  (`euro1976` %>% select(iso2c = isocntry, value_post_mat = v185, weight = v3) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor = T, 
                                         levels = c('Materialist',
                                                    'Mixed/Neither',
                                                    'Post-Materialist')),
             year = 1976)),
+
   # 1977 ----------------------------------------------------------------
-  (`1977` %>% select(iso2c = iscntry, value_post_mat = v140, weight = v5) %>% 
-     mutate(value_post_mat, car::recode(., recodes = '0=NA',
-                                        as.factor=T, 
+  (`euro1977` %>% select(iso2c = isocntry, value_post_mat = v140, weight = v5) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor = T, 
                                         levels = c('Materialist',
                                                    'Mixed/Neither',
                                                    'Post-Materialist')),
             year = 1977)),
-  # 1999 - SI ---------------------------------------------------------------
-  (`1999` %>% mutate_all(., ~as.numeric(.)) %>% 
-     select(iso3c = v3_1999, ess = v46_1999, class= class_1999, conflict = v43_1999, weight = weight_1999) %>% 
-     mutate(iso3c = car::recode(.$iso3c, c("1='AUS';c(2,3)='DEU';4='GBR';c(10,5)='IRL';6='USA'; 7 ='AUT';
-                                          8='HUN';9='ITA';11='NLD';12='NOR';13='SWE';14='CSK';15='SLO';
-                                          16='POL';17='BGR';18='RUS';19='NZL';20='CAN';21='PHI';
-                                          c(22,23)='ISR';24='JPN';25='ESP';26='LVA';27='FRA';28='CYP';
-                                          29='PRT';30='CHL';31='CHE';32='BGD';33='SVK'")),
-            ess = car::recode(.$ess,c("c(97,98,99)=NA")),
-            class = car::recode(.$class,c("1='Lower class';c(2,3)='Working class';
-                                   4='Middle class';5='Upper middle class'; 6='Upper class'; c(0,8,9)=NA"), as.factor = T,
-                                levels = c("Lower class", "Working class", "Middle class", "Upper middle class", "Upper class")),
-            conflict = car::recode(.$conflict,c("c(1,2)='Very Strong and strong conflicts';c(3,4,5)='Not very and no conflicts'; c(8,9)=NA"), as.factor = T,
-                                   levels = c("Very Strong and strong conflicts", "Not very and no conflicts")),
-            year = 1999)),
-  # 2005 - WO ---------------------------------------------------------------
-  (`2005` %>%  
-     select(iso3c = C_ALPHAN_2005, ess = TOPBOT_2005,  conflict = V49_2005, weight = WEIGHT_2005) %>%
-     mutate_at(vars(-iso3c), ~as.numeric(.)) %>%
-     mutate(iso3c= car::recode(.$iso3c,c("c('DE-E','DE-W')='DE';'BE-FLA'='BE';'GB-GBN'='GB'")),
-            ess = car::recode(.$ess,c("c(97,98,99)=NA")),
-            conflict = car::recode(.$conflict,c("c(5,4)='Very Strong and strong conflicts';c(3,1,2)='Not very and no conflicts'; c(7,8,9)=NA"), as.factor = T,
-                                   levels = c("Very Strong and strong conflicts", "Not very and no conflicts")),
-            year = 2005) %>% 
-     mutate(iso3c = countrycode(iso3c, "iso2c", "iso3c"))),
-  # 2009 - SI ---------------------------------------------------------------
-  (`2009` %>% 
-     select(iso3c = C_ALPHAN_2009, ess = V44_2009, class= V66_2009, conflict = V42_2009, weight = WEIGHT_2009) %>%
-     mutate_at(vars(-iso3c), ~as.numeric(.)) %>%
-     mutate(iso3c= car::recode(.$iso3c,c("'BE-FLA'='BE';'GB-GBN'='GB'")),
-            ess = car::recode(.$ess,c("c(97,98,99)=NA")),
-            class = car::recode(.$class,c("1='Lower class';2='Working class';
-                                   c(3,4)='Middle class';5='Upper middle class'; 6='Upper class'; c(0,8,9)=NA"), as.factor = T,
-                                levels = c("Lower class", "Working class", "Middle class", "Upper middle class", "Upper class")),
-            conflict = car::recode(.$conflict,c("c(1,2)='Very Strong and strong conflicts';c(3,4)='Not very and no conflicts'; c(7,8,9)=NA"), as.factor = T,
-                                   levels = c("Very Strong and strong conflicts", "Not very and no conflicts")),
-            year = 2009) %>% 
-     mutate(iso3c = countrycode(iso3c, "iso2c", "iso3c"))),
-  # 2015 - SI ---------------------------------------------------------------
-  (`2015` %>% 
-     select(iso3c = c_alphan_2015, ess = TOPBOT_2015, conflict = v42_2015, weight = WEIGHT_2015) %>% 
-     mutate_at(vars(-iso3c), ~as.numeric(.)) %>%
-     mutate(iso3c= car::recode(.$iso3c,c("'GB-GBN'='GB'")),
-            ess = car::recode(.$ess,c("c(0,97,98,99)=NA")),
-            conflict = car::recode(.$conflict,c("c(5,4)='Very Strong and strong conflicts';c(3,1,2)='Not very and no conflicts'; c(7,8,9)=NA"), as.factor = T,
-                                   levels = c("Very Strong and strong conflicts", "Not very and no conflicts")),
-            year = 2015) %>% 
-     mutate(iso3c = countrycode(iso3c, "iso2c", "iso3c")))))
 
+  # 1979 ----------------------------------------------------------------
+  (`euro1979` %>% select(iso2c = isocntry, value_post_mat = v56, weight = v5) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor = T, 
+                                        levels = c('Materialist',
+                                                   'Mixed/Neither',
+                                                   'Post-Materialist')),
+            year = 1979)),
+
+  # 1980 ----------------------------------------------------------------
+  (`euro1980` %>%  
+     select(iso2c = isocntry, value_post_mat = v80, ind_strikes_next = v10, weight = v6) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor = T, 
+                                        levels = c('Materialist',
+                                                   'Mixed/Neither',
+                                                   'Post-Materialist')),
+            ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                           as.factor = T,
+                                           levels = c('Increase',
+                                                      'Remain the same',
+                                                      'Decrease')),
+            year = 1980)),
+  
+  # 1981 ----------------------------------------------------------------
+  (`euro1981` %>% 
+     select(iso2c = isocntry, value_post_mat = v91, ind_strikes_next = v11, weight = v7) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor=T, 
+                                        levels = c('Materialist',
+                                                   'Mixed/Neither',
+                                                   'Post-Materialist')),
+            ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                           as.factor = T,
+                                           levels = c('Increase',
+                                                      'Remain the same',
+                                                      'Decrease')),
+            year = 1981)),
+  # 1982 ----------------------------------------------------------------
+  (`euro1982` %>% 
+     select(iso2c = isocntry, value_post_mat = v87, ind_strikes_next = v10, weight = v8) %>% 
+     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                        as.factor=T, 
+                                        levels = c('Materialist',
+                                                   'Mixed/Neither',
+                                                   'Post-Materialist')),
+            ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                           as.factor = T,
+                                           levels = c('Increase',
+                                                      'Remain the same',
+                                                      'Decrease')),
+            year = 1982)),
+
+  # 1983 --------------------------------------------------------------------
+  (`euro1983` %>% 
+   select(iso2c = isocntry, value_post_mat = v466, ind_strikes_next = v11, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                         as.factor = T,
+                                         levels = c('Increase',
+                                                    'Remain the same',
+                                                    'Decrease')),
+          year = 1983)),
+  
+  # 1984 --------------------------------------------------------------------
+  (`euro1984` %>% 
+   select(iso2c = isocntry, value_post_mat = v188, ind_strikes_next = v12, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                         as.factor = T,
+                                         levels = c('Increase',
+                                                    'Remain the same',
+                                                    'Decrease')),
+          year = 1984)),
+
+  # 1985 --------------------------------------------------------------------
+  (`euro1985` %>% 
+   select(iso2c = isocntry, value_post_mat = v93, ind_strikes_next = v12, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                         as.factor = T,
+                                         levels = c('Increase',
+                                                    'Remain the same',
+                                                    'Decrease')),
+          year = 1985)),
+
+  # 1986 --------------------------------------------------------------------
+  (`euro1986` %>% 
+   select(iso2c = isocntry, value_post_mat = v228, ind_strikes_next = v12, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                         as.factor = T,
+                                         levels = c('Increase',
+                                                    'Remain the same',
+                                                    'Decrease')),
+          year = 1986)),
+ 
+  # 1987 --------------------------------------------------------------------
+  (`euro1987` %>% 
+   select(iso2c = isocntry, value_post_mat = v473, tum_whynot = v302, weight = v10) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          tum_whynot = car::recode(.$tum_whynot, '0 = NA'),
+          year = 1987)),
+
+  # 1988 --------------------------------------------------------------------
+  (`euro1988` %>% 
+   select(iso2c = isocntry, value_post_mat = v724, ind_strikes_next = v12, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          ind_strikes_next = car::recode(.$ind_strikes_next, recodes = '0 = NA',
+                                         as.factor = T,
+                                         levels = c('Increase',
+                                                    'Remain the same',
+                                                    'Decrease')),
+          year = 1988)),
+
+  # 1989 --------------------------------------------------------------------
+  (`euro1989` %>% 
+   select(iso2c = isocntry, value_post_mat = v1379, weight = v9) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '4=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          year = 1989)),
+
+  # 1990 --------------------------------------------------------------------
+  (`euro1990` %>% 
+   select(iso2c = isocntry, value_post_mat = v501, weight = v15) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          year = 1990)),
+
+  # 1991 --------------------------------------------------------------------
+  (`euro1991` %>% 
+   select(iso2c = isocntry, value_post_mat = v470, weight = v16) %>% 
+   mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+                                      as.factor=T, 
+                                      levels = c('Materialist',
+                                                 'Mixed/Neither',
+                                                 'Post-Materialist')),
+          year = 1991))))
+
+# 5. Group ----------------------------------------------------------------
+rm(list = ls(pattern = "19|list")) #limpiar
+euro <- merge((euro %>%
+                 pivot_longer(cols = c("value_post_mat", "ind_strikes_next", "tum_whynot"), names_to = "variable", values_to = "value") %>% 
+                 as_survey_design(ids = 1, weights = weight) %>%
+                 group_by(iso2c, year, variable, value) %>%
+                 filter(!is.na(value)) %>% 
+                 summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
+                 mutate(prop = prop*100) %>% select(1:prop) %>% 
+                 mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
+                 mutate(value = str_replace_all(tolower(value), "_value_post_mat|_ind_strikes_next|_tum_whynot", ""),
+                        value = str_replace_all(tolower(value), "_and_", "/")) %>% 
+                 pivot_wider(names_from = c("variable", "value"),
+                             values_from = "prop")),
+              (euro %>%
+                 as_survey_design(ids = 1, weights = weight) %>%
+                 group_by(iso2c, year) %>%
+                 filter(!is.na(ess)) %>% 
+                 summarise(ess_mean = survey_mean(ess, na.rm = TRUE),
+                           ess_median = survey_median(ess, na.rm = TRUE)) %>% 
+                 select(-contains("se"))), by = c("iso3c", "year"), all = T) %>% 
+  select(-contains("not_very"))
+
+# 6. Label -------------------------------------------------------------------
+# Llamar etiquetas (en slice se indican los tramos)
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                                    range = c("B5:C714"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_euro|year|iso3c", variables))
+
+## Tranformar a vectornames
+var.labels <- as.character(labels$etiquetas)
+names(var.labels) <- labels$variables
+
+## Etiquetar
+Hmisc::label(euro) = as.list(var.labels[match(names(euro), names(euro))])
+
+# 7. Save -----------------------------------------------------------------
+saveRDS(euro, file="output/data/proc/euro.rds")
