@@ -2,7 +2,7 @@
 
 
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse,rvest, sjlabelled, Hmisc, countrycode, survey, srvyr, sjmisc, haven)
+pacman::p_load(tidyverse, rvest, sjlabelled, Hmisc, countrycode, survey, srvyr, sjmisc, haven)
 
 # 2. Load data ------------------------------------------------------------
 
@@ -58,16 +58,34 @@ latino2018 <- read_sav("input/data/lat/latino2018.sav")
 lat <- bind_rows(list(
   # 1995 ----------------------------------------------------------
   (`latino1995` %>% 
-     select(iso3c = pais, distr_inc_fair = p19, most_power1 = p61a1, weight = wt) %>% 
+     select(iso3c = pais, distr_inc_fair = p19, most_power1 = p61a1, 
+            id = enc, weight = wt) %>% 
+     mutate(distr_inc_fair = as.numeric(distr_inc_fair),
+            most_power1 = as.numeric(most_power1),
+            iso3c = as.numeric(iso3c)) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 76='BRA';
                                 152='CHL'; 484='MEX'; 600='PRY'; 604='PER';
-                                858='URY'; 862='VEN'"),
-            dist_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+                                858='URY'; 862='VEN'")),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                      1 = 'Very Fair';
+                                                                      2 = 'Fair';
+                                                                      3 = 'Neither fair nor unfair';
+                                                                      4 = 'Unfair';
+                                                                      5 = 'Very Unfair'"),
                                         as.factor = T, 
                                         levels = c('Very Fair', 'Fair',
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'Transnational companies';
+                                                                 8 = 'The government';
+                                                                 9 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -79,23 +97,41 @@ lat <- bind_rows(list(
                                                  'The government',
                                                  'Parliament/Congress')),
                                          
-            year = 1995))),
+            year = 1995) %>% 
+     mutate(iso3c = as.character(iso3c))),
+   
   # 1996 ----------------------------------------------------------------
   (`latino1996` %>%
-     select(iso3c = pais, trust_union= p33c, trust_private_comp = p33f, 
+     select(iso3c = pais, trust_union = p33c, trust_private_comp = p33f, 
             trust_comp_asso = p33k, trust_gov = p33m, most_power1 = p63a,
-            trust_pub_adm = p33g, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_pub_adm = p33g, id = enc, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            most_power1 = as.numeric(most_power1)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>% 
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                            1 = 'A lot of confidence';
+                                                            2 = 'Some confidence';
+                                                            3 = 'Little confidence';
+                                                            4 = 'No confidence at all'"),
                                          as.factor = T, 
                                          levels = c('A lot of confidence',
                                                     'Some confidence',
                                                     'Little confidence',
-                                                    'No confidence at all'))) %>% 
+                                                    'No confidence at all')))) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 218='ECU'; 
                                 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 558='NIC';
                                 600='PRY'; 604='PER'; 724='ESP'; 858='URY'; 862='VEN'")),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'Transnational companies';
+                                                                 8 = 'The government';
+                                                                 9 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -106,26 +142,49 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'The government',
                                                  'Parliament/Congress')),
-            year = 1996))),
+            year = 1996) %>% 
+     mutate(iso3c = as.character(iso3c))),
    
   # 1997 ----------------------------------------------------------------
   (`latino1997` %>% select(iso3c = idenpa, distr_inc_fair = nsp20, labor_law_prot = sp83,
-                     most_power1 = sp55a, weight = wt) %>% 
+                     most_power1 = sp55a, id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            labor_law_prot = as.numeric(labor_law_prot),
+            most_power1 = as.numeric(most_power1)) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 218='ECU'; 
                                 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 558='NIC';
                                 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 858='URY'; 
                                 862='VEN'")),
-            dist_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                      1 = 'Very Fair';
+                                                                      2 = 'Fair';
+                                                                      3 = 'Neither fair nor unfair';
+                                                                      4 = 'Unfair';
+                                                                      5 = 'Very Unfair'"),
                                         as.factor = T, 
                                         levels = c('Very Fair', 'Fair',
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
-            labor_law_prot = car::recode(.$labor_law_prot, recodes = c("-4:-1=NA"),
+            labor_law_prot = car::recode(.$labor_law_prot, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very protected';
+                                                                       2 = 'Fairly protected';
+                                                                       3 = 'A little protected';
+                                                                       4 = 'Not at all protected'"),
                                          as.factor = T,
                                          levels = c('Very protected', 'Fairly protected',
                                                     'A little protected', 'Not at all protected')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'Transnational companies';
+                                                                 8 = 'The government';
+                                                                 9 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -136,16 +195,29 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'The government',
                                                  'Parliament/Congress')),
-     year = 1997)),
+     year = 1997) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 1998 ----------------------------------------------------------------
-  (`latino1998` %>% select(iso3c = idenpa, most_power1 = sp51a, weight = pondera) %>% 
+  (`latino1998` %>% select(iso3c = idenpa, most_power1 = sp51a, 
+                           id = numentre, weight = pondera) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            most_power1 = as.numeric(most_power1)) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'Transnational companies';
+                                                                 8 = 'The government';
+                                                                 9 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -156,20 +228,39 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'The government',
                                                  'Parliament/Congress')),
-            year = 1998)),
+            year = 1998) %>% 
+     mutate(iso3c = as.character(iso3c))),
   # 2000 ----------------------------------------------------------------
   (`latino2000` %>% select(iso3c = IDENPA, labor_law_prot = P74ST, most_power1 = P51ST.A,
-                     weight = WT) %>% 
+                     id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            labor_law_prot = as.numeric(labor_law_prot),
+            most_power1 = as.numeric(labor_law_prot)) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-           labor_law_prot = car::recode(.$labor_law_prot, recodes = c("c(-4:-1, 16)=NA"),
+           labor_law_prot = car::recode(.$labor_law_prot, recodes = "c(-4, -3, -2, -1, 16)=NA;
+                                        1 = 'Very protected';
+                                        2 = 'Fairly protected';
+                                        3 = 'A little protected';
+                                        4 = 'No at all protected'",
                                           as.factor = T,
                                           levels = c('Very protected', 'Fairly protected',
                                                      'A little protected', 'Not at all protected')),
-           most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+           most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                1 = 'Large companies';
+                                                                2 = 'The military';
+                                                                3 = 'Trade unions';
+                                                                4 = 'Mass media';
+                                                                5 = 'Banks';
+                                                                6 = 'The government';
+                                                                7 = 'Parliament/Congress';
+                                                                8 = 'The judiciary';
+                                                                9 = 'Transnational companies';
+                                                                10 = 'Warfare';
+                                                                11 = 'Medium-sized companies'"),
                                        as.factor = T,
                                        levels = c('Large companies', 
                                                   'The military',
@@ -182,12 +273,21 @@ lat <- bind_rows(list(
                                                   'Transnational companies',
                                                   'Warfare',
                                                   'Medium-sized companies')),
-             year = 2000)),
+             year = 2000) %>% 
+     mutate(iso3c = as.character(iso3c))),
   # 2001 ----------------------------------------------------------------
   (`latino2001` %>%  
      select(iso3c = idenpa, distr_inc_fair = p11st, trust_pub_adm = p63stb, 
-            trust_priv_comp = p63std, most_power1 = p64sta, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_private_comp = p63std, most_power1 = p64sta, id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            most_power1 = as.numeric(most_power1)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>% 
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                            as.factor = T, 
                                                            levels = c('A lot of confidence',
                                                                       'Some confidence',
@@ -198,12 +298,26 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
                                          as.factor = T, 
                                          levels = c('Very Fair', 'Fair',
                                                     'Neither fair nor unfair',
                                                     'Unfair', 'Very Unfair')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'The judiciary';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'Transnational companies';
+                                                                 8 = 'The government';
+                                                                 9 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -214,14 +328,23 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'The government',
                                                  'Parliament/Congress')),
-            year = 2001)),
+            year = 2001) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2002 ----------------------------------------------------------------
   (`latino2002` %>% 
-     select(iso3c = idenpa, dist_inc_fair = p16st, trust_banks = p34stb, 
+     select(iso3c = idenpa, distr_inc_fair = p16st, trust_banks = p34stb, 
             trust_gov = p34std, trust_private_comp = p34ste, 
-            op_strong_tu = p22essh, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            op_strong_tu = p22essh, id =numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            op_strong_tu = as.numeric(op_strong_tu)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>% 
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -232,22 +355,39 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
                                          as.factor = T, 
                                          levels = c('Very Fair', 'Fair',
                                                     'Neither fair nor unfair',
                                                     'Unfair', 'Very Unfair')),
-            op_strong_tu = car::recode(.$op_strong_tu, recodes = c("-4:-1=NA"),
+            op_strong_tu = car::recode(.$op_strong_tu, recodes = c("-4:-1=NA;
+                                                                   1 = 'Strongly agree';
+                                                                   2 = 'Agree';
+                                                                   3 = 'Disagree';
+                                                                   4 = 'Strongly disagree'"),
                                        as.factor = T,
                                        levels = c('Strongly agree', 'Agree',
                                                   'Disagree', 'Strongly disagree')),
-            year = 2002)),
+            year = 2002) %>% 
+     mutate(iso3c = as.character(iso3c))),
   # 2003 ----------------------------------------------------------------
   (`latino2003` %>% 
      select(iso3c = idenpa, trust_union = p23sta, trust_private_comp = p23stb, 
             trust_banks = p23std, trust_gov = p23stg, most_power1 = p10st.1,
-            weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            most_power1 = as.numeric(most_power1)) %>%
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -258,7 +398,15 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'The government';
+                                                                 8 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -268,14 +416,23 @@ lat <- bind_rows(list(
                                                  'Political parties',
                                                  'The government',
                                                  'Parliament/Congress')),
-            year = 2003)),
+            year = 2003) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2004 --------------------------------------------------------------------
   (`latino2004` %>% 
      select(iso3c = idenpa, gov_pow_people = p24wvs, most_power1 = p15st.1,
             trust_banks = p32sta, trust_gov = p32std, trust_union = p32ste,
-            trust_private_comp = p34sta, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_private_comp = p34sta, id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            most_power1 = as.numeric(most_power1)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -286,11 +443,21 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("-4:-1=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'The government';
+                                                                 8 = 'Parliament/Congress'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -300,15 +467,24 @@ lat <- bind_rows(list(
                                                  'Political parties',
                                                  'The government',
                                                  'Parliament/Congress')),
-            year = 2004)),
+            year = 2004) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2005 --------------------------------------------------------------------
   (`latino2005` %>% 
      select(iso3c = idenpa, gov_pow_people = p22st, trust_union = p42stc, 
-            trust_gov = p45stc, trust_priv_comp = p45std, trust_banks = p45ste,
+            trust_gov = p45stc, trust_private_comp = p45std, trust_banks = p45ste,
             trust_pub_adm = p45stf, trust_comp_asso = p47stg, most_power1 = p27st_1,
-            weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            most_power1 = as.numeric(most_power1)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -319,11 +495,24 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:0=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("0:-4=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'The government';
+                                                                 8 = 'The judiciary';
+                                                                 9 = 'Transnational companies';
+                                                                 10 = 'Warfare';
+                                                                 11 = 'Medium-sized companies'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -337,15 +526,24 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'Warfare',
                                                  'Medium-sized companies')),
-            year = 2005)),
+            year = 2005) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2006 --------------------------------------------------------------------
-  (`2006` %>% 
+  (`latino2006` %>% 
      select(iso3c = idenpa, gov_pow_people = p22st, most_power1 = p27st_1, 
-            trust_union = p42stc, trust_gov = p45stc, trust_priv_comp = p45std,
+            trust_union = p42stc, trust_gov = p45stc, trust_private_comp = p45std,
             trust_banks = p45ste, trust_pub_adm = p45stf, trust_comp_asso = p47stg, 
-            weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            most_power1 = as.numeric(most_power1)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -356,11 +554,25 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            most_power1 = car::recode(.$most_power1, recodes = c("-4:0=NA"),
+            most_power1 = car::recode(.$most_power1, recodes = c("0:-4=NA;
+                                                                 1 = 'Large companies';
+                                                                 2 = 'The military';
+                                                                 3 = 'Trade unions';
+                                                                 4 = 'Mass media';
+                                                                 5 = 'Banks';
+                                                                 6 = 'Political parties';
+                                                                 7 = 'The government';
+                                                                 8 = 'Parliament/Congress';
+                                                                 9 = 'The judiciary';
+                                                                 10 = 'Transnational companies';
+                                                                 11 = 'Warfare';
+                                                                 12 = 'Medium-sized companies'"),
                                       as.factor = T,
                                       levels = c('Large companies', 
                                                  'The military',
@@ -374,13 +586,21 @@ lat <- bind_rows(list(
                                                  'Transnational companies',
                                                  'Warfare',
                                                  'Medium-sized companies')),
-            year = 2006)),
+            year = 2006) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2007 --------------------------------------------------------------------
   (`latino2007` %>% #Falta agregar MOST POWER 
      select(iso3c = idenpa, gov_pow_people = p20stm, trust_gov = p32st.a, 
-            trust_priv_comp = p32st.b, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_private_comp = p32st.b, id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
@@ -391,133 +611,478 @@ lat <- bind_rows(list(
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            year = 2007)),
+            year = 2007) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2008 --------------------------------------------------------------------
   (`latino2008` %>% 
      select(iso3c = idenpa, gov_pow_people = p25st, conflict_rp = p69st.a, 
             conflict_man_workers = p69st.c, trust_pub_adm = p28st.e, trust_gov = p31s.ta,  
-            trust_banks = p31st.b, trust_union = p31st.g, trust_priv_comp = p31st.h,
-            weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_banks = p31st.b, trust_union = p31st.g, trust_private_comp = p31st.h,
+            id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict'), funs(car::recode(., recodes = '-4:-1=NA',
+     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                             1 = 'Very strong';
+                                                                             2 = 'Strong';
+                                                                             3 = 'Weak';
+                                                                             4 = 'It doesnt exist conflict'"),
                                                               as.factor = T,
                                                               levels = c('Very strong',
                                                                          'Strong',
                                                                          'Weak',
-                                                                         "It doesn't exist conflict"))))) %>% 
+                                                                         "It doesnt exist conflict")))) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            year = 2008)),
+            year = 2008) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2009 --------------------------------------------------------------------
   (`latino2009` %>% 
      select(iso3c = idenpa, gov_pow_people = p22st, conflict_rp = p34stm.a, 
             conflict_man_workers = p34stm.b, trust_gov = p24st.a, trust_banks = p24st.b,
-            trust_union = p24st.g, trust_priv_comp = p24st.h, trust_pub_adm = p26st.e,
-            weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_union = p24st.g, trust_private_comp = p24st.h, trust_pub_adm = p26st.e,
+            id = numentre, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict'), funs(car::recode(., recodes = '-4:-1=NA',
+     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                             1 = 'Very strong';
+                                                                             2 = 'Strong';
+                                                                             3 = 'Weak';
+                                                                             4 = 'It doesnt exist conflict'"),
                                                               as.factor = T,
                                                               levels = c('Very strong',
                                                                          'Strong',
                                                                          'Weak',
-                                                                         "It doesn't exist conflict"))))) %>% 
+                                                                         "It doesn't exist conflict")))) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            year = 2009)),
+            year = 2009) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2010 --------------------------------------------------------------------
-  (`latino2010` %>% # FALTA MOST POWER
+  (`latino2010` %>% # FALTA MOST POWER: Labour Unions y Big companies
      select(iso3c = IDENPA, gov_pow_people = P17ST, distr_inc_fair = P12ST, 
             conflict_rp = P27ST.A, conflict_man_workers = P27ST.B, trust_gov = P18ST.A,
-            trust_banks = P18ST.B, trust_union = P18ST.G, trust_priv_comp = P18ST.H,
-            trust_pub_adm = P20ST.E, trust_state = P20ST.I, weight = wt) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = '-4:-1=NA',
+            trust_banks = P18ST.B, trust_union = P18ST.G, trust_private_comp = P18ST.H,
+            trust_pub_adm = P20ST.E, trust_state = P20ST.I, id = NUMENTRE, weight = wt) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            distr_inc_fair = as.numeric(distr_inc_fair)) %>% 
+     mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
                                                             as.factor = T, 
                                                             levels = c('A lot of confidence',
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict'), funs(car::recode(., recodes = '-4:-1=NA',
+     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                             1 = 'Very strong';
+                                                                             2 = 'Strong';
+                                                                             3 = 'Weak';
+                                                                             4 = 'It doesnt exist conflict'"),
                                                               as.factor = T,
                                                               levels = c('Very strong',
                                                                          'Strong',
                                                                          'Weak',
-                                                                         "It doesn't exist conflict"))))) %>% 
+                                                                         "It doesn't exist conflict")))) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            dist_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
                                         as.factor = T, 
                                         levels = c('Very Fair', 'Fair',
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
-            year = 2010)),
+            year = 2010) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
   # 2011 --------------------------------------------------------------------
   (`latino2011` %>% 
      select(iso3c = IDENPA, gov_pow_people = P19ST, distr_inc_fair = P12ST, 
-            weight = v15) %>% 
+            id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            distr_inc_fair = as.numeric(distr_inc_fair)) %>% 
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
                                 218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
                                 558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
                                 858='URY'; 862='VEN'")),
-            gov_pow_people = car::recode(.$gov_pow_people, recodes = '-4:-1=NA',
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
                                          levels = c('Benefit of powerful interests',
                                                     'For the good of all')),
-            dist_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA"),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
                                         as.factor = T, 
                                         levels = c('Very Fair', 'Fair',
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
-            year = 2011)),
+            year = 2011) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
-  # 1991 --------------------------------------------------------------------
-  (`1991` %>% 
-     select(iso2c = isocntry, value_post_mat = v470, weight = v16) %>% 
-     mutate(value_post_mat = car::recode(.$value_post_mat, recodes = '0=NA',
+  # 2013 --------------------------------------------------------------------
+  (`latino2013` %>% 
+     select(iso3c = IDENPA, ssc = S8, distr_inc_fair = P27ST, gov_pow_people = P14ST,
+            id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            ssc = as.numeric(ssc),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
                                          as.factor=T, 
-                                         levels = c('Materialist',
-                                                    'Mixed/Neither',
-                                                    'Post-Materialist')),
-            year = 1991) %>% 
-     mutate(iso3c = countrycode(iso3c, "iso2c", "iso3c"))),
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                        as.factor = T, 
+                                        levels = c('Very Fair', 'Fair',
+                                                   'Neither fair nor unfair',
+                                                   'Unfair', 'Very Unfair')),
+            ssc = car::recode(.$ssc, recodes = c("-4:-1=NA;
+                                                 1 = 'Upper';
+                                                 2 = 'Upper middle';
+                                                 3 = 'Middle';
+                                                 4 = 'Lower middle';
+                                                 5 = 'Lower'"),
+                              as.factor = T,
+                              levels = c('Upper', 'Upper middle', 'Middle', 
+                                         'Lower middle', 'Lower')),
+            year = 2013) %>% 
+     mutate(iso3c = as.character(iso3c))),
   
-))
+  # 2015 --------------------------------------------------------------------
+  (`latino2015` %>% 
+     select(iso3c = IDENPA, ssc = S6, distr_inc_fair = P18ST, gov_pow_people = P14ST,
+            trust_gov = P16ST.G, trust_union = P19ST.A, trust_private_comp = P19ST.E, 
+            trust_state = P19ST.F, trust_banks = P19ST.G, id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            ssc = as.numeric(ssc),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
+                                                            as.factor = T, 
+                                                            levels = c('A lot of confidence',
+                                                                       'Some confidence',
+                                                                       'Little confidence',
+                                                                       'No confidence at all')))) %>%
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
+                                         as.factor=T, 
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                        as.factor = T, 
+                                        levels = c('Very Fair', 'Fair',
+                                                   'Neither fair nor unfair',
+                                                   'Unfair', 'Very Unfair')),
+            ssc = car::recode(.$ssc, recodes = c("-4:-1=NA;
+                                                 1 = 'Upper';
+                                                 2 = 'Upper middle';
+                                                 3 = 'Middle';
+                                                 4 = 'Lower middle';
+                                                 5 = 'Lower'"),
+                              as.factor = T,
+                              levels = c('Upper', 'Upper middle', 'Middle', 
+                                         'Lower middle', 'Lower')),
+            year = 2015) %>% 
+     mutate(iso3c = as.character(iso3c))),
+  
+  # 2016 --------------------------------------------------------------------
+  (`latino2016` %>% 
+     select(iso3c = IDENPA, distr_inc_fair = P21ST, gov_pow_people = P10ST,
+            trust_gov = P13STE, id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            gov_pow_people = as.numeric(gov_pow_people),
+            trust_gov = as.numeric(trust_gov)) %>% 
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
+                                         as.factor=T, 
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                        as.factor = T, 
+                                        levels = c('Very Fair', 'Fair',
+                                                   'Neither fair nor unfair',
+                                                   'Unfair', 'Very Unfair')),
+            trust_gov = car::recode(.$trust_gov, recodes = c("-4:-1=NA;
+                                                             1 = 'A lot of confidence';
+                                                             2 = 'Some confidence';
+                                                             3 = 'Little confidence';
+                                                             4 = 'No confidence at all'"),
+                                     as.factor = T, 
+                                     levels = c('A lot of confidence',
+                                                'Some confidence',
+                                                'Little confidence',
+                                                'No confidence at all')),
+            year = 2016) %>% 
+     mutate(iso3c = as.character(iso3c))),
+  
+  # 2017 --------------------------------------------------------------------
+  (`latino2017` %>% 
+     select(iso3c = IDENPA, ssc = S1, distr_inc_fair = P20ST, gov_pow_people = P10ST,
+            trust_gov = P14ST.E, id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            gov_pow_people = as.numeric(gov_pow_people),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            trust_gov = as.numeric(trust_gov),
+            ssc = as.numeric(ssc)) %>% 
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
+                                         as.factor=T, 
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                        as.factor = T, 
+                                        levels = c('Very Fair', 'Fair',
+                                                   'Neither fair nor unfair',
+                                                   'Unfair', 'Very Unfair')),
+            trust_gov = car::recode(.$trust_gov, recodes = c("-4:-1=NA;
+                                                             1 = 'A lot of confidence';
+                                                             2 = 'Some confidence';
+                                                             3 = 'Little confidence';
+                                                             4 = 'No confidence at all'"),
+                                    as.factor = T, 
+                                    levels = c('A lot of confidence',
+                                               'Some confidence',
+                                               'Little confidence',
+                                               'No confidence at all')),
+            ssc = car::recode(.$ssc, recodes = c("-4:-1=NA;
+                                                 1 = 'Upper';
+                                                 2 = 'Upper middle';
+                                                 3 = 'Middle';
+                                                 4 = 'Lower middle';
+                                                 5 = 'Lower'"),
+                              as.factor = T,
+                              levels = c('Upper', 'Upper middle', 'Middle', 
+                                         'Lower middle', 'Lower')),
+            year = 2017) %>% 
+     mutate(iso3c = as.character(iso3c))),
+  
+  # 2018 --------------------------------------------------------------------
+  (`latino2018` %>% 
+     select(iso3c = IDENPA, distr_inc_fair = P23ST, gov_pow_people = P14ST,
+            trust_gov = P15STGBSC.E, trust_union = P16NC.C, trust_banks = P16NC.F,
+            id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
+                                                            as.factor = T, 
+                                                            levels = c('A lot of confidence',
+                                                                       'Some confidence',
+                                                                       'Little confidence',
+                                                                       'No confidence at all')))) %>%
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
+                                         as.factor=T, 
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                        as.factor = T, 
+                                        levels = c('Very Fair', 'Fair',
+                                                   'Neither fair nor unfair',
+                                                   'Unfair', 'Very Unfair')),
+            year = 2018) %>% 
+     mutate(iso3c = as.character(iso3c)))))
+
+# 5. Group ----------------------------------------------------------------
+rm(list = ls(pattern = "19|20|list")) #limpiar
+lat2 <- merge((lat %>%
+                 pivot_longer(cols = c(2,3, 7:20), names_to = "variable", values_to = "value") %>% 
+                 as_survey_design(ids = 1, weights = weight) %>%
+                 group_by(iso3c, year, variable, value) %>%
+                 filter(!is.na(value)) %>% 
+                 summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
+                 mutate(prop = prop*100) %>% select(1:prop) %>% 
+                 mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
+                 mutate(value = str_replace_all(tolower(value), "_distr_inc_fair|
+                                                _most_power1|_trust_union|_trust_private_comp|
+                                                _trust_comp_asso|_trust_gov|_trust_pub_adm|
+                                                _labor_law_prot|_trust_banks|_op_strong_tu|
+                                                _conflict_rp|_conflict_man_workers|
+                                                _trust_state|_ssc", ""),
+                        value = str_replace_all(tolower(value), "_and_", "/")) %>% 
+                 pivot_wider(names_from = c("variable", "value"),
+                             values_from = "prop")),
+              (issp %>%
+                 as_survey_design(ids = 1, weights = weight) %>%
+                 group_by(iso3c, year) %>%
+                 filter(!is.na(ess)) %>% 
+                 summarise(ess_mean = survey_mean(ess, na.rm = TRUE),
+                           ess_median = survey_median(ess, na.rm = TRUE)) %>% 
+                 select(-contains("se"))), by = c("iso3c", "year"), all = T) %>% 
+  select(-contains("not_very"))
+
+lat2 <- lat %>%
+                 pivot_longer(cols = c(2,3, 7:19), names_to = "variable", values_to = "value") %>% 
+                 as_survey_design(ids = 4, weights = weight) %>%
+                 group_by(iso3c, year, variable, value) %>%
+                 filter(!is.na(value)) %>% 
+                 summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
+                 mutate(prop = prop*100) %>% select(1:prop) %>% 
+                 mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
+                 mutate(value = str_replace_all(tolower(value), "_distr_inc_fair|
+                                                _most_power1|_trust_union|_trust_private_comp|
+                                                _trust_comp_asso|_trust_gov|_trust_pub_adm|
+                                                _labor_law_prot|_trust_banks|_op_strong_tu|
+                                                _conflict_rp|_conflict_man_workers|
+                                                _trust_state|_ssc", ""),
+                        value = str_replace_all(tolower(value), "_and_", "/")) %>% 
+                 pivot_wider(names_from = c("variable", "value"),
+                             values_from = "prop")
+# 6. Label -------------------------------------------------------------------
+# Llamar etiquetas (en slice se indican los tramos)
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                                    range = c("B5:C900"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_issp|year|iso3c", variables))
+
+## Tranformar a vectornames
+var.labels <- as.character(labels$etiquetas)
+names(var.labels) <- labels$variables
+
+## Etiquetar
+Hmisc::label(issp) = as.list(var.labels[match(names(issp), names(issp))])
+
+# 7. Save -----------------------------------------------------------------
+saveRDS(issp, file="output/data/proc/issp.rds")
