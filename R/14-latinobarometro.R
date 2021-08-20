@@ -1070,6 +1070,9 @@ lat2 <- lat %>%
                         value = str_replace_all(tolower(value), "_and_", "/")) %>% 
                  pivot_wider(names_from = c("variable", "value"),
                              values_from = "prop")
+#install.packages("beep")
+beep(8)
+
 # 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
