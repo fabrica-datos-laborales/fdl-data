@@ -54,6 +54,8 @@ latino2016 <- read_sav("input/data/lat/latino2016.sav")
 latino2017 <- read_sav("input/data/lat/latino2017.sav")
 latino2018 <- read_sav("input/data/lat/latino2018.sav")
 
+#most_power1 transformar en NA variables que no sean de interés (las más posibles)
+
 # 4. Merge and recode d.f -----------------------------------------------------------
 lat <- bind_rows(list(
   # 1995 ----------------------------------------------------------
