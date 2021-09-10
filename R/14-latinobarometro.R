@@ -116,7 +116,7 @@ lat <- bind_rows(list(
      mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
                                 76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 218='ECU'; 
                                 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 558='NIC';
-                                600='PRY'; 604='PER'; 724='ESP'; 858='URY'; 862='VEN'")),
+                                591 = 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 858='URY'; 862='VEN'")),
             most_power1 = car::recode(.$most_power1, recodes = c("c(-4,-3,-2,-1, 2,7,9)=NA;
                                                                  1 = 'Large companies';
                                                                  3 = 'Trade unions';
@@ -969,33 +969,8 @@ lat <- bind_rows(list(
 
 # 5. Group ----------------------------------------------------------------
 rm(list = ls(pattern = "19|20|list")) #limpiar
-lat2 <- merge((lat %>%
-                 pivot_longer(cols = c(2,3, 7:20), names_to = "variable", values_to = "value") %>% 
-                 as_survey_design(ids = 1, weights = weight) %>%
-                 group_by(iso3c, year, variable, value) %>%
-                 filter(!is.na(value)) %>% 
-                 summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
-                 mutate(prop = prop*100) %>% select(1:prop) %>% 
-                 mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
-                 mutate(value = str_replace_all(tolower(value), "_distr_inc_fair|
-                                                _most_power1|_trust_union|_trust_private_comp|
-                                                _trust_comp_asso|_trust_gov|_trust_pub_adm|
-                                                _labor_law_prot|_trust_banks|_op_strong_tu|
-                                                _conflict_rp|_conflict_man_workers|
-                                                _trust_state|_ssc", ""),
-                        value = str_replace_all(tolower(value), "_and_", "/")) %>% 
-                 pivot_wider(names_from = c("variable", "value"),
-                             values_from = "prop")),
-              (issp %>%
-                 as_survey_design(ids = 1, weights = weight) %>%
-                 group_by(iso3c, year) %>%
-                 filter(!is.na(ess)) %>% 
-                 summarise(ess_mean = survey_mean(ess, na.rm = TRUE),
-                           ess_median = survey_median(ess, na.rm = TRUE)) %>% 
-                 select(-contains("se"))), by = c("iso3c", "year"), all = T) %>% 
-  select(-contains("not_very"))
 
-lat2 <- lat %>%
+lat <- lat %>%
   filter(!is.na(id)) %>% 
                  pivot_longer(cols = c(5:18), names_to = "variable", values_to = "value") %>% 
                  as_survey_design(ids = 3, weights = weight) %>%
@@ -1004,17 +979,17 @@ lat2 <- lat %>%
                  summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
                  mutate(prop = prop*100) %>% select(1:prop) %>% 
                  mutate(value = str_replace_all(tolower(value), " ", "_")) %>%
-                 mutate(value = str_replace_all(tolower(value), "_distr_inc_fair|
-                                                _most_power1|_trust_union|_trust_private_comp|
-                                                _trust_comp_asso|_trust_gov|_trust_pub_adm|
-                                                _labor_law_prot|_trust_banks|_ op_strong_tu|
-                                                _conflict_rp|_conflict_man_workers|
-                                                _trust_state|_ssc", ""),
+                 mutate(value = str_replace_all(tolower(value), "_conflict_man_workers|
+                                                _conflict_rp|_distr_inc_fair|_gov_pow_people|
+                                                _labor_law_prot|_most_power1|_op_strong_tu|
+                                                _ssc|_trust_banks|_ trust_comp_asso|
+                                                _trust_gov|_trust_private_comp|
+                                                _trust_state|_trust_union", ""),
                         value = str_replace_all(tolower(value), "_and_", "/")) %>% 
                  pivot_wider(names_from = c("variable", "value"),
                              values_from = "prop")
 
-beep(8)
+
 
 # 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
