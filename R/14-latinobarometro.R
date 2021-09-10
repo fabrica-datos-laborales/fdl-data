@@ -54,7 +54,6 @@ latino2016 <- read_sav("input/data/lat/latino2016.sav")
 latino2017 <- read_sav("input/data/lat/latino2017.sav")
 latino2018 <- read_sav("input/data/lat/latino2018.sav")
 
-#most_power1 transformar en NA variables que no sean de interés (las más posibles)
 
 # 4. Merge and recode d.f -----------------------------------------------------------
 lat <- bind_rows(list(
@@ -249,7 +248,7 @@ lat <- bind_rows(list(
             distr_inc_fair = as.numeric(distr_inc_fair),
             most_power1 = as.numeric(most_power1)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -298,7 +297,7 @@ lat <- bind_rows(list(
             distr_inc_fair = as.numeric(distr_inc_fair),
             op_strong_tu = as.numeric(op_strong_tu)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>% 
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -341,7 +340,7 @@ lat <- bind_rows(list(
      mutate(iso3c = as.numeric(iso3c),
             most_power1 = as.numeric(most_power1)) %>%
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -382,7 +381,7 @@ lat <- bind_rows(list(
             gov_pow_people = as.numeric(gov_pow_people),
             most_power1 = as.numeric(most_power1)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -430,7 +429,7 @@ lat <- bind_rows(list(
             gov_pow_people = as.numeric(gov_pow_people),
             most_power1 = as.numeric(most_power1)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -478,7 +477,7 @@ lat <- bind_rows(list(
             gov_pow_people = as.numeric(gov_pow_people),
             most_power1 = as.numeric(most_power1)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -525,7 +524,7 @@ lat <- bind_rows(list(
      mutate(iso3c = as.numeric(iso3c),
             gov_pow_people = as.numeric(gov_pow_people)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -572,7 +571,7 @@ lat <- bind_rows(list(
             gov_pow_people = as.numeric(gov_pow_people)) %>% 
      mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -582,7 +581,7 @@ lat <- bind_rows(list(
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('conflict')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                              1 = 'Very strong';
                                                                              2 = 'Strong';
                                                                              3 = 'Weak';
@@ -616,7 +615,7 @@ lat <- bind_rows(list(
             gov_pow_people = as.numeric(gov_pow_people)) %>% 
      mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -626,7 +625,7 @@ lat <- bind_rows(list(
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('conflict')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                              1 = 'Very strong';
                                                                              2 = 'Strong';
                                                                              3 = 'Weak';
@@ -661,7 +660,7 @@ lat <- bind_rows(list(
             distr_inc_fair = as.numeric(distr_inc_fair)) %>% 
      mutate_at(vars(starts_with('conflict')), ~as.numeric(.)) %>%
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -671,7 +670,7 @@ lat <- bind_rows(list(
                                                                        'Some confidence',
                                                                        'Little confidence',
                                                                        'No confidence at all')))) %>%
-     mutate_at(vars(starts_with('conflict')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('conflict')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                              1 = 'Very strong';
                                                                              2 = 'Strong';
                                                                              3 = 'Weak';
@@ -787,7 +786,7 @@ lat <- bind_rows(list(
             distr_inc_fair = as.numeric(distr_inc_fair),
             gov_pow_people = as.numeric(gov_pow_people)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -933,7 +932,7 @@ lat <- bind_rows(list(
             distr_inc_fair = as.numeric(distr_inc_fair),
             gov_pow_people = as.numeric(gov_pow_people)) %>% 
      mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
-     mutate_at(vars(starts_with('trust')), funs(car::recode(., recodes = c("-4:-1=NA;
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
                                                                            1 = 'A lot of confidence';
                                                                            2 = 'Some confidence';
                                                                            3 = 'Little confidence';
@@ -965,7 +964,8 @@ lat <- bind_rows(list(
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
             year = 2018) %>% 
-     mutate(iso3c = as.character(iso3c)))))
+     mutate(iso3c = as.character(iso3c))))) %>% 
+  select(iso3c, year, id, weight, everything())
 
 # 5. Group ----------------------------------------------------------------
 rm(list = ls(pattern = "19|20|list")) #limpiar
@@ -996,8 +996,9 @@ lat2 <- merge((lat %>%
   select(-contains("not_very"))
 
 lat2 <- lat %>%
-                 pivot_longer(cols = c(2,3, 7:19), names_to = "variable", values_to = "value") %>% 
-                 as_survey_design(ids = 4, weights = weight) %>%
+  filter(!is.na(id)) %>% 
+                 pivot_longer(cols = c(5:18), names_to = "variable", values_to = "value") %>% 
+                 as_survey_design(ids = 3, weights = weight) %>%
                  group_by(iso3c, year, variable, value) %>%
                  filter(!is.na(value)) %>% 
                  summarise(prop = survey_mean(vartype = "ci",na.rm = TRUE)) %>% 
@@ -1006,7 +1007,7 @@ lat2 <- lat %>%
                  mutate(value = str_replace_all(tolower(value), "_distr_inc_fair|
                                                 _most_power1|_trust_union|_trust_private_comp|
                                                 _trust_comp_asso|_trust_gov|_trust_pub_adm|
-                                                _labor_law_prot|_trust_banks|_op_strong_tu|
+                                                _labor_law_prot|_trust_banks|_ op_strong_tu|
                                                 _conflict_rp|_conflict_man_workers|
                                                 _trust_state|_ssc", ""),
                         value = str_replace_all(tolower(value), "_and_", "/")) %>% 
