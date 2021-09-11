@@ -2,7 +2,7 @@
 
 
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse, rvest, sjlabelled, Hmisc, countrycode, survey, srvyr, sjmisc, haven, beepr)
+pacman::p_load(tidyverse, rvest, sjlabelled, Hmisc, countrycode, survey, srvyr, sjmisc, haven)
 
 # 2. Load data ------------------------------------------------------------
 
@@ -1006,4 +1006,4 @@ names(var.labels) <- labels$variables
 Hmisc::label(issp) = as.list(var.labels[match(names(issp), names(issp))])
 
 # 7. Save -----------------------------------------------------------------
-saveRDS(issp, file="output/data/proc/issp.rds")
+saveRDS(lat, file="output/data/proc/latino.rds")
