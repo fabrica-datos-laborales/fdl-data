@@ -996,14 +996,14 @@ lat <- lat %>%
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
                                     range = c("B5:C900"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
-  filter(grepl("_issp|year|iso3c", variables))
+  filter(grepl("_lat|year|iso3c", variables))
 
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables
 
 ## Etiquetar
-Hmisc::label(issp) = as.list(var.labels[match(names(issp), names(issp))])
+Hmisc::label(lat) = as.list(var.labels[match(names(lat), names(lat))])
 
 # 7. Save -----------------------------------------------------------------
 saveRDS(lat, file="output/data/proc/latino.rds")
