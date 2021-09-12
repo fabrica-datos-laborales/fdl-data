@@ -82,7 +82,7 @@ wdi <- wdi %>%
   select(iso3c, everything(), -iso2c)
 
 # 9. Label ----------------------------------------------------------------
-label(wdi$iso3c) <- "Country code ISO3"
+label(wdi$iso2c) <- "Country code ISO2"
 label(wdi$year) <- "Year"
 
 # 10. Save -----------------------------------------------------------------
