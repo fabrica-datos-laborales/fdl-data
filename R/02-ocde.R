@@ -197,9 +197,11 @@ oecd <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"),
 # 6. Label ----------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                     range = c("B5:C279"), col_names = F) %>%
-  slice(c(1,2,213:275)) %>% 
-  select(variables = 1, etiquetas = 2)
+                                    range = c("B4:C900"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_oecd|year|iso3c", variables))
+
+
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
 names(var.labels) <- labels$variables

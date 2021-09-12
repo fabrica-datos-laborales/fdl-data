@@ -51,18 +51,17 @@ vdem$v2x_regime <- car::recode(vdem$v2x_regime, recodes = c("0 = 'Closed autocra
                                                            'Electoral democracy',
                                                            'Liberal democracy')) 
   
-  
-              
-# ISO3C ----------------------------------------------------------------
-# x <- vdem %>%
-#   mutate(iso3c = countrycode(country_id, "vdem", "iso3c")) %>% 
-#   select(iso3c, everything(), -country_id)
+
 
 # 6. Label ----------------------------------------------------------------
-# Llamar etiquetas (en slice se indican los tramos)
+
+labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
+                                    range = c("B2:C900"), col_names = F) %>%
+  select(variables = 1, etiquetas = 2) %>% 
+  filter(grepl("_vdem|year|iso3c", variables))
+
 ## Tranformar a vectornames
 var.labels <- as.character(labels$etiquetas)
-var.labels <- c("Country code ISO3", "Year", var.labels)
 names(var.labels) <- labels$variables
 ## Etiquetar
 label(vdem) = as.list(var.labels[match(names(vdem), names(vdem))])
