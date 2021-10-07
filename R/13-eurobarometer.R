@@ -6,31 +6,6 @@ pacman::p_load(tidyverse,rvest, sjlabelled, Hmisc, countrycode, survey, srvyr, s
 
 # 2. Load data ------------------------------------------------------------
 
-## File names
-
-file_names=as.list(dir(path ="input/data/euro/", pattern="*.sav"))
-
-file_names = lapply(file_names, function(x) paste0('input/data/euro/', x))
-
-## List of data frames
-r <- lapply(file_names, haven::read_sav)
-
-# 2. Proc -----------------------------------------------------------------
-names(r) <- gsub("input/data/euro/euro|1970|1973|1974|1975|1976|1977|
-                 1978|1979|1980|1981|1982|1983|1984|1985|1986|1987|1988|1989|
-                 1990|1991|1996|.sav","", file_names)
-
-r <- Map(function(x, y) {names(x) <- paste0(names(x), '_',  y); x}, r, names(r))
-
-list_eu <- r
-
-rm(list = ls(pattern = "r|file_names"))
-
-# 3. Unlist ---------------------------------------------------------------
-list2env(list_eu, envir=.GlobalEnv)
-
-# 0. Apertura provisional de datos -------------------------------------------
-
 euro1976 <- read_sav("input/data/euro/euro1976.sav")
 euro1977 <- read_sav("input/data/euro/euro1977.sav")
 euro1979 <- read_sav("input/data/euro/euro1979.sav")
