@@ -224,7 +224,7 @@ data_ilo <- Reduce(function(x,y) merge(x = x, y = y, by = c("iso3c", "year"), al
 # 4. Label ----------------------------------------------------------------
 
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                    range = c("B2:C900"), col_names = F) %>%
+                                    sheet = 'Variables', range = c("B2:C900"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_ilostat|year|iso3c", variables))
 

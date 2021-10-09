@@ -56,7 +56,7 @@ vdem$v2x_regime <- car::recode(vdem$v2x_regime, recodes = c("0 = 'Closed autocra
 # 6. Label ----------------------------------------------------------------
 
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                    range = c("B2:C900"), col_names = F) %>%
+                                    sheet = 'Variables', range = c("B2:C900"), col_names = F) %>%
   select(variables = 1, etiquetas = 2) %>% 
   filter(grepl("_vdem|year|iso3c", variables))
 
