@@ -1,6 +1,6 @@
 # Code: World Bank --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(WDI, tidyverse, Hmisc)
+pacman::p_load(WDI, tidyverse, Hmisc,countrycode)
 
 # 2. Search ---------------------------------------------------------------
 WDIsearch("part time") # Permite buscar
@@ -82,7 +82,6 @@ wdi <- wdi %>%
   select(iso3c, everything(), -iso2c)
 
 # 9. Label ----------------------------------------------------------------
-label(wdi$iso2c) <- "Country code ISO2"
 label(wdi$year) <- "Year"
 
 # 10. Save -----------------------------------------------------------------
