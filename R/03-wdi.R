@@ -83,6 +83,7 @@ wdi <- wdi %>%
 
 # 9. Label ----------------------------------------------------------------
 label(wdi$year) <- "Year"
+label(wdi$iso3c) <- "Country code ISO3"
 
 # 10. Save -----------------------------------------------------------------
 saveRDS(wdi, file = "output/data/proc/wdi.rds")
