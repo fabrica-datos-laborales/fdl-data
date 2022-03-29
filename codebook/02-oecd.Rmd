@@ -5,10 +5,21 @@ pacman::p_load(tidyverse,
 
 # OECD
 
+The following variables are from Organisation for Economic Co-operation and Development (OECD) data base. It contains information of the different members of the organisation between 1960 and 2020. It provides information about Economics Relationships and Employments. Also, some variables that were extracted from WISE such as GDP and GNI per capita are included.
+
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:G279"), col_names = F)  %>% 
-select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6) %>%
-#filter(grepl("_oecd|_wise", Variable))  %>% 
-knitr::kable(.)
+
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:N279"), col_names = F) %>%
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+filter(grepl("_oecd|_wise", Variable)) %>%
+ arrange(Label) %>%
+   knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 52, bold = T) %>% 
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
+
 ```
 
+The information of every variable would depend on the country, because there are countries for which there is no information on some variables. Anyway, the data base contains information of countries members of the OECDE and countries non members. Some of this countries are: Australia, Austria, Belgium, Canada, Chile, Colombia, Costa Rica, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Korea, Latvia, Lithuania, Luxembourg, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey, United Kingdom, United States, Brazil and Russia Federation.
+  

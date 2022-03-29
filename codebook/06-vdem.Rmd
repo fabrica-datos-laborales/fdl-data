@@ -5,13 +5,15 @@ pacman::p_load(tidyverse,
 
 # Varietys of Democracy
 
-```{r vdem, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #vdem
-labels_vdem1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B755:C810"), col_names = F) 
-labels_vdem2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E755:G810"), col_names = F) 
-table_vdem <- c(labels_vdem1, labels_vdem2) 
-vdem <- data.frame(matrix(unlist(table_vdem), nrow=56)) %>%
-  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
-knitr::kable(vdem, booktabs = T) %>% 
-  kable_styling(latex_options = "striped", fixed_thead = T) 
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B653:N708"), col_names = F) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>%
+  pack_rows("Democracy and Sociopolitical System", 1, 49, bold = T) %>% 
+  pack_rows("Economics Relationships and Employments", 50, 56, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
 ```

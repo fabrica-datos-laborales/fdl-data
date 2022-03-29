@@ -5,15 +5,22 @@ pacman::p_load(tidyverse,
 
 # ICTWSS
 
-The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019.
+The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019. It provides information about collective bargaining, the different regulations and characteristics about the unions that every country has. The following table is divided by three categories in which we identified every variable: Economics Relationships and Employments, Pacts and Agreements and Political and Social Association.
+
 
 ```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B4:G216"), col_names = F) %>%
-  slice(c(4:216)) %>% 
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6) %>% 
-  knitr::kable(.) %>%
-pack_rows("Type of Pacts Agreements", 38, 53, bold = T)
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B7:N216"), col_names = F) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 4, bold = T) %>% 
+  pack_rows("Pacts and Agreements", 5, 59, bold = T) %>%
+  pack_rows("Political and Social Association", 60, 210, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
 
 ```
 
-- Cobetura geográfica. 
+Overall, the data base contains information of 56 countries, some belong to the OECD and some do not. The countries that integrate the OECD are: Australia, Austria, Belgium, Canada, Chile, Colombia, Costa Rica, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Korea, Latvia, Lithuania, Luxembourg, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal,
+Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey, United Kingdom and United States. The other countries are: Albania, Argentina, Bosnia and Herzegovina, Brazil, Bulgaria, China, Cyprus, Croatia, India, Indonesia, Kosovo, Malta, Montenegro, North Macedonia, Russia, Romania, Serbia and South Africa.  
+However, for some variables especially the ones about the characteristics of unions, the series are available in average for 46 of the 56 countries. 

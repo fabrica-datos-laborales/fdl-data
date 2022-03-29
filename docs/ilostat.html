@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 3 ILOSTAT | Fábrica de Datos Laborales</title>
   <meta name="description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 3 ILOSTAT | Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/lisa-coes/open-access" />
-  <meta property="og:image" content="https://github.com/lisa-coes/open-accessimages/lisa-complete.png" />
+  <meta property="og:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
   <meta property="og:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
   <meta name="github-repo" content="lisa-coes/open-access" />
 
@@ -19,7 +19,7 @@
   <meta name="twitter:title" content="Capítulo 3 ILOSTAT | Fábrica de Datos Laborales" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="twitter:image" content="https://github.com/lisa-coes/open-accessimages/lisa-complete.png" />
+  <meta name="twitter:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
 
 <meta name="author" content="Investigador a cargo: Pablo Pérez Ahumada   Asistente de investigación: Valentina Andrade   Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy" />
 
@@ -32,7 +32,7 @@
   <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
 <link rel="prev" href="oecd.html"/>
 <link rel="next" href="world-bank.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,6 +50,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -119,6 +121,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -168,88 +171,155 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="ilostat" class="section level1" number="3">
 <h1><span class="header-section-number">Capítulo 3</span> ILOSTAT</h1>
-<p>inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="ilostat.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ilostat</span></span>
-<span id="cb2-2"><a href="ilostat.html#cb2-2" aria-hidden="true" tabindex="-1"></a>labels1 <span class="ot">&lt;-</span> googlesheets4<span class="sc">::</span><span class="fu">read_sheet</span>(<span class="st">&quot;https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0&quot;</span>, <span class="at">range =</span> <span class="fu">c</span>(<span class="st">&quot;B5:C629&quot;</span>), <span class="at">col_names =</span> F) <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="ilostat.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">347</span><span class="sc">:</span><span class="dv">624</span>)) <span class="sc">%&gt;%</span> <span class="co"># selecciono 1, 2, donde parte -5, donde termina -5</span></span>
-<span id="cb2-4"><a href="ilostat.html#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">Variables =</span> <span class="dv">1</span>, <span class="at">Labels =</span> <span class="dv">2</span>)</span></code></pre></div>
-<pre><code>## &gt; Using an auto-discovered, cached token</code></pre>
-<pre><code>##   To suppress this message, modify your code or options to clearly consent to
-##   the use of a cached token</code></pre>
-<pre><code>##   See gargle&#39;s &quot;Non-interactive auth&quot; vignette for more details:</code></pre>
-<pre><code>##   &lt;https://gargle.r-lib.org/articles/non-interactive-auth.html&gt;</code></pre>
-<pre><code>## &gt; The googlesheets4 package is using a cached token for
-## &#39;valentinaandrade@uchile.cl&#39;</code></pre>
-<pre><code>## Reading from &quot;libro-codigos-fdl&quot;</code></pre>
-<pre><code>## Range &quot;B5:C629&quot;</code></pre>
-<pre><code>## New names:
-## * `` -&gt; ...1
-## * `` -&gt; ...2</code></pre>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="ilostat.html#cb11-1" aria-hidden="true" tabindex="-1"></a>labels2 <span class="ot">&lt;-</span> googlesheets4<span class="sc">::</span><span class="fu">read_sheet</span>(<span class="st">&quot;https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0&quot;</span>, <span class="at">range =</span> <span class="fu">c</span>(<span class="st">&quot;E5:G629&quot;</span>), <span class="at">col_names =</span> F) <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="ilostat.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">347</span><span class="sc">:</span><span class="dv">624</span>)) <span class="sc">%&gt;%</span> <span class="co"># selecciono 1, 2, donde parte -5, donde termina -5</span></span>
-<span id="cb11-3"><a href="ilostat.html#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">Definition =</span> <span class="dv">1</span>, <span class="at">Values =</span> <span class="dv">2</span>, <span class="at">Class =</span> <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>## Reading from &quot;libro-codigos-fdl&quot;</code></pre>
-<pre><code>## Range &quot;E5:G629&quot;</code></pre>
-<pre><code>## New names:
-## * `` -&gt; ...1
-## * `` -&gt; ...2
-## * `` -&gt; ...3</code></pre>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="ilostat.html#cb15-1" aria-hidden="true" tabindex="-1"></a>table_ilo <span class="ot">&lt;-</span> <span class="fu">c</span>(labels1, labels2) </span>
-<span id="cb15-2"><a href="ilostat.html#cb15-2" aria-hidden="true" tabindex="-1"></a>ilo <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">matrix</span>(<span class="fu">unlist</span>(table_ilo), <span class="at">nrow=</span><span class="dv">280</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb15-3"><a href="ilostat.html#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">Labels=</span><span class="dv">1</span>, <span class="at">Name=</span><span class="dv">2</span>, <span class="at">Definition=</span><span class="dv">3</span> , <span class="at">Values=</span><span class="dv">4</span>, <span class="at">Class=</span><span class="dv">5</span>) </span></code></pre></div>
-<pre><code>## Warning in matrix(unlist(table_ilo), nrow = 280): la longitud de los datos
-## [1390] no es un submúltiplo o múltiplo del número de filas [280] en la matriz</code></pre>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="ilostat.html#cb17-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(ilo, <span class="at">booktabs =</span> T) <span class="sc">%&gt;%</span> </span>
-<span id="cb17-2"><a href="ilostat.html#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">latex_options =</span> <span class="st">&quot;striped&quot;</span>, <span class="at">fixed_thead =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-3"><a href="ilostat.html#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Mean Nominal Hourly Earning (ISCO08 classification)&quot;</span>, <span class="dv">5</span>, <span class="dv">40</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-4"><a href="ilostat.html#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Mean Nominal Hourly Earning (ISCO88 classification)&quot;</span>, <span class="dv">41</span>, <span class="dv">73</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-5"><a href="ilostat.html#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Employment by sex and institutional sector&quot;</span>, <span class="dv">76</span>, <span class="dv">84</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-6"><a href="ilostat.html#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Employment by sex and status in employment&quot;</span>, <span class="dv">85</span>, <span class="dv">99</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-7"><a href="ilostat.html#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Number of strikes and lockouts by economic activity&quot;</span>, <span class="dv">100</span>, <span class="dv">153</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-8"><a href="ilostat.html#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Days not worked due to strikes and lockouts by economic activity&quot;</span>, <span class="dv">154</span>, <span class="dv">213</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-9"><a href="ilostat.html#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Workers involved in strikes and lockouts by economic activity&quot;</span>, <span class="dv">214</span>, <span class="dv">265</span>, <span class="at">bold =</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb17-10"><a href="ilostat.html#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pack_rows</span>(<span class="st">&quot;Unemployment rate (%)&quot;</span>, <span class="dv">266</span>, <span class="dv">280</span>, <span class="at">bold =</span> T) </span></code></pre></div>
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<p>ILOSTAT is the primary source of labour statistics, containing variables about Economics Relationships and Employments as well as Political and Social Association, included in the following table.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Labels
+<th style="text-align:left;">
+Variable
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Name
+<th style="text-align:left;">
+Concept
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Definition
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Values
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Class
 </th>
 </tr>
 </thead>
 <tbody>
+<tr grouplength="276">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Economics Relationships and Employments</strong>
+</td>
+</tr>
 <tr>
-<td style="text-align:left;">
-ud_ilostat
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_sh_agr_ilo
 </td>
 <td style="text-align:left;">
-Mean nominal hourly earning of employees (Total ISCO08 classification)
+Employment share in agriculture sector
 </td>
 <td style="text-align:left;">
-NA
+Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM)
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-100)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
 <tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_sh_mc_ilo
+</td>
 <td style="text-align:left;">
-cbc_ilostat
+Employment share in mining an construction sector
+</td>
+<td style="text-align:left;">
+Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM)
+</td>
+<td style="text-align:left;">
+(0-100)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_sh_ind_ilo
+</td>
+<td style="text-align:left;">
+Employment share in industry sector
+</td>
+<td style="text-align:left;">
+Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM)
+</td>
+<td style="text-align:left;">
+(0-100)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_sh_serv_ilo
+</td>
+<td style="text-align:left;">
+Employment share in service sector
+</td>
+<td style="text-align:left;">
+Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM)
+</td>
+<td style="text-align:left;">
+(0-100)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lp_ilo
+</td>
+<td style="text-align:left;">
+Labour productivity; ratio of GDP per employed person
+</td>
+<td style="text-align:left;">
+Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure.
+</td>
+<td style="text-align:left;">
+(0-100)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+hrs_lp_ilo
+</td>
+<td style="text-align:left;">
+Hourly labour productivity; ratio of GDP per hour worked
+</td>
+<td style="text-align:left;">
+Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure.
+</td>
+<td style="text-align:left;">
+(0-100)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+hourearn_isco08_total_ilostat
+</td>
+<td style="text-align:left;">
+Mean nominal hourly earning of employees (Total ISCO08 classification)
+</td>
+<td style="text-align:left;">
+The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid hourly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency.
+</td>
+<td style="text-align:left;">
+(0-∞)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+hourearn_isco08_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Managers (Total ISCO08 classification)
@@ -258,15 +328,15 @@ Mean nominal hourly earning of Managers (Total ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-hourearn_isco08_total
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+hourearn_isco08_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Professionals (Total ISCO08 classification)
@@ -275,15 +345,15 @@ Mean nominal hourly earning of Professionals (Total ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-hourearn_isco08_1
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+hourearn_isco08_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Technicians and associate professionals (Total ISCO08 classification)
@@ -292,20 +362,15 @@ Mean nominal hourly earning of Technicians and associate professionals (Total IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="36">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Mean Nominal Hourly Earning (ISCO08 classification)</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_2
+hourearn_isco08_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Clerical support workers (Total ISCO08 classification)
@@ -314,7 +379,7 @@ Mean nominal hourly earning of Clerical support workers (Total ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -322,7 +387,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_3
+hourearn_isco08_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Service and sales workers (Total ISCO08 classification)
@@ -331,7 +396,7 @@ Mean nominal hourly earning of Service and sales workers (Total ISCO08 classific
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -339,7 +404,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_4
+hourearn_isco08_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Skilled agricultural, forestry and fishery workers (Total ISCO08 classification)
@@ -348,7 +413,7 @@ Mean nominal hourly earning of Skilled agricultural, forestry and fishery worker
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -356,7 +421,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_5
+hourearn_isco08_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Craft and related trades workers (Total ISCO08 classification)
@@ -365,7 +430,7 @@ Mean nominal hourly earning of Craft and related trades workers (Total ISCO08 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -373,7 +438,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_6
+hourearn_isco08_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Plant and machine operators, and assemblers (Total ISCO08 classification)
@@ -382,7 +447,7 @@ Mean nominal hourly earning of Plant and machine operators, and assemblers (Tota
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -390,7 +455,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_7
+hourearn_isco08_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Elementary occupations (Total ISCO08 classification)
@@ -399,7 +464,7 @@ Mean nominal hourly earning of Elementary occupations (Total ISCO08 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -407,7 +472,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_8
+hourearn_isco08_0_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Armed forces occupations (Total ISCO08 classification)
@@ -416,7 +481,7 @@ Mean nominal hourly earning of Armed forces occupations (Total ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -424,7 +489,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_9
+hourearn_isco08_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Not elsewhere classified (Total ISCO08 classification)
@@ -433,7 +498,7 @@ Mean nominal hourly earning of Not elsewhere classified (Total ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -441,7 +506,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_0
+hourearn_masc_isco08_total_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men employees (ISCO08 classification)
@@ -450,7 +515,7 @@ Mean nominal hourly earning of men employees (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -458,7 +523,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco08_X
+hourearn_masc_isco08_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Managers (ISCO08 classification)
@@ -467,7 +532,7 @@ Mean nominal hourly earning of men Managers (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -475,7 +540,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_total
+hourearn_masc_isco08_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Professionals (ISCO08 classification)
@@ -484,7 +549,7 @@ Mean nominal hourly earning of men Professionals (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -492,7 +557,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_1
+hourearn_masc_isco08_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Technicians and associate professionals (ISCO08 classification)
@@ -501,7 +566,7 @@ Mean nominal hourly earning of men Technicians and associate professionals (ISCO
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -509,7 +574,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_2
+hourearn_masc_isco08_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Clerical support workers (ISCO08 classification)
@@ -518,7 +583,7 @@ Mean nominal hourly earning of men Clerical support workers (ISCO08 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -526,7 +591,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_3
+hourearn_masc_isco08_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Service and sales workers (ISCO08 classification)
@@ -535,7 +600,7 @@ Mean nominal hourly earning of men Service and sales workers (ISCO08 classificat
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -543,7 +608,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_4
+hourearn_masc_isco08_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Skilled agricultural, forestry and fishery workers (ISCO08 classification)
@@ -552,7 +617,7 @@ Mean nominal hourly earning of men Skilled agricultural, forestry and fishery wo
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -560,7 +625,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_5
+hourearn_masc_isco08_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Craft and related trades workers (ISCO08 classification)
@@ -569,7 +634,7 @@ Mean nominal hourly earning of men Craft and related trades workers (ISCO08 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -577,7 +642,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_6
+hourearn_masc_isco08_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Plant and machine operators, and assemblers (ISCO08 classification)
@@ -586,7 +651,7 @@ Mean nominal hourly earning of men Plant and machine operators, and assemblers (
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -594,7 +659,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_7
+hourearn_masc_isco08_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Elementary occupations (ISCO08 classification)
@@ -603,7 +668,7 @@ Mean nominal hourly earning of men Elementary occupations (ISCO08 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -611,7 +676,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_8
+hourearn_masc_isco08_0_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Armed forces occupations (ISCO08 classification)
@@ -620,7 +685,7 @@ Mean nominal hourly earning of men Armed forces occupations (ISCO08 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -628,7 +693,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_9
+hourearn_masc_isco08_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Not elsewhere classified (ISCO08 classification)
@@ -637,7 +702,7 @@ Mean nominal hourly earning of men Not elsewhere classified (ISCO08 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -645,7 +710,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_0
+hourearn_fem_isco08_total_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women employees (ISCO08 classification)
@@ -654,7 +719,7 @@ Mean nominal hourly earning of women employees (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -662,7 +727,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco08_X
+hourearn_fem_isco08_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Managers (ISCO08 classification)
@@ -671,7 +736,7 @@ Mean nominal hourly earning of women Managers (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -679,7 +744,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_total
+hourearn_fem_isco08_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Professionals (ISCO08 classification)
@@ -688,7 +753,7 @@ Mean nominal hourly earning of women Professionals (ISCO08 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -696,7 +761,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_1
+hourearn_fem_isco08_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Technicians and associate professionals (ISCO08 classification)
@@ -705,7 +770,7 @@ Mean nominal hourly earning of women Technicians and associate professionals (IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -713,7 +778,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_2
+hourearn_fem_isco08_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Clerical support workers (ISCO08 classification)
@@ -722,7 +787,7 @@ Mean nominal hourly earning of women Clerical support workers (ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -730,7 +795,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_3
+hourearn_fem_isco08_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Service and sales workers (ISCO08 classification)
@@ -739,7 +804,7 @@ Mean nominal hourly earning of women Service and sales workers (ISCO08 classific
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -747,7 +812,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_4
+hourearn_fem_isco08_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Skilled agricultural, forestry and fishery workers (ISCO08 classification)
@@ -756,7 +821,7 @@ Mean nominal hourly earning of women Skilled agricultural, forestry and fishery 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -764,7 +829,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_5
+hourearn_fem_isco08_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Craft and related trades workers (ISCO08 classification)
@@ -773,7 +838,7 @@ Mean nominal hourly earning of women Craft and related trades workers (ISCO08 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -781,7 +846,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_6
+hourearn_fem_isco08_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Plant and machine operators, and assemblers (ISCO08 classification)
@@ -790,7 +855,7 @@ Mean nominal hourly earning of women Plant and machine operators, and assemblers
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -798,7 +863,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_7
+hourearn_fem_isco08_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Elementary occupations (ISCO08 classification)
@@ -807,7 +872,7 @@ Mean nominal hourly earning of women Elementary occupations (ISCO08 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -815,7 +880,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_8
+hourearn_fem_isco08_0_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Armed forces occupations (ISCO08 classification)
@@ -824,7 +889,7 @@ Mean nominal hourly earning of women Armed forces occupations (ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -832,7 +897,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_9
+hourearn_fem_isco08_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Not elsewhere classified (ISCO08 classification)
@@ -841,7 +906,7 @@ Mean nominal hourly earning of women Not elsewhere classified (ISCO08 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -849,7 +914,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_0
+hourearn_isco88_total_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of employees (Total ISCO88 classification)
@@ -858,7 +923,7 @@ Mean nominal hourly earning of employees (Total ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -866,7 +931,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco08_X
+hourearn_isco88_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Legislators, senior officials and managers (Total ISCO88 classification)
@@ -875,7 +940,7 @@ Mean nominal hourly earning of Legislators, senior officials and managers (Total
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -883,7 +948,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_total
+hourearn_isco88_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Professionals (Total ISCO88 classification)
@@ -892,7 +957,7 @@ Mean nominal hourly earning of Professionals (Total ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -900,7 +965,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_1
+hourearn_isco88_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Technicians and associate professionals (Total ISCO88 classification)
@@ -909,20 +974,15 @@ Mean nominal hourly earning of Technicians and associate professionals (Total IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="33">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Mean Nominal Hourly Earning (ISCO88 classification)</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_2
+hourearn_isco88_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Clerks (Total ISCO88 classification)
@@ -931,7 +991,7 @@ Mean nominal hourly earning of Clerks (Total ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -939,7 +999,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_3
+hourearn_isco88_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Service workers and shop and market sales workers (Total ISCO88 classification)
@@ -948,7 +1008,7 @@ Mean nominal hourly earning of Service workers and shop and market sales workers
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -956,7 +1016,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_4
+hourearn_isco88_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Skilled agricultural and fishery workers (Total ISCO88 classification)
@@ -965,7 +1025,7 @@ Mean nominal hourly earning of Skilled agricultural and fishery workers (Total I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -973,7 +1033,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_5
+hourearn_isco88_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Craft and related trades workers (Total ISCO88 classification)
@@ -982,7 +1042,7 @@ Mean nominal hourly earning of Craft and related trades workers (Total ISCO88 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -990,7 +1050,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_6
+hourearn_isco88_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Plant and machine operators and assemblers (Total ISCO88 classification)
@@ -999,7 +1059,7 @@ Mean nominal hourly earning of Plant and machine operators and assemblers (Total
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1007,7 +1067,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_7
+hourearn_isco88_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Elementary occupations (Total ISCO88 classification)
@@ -1016,7 +1076,7 @@ Mean nominal hourly earning of Elementary occupations (Total ISCO88 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1024,7 +1084,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_8
+hourearn_isco88_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of Not elsewhere classified (Total ISCO88 classification)
@@ -1033,7 +1093,7 @@ Mean nominal hourly earning of Not elsewhere classified (Total ISCO88 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1041,7 +1101,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_9
+hourearn_masc_isco88_total_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men employees (ISCO88 classification)
@@ -1050,7 +1110,7 @@ Mean nominal hourly earning of men employees (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1058,7 +1118,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_isco88_X
+hourearn_masc_isco88_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Legislators, senior officials and managers (ISCO88 classification)
@@ -1067,7 +1127,7 @@ Mean nominal hourly earning of men Legislators, senior officials and managers (I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1075,7 +1135,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_total
+hourearn_masc_isco88_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Professionals (ISCO88 classification)
@@ -1084,7 +1144,7 @@ Mean nominal hourly earning of men Professionals (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1092,7 +1152,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_1
+hourearn_masc_isco88_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Technicians and associate professionals (ISCO88 classification)
@@ -1101,7 +1161,7 @@ Mean nominal hourly earning of men Technicians and associate professionals (ISCO
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1109,7 +1169,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_2
+hourearn_masc_isco88_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Clerks (ISCO88 classification)
@@ -1118,7 +1178,7 @@ Mean nominal hourly earning of men Clerks (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1126,7 +1186,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_3
+hourearn_masc_isco88_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Service workers and shop and market sales workers (ISCO88 classification)
@@ -1135,7 +1195,7 @@ Mean nominal hourly earning of men Service workers and shop and market sales wor
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1143,7 +1203,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_4
+hourearn_masc_isco88_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Skilled agricultural and fishery workers (ISCO88 classification)
@@ -1152,7 +1212,7 @@ Mean nominal hourly earning of men Skilled agricultural and fishery workers (ISC
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1160,7 +1220,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_5
+hourearn_masc_isco88_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Craft and related trades workers (ISCO88 classification)
@@ -1169,7 +1229,7 @@ Mean nominal hourly earning of men Craft and related trades workers (ISCO88 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1177,7 +1237,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_6
+hourearn_masc_isco88_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Plant and machine operators and assemblers (ISCO88 classification)
@@ -1186,7 +1246,7 @@ Mean nominal hourly earning of men Plant and machine operators and assemblers (I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1194,7 +1254,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_7
+hourearn_masc_isco88_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Elementary occupations (ISCO88 classification)
@@ -1203,7 +1263,7 @@ Mean nominal hourly earning of men Elementary occupations (ISCO88 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1211,7 +1271,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_8
+hourearn_masc_isco88_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of men Not elsewhere classified (ISCO88 classification)
@@ -1220,7 +1280,7 @@ Mean nominal hourly earning of men Not elsewhere classified (ISCO88 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1228,7 +1288,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_9
+hourearn_fem_isco88_total_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women employees (ISCO88 classification)
@@ -1237,7 +1297,7 @@ Mean nominal hourly earning of women employees (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1245,7 +1305,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_masc_isco88_X
+hourearn_fem_isco88_1_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Legislators, senior officials and managers (ISCO88 classification)
@@ -1254,7 +1314,7 @@ Mean nominal hourly earning of women Legislators, senior officials and managers 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1262,7 +1322,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_total
+hourearn_fem_isco88_2_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Professionals (ISCO88 classification)
@@ -1271,7 +1331,7 @@ Mean nominal hourly earning of women Professionals (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1279,7 +1339,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_1
+hourearn_fem_isco88_3_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Technicians and associate professionals (ISCO88 classification)
@@ -1288,7 +1348,7 @@ Mean nominal hourly earning of women Technicians and associate professionals (IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1296,7 +1356,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_2
+hourearn_fem_isco88_4_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Clerks (ISCO88 classification)
@@ -1305,7 +1365,7 @@ Mean nominal hourly earning of women Clerks (ISCO88 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1313,7 +1373,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_3
+hourearn_fem_isco88_5_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Service workers and shop and market sales workers (ISCO88 classification)
@@ -1322,7 +1382,7 @@ Mean nominal hourly earning of women Service workers and shop and market sales w
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1330,7 +1390,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_4
+hourearn_fem_isco88_6_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Skilled agricultural and fishery workers (ISCO88 classification)
@@ -1339,7 +1399,7 @@ Mean nominal hourly earning of women Skilled agricultural and fishery workers (I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1347,7 +1407,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_5
+hourearn_fem_isco88_7_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Craft and related trades workers (ISCO88 classification)
@@ -1356,7 +1416,7 @@ Mean nominal hourly earning of women Craft and related trades workers (ISCO88 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1364,7 +1424,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_6
+hourearn_fem_isco88_8_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Plant and machine operators and assemblers (ISCO88 classification)
@@ -1373,7 +1433,7 @@ Mean nominal hourly earning of women Plant and machine operators and assemblers 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1381,16 +1441,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_7
+hourearn_fem_isco88_9_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Elementary occupations (ISCO88 classification)
 </td>
 <td style="text-align:left;">
-The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid monthly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1398,16 +1458,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_8
+hourearn_fem_isco88_X_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal hourly earning of women Not elsewhere classified (ISCO88 classification)
 </td>
 <td style="text-align:left;">
-Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings.The labour income share in GDP is the ratio, in percentage, between total labour income and gross domestic product (a measure of total output), both provided in nominal terms. Labour income includes the compensation of employees and part of the income of the self-employed. Self-employed workers earn from both their work and capital ownership. Total compensation of employees refers to the remuneration, in cash or in kind, payable by an enterprise to an employee in return for work done by the latter during the accounting period. The labour income of self-employed is imputed on the basis of a statistical analysis of employees of similar characteristics. The labour income share after accounting for the labour income of the self-employed is often referred to as the adjusted labour income share in GDP. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. We use data that comes from administrative data, imputed and modelled observations.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1415,50 +1475,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_9
+month_earn_ilostat_ilostat
 </td>
 <td style="text-align:left;">
 Mean nominal monthly earning of employees (U.S. dollars)
 </td>
 <td style="text-align:left;">
-The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations.
+The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid monthly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency.
 </td>
 <td style="text-align:left;">
-(0-8)
-</td>
-<td style="text-align:left;">
-numeric
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-hourearn_fem_isco88_X
-</td>
-<td style="text-align:left;">
-Labour income share as a percent of GDP
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-(0-8)
-</td>
-<td style="text-align:left;">
-numeric
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-month_earn_ilostat
-</td>
-<td style="text-align:left;">
-Total employment
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1469,21 +1495,55 @@ numeric
 labor_inc_share_ilostat
 </td>
 <td style="text-align:left;">
-Total employment in public sector
+Labour income share as a percent of GDP
 </td>
 <td style="text-align:left;">
-NA
+Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings.The labour income share in GDP is the ratio, in percentage, between total labour income and gross domestic product (a measure of total output), both provided in nominal terms. Labour income includes the compensation of employees and part of the income of the self-employed. Self-employed workers earn from both their work and capital ownership. Total compensation of employees refers to the remuneration, in cash or in kind, payable by an enterprise to an employee in return for work done by the latter during the accounting period. The labour income of self-employed is imputed on the basis of a statistical analysis of employees of similar characteristics. The labour income share after accounting for the labour income of the self-employed is often referred to as the adjusted labour income share in GDP. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. We use data that comes from administrative data, imputed and modelled observations.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
 <tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_total_ilostat
+</td>
 <td style="text-align:left;">
-emp_total
+Total employment
+</td>
+<td style="text-align:left;">
+The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations.
+</td>
+<td style="text-align:left;">
+(0-∞)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_pub_ilostat
+</td>
+<td style="text-align:left;">
+Total employment in public sector
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+(0-∞)
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_pri_ilostat
 </td>
 <td style="text-align:left;">
 Total employment in private sector
@@ -1492,15 +1552,15 @@ Total employment in private sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
-emp_pub
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+emp_masc_total_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in total
@@ -1509,20 +1569,15 @@ Male employment in total
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="9">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Employment by sex and institutional sector</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_pri
+emp_masc_pub_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in public sector
@@ -1531,7 +1586,7 @@ Male employment in public sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1539,7 +1594,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_total
+emp_masc_pri_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in private sector
@@ -1548,7 +1603,7 @@ Male employment in private sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1556,7 +1611,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_pub
+emp_fem_total_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in total
@@ -1565,7 +1620,7 @@ Female employment in total
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1573,16 +1628,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_pri
+emp_fem_pub_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in public sector
 </td>
 <td style="text-align:left;">
-Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1590,7 +1645,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_total
+emp_fem_pri_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in private sector
@@ -1599,7 +1654,7 @@ Female employment in private sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1607,16 +1662,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_pub
+emp_total_icse93_ilostat
 </td>
 <td style="text-align:left;">
 Total employment (ICSE93 status classification)
 </td>
 <td style="text-align:left;">
-NA
+Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1624,7 +1679,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_pri
+emp_total_icse93_1_ilostat
 </td>
 <td style="text-align:left;">
 Total employment in Employees status (ICSE93 classification)
@@ -1633,7 +1688,7 @@ Total employment in Employees status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1641,7 +1696,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_total_icse93
+emp_total_icse93_2_ilostat
 </td>
 <td style="text-align:left;">
 Total employment in Employers status (ICSE93 classification)
@@ -1650,7 +1705,7 @@ Total employment in Employers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1658,7 +1713,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_total_icse93_1
+emp_total_icse93_3_ilostat
 </td>
 <td style="text-align:left;">
 Total employment in Own-account workers status (ICSE93 classification)
@@ -1667,20 +1722,15 @@ Total employment in Own-account workers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="15">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Employment by sex and status in employment</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_total_icse93_2
+emp_total_icse93_5_ilostat
 </td>
 <td style="text-align:left;">
 Total employment in Contributing family workers status (ICSE93 classification)
@@ -1689,7 +1739,7 @@ Total employment in Contributing family workers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1697,7 +1747,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_total_icse93_3
+emp_masc_icse93_total_ilostat
 </td>
 <td style="text-align:left;">
 Male total employment status (ICSE93 classification)
@@ -1706,7 +1756,7 @@ Male total employment status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1714,7 +1764,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_total_icse93_5
+emp_masc_icse93_1_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in Employees status (ICSE93 classification)
@@ -1723,7 +1773,7 @@ Male employment in Employees status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1731,7 +1781,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_icse93_total
+emp_masc_icse93_2_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in Employers status (ICSE93 classification)
@@ -1740,7 +1790,7 @@ Male employment in Employers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1748,7 +1798,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_icse93_1
+emp_masc_icse93_3_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in Own-account workers status (ICSE93 classification)
@@ -1757,7 +1807,7 @@ Male employment in Own-account workers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1765,7 +1815,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_icse93_2
+emp_masc_icse93_5_ilostat
 </td>
 <td style="text-align:left;">
 Male employment in Contributing family workers status (ICSE93 classification)
@@ -1774,7 +1824,7 @@ Male employment in Contributing family workers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1782,7 +1832,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_icse93_3
+emp_fem_icse93_total_ilostat
 </td>
 <td style="text-align:left;">
 Female total employment status (ICSE93 classification)
@@ -1791,7 +1841,7 @@ Female total employment status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1799,7 +1849,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_masc_icse93_5
+emp_fem_icse93_1_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in Employees status (ICSE93 classification)
@@ -1808,7 +1858,7 @@ Female employment in Employees status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1816,7 +1866,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_icse93_total
+emp_fem_icse93_2_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in Employers status (ICSE93 classification)
@@ -1825,7 +1875,7 @@ Female employment in Employers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1833,16 +1883,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_icse93_1
+emp_fem_icse93_3_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in Own-account workers status (ICSE93 classification)
 </td>
 <td style="text-align:left;">
-A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1850,7 +1900,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_icse93_2
+emp_fem_icse93_5_ilostat
 </td>
 <td style="text-align:left;">
 Female employment in Contributing family workers status (ICSE93 classification)
@@ -1859,7 +1909,7 @@ Female employment in Contributing family workers status (ICSE93 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1867,16 +1917,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_icse93_3
+nstrikes_isic31_total_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts total (ISIC3.1 classification)
 </td>
 <td style="text-align:left;">
-NA
+A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1884,7 +1934,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-emp_fem_icse93_5
+nstrikes_isic31_D_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Manufacturing (ISIC3.1 classification)
@@ -1893,7 +1943,7 @@ Number of strikes and lockouts in Manufacturing (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1901,7 +1951,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_total
+nstrikes_isic31_E_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification)
@@ -1910,7 +1960,7 @@ Number of strikes and lockouts in Electricity, gas and water supply (ISIC3.1 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1918,7 +1968,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_D
+nstrikes_isic31_F_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Construction (ISIC3.1 classification)
@@ -1927,20 +1977,15 @@ Number of strikes and lockouts in Construction (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="54">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Number of strikes and lockouts by economic activity</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_E
+nstrikes_isic31_G_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification)
@@ -1949,7 +1994,7 @@ Number of strikes and lockouts in Wholesale and retail trade; repair of motor ve
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1957,7 +2002,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_F
+nstrikes_isic31_H_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Hotels and restaurants (ISIC3.1 classification)
@@ -1966,7 +2011,7 @@ Number of strikes and lockouts in Hotels and restaurants (ISIC3.1 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1974,7 +2019,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_G
+nstrikes_isic31_I_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Transport, storage and communications (ISIC3.1 classification)
@@ -1983,7 +2028,7 @@ Number of strikes and lockouts in Transport, storage and communications (ISIC3.1
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1991,7 +2036,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_H
+nstrikes_isic31_J_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Financial intermediation (ISIC3.1 classification)
@@ -2000,7 +2045,7 @@ Number of strikes and lockouts in Financial intermediation (ISIC3.1 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2008,7 +2053,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_I
+nstrikes_isic31_N_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Health and social work (ISIC3.1 classification)
@@ -2017,7 +2062,7 @@ Number of strikes and lockouts in Health and social work (ISIC3.1 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2025,7 +2070,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_J
+nstrikes_isic31_X_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Not elsewhere classified (ISIC3.1 classification)
@@ -2034,7 +2079,7 @@ Number of strikes and lockouts in Not elsewhere classified (ISIC3.1 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2042,7 +2087,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_N
+nstrikes_sector_total_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in total broad sector
@@ -2051,7 +2096,7 @@ Number of strikes and lockouts in total broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2059,7 +2104,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_X
+nstrikes_isic31_K_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification)
@@ -2068,7 +2113,7 @@ Number of strikes and lockouts in Real estate, renting and business activities (
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2076,7 +2121,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_sector_total
+nstrikes_isic2_total_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts total (ISIC2 classification)
@@ -2085,7 +2130,7 @@ Number of strikes and lockouts total (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2093,7 +2138,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_K
+nstrikes_isic2_6_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification)
@@ -2102,7 +2147,7 @@ Number of strikes and lockouts in Wholesale and retail and restaurants and hotel
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2110,7 +2155,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_total
+nstrikes_isic2_5_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Construction (ISIC2 classification)
@@ -2119,7 +2164,7 @@ Number of strikes and lockouts in Construction (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2127,7 +2172,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_6
+nstrikes_isic2_2_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Mining and quarrying (ISIC2 classification)
@@ -2136,7 +2181,7 @@ Number of strikes and lockouts in Mining and quarrying (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2144,7 +2189,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_5
+nstrikes_isic2_3_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Manufacturing (ISIC2 classification)
@@ -2153,7 +2198,7 @@ Number of strikes and lockouts in Manufacturing (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2161,7 +2206,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_2
+nstrikes_isic2_4_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Electricity, gas and water (ISIC2 classification)
@@ -2170,7 +2215,7 @@ Number of strikes and lockouts in Electricity, gas and water (ISIC2 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2178,7 +2223,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_3
+nstrikes_isic2_7_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Transport, storage and comunication (ISIC2 classification)
@@ -2187,7 +2232,7 @@ Number of strikes and lockouts in Transport, storage and comunication (ISIC2 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2195,7 +2240,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_4
+nstrikes_isic2_8_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification)
@@ -2204,7 +2249,7 @@ Number of strikes and lockouts in Financing, insurance, real estate and business
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2212,7 +2257,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_7
+nstrikes_isic2_9_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Community, social and personal services(ISIC2 classification)
@@ -2221,7 +2266,7 @@ Number of strikes and lockouts in Community, social and personal services(ISIC2 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2229,7 +2274,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_8
+nstrikes_isic31_A_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification)
@@ -2238,7 +2283,7 @@ Number of strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2246,7 +2291,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_9
+nstrikes_isic31_B_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Fishing (ISIC3.1 classification)
@@ -2255,7 +2300,7 @@ Number of strikes and lockouts in Fishing (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2263,7 +2308,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_A
+nstrikes_isic31_C_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Mining and quarrying (ISIC3.1 classification)
@@ -2272,7 +2317,7 @@ Number of strikes and lockouts in Mining and quarrying (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2280,7 +2325,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_B
+nstrikes_isic31_L_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification)
@@ -2289,7 +2334,7 @@ Number of strikes and lockouts in Public administration and defence; compulsory 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2297,7 +2342,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_C
+nstrikes_isic31_M_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Education (ISIC3.1 classification)
@@ -2306,7 +2351,7 @@ Number of strikes and lockouts in Education (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2314,7 +2359,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_L
+nstrikes_isic31_O_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification)
@@ -2323,7 +2368,7 @@ Number of strikes and lockouts in Other community, social and personal service a
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2331,7 +2376,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_M
+nstrikes_isic31_Q_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification)
@@ -2340,7 +2385,7 @@ Number of strikes and lockouts in Extraterritorial organizations and bodies (ISI
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2348,7 +2393,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_O
+nstrikes_isic2_1_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification)
@@ -2357,7 +2402,7 @@ Number of strikes and lockouts in Agriculture, hunting, forestry and fishing (IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2365,7 +2410,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_Q
+nstrikes_isic4_total_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts total (ISIC4 classification)
@@ -2374,7 +2419,7 @@ Number of strikes and lockouts total (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2382,7 +2427,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_1
+nstrikes_isic2_0_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Activities not adequately defined (ISIC2 classification)
@@ -2391,7 +2436,7 @@ Number of strikes and lockouts in Activities not adequately defined (ISIC2 class
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2399,7 +2444,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_total
+nstrikes_isic4_B_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Mining and quarrying (ISIC4 classification)
@@ -2408,7 +2453,7 @@ Number of strikes and lockouts in Mining and quarrying (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2416,7 +2461,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic2_0
+nstrikes_isic4_C_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Manufacturing (ISIC4 classification)
@@ -2425,7 +2470,7 @@ Number of strikes and lockouts in Manufacturing (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2433,7 +2478,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_B
+nstrikes_isic4_D_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification)
@@ -2442,7 +2487,7 @@ Number of strikes and lockouts in Electricity; gas, steam and air conditioning s
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2450,7 +2495,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_C
+nstrikes_isic4_E_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification)
@@ -2459,7 +2504,7 @@ Number of strikes and lockouts in Water supply; sewerage, waste management and r
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2467,7 +2512,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_D
+nstrikes_isic4_F_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Construction (ISIC4 classification)
@@ -2476,7 +2521,7 @@ Number of strikes and lockouts in Construction (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2484,7 +2529,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_E
+nstrikes_isic4_G_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification)
@@ -2493,7 +2538,7 @@ Number of strikes and lockouts in Wholesale and retail trade; repair of motor ve
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2501,7 +2546,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_F
+nstrikes_isic4_H_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Transportation and storage (ISIC4 classification)
@@ -2510,7 +2555,7 @@ Number of strikes and lockouts in Transportation and storage (ISIC4 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2518,7 +2563,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_G
+nstrikes_isic4_I_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Accommodation and food service activities (ISIC4 classification)
@@ -2527,7 +2572,7 @@ Number of strikes and lockouts in Accommodation and food service activities (ISI
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2535,7 +2580,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_H
+nstrikes_isic4_J_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Information and communication (ISIC4 classification)
@@ -2544,7 +2589,7 @@ Number of strikes and lockouts in Information and communication (ISIC4 classific
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2552,7 +2597,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_I
+nstrikes_isic4_M_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification)
@@ -2561,7 +2606,7 @@ Number of strikes and lockouts in Professional, scientific and technical activit
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2569,7 +2614,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_J
+nstrikes_isic4_N_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Administrative and support service activities (ISIC4 classification)
@@ -2578,7 +2623,7 @@ Number of strikes and lockouts in Administrative and support service activities 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2586,7 +2631,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_M
+nstrikes_isic4_O_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification)
@@ -2595,7 +2640,7 @@ Number of strikes and lockouts in Public administration and defence; compulsory 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2603,7 +2648,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_N
+nstrikes_isic4_P_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Education (ISIC4 classification)
@@ -2612,7 +2657,7 @@ Number of strikes and lockouts in Education (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2620,7 +2665,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_O
+nstrikes_isic4_Q_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Human health and social work activities (ISIC4 classification)
@@ -2629,7 +2674,7 @@ Number of strikes and lockouts in Human health and social work activities (ISIC4
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2637,7 +2682,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_P
+nstrikes_isic4_R_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification)
@@ -2646,7 +2691,7 @@ Number of strikes and lockouts in Arts, entertainment and recreation (ISIC4 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2654,7 +2699,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_Q
+nstrikes_isic4_S_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Other service activities (ISIC4 classification)
@@ -2663,7 +2708,7 @@ Number of strikes and lockouts in Other service activities (ISIC4 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2671,7 +2716,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_R
+nstrikes_isic4_K_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Financial and insurance activities (ISIC4 classification)
@@ -2680,7 +2725,7 @@ Number of strikes and lockouts in Financial and insurance activities (ISIC4 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2688,7 +2733,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_S
+nstrikes_isic4_A_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification)
@@ -2697,7 +2742,7 @@ Number of strikes and lockouts in Agriculture; forestry and fishing (ISIC4 class
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2705,7 +2750,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_K
+nstrikes_isic4_L_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Real estate activities (ISIC4 classification)
@@ -2714,7 +2759,7 @@ Number of strikes and lockouts in Real estate activities (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2722,7 +2767,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_A
+nstrikes_isic4_T_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification)
@@ -2731,7 +2776,7 @@ Number of strikes and lockouts in Activities of households as employers; undiffe
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2739,7 +2784,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_L
+nstrikes_isic4_U_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification)
@@ -2748,7 +2793,7 @@ Number of strikes and lockouts in Activities of extraterritorial organizations a
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2756,16 +2801,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_T
+nstrikes_isic4_X_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Not elsewhere classified (ISIC4 classification)
 </td>
 <td style="text-align:left;">
-Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2773,7 +2818,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_U
+nstrikes_isic31_P_ilostat
 </td>
 <td style="text-align:left;">
 Number of strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification)
@@ -2782,7 +2827,7 @@ Number of strikes and lockouts in Activities of private households as employers 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2790,16 +2835,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic4_X
+ndays_isic31_total_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts total (ISIC3.1 classification)
 </td>
 <td style="text-align:left;">
-NA
+Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2807,7 +2852,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nstrikes_isic31_P
+ndays_isic31_D _ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Manufacturing (ISIC3.1 classification)
@@ -2816,7 +2861,7 @@ Days not worked due to strikes and lockouts in Manufacturing (ISIC3.1 classifica
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2824,7 +2869,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_total
+ndays_isic31_E_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification)
@@ -2833,7 +2878,7 @@ Days not worked due to strikes and lockouts in Electricity, gas and water supply
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2841,7 +2886,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_D
+ndays_isic31_F_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Construction (ISIC3.1 classification)
@@ -2850,20 +2895,15 @@ Days not worked due to strikes and lockouts in Construction (ISIC3.1 classificat
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="60">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Days not worked due to strikes and lockouts by economic activity</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_E
+ndays_isic31_G_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification)
@@ -2872,7 +2912,7 @@ Days not worked due to strikes and lockouts in Wholesale and retail trade; repai
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2880,7 +2920,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_F
+ndays_isic31_H_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Hotels and restaurants (ISIC3.1 classification)
@@ -2889,7 +2929,7 @@ Days not worked due to strikes and lockouts in Hotels and restaurants (ISIC3.1 c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2897,7 +2937,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_G
+ndays_isic31_I_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Transport, storage and communications (ISIC3.1 classification)
@@ -2906,7 +2946,7 @@ Days not worked due to strikes and lockouts in Transport, storage and communicat
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2914,7 +2954,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_H
+ndays_isic31_J_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Financial intermediation (ISIC3.1 classification)
@@ -2923,7 +2963,7 @@ Days not worked due to strikes and lockouts in Financial intermediation (ISIC3.1
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2931,7 +2971,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_I
+ndays_isic31_N_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Health and social work (ISIC3.1 classification)
@@ -2940,7 +2980,7 @@ Days not worked due to strikes and lockouts in Health and social work (ISIC3.1 c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2948,7 +2988,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_J
+ndays_isic31_X_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC3.1 classification)
@@ -2957,7 +2997,7 @@ Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC3.1
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2965,7 +3005,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_N
+ndays_sector_total_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in total broad sector
@@ -2974,7 +3014,7 @@ Days not worked due to strikes and lockouts in total broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2982,7 +3022,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_X
+ndays_isic31_K_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification)
@@ -2991,7 +3031,7 @@ Days not worked due to strikes and lockouts in Real estate, renting and business
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -2999,7 +3039,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_sector_total
+ndays_isic2_total_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts total (ISIC2 classification)
@@ -3008,7 +3048,7 @@ Days not worked due to strikes and lockouts total (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3016,7 +3056,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_K
+ndays_isic2_6_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification)
@@ -3025,7 +3065,7 @@ Days not worked due to strikes and lockouts in Wholesale and retail and restaura
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3033,7 +3073,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_total
+ndays_isic2_5_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Construction (ISIC2 classification)
@@ -3042,7 +3082,7 @@ Days not worked due to strikes and lockouts in Construction (ISIC2 classificatio
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3050,7 +3090,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_6
+ndays_isic2_2_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Mining and quarrying (ISIC2 classification)
@@ -3059,7 +3099,7 @@ Days not worked due to strikes and lockouts in Mining and quarrying (ISIC2 class
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3067,7 +3107,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_5
+ndays_isic2_3_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Manufacturing (ISIC2 classification)
@@ -3076,7 +3116,7 @@ Days not worked due to strikes and lockouts in Manufacturing (ISIC2 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3084,7 +3124,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_2
+ndays_isic2_4_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Electricity, gas and water (ISIC2 classification)
@@ -3093,7 +3133,7 @@ Days not worked due to strikes and lockouts in Electricity, gas and water (ISIC2
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3101,7 +3141,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_3
+ndays_isic2_7_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Transport, storage and comunication (ISIC2 classification)
@@ -3110,7 +3150,7 @@ Days not worked due to strikes and lockouts in Transport, storage and comunicati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3118,7 +3158,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_4
+ndays_isic2_8_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification)
@@ -3127,7 +3167,7 @@ Days not worked due to strikes and lockouts in Financing, insurance, real estate
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3135,7 +3175,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_7
+ndays_isic2_9_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Community, social and personal services(ISIC2 classification)
@@ -3144,7 +3184,7 @@ Days not worked due to strikes and lockouts in Community, social and personal se
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3152,7 +3192,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_8
+ndays_isic31_A_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification)
@@ -3161,7 +3201,7 @@ Days not worked due to strikes and lockouts in Agriculture, hunting and forestry
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3169,7 +3209,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_9
+ndays_isic31_B_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Fishing (ISIC3.1 classification)
@@ -3178,7 +3218,7 @@ Days not worked due to strikes and lockouts in Fishing (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3186,7 +3226,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_A
+ndays_isic31_C_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Mining and quarrying (ISIC3.1 classification)
@@ -3195,7 +3235,7 @@ Days not worked due to strikes and lockouts in Mining and quarrying (ISIC3.1 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3203,7 +3243,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_B
+ndays_isic31_L_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification)
@@ -3212,7 +3252,7 @@ Days not worked due to strikes and lockouts in Public administration and defence
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3220,7 +3260,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_C
+ndays_isic31_M_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Education (ISIC3.1 classification)
@@ -3229,7 +3269,7 @@ Days not worked due to strikes and lockouts in Education (ISIC3.1 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3237,7 +3277,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_L
+ndays_isic31_O_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification)
@@ -3246,7 +3286,7 @@ Days not worked due to strikes and lockouts in Other community, social and perso
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3254,7 +3294,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_M
+ndays_isic31_Q_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification)
@@ -3263,7 +3303,7 @@ Days not worked due to strikes and lockouts in Extraterritorial organizations an
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3271,7 +3311,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_O
+ndays_isic2_1_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification)
@@ -3280,7 +3320,7 @@ Days not worked due to strikes and lockouts in Agriculture, hunting, forestry an
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3288,7 +3328,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_Q
+ndays_isic4_total_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts total (ISIC4 classification)
@@ -3297,7 +3337,7 @@ Days not worked due to strikes and lockouts total (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3305,7 +3345,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_1
+ndays_isic2_0_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities not adequately defined(ISIC2 classification)
@@ -3314,7 +3354,7 @@ Days not worked due to strikes and lockouts in Activities not adequately defined
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3322,7 +3362,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_total
+ndays_isic4_B_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Mining and quarrying (ISIC4 classification)
@@ -3331,7 +3371,7 @@ Days not worked due to strikes and lockouts in Mining and quarrying (ISIC4 class
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3339,7 +3379,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic2_0
+ndays_isic4_C_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Manufacturing (ISIC4 classification)
@@ -3348,7 +3388,7 @@ Days not worked due to strikes and lockouts in Manufacturing (ISIC4 classificati
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3356,7 +3396,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_B
+ndays_isic4_D_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification)
@@ -3365,7 +3405,7 @@ Days not worked due to strikes and lockouts in Electricity; gas, steam and air c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3373,7 +3413,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_C
+ndays_isic4_E_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification)
@@ -3382,7 +3422,7 @@ Days not worked due to strikes and lockouts in Water supply; sewerage, waste man
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3390,7 +3430,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_D
+ndays_isic4_F_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Construction (ISIC4 classification)
@@ -3399,7 +3439,7 @@ Days not worked due to strikes and lockouts in Construction (ISIC4 classificatio
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3407,7 +3447,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_E
+ndays_isic4_G_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification)
@@ -3416,7 +3456,7 @@ Days not worked due to strikes and lockouts in Wholesale and retail trade; repai
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3424,7 +3464,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_F
+ndays_isic4_H_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Transportation and storage (ISIC4 classification)
@@ -3433,7 +3473,7 @@ Days not worked due to strikes and lockouts in Transportation and storage (ISIC4
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3441,7 +3481,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_G
+ndays_isic4_I_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Accommodation and food service activities (ISIC4 classification)
@@ -3450,7 +3490,7 @@ Days not worked due to strikes and lockouts in Accommodation and food service ac
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3458,7 +3498,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_H
+ndays_isic4_J_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Information and communication (ISIC4 classification)
@@ -3467,7 +3507,7 @@ Days not worked due to strikes and lockouts in Information and communication (IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3475,7 +3515,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_I
+ndays_isic4_M_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification)
@@ -3484,7 +3524,7 @@ Days not worked due to strikes and lockouts in Professional, scientific and tech
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3492,7 +3532,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_J
+ndays_isic4_N_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Administrative and support service activities (ISIC4 classification)
@@ -3501,7 +3541,7 @@ Days not worked due to strikes and lockouts in Administrative and support servic
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3509,7 +3549,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_M
+ndays_isic4_O_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification)
@@ -3518,7 +3558,7 @@ Days not worked due to strikes and lockouts in Public administration and defence
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3526,7 +3566,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_N
+ndays_isic4_P_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Education (ISIC4 classification)
@@ -3535,7 +3575,7 @@ Days not worked due to strikes and lockouts in Education (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3543,7 +3583,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_O
+ndays_isic4_Q_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Human health and social work activities (ISIC4 classification)
@@ -3552,7 +3592,7 @@ Days not worked due to strikes and lockouts in Human health and social work acti
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3560,7 +3600,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_P
+ndays_isic4_R_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification)
@@ -3569,7 +3609,7 @@ Days not worked due to strikes and lockouts in Arts, entertainment and recreatio
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3577,7 +3617,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_Q
+ndays_isic4_S_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Other service activities (ISIC4 classification)
@@ -3586,7 +3626,7 @@ Days not worked due to strikes and lockouts in Other service activities (ISIC4 c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3594,7 +3634,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_R
+ndays_isic4_K_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Financial and insurance activities (ISIC4 classification)
@@ -3603,7 +3643,7 @@ Days not worked due to strikes and lockouts in Financial and insurance activitie
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3611,7 +3651,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_S
+ndays_isic4_A_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification)
@@ -3620,7 +3660,7 @@ Days not worked due to strikes and lockouts in Agriculture; forestry and fishing
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3628,7 +3668,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_K
+ndays_isic4_L_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Real estate activities (ISIC4 classification)
@@ -3637,7 +3677,7 @@ Days not worked due to strikes and lockouts in Real estate activities (ISIC4 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3645,7 +3685,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_A
+ndays_isic4_T_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification)
@@ -3654,7 +3694,7 @@ Days not worked due to strikes and lockouts in Activities of households as emplo
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3662,7 +3702,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_L
+ndays_isic4_U_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification)
@@ -3671,7 +3711,7 @@ Days not worked due to strikes and lockouts in Activities of extraterritorial or
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3679,7 +3719,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_T
+ndays_isic4_X_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC4 classification)
@@ -3688,7 +3728,7 @@ Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC4 c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3696,7 +3736,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_U
+ndays_isic31_P_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification)
@@ -3705,7 +3745,7 @@ Days not worked due to strikes and lockouts in Activities of private households 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3713,7 +3753,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_X
+ndays_isic4_A_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification)
@@ -3722,7 +3762,7 @@ Days not worked due to strikes and lockouts in Agriculture; forestry and fishing
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3730,7 +3770,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_P
+ndays_isic4_L_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Real estate activities (ISIC4 classification)
@@ -3739,7 +3779,7 @@ Days not worked due to strikes and lockouts in Real estate activities (ISIC4 cla
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3747,7 +3787,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_A
+ndays_isic4_T_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification)
@@ -3756,7 +3796,7 @@ Days not worked due to strikes and lockouts in Activities of households as emplo
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3764,7 +3804,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_L
+ndays_isic4_U_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification)
@@ -3773,7 +3813,7 @@ Days not worked due to strikes and lockouts in Activities of extraterritorial or
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3781,16 +3821,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_T
+ndays_isic4_X_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC4 classification)
 </td>
 <td style="text-align:left;">
-Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3798,7 +3838,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_U
+ndays_isic31_P_ilostat
 </td>
 <td style="text-align:left;">
 Days not worked due to strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification)
@@ -3807,7 +3847,7 @@ Days not worked due to strikes and lockouts in Activities of private households 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3815,16 +3855,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic4_X
+nworkers_isic31_total_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts total (ISIC3.1 classification)
 </td>
 <td style="text-align:left;">
-NA
+Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3832,7 +3872,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ndays_isic31_P
+nworkers_isic31_E_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification)
@@ -3841,7 +3881,7 @@ Workers involved in strikes and lockouts in Electricity, gas and water supply (I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3849,7 +3889,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_total
+nworkers_isic31_F_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Construction (ISIC3.1 classification)
@@ -3858,7 +3898,7 @@ Workers involved in strikes and lockouts in Construction (ISIC3.1 classification
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3866,7 +3906,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_E
+nworkers_isic31_G_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification)
@@ -3875,20 +3915,15 @@ Workers involved in strikes and lockouts in Wholesale and retail trade; repair o
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="52">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Workers involved in strikes and lockouts by economic activity</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_F
+nworkers_isic31_H_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classification)
@@ -3897,7 +3932,7 @@ Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classificatio
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3905,7 +3940,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_G
+nworkers_isic31_I_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Transport, storage and communications (ISIC3.1 classification)
@@ -3914,7 +3949,7 @@ Workers involved in strikes and lockouts in Transport, storage and communication
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3922,7 +3957,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_H
+nworkers_isic31_J_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Financial intermediation (ISIC3.1 classification)
@@ -3931,7 +3966,7 @@ Workers involved in strikes and lockouts in Financial intermediation (ISIC3.1 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3939,7 +3974,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_I
+nworkers_isic31_N_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Health and social work (ISIC3.1 classification)
@@ -3948,7 +3983,7 @@ Workers involved in strikes and lockouts in Health and social work (ISIC3.1 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3956,7 +3991,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_J
+nworkers_isic31_X_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Not elsewhere classified (ISIC3.1 classification)
@@ -3965,7 +4000,7 @@ Workers involved in strikes and lockouts in Not elsewhere classified (ISIC3.1 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3973,7 +4008,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_N
+nworkers_sector_total_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in total broad sector
@@ -3982,7 +4017,7 @@ Workers involved in strikes and lockouts in total broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -3990,7 +4025,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_X
+nworkers_sector_nag_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in non agriculture broad sector
@@ -3999,7 +4034,7 @@ Workers involved in strikes and lockouts in non agriculture broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4007,7 +4042,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_sector_total
+nworkers_sector_ind_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in industry broad sector
@@ -4016,7 +4051,7 @@ Workers involved in strikes and lockouts in industry broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4024,7 +4059,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_sector_nag
+nworkers_sector_X_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts not elsewhere classified broad sector
@@ -4033,7 +4068,7 @@ Workers involved in strikes and lockouts not elsewhere classified broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4041,7 +4076,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_sector_ind
+nworkers_isic31_K_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification)
@@ -4050,7 +4085,7 @@ Workers involved in strikes and lockouts in Real estate, renting and business ac
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4058,7 +4093,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_sector_X
+nworkers_sector_ser_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in services broad sector
@@ -4067,7 +4102,7 @@ Workers involved in strikes and lockouts in services broad sector
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4075,7 +4110,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_K
+nworkers_isic2_total_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts total (ISIC2 classification)
@@ -4084,7 +4119,7 @@ Workers involved in strikes and lockouts total (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4092,7 +4127,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_sector_ser
+nworkers_isic2_6_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification)
@@ -4101,7 +4136,7 @@ Workers involved in strikes and lockouts in Wholesale and retail and restaurants
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4109,7 +4144,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_total
+nworkers_isic2_5_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Construction (ISIC2 classification)
@@ -4118,7 +4153,7 @@ Workers involved in strikes and lockouts in Construction (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4126,7 +4161,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_6
+nworkers_isic2_2_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Mining and quarrying (ISIC2 classification)
@@ -4135,7 +4170,7 @@ Workers involved in strikes and lockouts in Mining and quarrying (ISIC2 classifi
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4143,7 +4178,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_5
+nworkers_isic2_3_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Manufacturing (ISIC2 classification)
@@ -4152,7 +4187,7 @@ Workers involved in strikes and lockouts in Manufacturing (ISIC2 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4160,7 +4195,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_2
+nworkers_isic2_4_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Electricity, gas and water (ISIC2 classification)
@@ -4169,7 +4204,7 @@ Workers involved in strikes and lockouts in Electricity, gas and water (ISIC2 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4177,7 +4212,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_3
+nworkers_isic2_7_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Transport, storage and comunication (ISIC2 classification)
@@ -4186,7 +4221,7 @@ Workers involved in strikes and lockouts in Transport, storage and comunication 
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4194,7 +4229,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_4
+nworkers_isic2_8_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification)
@@ -4203,7 +4238,7 @@ Workers involved in strikes and lockouts in Financing, insurance, real estate an
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4211,7 +4246,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_7
+nworkers_isic2_9_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Community, social and personal services(ISIC2 classification)
@@ -4220,7 +4255,7 @@ Workers involved in strikes and lockouts in Community, social and personal servi
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4228,7 +4263,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_8
+nworkers_isic31_A_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification)
@@ -4237,7 +4272,7 @@ Workers involved in strikes and lockouts in Agriculture, hunting and forestry (I
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4245,7 +4280,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_9
+nworkers_isic31_B_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Fishing (ISIC3.1 classification)
@@ -4254,7 +4289,7 @@ Workers involved in strikes and lockouts in Fishing (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4262,7 +4297,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_A
+nworkers_isic31_C_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Mining and quarrying (ISIC3.1 classification)
@@ -4271,7 +4306,7 @@ Workers involved in strikes and lockouts in Mining and quarrying (ISIC3.1 classi
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4279,7 +4314,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_B
+nworkers_isic31_D_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classification)
@@ -4288,7 +4323,7 @@ Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classificatio
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4296,7 +4331,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_C
+nworkers_isic31_L_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification)
@@ -4305,7 +4340,7 @@ Workers involved in strikes and lockouts in Public administration and defence; c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4313,7 +4348,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_D
+nworkers_isic31_M_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Education (ISIC3.1 classification)
@@ -4322,7 +4357,7 @@ Workers involved in strikes and lockouts in Education (ISIC3.1 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4330,7 +4365,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_L
+nworkers_isic31_O_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification)
@@ -4339,7 +4374,7 @@ Workers involved in strikes and lockouts in Other community, social and personal
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4347,7 +4382,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_M
+nworkers_isic31_Q_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification)
@@ -4356,7 +4391,7 @@ Workers involved in strikes and lockouts in Extraterritorial organizations and b
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4364,7 +4399,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_O
+nworkers_isic2_1_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification)
@@ -4373,7 +4408,7 @@ Workers involved in strikes and lockouts in Agriculture, hunting, forestry and f
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4381,7 +4416,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic31_Q
+nworkers_isic2_0_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Activities not adequately defined(ISIC2 classification)
@@ -4390,7 +4425,7 @@ Workers involved in strikes and lockouts in Activities not adequately defined(IS
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4398,7 +4433,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_1
+nworkers_isic4_B_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Mining and quarrying (ISIC4 classification)
@@ -4407,7 +4442,7 @@ Workers involved in strikes and lockouts in Mining and quarrying (ISIC4 classifi
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4415,7 +4450,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic2_0
+nworkers_isic4_C_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Manufacturing (ISIC4 classification)
@@ -4424,7 +4459,7 @@ Workers involved in strikes and lockouts in Manufacturing (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4432,7 +4467,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_B
+nworkers_isic4_D_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification)
@@ -4441,7 +4476,7 @@ Workers involved in strikes and lockouts in Electricity; gas, steam and air cond
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4449,7 +4484,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_C
+nworkers_isic4_E_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification)
@@ -4458,7 +4493,7 @@ Workers involved in strikes and lockouts in Water supply; sewerage, waste manage
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4466,7 +4501,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_D
+nworkers_isic4_F_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Construction (ISIC4 classification)
@@ -4475,7 +4510,7 @@ Workers involved in strikes and lockouts in Construction (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4483,7 +4518,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_E
+nworkers_isic4_G_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification)
@@ -4492,7 +4527,7 @@ Workers involved in strikes and lockouts in Wholesale and retail trade; repair o
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4500,7 +4535,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_F
+nworkers_isic4_H_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Transportation and storage (ISIC4 classification)
@@ -4509,7 +4544,7 @@ Workers involved in strikes and lockouts in Transportation and storage (ISIC4 cl
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4517,7 +4552,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_G
+nworkers_isic4_I_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Accommodation and food service activities (ISIC4 classification)
@@ -4526,7 +4561,7 @@ Workers involved in strikes and lockouts in Accommodation and food service activ
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4534,7 +4569,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_H
+nworkers_isic4_J_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Information and communication (ISIC4 classification)
@@ -4543,7 +4578,7 @@ Workers involved in strikes and lockouts in Information and communication (ISIC4
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4551,7 +4586,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_I
+nworkers_isic4_M_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification)
@@ -4560,7 +4595,7 @@ Workers involved in strikes and lockouts in Professional, scientific and technic
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4568,7 +4603,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_J
+nworkers_isic4_N_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Administrative and support service activities (ISIC4 classification)
@@ -4577,7 +4612,7 @@ Workers involved in strikes and lockouts in Administrative and support service a
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4585,7 +4620,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_M
+nworkers_isic4_O_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification)
@@ -4594,7 +4629,7 @@ Workers involved in strikes and lockouts in Public administration and defence; c
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4602,7 +4637,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_N
+nworkers_isic4_P_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Education (ISIC4 classification)
@@ -4611,7 +4646,7 @@ Workers involved in strikes and lockouts in Education (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4619,7 +4654,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_O
+nworkers_isic4_Q_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Human health and social work activities (ISIC4 classification)
@@ -4628,7 +4663,7 @@ Workers involved in strikes and lockouts in Human health and social work activit
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4636,7 +4671,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_P
+nworkers_isic4_R_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification)
@@ -4645,7 +4680,7 @@ Workers involved in strikes and lockouts in Arts, entertainment and recreation (
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4653,7 +4688,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_Q
+nworkers_isic4_S_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Other service activities (ISIC4 classification)
@@ -4662,7 +4697,7 @@ Workers involved in strikes and lockouts in Other service activities (ISIC4 clas
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4670,16 +4705,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_R
+nworkers_isic4_K_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts in Financial and insurance activities (ISIC4 classification)
 </td>
 <td style="text-align:left;">
-The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs.
+NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4687,7 +4722,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_S
+nworkers_isic4_total_ilostat
 </td>
 <td style="text-align:left;">
 Workers involved in strikes and lockouts total (ISIC4 classification)
@@ -4696,7 +4731,7 @@ Workers involved in strikes and lockouts total (ISIC4 classification)
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4704,16 +4739,16 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_K
+unemp_total_15_ilostat
 </td>
 <td style="text-align:left;">
 Unemployment rate in +15 years
 </td>
 <td style="text-align:left;">
-NA
+The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4721,7 +4756,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-nworkers_isic4_total
+unemp_total_1564_ilostat
 </td>
 <td style="text-align:left;">
 Unemployment rate in 15-64 years
@@ -4730,7 +4765,7 @@ Unemployment rate in 15-64 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4738,7 +4773,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_total_15
+unemp_total_1524_ilostat
 </td>
 <td style="text-align:left;">
 Unemployment rate in 15-24 years
@@ -4747,7 +4782,7 @@ Unemployment rate in 15-24 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4755,7 +4790,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_total_1564
+unemp_total_25_ilostat
 </td>
 <td style="text-align:left;">
 Unemployment rate in +25 years
@@ -4764,20 +4799,15 @@ Unemployment rate in +25 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
-<tr grouplength="15">
-<td colspan="5" style="border-bottom: 1px solid;">
-<strong>Unemployment rate (%)</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_total_1524
+unemp_masc_15_ilostat
 </td>
 <td style="text-align:left;">
 Male unemployment rate in +15 years
@@ -4786,7 +4816,7 @@ Male unemployment rate in +15 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4794,7 +4824,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_total_25
+unemp_masc_1564_ilostat
 </td>
 <td style="text-align:left;">
 Male unemployment rate in 15-64 years
@@ -4803,7 +4833,7 @@ Male unemployment rate in 15-64 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4811,7 +4841,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_masc_15
+unemp_masc_1524_ilostat
 </td>
 <td style="text-align:left;">
 Male unemployment rate in 15-24 years
@@ -4820,7 +4850,7 @@ Male unemployment rate in 15-24 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4828,7 +4858,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_masc_1564
+unemp_masc_25_ilostat
 </td>
 <td style="text-align:left;">
 Male unemployment rate in +25 years
@@ -4837,7 +4867,7 @@ Male unemployment rate in +25 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
@@ -4845,7 +4875,7 @@ numeric
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_masc_1524
+unemp_fem_15_ilostat
 </td>
 <td style="text-align:left;">
 Female unemployment rate in +15 years
@@ -4854,15 +4884,20 @@ Female unemployment rate in +15 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
 </tr>
+<tr grouplength="2">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Political and Social Association</strong>
+</td>
+</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_masc_25
+unemp_fem_1564_ilostat
 </td>
 <td style="text-align:left;">
 Female unemployment rate in 15-64 years
@@ -4871,15 +4906,15 @@ Female unemployment rate in 15-64 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
-ud_ilostat
+numeric
 </td>
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_fem_15
+unemp_fem_1524_ilostat
 </td>
 <td style="text-align:left;">
 Female unemployment rate in 15-24 years
@@ -4888,15 +4923,15 @@ Female unemployment rate in 15-24 years
 NA
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-∞)
 </td>
 <td style="text-align:left;">
-cbc_ilostat
+numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_fem_1564
+<td style="text-align:left;">
+unemp_fem_25_ilostat
 </td>
 <td style="text-align:left;">
 Female unemployment rate in +25 years
@@ -4905,15 +4940,15 @@ Female unemployment rate in +25 years
 NA
 </td>
 <td style="text-align:left;">
-numeric
+(0-∞)
 </td>
 <td style="text-align:left;">
-hourearn_isco08_total
+numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_fem_1524
+<td style="text-align:left;">
+unemp_other_15_ilostat
 </td>
 <td style="text-align:left;">
 Other sexes unemployment rate in +15 years
@@ -4922,141 +4957,210 @@ Other sexes unemployment rate in +15 years
 NA
 </td>
 <td style="text-align:left;">
-numeric
+(0-∞)
 </td>
 <td style="text-align:left;">
-hourearn_isco08_1
+numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_fem_25
+<td style="text-align:left;">
+unemp_other_1524_ilostat
 </td>
 <td style="text-align:left;">
 Other sexes unemployment rate in 15-24 years
 </td>
 <td style="text-align:left;">
-(0-100)
+NA
+</td>
+<td style="text-align:left;">
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
-<td style="text-align:left;">
-hourearn_isco08_2
-</td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_other_15
+<td style="text-align:left;">
+unemp_other_25_ilostat
 </td>
 <td style="text-align:left;">
 Other sexes unemployment rate in +25 years
 </td>
 <td style="text-align:left;">
-(0-100)
+NA
+</td>
+<td style="text-align:left;">
+(0-∞)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
-<td style="text-align:left;">
-hourearn_isco08_3
-</td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_other_1524
+<td style="text-align:left;">
+ud_ilostat
+</td>
+<td style="text-align:left;">
+Trade union density rate (%)
 </td>
 <td style="text-align:left;">
 Percentage of employees who are members of a trade union. A trade union is defined as a workers’ organization constituted for the purpose of furthering and defending the interests of workers. For the purposes of promoting international comparability of the statistics presented in ILOSTAT, trade union membership refers only to union members who are employees. That is, it excludes union members who are not in paid employment (self-employed, unemployed, retired, etc.) unless otherwise stated in the notes.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-100)
 </td>
 <td style="text-align:left;">
 numeric
 </td>
-<td style="text-align:left;">
-hourearn_isco08_4
-</td>
 </tr>
 <tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-unemp_other_25
+<td style="text-align:left;">
+cbc_ilostat
+</td>
+<td style="text-align:left;">
+Collective bargaining coverage rate (%)
 </td>
 <td style="text-align:left;">
 Percentage of workers covered by collective bargaining, that is, all those workers whose pay and/or conditions of employment are determined by one or more collective agreement(s). Collective bargaining agreements refer to all agreements in writing regarding working conditions and terms of employment concluded between an employer, a group of emplores or one or more employers’ organisations, on the one hand, and one or more representative workers’ organisations, on the other. Collective bargaining coverage includes, to the extent possible, workers covered by collective agreements by virtue of their extension, as well as workers covered by collective agreements concluded in previous years but still in force.
 </td>
 <td style="text-align:left;">
-(0-8)
+(0-100)
 </td>
 <td style="text-align:left;">
 numeric
-</td>
-<td style="text-align:left;">
-hourearn_isco08_5
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-Trade union density rate (%)
-</td>
-<td style="text-align:left;">
-The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid hourly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency.
-</td>
-<td style="text-align:left;">
-(0-8)
-</td>
-<td style="text-align:left;">
-numeric
-</td>
-<td style="text-align:left;">
-hourearn_isco08_6
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-Collective bargaining coverage rate (%)
-</td>
-<td style="text-align:left;">
-NA
-</td>
-<td style="text-align:left;">
-(0-8)
-</td>
-<td style="text-align:left;">
-numeric
-</td>
-<td style="text-align:left;">
-hourearn_isco08_7
 </td>
 </tr>
 </tbody>
 </table>
+<p>The geographical and temporal coverage varies between the different variables:</p>
+<table>
+<colgroup>
+<col width="78%" />
+<col width="11%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Years</th>
+<th>Countries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Trade union density rate (%)</td>
+<td>2010-2016</td>
+<td>99 countries</td>
+</tr>
+<tr class="even">
+<td>Collective bargaining coverage rate (%)</td>
+<td>2010-2016</td>
+<td>76 countries</td>
+</tr>
+<tr class="odd">
+<td>Mean nominal hourly earning of employees (PPP)</td>
+<td>2010-2020</td>
+<td>101 countries</td>
+</tr>
+<tr class="even">
+<td>Mean nominal monthly earning of employees (U.S. dollars)</td>
+<td>2010-2020</td>
+<td>18 countries</td>
+</tr>
+<tr class="odd">
+<td>Labour income share as a percent of GDP</td>
+<td>2004-2017</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Employment by sex and institutional sector (thousands)</td>
+<td>1976-2020</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Employment by sex and status in employment</td>
+<td>1991-2019</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Number of strikes and lockouts by economic activity</td>
+<td>1969-2020</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Days not worked due to strikes and lockouts by economic activity</td>
+<td>1969-2020</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Workers involved in strikes and lockouts by economic activity (thousands)</td>
+<td>1969-2020</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td>Unemployment rate (%) – Annual</td>
+<td>2000-2020</td>
+<td>x</td>
+</tr>
+<tr class="even">
+<td>Employment share (WISE)</td>
+<td>2003-2014</td>
+<td>229 countries</td>
+</tr>
+<tr class="odd">
+<td>Labour productivity; ratio of GDP per employed person (WISE)</td>
+<td>2003-2014</td>
+<td>229 countries</td>
+</tr>
+<tr class="even">
+<td>Hourly labour productivity; ratio of GDP per hour worked (WISE)</td>
+<td>2003-2014</td>
+<td>229 countries</td>
+</tr>
+</tbody>
+</table>
+<p>googlesheets4::read_sheet(“<a href="https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0" class="uri">https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0</a>,” range = c(“B262:N628”), col_names = F) %&gt;%
+select(Variable = 1, Concept = 2, Years = 7, Countries = 8, Label = 13) %&gt;%
+filter(grepl("_ilo|_wise“, Variable)) %&gt;%
+arrange(Label) %&gt;%
+knitr::kable(.) %&gt;%
+pack_rows(”Economics Relationships and Employments“, 1, 276, bold = T) %&gt;%
+pack_rows(”Political and Social Association", 277, 278, bold = T) %&gt;%
+kable_styling(font_size = 10) %&gt;%
+remove_column(6)</p>
+<p>buscar names y pivot longer, hacer agrupaciones, agrupar datos, ver cómo hacerlo
+inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline</p>
 <div id="ilo-eplex" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> ILO-EPLEX</h2>
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Labels
+<th style="text-align:left;">
+Variable
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
-Name
+<th style="text-align:left;">
+Concept
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Definition
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Values
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;">
 Class
 </th>
 </tr>
 </thead>
 <tbody>
+<tr grouplength="28">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Economics Relationships and Employments</strong>
+</td>
+</tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ftc_reg_eplex
 </td>
 <td style="text-align:left;">
@@ -5073,7 +5177,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ftc_max_eplex
 </td>
 <td style="text-align:left;">
@@ -5090,7 +5194,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ftc_max_nocum_eplex
 </td>
 <td style="text-align:left;">
@@ -5107,7 +5211,7 @@ numeric
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ftc_valid_eplex
 </td>
 <td style="text-align:left;">
@@ -5124,7 +5228,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_mine_eplex
 </td>
 <td style="text-align:left;">
@@ -5141,7 +5245,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_bcollar_eplex
 </td>
 <td style="text-align:left;">
@@ -5158,7 +5262,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_civilserv_eplex
 </td>
 <td style="text-align:left;">
@@ -5175,7 +5279,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_domestic_eplex
 </td>
 <td style="text-align:left;">
@@ -5192,7 +5296,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_dockers_eplex
 </td>
 <td style="text-align:left;">
@@ -5209,7 +5313,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_managerial_eplex
 </td>
 <td style="text-align:left;">
@@ -5226,7 +5330,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_agric_eplex
 </td>
 <td style="text-align:left;">
@@ -5243,7 +5347,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 lc_teachers_eplex
 </td>
 <td style="text-align:left;">
@@ -5260,7 +5364,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_pregnant_eplex
 </td>
 <td style="text-align:left;">
@@ -5277,7 +5381,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_familyresp_eplex
 </td>
 <td style="text-align:left;">
@@ -5294,7 +5398,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_older_eplex
 </td>
 <td style="text-align:left;">
@@ -5311,7 +5415,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_wrep_eplex
 </td>
 <td style="text-align:left;">
@@ -5328,7 +5432,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_disab_eplex
 </td>
 <td style="text-align:left;">
@@ -5345,7 +5449,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_occ_dis_eplex
 </td>
 <td style="text-align:left;">
@@ -5362,7 +5466,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 spd_longperiod_eplex
 </td>
 <td style="text-align:left;">
@@ -5379,7 +5483,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 vd_conduct_eplex
 </td>
 <td style="text-align:left;">
@@ -5396,7 +5500,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 vd_capacity_eplex
 </td>
 <td style="text-align:left;">
@@ -5413,7 +5517,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 vd_economic_eplex
 </td>
 <td style="text-align:left;">
@@ -5430,7 +5534,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_tum_eplex
 </td>
 <td style="text-align:left;">
@@ -5447,7 +5551,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_strike_eplex
 </td>
 <td style="text-align:left;">
@@ -5464,7 +5568,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_pol_op_eplex
 </td>
 <td style="text-align:left;">
@@ -5481,7 +5585,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_pregnant_eplex
 </td>
 <td style="text-align:left;">
@@ -5498,7 +5602,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_disab_eplex
 </td>
 <td style="text-align:left;">
@@ -5515,7 +5619,7 @@ factor
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pd_complain_eplex
 </td>
 <td style="text-align:left;">
@@ -5565,6 +5669,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

@@ -2,7 +2,7 @@
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Libro de Códigos</center>"
 author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy"
-date: "12 julio 2021"
+date: "09 agosto 2021"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib] #packages.bib

@@ -43,9 +43,9 @@ Este documento y base de datos fue elaborada por Valentina Andrade, Emilia Cuadr
 
 El objetivo del proyecto es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para ello, se desarrolla un análisis comparado de los factores institucionales (regulaciones laborales) y políticos (relación entre partidos y movimiento sindical) que lo configuran.
 
-Por ello el **proyecto** se ha propuesto la construcción de una **base de datos a nivel mundial y temporal** sobre 
+Por ello el **proyecto** se ha propuesto la construcción de una **base de datos a nivel mundial y temporal** sobre relaciones laborales. Esto incluye datos sobre acuerdos y pactos entre empresarios, sindicatos y el gobierno, características políticas y sociales sobre los sindicatos de trabajadores y otras asociaciones, relaciones económicas y empleo en distintas ramas y sectores de la economía, y variables sobre el sistema sociopolítico como índices de democracia y confianza sobre diversas instituciones, entre otras. Los datos están disponible para *número total de países promedio* desde *años*. Las fuentes de información principales *resumen de algunas son*
 
-(relaciones laborales que incluye *aquí indicaremos los módulos*, con datos disponibles para *número total de países promedio* desde *años*. Las fuentes de información principales *resumen de algunas son*)
+Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta desde el diseño transparente, la apertura de datos, análisis reproducibles y publicaciones libres. Esto supone transparentar las decisiones metodológicas del estudio, disponer a la comunidad de los datos y recursos utilizados en la investigación, permitir que se puedan reproducir los datos obtenidos y dar libre acceso a los resultados y productos de la investigación (LISA, 2021). 
 
 (Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
 

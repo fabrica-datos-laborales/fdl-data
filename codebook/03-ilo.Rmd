@@ -5,42 +5,68 @@ pacman::p_load(tidyverse,
 
 # ILOSTAT
 
-inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline
+ILOSTAT is the primary source of labour statistics, containing variables about Economics Relationships and Employments as well as Political and Social Association, included in the following table. Some variables like employment share in different economic sectors, labour productivity and hourly labour productivity are from World Indicators of Skills for Employment (WISE). WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years from 1990 to the present.
 
-```{r ilo}
+```{r ilo, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #ilostat
-labels1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B5:C629"), col_names = F) %>%
-  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
-  select(Variables = 1, Labels = 2)
-labels2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E5:G629"), col_names = F) %>%
-  slice(c(347:624)) %>% # selecciono 1, 2, donde parte -5, donde termina -5
-  select(Definition = 1, Values = 2, Class = 3)
-table_ilo <- c(labels1, labels2) 
-ilo <- data.frame(matrix(unlist(table_ilo), nrow=280)) %>%
-  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
-knitr::kable(ilo, booktabs = T) %>% 
-  kable_styling(latex_options = "striped", fixed_thead = T) %>%
-  pack_rows("Mean Nominal Hourly Earning (ISCO08 classification)", 5, 40, bold = T) %>%
-  pack_rows("Mean Nominal Hourly Earning (ISCO88 classification)", 41, 73, bold = T) %>%
-  pack_rows("Employment by sex and institutional sector", 76, 84, bold = T) %>%
-  pack_rows("Employment by sex and status in employment", 85, 99, bold = T) %>%
-  pack_rows("Number of strikes and lockouts by economic activity", 100, 153, bold = T) %>%
-  pack_rows("Days not worked due to strikes and lockouts by economic activity", 154, 213, bold = T) %>%
-  pack_rows("Workers involved in strikes and lockouts by economic activity", 214, 265, bold = T) %>%
-  pack_rows("Unemployment rate (%)", 266, 280, bold = T) 
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B262:N628"), col_names = F) %>% 
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Year coverage" = 7, "Regional coverage" = 8, Label = 13) %>%
+  filter(grepl("_ilo|_wise", Variable)) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 276, bold = T) %>% 
+  pack_rows("Political and Social Association", 277, 278, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
 ```
 
+The geographical and temporal coverage varies between the different variables:
 
+| Variable                                                                   | Years       | Countries |
+| -------------------------------------------------------------------------- | ----------- | --------- |
+| Trade union density rate (%)                                               |  2010-2016  |  99 countries  |
+| Collective bargaining coverage rate (%)                                    |  2010-2016  |  76 countries  |  
+| Mean nominal hourly earning of employees (PPP)                             |  2010-2020  |  101 countries |
+| Mean nominal monthly earning of employees (U.S. dollars)                   |  2010-2020  |  18 countries  |
+| Labour income share as a percent of GDP                                    |  2004-2017  |  x             |
+| Employment by sex and institutional sector (thousands)                     |  1976-2020  |   x        |
+| Employment by sex and status in employment                                 |  1991-2019  |    x       |
+| Number of strikes and lockouts by economic activity                        |  1969-2020  |     x      |
+| Days not worked due to strikes and lockouts by economic activity           |  1969-2020  |      x     |
+| Workers involved in strikes and lockouts by economic activity (thousands)  |  1969-2020  |       x    |
+| Unemployment rate (%) -- Annual                                            |  2000-2020  |        x   |
+| Employment share (WISE)                                                    | 2003-2014   |	229 countries |
+| Labour productivity; ratio of GDP per employed person (WISE)               | 2003-2014   |	229 countries |
+| Hourly labour productivity; ratio of GDP per hour worked (WISE)            | 2003-2014   |	229 countries |
+
+
+
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B262:N628"), col_names = F) %>% 
+  select(Variable = 1, Concept = 2, Years = 7, Countries = 8, Label = 13) %>%
+filter(grepl("_ilo|_wise", Variable)) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 276, bold = T) %>% 
+  pack_rows("Political and Social Association", 277, 278, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+  
+
+
+buscar names y pivot longer, hacer agrupaciones, agrupar datos, ver cómo hacerlo
+inline cuantos diferentes tipos de patrones ahy en ilostat (table(ilo)) y veo cuantas respuestas hay y lo pongo en la descripción: pongo la cobertura con inline
 
 ## ILO-EPLEX
 ```{r iloeplex, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #ilo-eplex
-labels_eplex1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:C350"), col_names = F) 
-labels_eplex2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E323:G350"), col_names = F) 
-table_eplex <- c(labels_eplex1, labels_eplex2) 
-eplex <- data.frame(matrix(unlist(table_eplex), nrow=28)) %>%
-  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
-knitr::kable(eplex, booktabs = T) %>% 
-  kable_styling(latex_options = "striped", fixed_thead = T) 
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:N350"), col_names = F) %>% #falta ver los wise
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Year coverage" = 7, "Regional coverage" = 8, Label = 13) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 28, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
 ```
 

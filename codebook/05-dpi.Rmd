@@ -6,12 +6,13 @@ pacman::p_load(tidyverse,
 # DPI
 ```{r dpi, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #dpi
-labels_dpi1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B310:C320"), col_names = F) 
-labels_dpi2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E310:G320"), col_names = F) 
-table_dpi <- c(labels_dpi1, labels_dpi2) 
-dpi <- data.frame(matrix(unlist(table_dpi), nrow=11)) %>%
-  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
-knitr::kable(dpi, booktabs = T) %>% 
-  kable_styling(latex_options = "striped", fixed_thead = T) 
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B310:N320"), col_names = F) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Democracy and Sociopolitical System", 1, 11, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
 ```
 

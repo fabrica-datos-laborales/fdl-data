@@ -6,12 +6,14 @@ pacman::p_load(tidyverse,
 # World Bank
 
 ```{r wdi, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-#world bank
-labels_wb1 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B280:C309"), col_names = F) 
-labels_wb2 <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("E280:G309"), col_names = F) 
-table_wb <- c(labels_wb1, labels_wb2) 
-wb <- data.frame(matrix(unlist(table_wb), nrow=30)) %>%
-  select(Labels=1, Name=2, Definition=3 , Values=4, Class=5) 
-knitr::kable(wb, booktabs = T) %>% 
-  kable_styling(latex_options = "striped", fixed_thead = T) 
+
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B268:N309"), col_names = F) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+filter(grepl("_wdi|_wise", Variable)) %>% 
+  arrange(Label) %>%
+  knitr::kable(.) %>% 
+  pack_rows("Economics Relationships and Employments", 1, 30, bold = T) %>%
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
 ```
