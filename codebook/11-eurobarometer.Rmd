@@ -1,0 +1,23 @@
+```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+pacman::p_load(tidyverse,
+               kableExtra)
+```
+
+# Eurobarometer
+
+
+```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B752:N757"), sheet= "Variables", col_names = F) %>%
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+ arrange(Label) %>%
+   knitr::kable(.) %>% 
+  pack_rows("Democracy and Sociopolitical System", 1, 6, bold = T) %>% 
+  kable_styling(font_size = 10) %>% 
+  remove_column(6)
+
+
+```
+
+
+  

@@ -5,14 +5,14 @@ author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigac
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib] #packages.bib
+#bibliography: [book.bib] #packages.bib
 biblio-style: apalike
 link-citations: yes
 description: "Documento de trabajo del equipo <b>Open Access</b> para el Laboratorio de Ciencia Social Abierta"
-favicon: images/lisa.ico
-cover-image: images/lisa-complete.png
-github-repo: lisa-coes/open-access
-url: https://github.com/lisa-coes/open-access
+#favicon: images/lisa.ico
+#cover-image: images/lisa-complete.png
+github-repo: fabrica-datos-laborales/fdl-data
+url: https://github.com/fabrica-datos-laborales/fdl-data
 always_allow_html: yes
 ---
 
@@ -50,3 +50,5 @@ Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta 
 (Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
 
 (Como citar la base de datos )
+
+

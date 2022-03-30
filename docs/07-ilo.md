@@ -1,0 +1,2539 @@
+
+
+# ILOSTAT
+
+ILOSTAT is the primary source of labour statistics, containing variables about Economics Relationships and Employments as well as Political and Social Association, included in the following table. Some variables like employment share in different economic sectors, labour productivity and hourly labour productivity are from World Indicators of Skills for Employment (WISE) database. WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years from 1990 to the present.
+
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Variable </th>
+   <th style="text-align:left;"> Concept </th>
+   <th style="text-align:left;"> Definition </th>
+   <th style="text-align:left;"> Values </th>
+   <th style="text-align:left;"> Class </th>
+   
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="282"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sh_agr_ilo </td>
+   <td style="text-align:left;"> Employment share in agriculture sector </td>
+   <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sh_mc_ilo </td>
+   <td style="text-align:left;"> Employment share in mining an construction sector </td>
+   <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sh_ind_ilo </td>
+   <td style="text-align:left;"> Employment share in industry sector </td>
+   <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sh_serv_ilo </td>
+   <td style="text-align:left;"> Employment share in service sector </td>
+   <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lp_ilo </td>
+   <td style="text-align:left;"> Labour productivity; ratio of GDP per employed person </td>
+   <td style="text-align:left;"> Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hrs_lp_ilo </td>
+   <td style="text-align:left;"> Hourly labour productivity; ratio of GDP per hour worked </td>
+   <td style="text-align:left;"> Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of employees (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Managers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of managers relate to the gross remuneration in cash and in kind paid to managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Professionals (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of professionals relate to the gross remuneration in cash and in kind paid to professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Technicians and associate professionals (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of technicians and associate professionals relate to the gross remuneration in cash and in kind paid to technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Clerical support workers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of clerical support workers relate to the gross remuneration in cash and in kind paid to clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Service and sales workers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of service and sales workers relate to the gross remuneration in cash and in kind paid to services and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Skilled agricultural, forestry and fishery workers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Craft and related trades workers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of craft and related trades workers relate to the gross remuneration in cash and in kind paid to craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Plant and machine operators, and assemblers (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Elementary occupations (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of elementary ocupations relate to the gross remuneration in cash and in kind paid to elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_0_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Armed forces occupations (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of armed forces occupations relate to the gross remuneration in cash and in kind paid to armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco08_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Not elsewhere classified (Total ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men employees (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men employees relate to the gross remuneration in cash and in kind paid to men employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Managers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men managers relate to the gross remuneration in cash and in kind paid to men managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Professionals (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men professionals relate to the gross remuneration in cash and in kind paid to men professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Technicians and associate professionals (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men technicians and associated profesionals relate to the gross remuneration in cash and in kind paid to men  technicians and associated profesionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Clerical support workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men clerical support workers relate to the gross remuneration in cash and in kind paid to men clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Service and sales workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men service and sales workers relate to the gross remuneration in cash and in kind paid to men service and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Skilled agricultural, forestry and fishery workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to men skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Craft and related trades workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men craft and related trades workers relate to the gross remuneration in cash and in kind paid to men craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Plant and machine operators, and assemblers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to men plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Elementary occupations (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men employed in elementary occupations relate to the gross remuneration in cash and in kind paid to men employed in elementary occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_0_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Armed forces occupations (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men employed in armed forces occupations relate to the gross remuneration in cash and in kind paid to men employed in armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco08_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Not elsewhere classified (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of men not elsewhere classified relate to the gross remuneration in cash and in kind paid to men not elsewhere classified, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women employees (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women employees relate to the gross remuneration in cash and in kind paid to women employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Managers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women managers relate to the gross remuneration in cash and in kind paid to women managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Professionals (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women professionals relate to the gross remuneration in cash and in kind paid to women professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Technicians and associate professionals (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women technicians and associated profesionals relate to the gross remuneration in cash and in kind paid to women  technicians and associated profesionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Clerical support workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women clerical support workers relate to the gross remuneration in cash and in kind paid to women clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Service and sales workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women service and sales workers relate to the gross remuneration in cash and in kind paid to women service and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Skilled agricultural, forestry and fishery workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to women skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Craft and related trades workers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women craft and related trades workers relate to the gross remuneration in cash and in kind paid to women craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Plant and machine operators, and assemblers (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to women plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Elementary occupations (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women employed in elementary occupations relate to the gross remuneration in cash and in kind paid to women employed in elementary occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_0_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Armed forces occupations (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women employed in armed forces occupations relate to the gross remuneration in cash and in kind paid to women employed in armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco08_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Not elsewhere classified (ISCO08 classification) </td>
+   <td style="text-align:left;"> The earnings of women not elsewhere classified relate to the gross remuneration in cash and in kind paid to women not elsewhere classified, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of employees (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Legislators, senior officials and managers (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Professionals (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of professionals relate to the gross remuneration in cash and in kind paid to professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Technicians and associate professionals (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of technicians and associate professionals relate to the gross remuneration in cash and in kind paid to technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  Clerks (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of clerks relate to the gross remuneration in cash and in kind paid to clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Service workers and shop and market sales workers (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Skilled agricultural and fishery workers (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Craft and related trades workers (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of craft and related trades workers relate to the gross remuneration in cash and in kind paid to craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Plant and machine operators and assemblers (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Elementary occupations (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of elementary ocupations relate to the gross remuneration in cash and in kind paid to elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_isco88_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of Not elsewhere classified (Total ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men employees (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men employees relate to the gross remuneration in cash and in kind paid to men employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Legislators, senior officials and managers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to men legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Professionals (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men professionals relate to the gross remuneration in cash and in kind paid to men professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Technicians and associate professionals (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men technicians and associate professionals relate to the gross remuneration in cash and in kind paid to men technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  men Clerks (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men clerks relate to the gross remuneration in cash and in kind paid to men clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Service workers and shop and market sales workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to men service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Skilled agricultural and fishery workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to men skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Craft and related trades workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men craft and related trades workers relate to the gross remuneration in cash and in kind paid to men craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Plant and machine operators and assemblers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to men plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Elementary occupations (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men employed in elementary ocupations relate to the gross remuneration in cash and in kind paid to men employed in elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_masc_isco88_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of men Not elsewhere classified (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of men not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to men not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_total_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women employees (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women employees relate to the gross remuneration in cash and in kind paid to women employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_1_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Legislators, senior officials and managers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to women legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_2_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Professionals (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women professionals relate to the gross remuneration in cash and in kind paid to women professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_3_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Technicians and associate professionals (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women technicians and associate professionals relate to the gross remuneration in cash and in kind paid to women technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_4_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of  women Clerks (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women clerks relate to the gross remuneration in cash and in kind paid to women clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_5_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Service workers and shop and market sales workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to women service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_6_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Skilled agricultural and fishery workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to women skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_7_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Craft and related trades workers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women craft and related trades workers relate to the gross remuneration in cash and in kind paid to women craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_8_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Plant and machine operators and assemblers (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to women plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_9_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Elementary occupations (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women employed in elementary ocupations relate to the gross remuneration in cash and in kind paid to women employed in elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> hourearn_fem_isco88_X_ilostat </td>
+   <td style="text-align:left;"> Mean nominal hourly earning of women Not elsewhere classified (ISCO88 classification) </td>
+   <td style="text-align:left;"> The earnings of women not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to women not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> month_earn_ilostat_ilostat </td>
+   <td style="text-align:left;"> Mean nominal monthly earning of employees (U.S. dollars) </td>
+   <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid monthly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> labor_inc_share_ilostat </td>
+   <td style="text-align:left;"> Labour income share as a percent of GDP </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings.The labour income share in GDP is the ratio, in percentage, between total labour income and gross domestic product (a measure of total output), both provided in nominal terms. Labour income includes the compensation of employees and part of the income of the self-employed. Self-employed workers earn from both their work and capital ownership. Total compensation of employees refers to the remuneration, in cash or in kind, payable by an enterprise to an employee in return for work done by the latter during the accounting period. The labour income of self-employed is imputed on the basis of a statistical analysis of employees of similar characteristics. The labour income share after accounting for the labour income of the self-employed is often referred to as the adjusted labour income share in GDP. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. We use data that comes from administrative data, imputed and modelled observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_ilostat </td>
+   <td style="text-align:left;"> Total employment </td>
+   <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_pub_ilostat </td>
+   <td style="text-align:left;"> Total employment in public sector </td>
+   <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_pri_ilostat </td>
+   <td style="text-align:left;"> Total employment in private sector </td>
+   <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_total_ilostat </td>
+   <td style="text-align:left;"> Male employment in total </td>
+   <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_pub_ilostat </td>
+   <td style="text-align:left;"> Male employment in public sector </td>
+   <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_pri_ilostat </td>
+   <td style="text-align:left;"> Male employment in private sector </td>
+   <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_total_ilostat </td>
+   <td style="text-align:left;"> Female employment in total </td>
+   <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_pub_ilostat </td>
+   <td style="text-align:left;"> Female employment in public sector </td>
+   <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_pri_ilostat </td>
+   <td style="text-align:left;"> Female employment in private sector </td>
+   <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_icse93_ilostat </td>
+   <td style="text-align:left;"> Total employment (ICSE93 status classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_icse93_1_ilostat </td>
+   <td style="text-align:left;"> Total employment in Employees status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_icse93_2_ilostat </td>
+   <td style="text-align:left;"> Total employment in Employers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_icse93_3_ilostat </td>
+   <td style="text-align:left;"> Total employment in Own-account workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_total_icse93_5_ilostat </td>
+   <td style="text-align:left;"> Total employment in Contributing family workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_icse93_total_ilostat </td>
+   <td style="text-align:left;"> Male total employment status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_icse93_1_ilostat </td>
+   <td style="text-align:left;"> Male employment in Employees status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_icse93_2_ilostat </td>
+   <td style="text-align:left;"> Male employment in Employers status  (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_icse93_3_ilostat </td>
+   <td style="text-align:left;"> Male employment in Own-account workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_masc_icse93_5_ilostat </td>
+   <td style="text-align:left;"> Male employment in Contributing family workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_icse93_total_ilostat </td>
+   <td style="text-align:left;"> Female total employment status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_icse93_1_ilostat </td>
+   <td style="text-align:left;"> Female employment in Employees status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_icse93_2_ilostat </td>
+   <td style="text-align:left;"> Female employment in Employers status  (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_icse93_3_ilostat </td>
+   <td style="text-align:left;"> Female employment in Own-account workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_icse93_5_ilostat </td>
+   <td style="text-align:left;"> Female employment in Contributing family workers status (ICSE93 classification) </td>
+   <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_total_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts total (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_D_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Manufacturing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_E_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_F_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Construction (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_G_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_H_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Hotels and restaurants (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_I_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Transport, storage and communications (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_J_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Financial intermediation (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_N_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Health and social work (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_X_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Not elsewhere classified (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_sector_total_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in total broad sector </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_K_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_total_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts total (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_6_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_5_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Construction (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_2_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Mining and quarrying (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_3_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Manufacturing (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_4_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Electricity, gas and water (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_7_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Transport, storage and comunication (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_8_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_9_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Community, social and personal services(ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_A_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_B_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Fishing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_C_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Mining and quarrying (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_L_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_M_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Education (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_O_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_Q_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_1_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_total_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts total (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic2_0_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Activities not adequately defined (ISIC2 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_B_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Mining and quarrying (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_C_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Manufacturing (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_D_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_E_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_F_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Construction (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_G_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_H_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Transportation and storage (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_I_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Accommodation and food service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_J_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Information and communication (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_M_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_N_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Administrative and support service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_O_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_P_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Education (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_Q_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Human health and social work activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_R_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_S_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Other service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_K_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Financial and insurance activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_A_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_L_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Real estate activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_T_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_U_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic4_X_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Not elsewhere classified (ISIC4 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nstrikes_isic31_P_ilostat </td>
+   <td style="text-align:left;"> Number of strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_total_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts total (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_D _ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Manufacturing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_E_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_F_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Construction (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_G_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_H_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Hotels and restaurants (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_I_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Transport, storage and communications (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_J_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Financial intermediation (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_N_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Health and social work (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_X_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_sector_total_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in total broad sector </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_K_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_total_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts total (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_6_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to  strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_5_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Construction (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_2_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Mining and quarrying (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_3_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Manufacturing (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_4_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Electricity, gas and water (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_7_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Transport, storage and comunication (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_8_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_9_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Community, social and personal services(ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_A_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_B_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Fishing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_C_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Mining and quarrying (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_L_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_M_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Education (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_O_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_Q_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_1_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_total_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts total (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic2_0_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities not adequately defined(ISIC2 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_B_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Mining and quarrying (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_C_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Manufacturing (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_D_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_E_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_F_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Construction (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_G_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_H_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Transportation and storage (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_I_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Accommodation and food service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_J_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Information and communication (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_M_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_N_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Administrative and support service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_O_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_P_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Education (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_Q_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Human health and social work activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_R_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_S_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Other service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_K_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Financial and insurance activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_A_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_L_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Real estate activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_T_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_U_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_X_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_P_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_A_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Agriculture; forestry and fishing (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_L_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Real estate activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_T_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_U_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of extraterritorial organizations and bodies (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic4_X_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Not elsewhere classified (ISIC4 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ndays_isic31_P_ilostat </td>
+   <td style="text-align:left;"> Days not worked due to strikes and lockouts in Activities of private households as employers and undifferentiated production activities of private households (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_total_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts total (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_E_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Electricity, gas and water supply (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_F_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Construction (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_G_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_H_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_I_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Transport, storage and communications (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_J_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Financial intermediation (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_N_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Health and social work (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_X_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Not elsewhere classified (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_sector_total_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in total broad sector </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_sector_nag_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in non agriculture broad sector </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_sector_ind_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in industry broad sector </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_sector_X_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts not elsewhere classified broad sector </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_K_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Real estate, renting and business activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_sector_ser_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in services broad sector </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_total_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts total (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_6_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Wholesale and retail and restaurants and hotels (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_5_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Construction (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_2_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Mining and quarrying (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_3_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Manufacturing (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_4_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Electricity, gas and water (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_7_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Transport, storage and comunication (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_8_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Financing, insurance, real estate and business services(ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_9_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Community, social and personal services(ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_A_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Agriculture, hunting and forestry (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_B_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Fishing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_C_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Mining and quarrying (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_D_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Manufacturing (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_L_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Public administration and defence; compulsory social security (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_M_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Education (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_O_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Other community, social and personal service activities (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic31_Q_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Extraterritorial organizations and bodies (ISIC3.1 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_1_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Agriculture, hunting, forestry and fishing (ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic2_0_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Activities not adequately defined(ISIC2 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_B_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Mining and quarrying (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_C_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Manufacturing (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_D_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Electricity; gas, steam and air conditioning supply (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_E_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Water supply; sewerage, waste management and remediation activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_F_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Construction (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_G_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Wholesale and retail trade; repair of motor vehicles and motorcycles (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_H_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Transportation and storage (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_I_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Accommodation and food service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_J_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Information and communication (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_M_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Professional, scientific and technical activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_N_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Administrative and support service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_O_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Public administration and defence; compulsory social security (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_P_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Education (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_Q_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Human health and social work activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_R_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Arts, entertainment and recreation (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_S_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Other service activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_K_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts in Financial and insurance activities (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nworkers_isic4_total_ilostat </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts total (ISIC4 classification) </td>
+   <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_total_15_ilostat </td>
+   <td style="text-align:left;"> Unemployment rate in +15 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_total_1564_ilostat </td>
+   <td style="text-align:left;"> Unemployment rate in 15-64 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_total_1524_ilostat </td>
+   <td style="text-align:left;"> Unemployment rate in 15-24 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_total_25_ilostat </td>
+   <td style="text-align:left;"> Unemployment rate in +25 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_masc_15_ilostat </td>
+   <td style="text-align:left;"> Male unemployment rate in +15 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_masc_1564_ilostat </td>
+   <td style="text-align:left;"> Male unemployment rate in 15-64 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_masc_1524_ilostat </td>
+   <td style="text-align:left;"> Male unemployment rate in 15-24 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_masc_25_ilostat </td>
+   <td style="text-align:left;"> Male unemployment rate in +25 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_fem_15_ilostat </td>
+   <td style="text-align:left;"> Female unemployment rate in +15 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_fem_1564_ilostat </td>
+   <td style="text-align:left;"> Female unemployment rate in 15-64 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_fem_1524_ilostat </td>
+   <td style="text-align:left;"> Female unemployment rate in 15-24 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_fem_25_ilostat </td>
+   <td style="text-align:left;"> Female unemployment rate in +25 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_other_15_ilostat </td>
+   <td style="text-align:left;"> Other sexes unemployment rate in +15 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_other_1524_ilostat </td>
+   <td style="text-align:left;"> Other sexes unemployment rate in 15-24 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_other_25_ilostat </td>
+   <td style="text-align:left;"> Other sexes unemployment rate in +25 years </td>
+   <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr grouplength="2"><td colspan="6" style="border-bottom: 1px solid;"><strong>Political and Social Association</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ud_ilostat </td>
+   <td style="text-align:left;"> Trade union density rate (%) </td>
+   <td style="text-align:left;"> Percentage of employees who are members of a trade union. A trade union is defined as a workers' organization constituted for the purpose of furthering and defending the interests of workers. For the purposes of promoting international comparability of the statistics presented in ILOSTAT, trade union membership refers only to union members who are employees. That is, it excludes union members who are not in paid employment (self-employed, unemployed, retired, etc.) unless otherwise stated in the notes. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> cbc_ilostat </td>
+   <td style="text-align:left;"> Collective bargaining coverage rate (%) </td>
+   <td style="text-align:left;"> Percentage of workers covered by collective bargaining, that is, all those workers whose pay and/or conditions of employment are determined by one or more collective agreement(s). Collective bargaining agreements refer to all agreements in writing regarding working conditions and terms of employment concluded between an employer, a group of emplores or one or more employers' organisations, on the one hand, and one or more representative workers' organisations, on the other. Collective bargaining coverage includes, to the extent possible, workers covered by collective agreements by virtue of their extension, as well as workers covered by collective agreements concluded in previous years but still in force. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+</tbody>
+</table>
+
+
+
+
+## ILO-EPLEX
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Variable </th>
+   <th style="text-align:left;"> Concept </th>
+   <th style="text-align:left;"> Definition </th>
+   <th style="text-align:left;"> Values </th>
+   <th style="text-align:left;"> Class </th>
+   
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="28"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ftc_reg_eplex </td>
+   <td style="text-align:left;"> FTC regulated </td>
+   <td style="text-align:left;"> Whether the fixed-term contracts are regulated or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ftc_max_eplex </td>
+   <td style="text-align:left;"> Maximum cumulative duration of succesive FTCs </td>
+   <td style="text-align:left;"> Maximum cumulative duration of succesive Fixed-term contracts in months </td>
+   <td style="text-align:left;"> 0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ftc_max_nocum_eplex </td>
+   <td style="text-align:left;"> Maximum not-cumulative duration of succesive FTCs </td>
+   <td style="text-align:left;"> Maximum not-cumulative duration of succesive Fixed-term contracts in months </td>
+   <td style="text-align:left;"> 0-72 </td>
+   <td style="text-align:left;"> numeric </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ftc_valid_eplex </td>
+   <td style="text-align:left;"> Valid reasons for FTC use </td>
+   <td style="text-align:left;"> Valid reasons for fixed-term contracts use </td>
+   <td style="text-align:left;"> 0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_mine_eplex </td>
+   <td style="text-align:left;"> Legal coverage: mine workers </td>
+   <td style="text-align:left;"> Whether mine workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_bcollar_eplex </td>
+   <td style="text-align:left;"> Legal coverage: blue-collar workers </td>
+   <td style="text-align:left;"> Whether blue-collar workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_civilserv_eplex </td>
+   <td style="text-align:left;"> Legal coverage: civil/public servants </td>
+   <td style="text-align:left;"> Whether civil/public servants workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_domestic_eplex </td>
+   <td style="text-align:left;"> Legal coverage: domestic workers </td>
+   <td style="text-align:left;"> Whether domestic workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_dockers_eplex </td>
+   <td style="text-align:left;"> Legal coverage: dock workers </td>
+   <td style="text-align:left;"> Whether dock workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_managerial_eplex </td>
+   <td style="text-align:left;"> Legal coverage: managerial/executive positions </td>
+   <td style="text-align:left;"> Whether managerial/executive positions workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_agric_eplex </td>
+   <td style="text-align:left;"> Legal coverage: agricultural workers </td>
+   <td style="text-align:left;"> Whether agricultural workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lc_teachers_eplex </td>
+   <td style="text-align:left;"> Legal coverage: teachers </td>
+   <td style="text-align:left;"> Whether agricultural workers are protected by legal regulation or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_pregnant_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: pregnant women and/or women on maternity leave </td>
+   <td style="text-align:left;"> Whether pregnant women and/or women on maternity leave have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_familyresp_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: workers with family responsibilities </td>
+   <td style="text-align:left;"> Whether workers with family responsibilities have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_older_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: older workers/workers on the verge of retirement </td>
+   <td style="text-align:left;"> Whether older workers/workers on the verge of retirement have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_wrep_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: workers' representative </td>
+   <td style="text-align:left;"> Whether workers' representatives have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_disab_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: workers with disabilities </td>
+   <td style="text-align:left;"> Whether workers with disabilities have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_occ_dis_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: workers on temporary leave following an occupational disease or a work injury </td>
+   <td style="text-align:left;"> Whether workers on temporary leave following an occupational disease or a work injury have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> spd_longperiod_eplex </td>
+   <td style="text-align:left;"> Special protection dismissal: workers with a long period of service </td>
+   <td style="text-align:left;"> Whether workers with a long period of service have a special protection against dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> vd_conduct_eplex </td>
+   <td style="text-align:left;"> Valid grounds for dismissal: worker's conduct </td>
+   <td style="text-align:left;"> Whether the worker's conduct is a valid ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> vd_capacity_eplex </td>
+   <td style="text-align:left;"> Valid grounds for dismissal: worker's capacity </td>
+   <td style="text-align:left;"> Whether the worker's capacities are a valid ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> vd_economic_eplex </td>
+   <td style="text-align:left;"> Valid grounds for dismissal: economic reasons </td>
+   <td style="text-align:left;"> Whether economic reasons are a valid ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_tum_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: trade union membership and activities </td>
+   <td style="text-align:left;"> Whether the trade union membership is a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_strike_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: participation in a lawful strike </td>
+   <td style="text-align:left;"> Whether the participation in a lawful strike is a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_pol_op_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: political opinion </td>
+   <td style="text-align:left;"> Whether the political opinion is a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_pregnant_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: pregnancy </td>
+   <td style="text-align:left;"> Whether pregnancy is a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_disab_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: disabilities </td>
+   <td style="text-align:left;"> Whether disabilities are a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pd_complain_eplex </td>
+   <td style="text-align:left;"> Prohibited grounds for dismissal: filling a complaint against the employer </td>
+   <td style="text-align:left;"> Whetherfilling a complaint against the employer is a prohibited ground for dismissal or not </td>
+   <td style="text-align:left;"> 1= Yes, 2= No </td>
+   <td style="text-align:left;"> factor </td>
+   
+  </tr>
+</tbody>
+</table>
+

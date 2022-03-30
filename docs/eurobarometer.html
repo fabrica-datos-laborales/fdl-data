@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fábrica de Datos Laborales</title>
+  <title>Capítulo 10 Eurobarometer | Fábrica de Datos Laborales</title>
   <meta name="description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Fábrica de Datos Laborales" />
+  <meta property="og:title" content="Capítulo 10 Eurobarometer | Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
   <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Fábrica de Datos Laborales" />
+  <meta name="twitter:title" content="Capítulo 10 Eurobarometer | Fábrica de Datos Laborales" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="latinobarometro.html"/>
 
-<link rel="next" href="ictwss.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -171,25 +171,138 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Fábrica de Datos Laborales</h1>
-<h2 class="subtitle"><em><center>
-Libro de Códigos
-</center></em></h2>
-<p class="author"><em>Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy</em></p>
-<p class="date"><em>30 marzo 2022</em></p>
-</div>
-<div id="presentation" class="section level1 unnumbered hasAnchor">
-<h1>Presentation<a href="index.html#presentation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This codebook was made with the variables and data bases that were used in “name investigation”. The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, Eurobarometer, Latinobarometer. The variables year and country were used in every single one of the data bases but won´t be listed in every item. For country, we use iso3c classification, in which every code means:</p>
-<p>“webscrapping de wikipedia”</p>
-<p><strong>Presentación</strong></p>
-<p>Este documento y base de datos fue elaborada por Valentina Andrade, Emilia Cuadros y Nicolás Godoy para el proyecto FONDECYT N°11190229 “Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada”, dirigido por Pablo Pérez Ahumada, profesor asistente del departamento de sociología de la Universidad Alberto Hurtado (UAH) e investigador asociado al Centro de Estudios del Conflicto y Cohesión Social (COES).</p>
-<p>El objetivo del proyecto es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para ello, se desarrolla un análisis comparado de los factores institucionales (regulaciones laborales) y políticos (relación entre partidos y movimiento sindical) que lo configuran.</p>
-<p>Por ello el <strong>proyecto</strong> se ha propuesto la construcción de una <strong>base de datos a nivel mundial y temporal</strong> sobre relaciones laborales. Esto incluye datos sobre acuerdos y pactos entre empresarios, sindicatos y el gobierno, características políticas y sociales sobre los sindicatos de trabajadores y otras asociaciones, relaciones económicas y empleo en distintas ramas y sectores de la economía, y variables sobre el sistema sociopolítico como índices de democracia y confianza sobre diversas instituciones, entre otras. Los datos están disponible para <em>número total de países promedio</em> desde <em>años</em>. Las fuentes de información principales <em>resumen de algunas son</em></p>
-<p>Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta desde el diseño transparente, la apertura de datos, análisis reproducibles y publicaciones libres. Esto supone transparentar las decisiones metodológicas del estudio, disponer a la comunidad de los datos y recursos utilizados en la investigación, permitir que se puedan reproducir los datos obtenidos y dar libre acceso a los resultados y productos de la investigación (LISA, 2021).</p>
-<p>(Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)</p>
-<p>(Como citar la base de datos )</p>
+<div id="eurobarometer" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Capítulo 10</span> Eurobarometer<a href="eurobarometer.html#eurobarometer" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Concept
+</th>
+<th style="text-align:left;">
+Definition
+</th>
+<th style="text-align:left;">
+Values
+</th>
+<th style="text-align:left;">
+Class
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="6">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Democracy and Sociopolitical System</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+value_post_mat_materialist_euro
+</td>
+<td style="text-align:left;">
+Value orientation: Materialist
+</td>
+<td style="text-align:left;">
+Share of people clasified as materialist according to Materialist/Post-materialist values index
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+value_post_mat_mixed/neither_euro
+</td>
+<td style="text-align:left;">
+Value orientation: Mixed/Neither
+</td>
+<td style="text-align:left;">
+Share of people clasified as mixed/neither according to Materialist/Post-materialist values index
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+value_post_mat_post-materialist_euro
+</td>
+<td style="text-align:left;">
+Value orientation: Post-materialist
+</td>
+<td style="text-align:left;">
+Share of people clasified as post-materialist according to Materialist/Post-materialist values index
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ind_strikes_next_increase_euro
+</td>
+<td style="text-align:left;">
+Industrial Strikes Next Year: Increase
+</td>
+<td style="text-align:left;">
+Share of people who consider that there will be a higher amount of Strikes and Industrial Disputes the next year
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ind_strikes_next_remain_the_same_euro
+</td>
+<td style="text-align:left;">
+Industrial Strikes Next Year: Remain the same
+</td>
+<td style="text-align:left;">
+Share of people who consider that there will be the same amount of Strikes and Industrial Disputes the next year
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ind_strikes_next_decrease_euro
+</td>
+<td style="text-align:left;">
+Industrial Strikes Next Year: Decrease
+</td>
+<td style="text-align:left;">
+Share of people who consider that there will be a lower amount of Strikes and Industrial Disputes the next year
+</td>
+<td style="text-align:left;">
+0-100
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+</tbody>
+</table>
 
 </div>
             </section>
@@ -197,8 +310,8 @@ Libro de Códigos
           </div>
         </div>
       </div>
+<a href="latinobarometro.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="ictwss.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

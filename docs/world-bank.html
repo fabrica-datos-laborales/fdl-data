@@ -4,22 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 4 World Bank | Fábrica de Datos Laborales</title>
+  <title>Capítulo 3 World Bank | Fábrica de Datos Laborales</title>
   <meta name="description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 4 World Bank | Fábrica de Datos Laborales" />
+  <meta property="og:title" content="Capítulo 3 World Bank | Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://github.com/lisa-coes/open-access" />
-  <meta property="og:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
+  
   <meta property="og:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="github-repo" content="lisa-coes/open-access" />
+  <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 4 World Bank | Fábrica de Datos Laborales" />
+  <meta name="twitter:title" content="Capítulo 3 World Bank | Fábrica de Datos Laborales" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="twitter:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
+  
 
 <meta name="author" content="Investigador a cargo: Pablo Pérez Ahumada   Asistente de investigación: Valentina Andrade   Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy" />
 
@@ -29,11 +28,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
-<link rel="prev" href="ilostat.html"/>
-<link rel="next" href="dpi.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+  
+<link rel="prev" href="oecd.html"/>
+<link rel="next" href="world-value-survey.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,13 +48,77 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -74,17 +137,20 @@
 <li><a href="./">Libro de códigos Fábrica de Datos Laborales</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentation</a></li>
-<li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS</a></li>
-<li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD</a></li>
-<li class="chapter" data-level="3" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>3</b> ILOSTAT</a>
+<li><a href="index.html#presentation">Presentation<span></span></a></li>
+<li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS<span></span></a></li>
+<li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD<span></span></a></li>
+<li class="chapter" data-level="3" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>3</b> World Bank<span></span></a></li>
+<li class="chapter" data-level="4" data-path="world-value-survey.html"><a href="world-value-survey.html"><i class="fa fa-check"></i><b>4</b> World Value Survey<span></span></a></li>
+<li class="chapter" data-level="5" data-path="international-social-survey-programme-issp.html"><a href="international-social-survey-programme-issp.html"><i class="fa fa-check"></i><b>5</b> International Social Survey Programme (ISSP)<span></span></a></li>
+<li class="chapter" data-level="6" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>6</b> DPI<span></span></a></li>
+<li class="chapter" data-level="7" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>7</b> ILOSTAT<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="ilostat.html"><a href="ilostat.html#ilo-eplex"><i class="fa fa-check"></i><b>3.1</b> ILO-EPLEX</a></li>
+<li class="chapter" data-level="7.1" data-path="ilostat.html"><a href="ilostat.html#ilo-eplex"><i class="fa fa-check"></i><b>7.1</b> ILO-EPLEX<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>4</b> World Bank</a></li>
-<li class="chapter" data-level="5" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>5</b> DPI</a></li>
-<li class="chapter" data-level="6" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>6</b> Varietys of Democracy</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>8</b> Varietys of Democracy<span></span></a></li>
+<li class="chapter" data-level="9" data-path="latinobarometro.html"><a href="latinobarometro.html"><i class="fa fa-check"></i><b>9</b> Latinobarometro<span></span></a></li>
+<li class="chapter" data-level="10" data-path="eurobarometer.html"><a href="eurobarometer.html"><i class="fa fa-check"></i><b>10</b> Eurobarometer<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/fabrica-datos-laborales" target="blank">Repositorio FDL</a></li>
 
@@ -105,8 +171,9 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="world-bank" class="section level1" number="4">
-<h1><span class="header-section-number">Capítulo 4</span> World Bank</h1>
+<div id="world-bank" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Capítulo 3</span> World Bank<a href="world-bank.html#world-bank" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Some variables like employment share in different economic sectors, labour productivity and hourly labour productivity are from World Indicators of Skills for Employment (WISE) database. WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years from 1990 to the present.**CAMBIAR*</p>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -144,7 +211,7 @@ Trade Openess
 Trade in services is the sum of service exports and imports divided by the value of GDP, all in current U.S. dollars. The indicator provides a summary measure of globalisation which may have an impact on skill demands. Source: International Monetary Fund, Balance of Payments Statistics Yearbook and data files, and World Bank and OECD GDP estimates
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -161,7 +228,7 @@ Total Population
 Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship–except for refugees not permanently settled in the country of asylum, who are generally considered part of the population of their country of origin. The values shown are midyear estimates.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -348,7 +415,7 @@ GINI index (World Bank estimate)
 Gini index measures the extent to which the distribution of income (or, in some cases, consumption expenditure) among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality.
 </td>
 <td style="text-align:left;">
-(1-∞)
+(0-1)
 </td>
 <td style="text-align:left;">
 numeric
@@ -671,7 +738,7 @@ Ease of doing business score (DB17-20 methodology)
 The ease of doing business score is the simple average of the scores for each of the Doing Business topics: starting a business, dealing with construction permits, getting electricity, registering property, getting credit, protecting minority investors, paying taxes, trading across borders, enforcing contracts and resolving insolvency. The score is computed based on the methodology in the DB17-20 studies for topics that underwent methodology updates.
 </td>
 <td style="text-align:left;">
-(1-∞)
+(0-100)
 </td>
 <td style="text-align:left;">
 numeric
@@ -705,7 +772,7 @@ Ease of doing business index (1=most business-friendly regulations)
 Ease of doing business ranks economies from 1 to 190, with first place being the best. A high ranking (a low numerical rank) means that the regulatory environment is conducive to business operation. The index averages the country’s percentile rankings on 10 topics covered in the World Bank’s Doing Business. The ranking on each topic is the simple average of the percentile rankings on its component indicators.
 </td>
 <td style="text-align:left;">
-1-190
+(1-190)
 </td>
 <td style="text-align:left;">
 numeric
@@ -720,12 +787,11 @@ numeric
           </div>
         </div>
       </div>
-<a href="ilostat.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="dpi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="oecd.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="world-value-survey.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -765,6 +831,10 @@ gitbook.start({
 "text": null
 },
 "download": ["codebook.pdf", "codebook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

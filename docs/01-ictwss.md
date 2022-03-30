@@ -1,8 +1,9 @@
 
 
+
 # ICTWSS
 
-The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019. It provides information about collective bargaining, the different regulations and characteristics about the unions that every country has. The following table is divided by three categories in which we identified every variable: Economics Relationships and Employments, Pacts and Agreements and Political and Social Association.
+The following variables are from the Institutional Characteristics of Trade Unions, Wage Setting, State Intervention and Social Pacts (ICTWSS) data base that contains information of 56 countries between 1960 and 2019. It provides information about collective bargaining, the different regulations and characteristics about the unions that every country has. The following table is divided by three categories in which we identified each variable: Economics Relationships and Employments, Pacts and Agreements and Political and Social Association.
 
 
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
@@ -38,7 +39,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> wsee _ictwss </td>
    <td style="text-align:left;"> Wage and Salary Earners in Employment </td>
    <td style="text-align:left;"> Wage and Salary Earners in Employment. Employed wage and salary workers, source (unless stated otherwise): OECD, Labour Force Statistics (Eurostat or ILOSTAT). </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -46,7 +47,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> wsee_s _ictwss </td>
    <td style="text-align:left;"> Wage and Salary Earners in Employment (survey data) </td>
    <td style="text-align:left;"> Wage and Salary Earners in Employment, survey data. Employed wage and salary workers, source (data derived from household or labour force surveys) </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -199,7 +200,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> length _ictwss </td>
    <td style="text-align:left;"> Average length of (wage clauses in) collective agreements, in months </td>
    <td style="text-align:left;"> Length or duration of collective (wage) agreements </td>
-   <td style="text-align:left;"> (1-∞)  average length of (wage clauses in) collective agreements, in months </td>
+   <td style="text-align:left;"> (1-8)  average length of (wage clauses in) collective agreements, in months </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -415,7 +416,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> wcb_new _ictwss </td>
    <td style="text-align:left;"> Workers covered by (new) collective agreements negotiated in the particular year </td>
    <td style="text-align:left;"> Workers covered by (new) collective agreements negotiated in the particular year. Number of employees covered by collective agreements or statutory regulation. </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -423,7 +424,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> wcb _ictwss </td>
    <td style="text-align:left;"> Workers covered by (old and new) collective agreements </td>
    <td style="text-align:left;"> Workers covered by (old and new) collective agreements, including agreements negotiated in earlier years but still valid. Number of employees covered by collective agreements </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -431,7 +432,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> wstat _ictwss </td>
    <td style="text-align:left;"> Workers covered by statutory regulation and excluded from collective bargaining </td>
    <td style="text-align:left;"> Workers covered by statutory regulation and excluded from collective bargaining. Number of employees covered by statutory regulation and excluded from collective bargaining </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -439,7 +440,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> cfwage _ictwss </td>
    <td style="text-align:left;"> Confederation negotiates binding national wage agreements </td>
    <td style="text-align:left;"> Confederation negotiates binding national (cross-sector) wage agreements (bipartite or tripartite) </td>
-   <td style="text-align:left;"> 1 = Yes (if AUT-W or SPONSOR-W or WAGE ≠ 0); 0 = No (if AUT-W or SPONSOR-W or WAGE = 0) </td>
+   <td style="text-align:left;"> 1 = Yes (if AUT-W or SPONSOR-W or WAGE &lt;U+2260&gt; 0); 0 = No (if AUT-W or SPONSOR-W or WAGE = 0) </td>
    <td style="text-align:left;"> factor </td>
    
   </tr>
@@ -447,7 +448,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> cfnonwage _ictwss </td>
    <td style="text-align:left;"> Confederation negotiates binding national non-wage agreements </td>
    <td style="text-align:left;"> Confederation negotiates binding national (cross-sectoral) non-wage agreements (bipartite or tri partite) </td>
-   <td style="text-align:left;"> 1 = Yes (if AUT-NW or SPONSOR-NW or NONWAGE ≠ 0); 0 = No (if AUT-NW or SPONSOR-NW or NONWAGE = 0) </td>
+   <td style="text-align:left;"> 1 = Yes (if AUT-NW or SPONSOR-NW or NONWAGE &lt;U+2260&gt; 0); 0 = No (if AUT-NW or SPONSOR-NW or NONWAGE = 0) </td>
    <td style="text-align:left;"> factor </td>
    
   </tr>
@@ -608,7 +609,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> necfs _ictwss </td>
    <td style="text-align:left;"> Number of Employers’ Confederations (Organisations) </td>
    <td style="text-align:left;"> Number of Employers’ Confederations (Organisations in agriculture are excluded) </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -632,15 +633,15 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nucfs _ictwss </td>
    <td style="text-align:left;"> Number of Union Confederations </td>
    <td style="text-align:left;"> Number of Union Confederations </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> enucfs _ictwss </td>
    <td style="text-align:left;"> Effective Number of Union Confederations </td>
-   <td style="text-align:left;"> Effective Number of Union Confederations, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by HCF=∑in(pi2), where piis the proportion of total membership organised by the I thconfederation and n is the total number of confederations. For more information see Iversen, (1999); Visser, (1990) </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> Effective Number of Union Confederations, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by HCF=&lt;U+2211&gt;in(pi2), where piis the proportion of total membership organised by the I thconfederation and n is the total number of confederations. For more information see Iversen, (1999); Visser, (1990) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -656,15 +657,15 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> naffcf1 _ictwss </td>
    <td style="text-align:left;"> Number of affiliates of confederation 1 </td>
    <td style="text-align:left;"> Number of affiliated unions to confederation 1 (only national unions or federations) </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> enaffcf1 _ictwss </td>
    <td style="text-align:left;"> Effective number of affiliates of confederation 1 </td>
-   <td style="text-align:left;"> Effective number of affiliates, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by Haff=∑in(pi2), where piis the proportion of total membership organised by the I thaffiliate and n is the total number of affiliates. For more informormation see Iversen, (1999); Visser, (1990). This number is indicative of the total number of the bargaining units in a country, especially if we assume that there is joint or majority bargaining in countries with unions divided between different union confederations. </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> Effective number of affiliates, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by Haff=&lt;U+2211&gt;in(pi2), where piis the proportion of total membership organised by the I thaffiliate and n is the total number of affiliates. For more informormation see Iversen, (1999); Visser, (1990). This number is indicative of the total number of the bargaining units in a country, especially if we assume that there is joint or majority bargaining in countries with unions divided between different union confederations. </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -672,7 +673,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> memcf1 _ictwss </td>
    <td style="text-align:left;"> Total membership x 1,000 of unions affiliated to confederation 1 </td>
    <td style="text-align:left;"> Total membership of unions affiliated to confederation 1 (usually largest). Sum of members of affiliates in confederation 1 </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -688,7 +689,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> naffcf* _ictwss </td>
    <td style="text-align:left;"> Number of affiliates of confederation </td>
    <td style="text-align:left;"> Number of affiliated unions to confederation  (only national unions or federations) </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -696,7 +697,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> memcf* _ictwss </td>
    <td style="text-align:left;"> Total membership x 1,000 of unions affiliated to confederation </td>
    <td style="text-align:left;"> Total membership of unions affiliated to confederation 1 (usually largest). Sum of members of affiliates in confederation 1 </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -704,7 +705,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> nindu _ictwss </td>
    <td style="text-align:left;"> Number of unaffiliated or independent unions </td>
    <td style="text-align:left;"> Number of unaffiliated or independent unions (only national unions or federations) </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -712,7 +713,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> mindu _ictwss </td>
    <td style="text-align:left;"> Members of independent unions </td>
    <td style="text-align:left;"> Sum of members of independent or unaffiliated unions </td>
-   <td style="text-align:left;"> (0-∞) </td>
+   <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -720,15 +721,15 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tnunions _ictwss </td>
    <td style="text-align:left;"> Total Number of Unions. </td>
    <td style="text-align:left;"> Total Number of Unions. Sum of all affiliated and independent unions. </td>
-   <td style="text-align:left;"> (0-∞) =  ∑ NaffCF1-8+ NindU </td>
+   <td style="text-align:left;"> (0-Inf) =  &lt;U+2211&gt; NaffCF1-8+ NindU </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> etnunions _ictwss </td>
    <td style="text-align:left;"> Effective number of unions </td>
-   <td style="text-align:left;"> Effective number of unions, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by HCF=∑in(pi2), where piis the proportion of total membership organised by the I thunion and n is the total number of unions. ETNUnions is approximated by multiplying the effective number of confederations and the effective number of affiliates in the main confederations, thus ETNunion = ENUCFs * ENAffCF1. Rather than the total number of unions, this would give an idea of union fragmentation and the number of bargaining units in the country, where confederations bargain separately. </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> Effective number of unions, defined as the inverse of the Herfindahl-index or 1/H. The Herfindahl (H) index is given by HCF=&lt;U+2211&gt;in(pi2), where piis the proportion of total membership organised by the I thunion and n is the total number of unions. ETNUnions is approximated by multiplying the effective number of confederations and the effective number of affiliates in the main confederations, thus ETNunion = ENUCFs * ENAffCF1. Rather than the total number of unions, this would give an idea of union fragmentation and the number of bargaining units in the country, where confederations bargain separately. </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -736,7 +737,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tum _ictwss </td>
    <td style="text-align:left;"> Total Union Membership </td>
    <td style="text-align:left;"> Total Union Membership </td>
-   <td style="text-align:left;"> (1-∞) = ∑ MemCF1-8+ MindU) </td>
+   <td style="text-align:left;"> (1-8) = &lt;U+2211&gt; MemCF1-8+ MindU) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -744,7 +745,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> num _ictwss </td>
    <td style="text-align:left;"> Net Union Membership </td>
    <td style="text-align:left;"> TUM minusunion members outside the active, dependent and employed labour force (i.e. retired workers, independent workers, students, unemployed, see Ebinghaus and Visser, 2000; Visser, 1991, 2006). </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -752,7 +753,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> num_s _ictwss </td>
    <td style="text-align:left;"> Union Membership </td>
    <td style="text-align:left;"> Union Membership as based on (national) household of labour forcer suvey. Union members among the dependent employed labour force </td>
-   <td style="text-align:left;"> (1-∞) </td>
+   <td style="text-align:left;"> (1-8) </td>
    <td style="text-align:left;"> numeric </td>
    
   </tr>
@@ -1023,7 +1024,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> concconf _ictwss </td>
    <td style="text-align:left;"> Membership concentration at confederal level </td>
-   <td style="text-align:left;"> Membership concentration at confederal level (Herfindahl index calculated over membership shares of confederations or peak associations).  Given by ∑in(pi2), where piis the proportion of total membership organised by the i thconfederation and n is the total number of confederations </td>
+   <td style="text-align:left;"> Membership concentration at confederal level (Herfindahl index calculated over membership shares of confederations or peak associations).  Given by &lt;U+2211&gt;in(pi2), where piis the proportion of total membership organised by the i thconfederation and n is the total number of confederations </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
    
@@ -1031,7 +1032,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> concunion _ictwss </td>
    <td style="text-align:left;"> Membership concentration at union level </td>
-   <td style="text-align:left;"> Membership concentration at union level (Herfindahl index calculated over membership shares of affiliated within the main condederation). Given by ∑in(pi2), where piis the proportion of total membership organised by the i thaffiliate and n is the total number of affiliates.∑ Aff1 n (pi2), where p denotes the fraction of total membership organised by the ith affiliate and n is the total number of affiliates. This variable measures the degree of concentration or fragmentation regarding bargaining units at the industry or occupational level </td>
+   <td style="text-align:left;"> Membership concentration at union level (Herfindahl index calculated over membership shares of affiliated within the main condederation). Given by &lt;U+2211&gt;in(pi2), where piis the proportion of total membership organised by the i thaffiliate and n is the total number of affiliates.&lt;U+2211&gt; Aff1 n (pi2), where p denotes the fraction of total membership organised by the ith affiliate and n is the total number of affiliates. This variable measures the degree of concentration or fragmentation regarding bargaining units at the industry or occupational level </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
    
@@ -1039,7 +1040,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> centconf _ictwss </td>
    <td style="text-align:left;"> Summary measure of formal authority of unions regarding wage setting at peak and sectoral level </td>
-   <td style="text-align:left;"> Summary measure of formal authority of unions regarding wage setting at peak and sectoral level. √(CFpower*CONCconf) </td>
+   <td style="text-align:left;"> Summary measure of formal authority of unions regarding wage setting at peak and sectoral level. v(CFpower*CONCconf) </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
    
@@ -1047,7 +1048,7 @@ The following variables are from the Institutional Characteristics of Trade Unio
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> centunion _ictwss </td>
    <td style="text-align:left;"> Summary measure of concentration of unions at peak and sectoral level </td>
-   <td style="text-align:left;"> Summary measure of concentration of unions at peak and sectoral level. √(UNpower*CONCunion) </td>
+   <td style="text-align:left;"> Summary measure of concentration of unions at peak and sectoral level. v(UNpower*CONCunion) </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
    

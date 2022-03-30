@@ -6,20 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 2 OECD | Fábrica de Datos Laborales</title>
   <meta name="description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 2 OECD | Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://github.com/lisa-coes/open-access" />
-  <meta property="og:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
+  
   <meta property="og:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="github-repo" content="lisa-coes/open-access" />
+  <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 2 OECD | Fábrica de Datos Laborales" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
-  <meta name="twitter:image" content="https://github.com/lisa-coes/open-access/images/lisa-complete.png" />
+  
 
 <meta name="author" content="Investigador a cargo: Pablo Pérez Ahumada   Asistente de investigación: Valentina Andrade   Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy" />
 
@@ -29,11 +28,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
+  
 <link rel="prev" href="ictwss.html"/>
-<link rel="next" href="ilostat.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="world-bank.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,13 +48,77 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -74,17 +137,20 @@
 <li><a href="./">Libro de códigos Fábrica de Datos Laborales</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentation</a></li>
-<li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS</a></li>
-<li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD</a></li>
-<li class="chapter" data-level="3" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>3</b> ILOSTAT</a>
+<li><a href="index.html#presentation">Presentation<span></span></a></li>
+<li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS<span></span></a></li>
+<li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD<span></span></a></li>
+<li class="chapter" data-level="3" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>3</b> World Bank<span></span></a></li>
+<li class="chapter" data-level="4" data-path="world-value-survey.html"><a href="world-value-survey.html"><i class="fa fa-check"></i><b>4</b> World Value Survey<span></span></a></li>
+<li class="chapter" data-level="5" data-path="international-social-survey-programme-issp.html"><a href="international-social-survey-programme-issp.html"><i class="fa fa-check"></i><b>5</b> International Social Survey Programme (ISSP)<span></span></a></li>
+<li class="chapter" data-level="6" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>6</b> DPI<span></span></a></li>
+<li class="chapter" data-level="7" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>7</b> ILOSTAT<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="ilostat.html"><a href="ilostat.html#ilo-eplex"><i class="fa fa-check"></i><b>3.1</b> ILO-EPLEX</a></li>
+<li class="chapter" data-level="7.1" data-path="ilostat.html"><a href="ilostat.html#ilo-eplex"><i class="fa fa-check"></i><b>7.1</b> ILO-EPLEX<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>4</b> World Bank</a></li>
-<li class="chapter" data-level="5" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>5</b> DPI</a></li>
-<li class="chapter" data-level="6" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>6</b> Varietys of Democracy</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>8</b> Varietys of Democracy<span></span></a></li>
+<li class="chapter" data-level="9" data-path="latinobarometro.html"><a href="latinobarometro.html"><i class="fa fa-check"></i><b>9</b> Latinobarometro<span></span></a></li>
+<li class="chapter" data-level="10" data-path="eurobarometer.html"><a href="eurobarometer.html"><i class="fa fa-check"></i><b>10</b> Eurobarometer<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/fabrica-datos-laborales" target="blank">Repositorio FDL</a></li>
 
@@ -105,8 +171,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="oecd" class="section level1" number="2">
-<h1><span class="header-section-number">Capítulo 2</span> OECD</h1>
+<div id="oecd" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> OECD<a href="oecd.html#oecd" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The following variables are from Organisation for Economic Co-operation and Development (OECD) data base. It contains information of the different members of the organisation between 1960 and 2020. It provides information about Economics Relationships and Employments. Also, some variables that were extracted from WISE such as GDP and GNI per capita are included.</p>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -145,7 +211,7 @@ Real Minimum Wages
 Real hourly and annual minimum wages are calculated first by deflating the series using the consumer price index taking 2019 as the base year. The series are then converted into a common currency unit (USD) using Purchasing Power Parities (PPPs) for private consumption expenditures in 2019.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -162,7 +228,7 @@ Minimum relative to median wages of full-time workers
 For cross-country comparisons, data on minimum wage levels are further supplemented with another measure of minimum wages relative to average wages, that is, the ratio of minimum wages to median earnings of full-time employees. Median rather than mean earnings provide a better basis for international comparisons as it accounts for differences in earnings dispersion across countries. However, while median of basic earnings of full-time workers - i.e. excluding overtime and bonus payments - are, ideally, the preferred measure of average wages for international comparisons of minimum-to-median earnings, they are not available for a large number of countries.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -179,7 +245,7 @@ Employment in services (ISIC rev.4)
 Employment by activities and status (ISIC rev.4) Employment rates in services are defined as a measure of the extent to which available labour resources (people available to work) broken down by services sector (G-S)
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -196,7 +262,7 @@ Employment in agriculture (ISIC rev.4)
 Employment by activities and status (ISIC rev.4) Employment rates in agriculture are defined as a measure of the extent to which available labour resources (people available to work) broken down by agriculture sector (A)
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -213,7 +279,7 @@ Employment in industry (ISIC rev.4)
 Employment by activities and status (ISIC rev.4) Employment rates in industry are defined as a measure of the extent to which available labour resources (people available to work) broken down by industry sector (B-F)
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -230,7 +296,7 @@ Employment rate
 Employment rates are defined as a measure of the extent to which available labour resources (people available to work) are being used. They are calculated as the ratio of the employed to the working age population. Employment rates are sensitive to the economic cycle, but in the longer term they are significantly affected by governments’ higher education and income support policies and by policies that facilitate employment of women and disadvantaged groups. Employed people are those aged 15 or over who report that they have worked in gainful employment for at least one hour in the previous week or who had a job but were absent from work during the reference week. The working age population refers to people aged 15 to 64. This indicator is seasonally adjusted and it is measured in terms of thousand persons aged 15 and over; and in numbers of employed persons aged 15 to 64 as a percentage of working age population. Source: Labour Force Surveys Link: <a href="https://www.oecd.org/els/emp/LFS%20Definitions%20-%20Tables.pdf" class="uri">https://www.oecd.org/els/emp/LFS%20Definitions%20-%20Tables.pdf</a>
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -247,7 +313,7 @@ Employment in agriculture, forestry and fishing
 Employment in agriculture, forestry and fishing
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -264,7 +330,7 @@ Employment in mining and quarrying
 Employment in mining and quarrying
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -281,7 +347,7 @@ Employment in manufacturing
 Employment in manufacturing
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -298,7 +364,7 @@ Employment in electricity, gas, steam and air conditioning supply
 Employment in electricity, gas, steam and air conditioning supply
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -315,7 +381,7 @@ Employment in water supply, sewerage, waste management and remediation activitie
 Employment in water supply, sewerage, waste management and remediation activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -332,7 +398,7 @@ Employment in construction
 Employment in construction
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -349,7 +415,7 @@ Employment in wholesale and retail trade, repair of motor vehicles and motorcycl
 Employment in wholesale and retail trade, repair of motor vehicles and motorcycles
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -366,7 +432,7 @@ Employment in transportation and storage
 Employment in transportation and storage
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -383,7 +449,7 @@ Employment in accomodation and food service activities
 Employment in accomodation and food service activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -400,7 +466,7 @@ Employment in information and communication
 Employment in information and communication
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -417,7 +483,7 @@ Employment in financial and insurance activities
 Employment in financial and insurance activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -434,7 +500,7 @@ Employment in real state activities
 Employment in real state activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -451,7 +517,7 @@ Employment in professional, scientific and technical activities
 Employment in professional, scientific and technical activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -468,7 +534,7 @@ Employment in administrative and support service activities
 Employment in administrative and support service activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -485,7 +551,7 @@ Employment in public administration and defence, compulsory social security
 Employment in public administration and defence, compulsory social security
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -502,7 +568,7 @@ Employment in education
 Employment in education
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -519,7 +585,7 @@ Employment in human health and social work activities
 Employment in human health and social work activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -536,7 +602,7 @@ Employment in artes, entertainment and recreation
 Employment in artes, entertainment and recreation
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -553,7 +619,7 @@ Employment in other service activities
 Employment in other service activities
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -570,7 +636,7 @@ Employment in activities of households as employers; undifferentiated goods and 
 Employment in activities of households as employers; undifferentiated goods and services producing activities of households for own use
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -587,7 +653,7 @@ Employment in activities of extraterritorial organizations and bodies
 Employment in activities of extraterritorial organizations and bodies
 </td>
 <td style="text-align:left;">
-(0-∞)
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -876,7 +942,7 @@ Average hours worked per worker (total workers)
 Average annual hours actually worked per worker (total workers) is defined as the total number of hours worked over the year divided by the average number of people in employment. The data are intended for comparisons of trends over time; they are unsuitable for comparisons of the level of average annual hours of work for a given year, because of differences in their sources. Part-time workers are covered as well as full-time workers.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -893,7 +959,7 @@ Average hours worked per worker (dependent workers)
 Average annual hours actually worked per worker (dependent workers) is defined as the total number of hours worked over the year divided by the average number of people in employment. The data are intended for comparisons of trends over time; they are unsuitable for comparisons of the level of average annual hours of work for a given year, because of differences in their sources. Part-time workers are covered as well as full-time workers.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -910,7 +976,7 @@ GDP
 GDP at purchaser’s prices is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. Data are in current U.S. dollars. Dollar figures for GDP are converted from domestic currencies using single year official exchange rates. For a few countries where the official exchange rate does not reflect the rate effectively applied to actual foreign exchange transactions, an alternative conversion factor is used.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -927,7 +993,7 @@ GNI per capita
 GNI per capita based on purchasing power parity (PPP). PPP GNI is gross national income (GNI) converted to international dollars using purchasing power parity rates. An international dollar has the same purchasing power over GNI as a U.S. dollar has in the United States. GNI is the sum of value added by all resident producers plus any product taxes (less subsidies) not included in the valuation of output plus net receipts of primary income (compensation of employees and property income) from abroad. Data are in current international dollars based on the 2011 ICP round.
 </td>
 <td style="text-align:left;">
-NA
+(0-Inf)
 </td>
 <td style="text-align:left;">
 numeric
@@ -1029,11 +1095,10 @@ numeric
         </div>
       </div>
 <a href="ictwss.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ilostat.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="world-bank.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1073,6 +1138,10 @@ gitbook.start({
 "text": null
 },
 "download": ["codebook.pdf", "codebook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
