@@ -27,6 +27,7 @@ latino2015 <- read_sav("input/data/lat/latino2015.sav")
 latino2016 <- read_sav("input/data/lat/latino2016.sav")
 latino2017 <- read_sav("input/data/lat/latino2017.sav")
 latino2018 <- read_sav("input/data/lat/latino2018.sav")
+latino2020 <- readRDS("input/data/lat/latino2020.rds")
 
 
 # 4. Merge and recode d.f -----------------------------------------------------------
@@ -938,7 +939,48 @@ lat <- bind_rows(list(
                                                    'Neither fair nor unfair',
                                                    'Unfair', 'Very Unfair')),
             year = 2018) %>% 
-     mutate(iso3c = as.character(iso3c))))) %>% 
+     mutate(iso3c = as.character(iso3c))),
+  # 2020 --------------------------------------------------------------------
+  (`latino2020` %>% 
+     select(iso3c = idenpa, distr_inc_fair = p19st_a, gov_pow_people = p12st,
+            trust_gov = p13st_e, trust_union = , trust_banks = P16NC.F,
+            id = NUMENTRE, weight = WT) %>% 
+     mutate(iso3c = as.numeric(iso3c),
+            distr_inc_fair = as.numeric(distr_inc_fair),
+            gov_pow_people = as.numeric(gov_pow_people)) %>% 
+     mutate_at(vars(starts_with('trust')), ~as.numeric(.)) %>%
+     mutate_at(vars(starts_with('trust')), ~(car::recode(., recodes = c("-4:-1=NA;
+                                                                           1 = 'A lot of confidence';
+                                                                           2 = 'Some confidence';
+                                                                           3 = 'Little confidence';
+                                                                           4 = 'No confidence at all'"),
+                                                         as.factor = T, 
+                                                         levels = c('A lot of confidence',
+                                                                    'Some confidence',
+                                                                    'Little confidence',
+                                                                    'No confidence at all')))) %>%
+     mutate(iso3c = car::recode(.$iso3c, recodes = c("-5:-1=NA; 32='ARG'; 68='BOL';
+                                76='BRA'; 152='CHL'; 170='COL'; 188='CRI'; 214='DOM';
+                                218='ECU'; 222='SLV'; 320='GTM'; 340='HND'; 484='MEX'; 
+                                558='NIC'; 591= 'PAN'; 600='PRY'; 604='PER'; 724='ESP'; 
+                                858='URY'; 862='VEN'")),
+            gov_pow_people = car::recode(.$gov_pow_people, recodes = c("-4:-1=NA;
+                                                                       1 = 'Benefit of powerful interests';
+                                                                       2 = 'For the good of all'"),
+                                         as.factor=T, 
+                                         levels = c('Benefit of powerful interests',
+                                                    'For the good of all')),
+            distr_inc_fair = car::recode(.$distr_inc_fair, recodes = c("-4:-1=NA;
+                                                                       1 = 'Very Fair';
+                                                                       2 = 'Fair';
+                                                                       3 = 'Neither fair nor unfair';
+                                                                       4 = 'Unfair';
+                                                                       5 = 'Very Unfair'"),
+                                         as.factor = T, 
+                                         levels = c('Very Fair', 'Fair',
+                                                    'Neither fair nor unfair',
+                                                    'Unfair', 'Very Unfair')),
+            year = 2020))) %>% 
   select(iso3c, year, id, weight, everything())
 
 # 5. Group ----------------------------------------------------------------
