@@ -9,9 +9,10 @@ The following variables are from Organisation for Economic Co-operation and Deve
 
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
-googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:N279"), col_names = F) %>%
-select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
-filter(grepl("_oecd|_wise", Variable)) %>%
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B217:N279"), sheet= "Variables", col_names = F) %>%
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Fuente = 9, Label = 13) %>%
+filter(grepl("_oecd", Variable)|grepl("OCDE-WISE", Fuente)) %>%
+  select(-Fuente) %>% 
  arrange(Label) %>%
    knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 52, bold = T) %>% 

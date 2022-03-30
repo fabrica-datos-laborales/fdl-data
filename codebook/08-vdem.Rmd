@@ -7,7 +7,7 @@ pacman::p_load(tidyverse,
 
 ```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #vdem
-googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B653:N708"), col_names = F) %>%
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B696:N751"), sheet= "Variables", col_names = F) %>%
   select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>%
