@@ -9,7 +9,7 @@ Eurobarometer is, according to their website, the polling instrument used by the
 
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
-googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B752:N757"), sheet= "Variables", col_names = F) %>%
+googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B751:N756"), sheet= "Variables", col_names = F) %>%
 select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
  arrange(Label) %>%
    knitr::kable(.) %>% 
