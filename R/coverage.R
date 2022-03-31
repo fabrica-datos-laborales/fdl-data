@@ -3,7 +3,7 @@
 
 rm(list = ls())
 # Install packages --------------------------------------------------------
-pacman::p_load(tidyverse)
+pacman::p_load(tidyverse, writexl)
 
 # Import data -------------------------------------------------------------
 ictwss <- readRDS("output/data/proc/ictwss.rds")
@@ -40,4 +40,5 @@ fdl <- fdl %>%
 
 # Create coverage table ---------------------------------------------------
 
+writexl::write_xlsx(fdl, "output/data/coverage.xlsx")
 
