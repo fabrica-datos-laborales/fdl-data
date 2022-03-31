@@ -31,7 +31,12 @@ fdl <- fdl %>%
   mutate_all(~(as.character(.))) %>% 
   pivot_longer(cols = c(3:786),
                     names_to = "vars",
-                    values_to = "valores")
+                    values_to = "valores") %>% 
+  group_by(vars) %>% 
+  mutate(temporal = paste0(min(.$year), "-", max(.$year)),
+         regional = sum(iso3c)) %>% 
+  ungroup() %>% 
+  select(vars, temporal, regional)
 
 # Create coverage table ---------------------------------------------------
 
