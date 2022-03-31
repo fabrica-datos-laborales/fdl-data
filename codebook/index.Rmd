@@ -24,6 +24,7 @@ kable <- function(data) {
     kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options =c("striped", "scale_down"),  full_width = T)
 }
 options(knitr.kable.NA = 'No sabe/No responde', kableExtra.auto_format = FALSE)
+pacman::p_load(tidyverse, rvest)
 ```
 
 ```{r load devtools}
@@ -50,5 +51,17 @@ Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta 
 (Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
 
 (Como citar la base de datos )
+
+```{r tabla iso3c}
+url <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3")
+iso3c <- url %>% html_nodes("span.monospaced") %>% html_text()  
+iso3c <- iso3c[1:249]
+country <- url %>% html_nodes("li a") %>% html_text()
+country <- country[15:263]
+table <- data.frame(iso3c = iso3c, Country = country)
+
+table %>% knitr::kable(.) 
+
+```
 
 
