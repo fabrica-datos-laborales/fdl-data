@@ -33,24 +33,19 @@ pacman::p_load(tidyverse, rvest, kableExtra)
 
 # Presentation{-}
 
-This codebook was made with the variables and data bases that were used in "name investigation". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, Eurobarometer, Latinobarometer. The variables year and country were used in every single one of the data bases but won´t be listed in every item. For country, we use iso3c classification, in which every code means:
+This codebook was made with the variables and data bases that were used in "Fabrica de Datos Laborales". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer. This database allows you to make comparative analysis between different countries and years.
 
-"webscrapping de wikipedia"
+**Presentation**
 
+This document and database was made by Valentina Andrade, Emilia Cuadros y Nicolás Godoy for FONDECYT N°11190229 "Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada", leaded by Pablo Pérez Ahumada, assistant professor of the Department of Sociology of Universidad Alberto Hurtado (UAH) and associate investigator of the Centro de Estudios del Conflicto y Cohesión Social (COES). 
 
-**Presentación**
+The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up. 
 
-Este documento y base de datos fue elaborada por Valentina Andrade, Emilia Cuadros y Nicolás Godoy para el proyecto FONDECYT N°11190229 "Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada", dirigido por Pablo Pérez Ahumada, profesor asistente del departamento de sociología de la Universidad Alberto Hurtado (UAH) e investigador asociado al Centro de Estudios del Conflicto y Cohesión Social (COES). 
+For this reason, the project has proposed the construction of a **global and temporary database** on labour relations. This includes data on agreements and pacts between employers, unions and the government, political and social characteristics of workers' unions and other associations, economic relations and employment in different branches and sectors of the economy, and variables on the sociopolitical system such as indices of democracy and confidence in various institutions, among others. Data is available for an average of 60 countries and from 1789 to 2020, in general. The main sources of information are *ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.*
 
-El objetivo del proyecto es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para ello, se desarrolla un análisis comparado de los factores institucionales (regulaciones laborales) y políticos (relación entre partidos y movimiento sindical) que lo configuran.
+With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).
 
-Por ello el **proyecto** se ha propuesto la construcción de una **base de datos a nivel mundial y temporal** sobre relaciones laborales. Esto incluye datos sobre acuerdos y pactos entre empresarios, sindicatos y el gobierno, características políticas y sociales sobre los sindicatos de trabajadores y otras asociaciones, relaciones económicas y empleo en distintas ramas y sectores de la economía, y variables sobre el sistema sociopolítico como índices de democracia y confianza sobre diversas instituciones, entre otras. Los datos están disponible para *número total de países promedio* desde *años*. Las fuentes de información principales *resumen de algunas son*
-
-Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta desde el diseño transparente, la apertura de datos, análisis reproducibles y publicaciones libres. Esto supone transparentar las decisiones metodológicas del estudio, disponer a la comunidad de los datos y recursos utilizados en la investigación, permitir que se puedan reproducir los datos obtenidos y dar libre acceso a los resultados y productos de la investigación (LISA, 2021). 
-
-(Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
-
-(Como citar la base de datos )
+This database allows you to make comparative analysis between different countries and years. For country, we use iso3c classification.
 
 ```{r tabla iso3c}
 url <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3")
