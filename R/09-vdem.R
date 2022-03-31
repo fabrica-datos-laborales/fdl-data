@@ -1,15 +1,20 @@
 # Code: VDEM ----------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(tidyverse, readr, Hmisc, vdemdata)
+pacman::p_load(tidyverse, readr, Hmisc, devtools, vdemdata)
+#devtools::install_github("vdeminstitute/vdemdata")
 
 # 2. Scrapp vdem --------------------------------------------------------------
 vdemdata::find_var("polyarchy")
 vdem <- vdemdata::vdem
 #vparty <- vdemdata::vparty
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
-                                  range = c("A5:C810"), col_names = F) %>% 
+                                  range = c("A5:C810"), sheet = "Variables", col_names = F) %>% 
   select(variables_original = 1, variables = 2, etiquetas = 3) %>% 
-  filter(grepl("_vdem", variables))
+  filter(grepl("_vdem", variables)| variables %in% c("iso3c", "year")) %>% 
+  mutate(variables_original = ifelse(is.na(variables_original) & variables == "year", "year",
+                                     ifelse(is.na(variables_original) & variables == "iso3c", "iso3c",
+                                            variables_original)))
+
 
 
 # 4. Select ------------------------------------------------------------------
@@ -53,7 +58,11 @@ vdem$v2x_regime <- car::recode(vdem$v2x_regime, recodes = c("0 = 'Closed autocra
   
 
 
-# 6. Label ----------------------------------------------------------------
+# 6. Rename ---------------------------------------------------------------
+
+names(vdem) <- ifelse(match(labels$variables_original, names(x)), labels$variables, NA)
+
+# 7. Label ----------------------------------------------------------------
 
 labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0",
                                     sheet = 'Variables', range = c("B2:C900"), col_names = F) %>%
