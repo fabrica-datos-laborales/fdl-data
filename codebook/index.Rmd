@@ -24,7 +24,7 @@ kable <- function(data) {
     kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options =c("striped", "scale_down"),  full_width = T)
 }
 options(knitr.kable.NA = 'No sabe/No responde', kableExtra.auto_format = FALSE)
-pacman::p_load(tidyverse, rvest)
+pacman::p_load(tidyverse, rvest, kableExtra)
 ```
 
 ```{r load devtools}
@@ -60,7 +60,9 @@ country <- url %>% html_nodes("li a") %>% html_text()
 country <- country[15:263]
 table <- data.frame(iso3c = iso3c, Country = country)
 
-table %>% knitr::kable(.) 
+table %>% 
+  knitr::kable(.) %>% 
+  kable_styling(font_size = 10) 
 
 ```
 
