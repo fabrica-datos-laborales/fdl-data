@@ -19,6 +19,7 @@ labels <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_
 
 # 4. Select ------------------------------------------------------------------
 variable_original <- as.vector(labels$variables_original)
+variable_original <- variable_original[3:57]
 
 vdem <- vdem %>%
   select(iso3c = country_text_id, year,variable_original)
@@ -60,7 +61,7 @@ vdem$v2x_regime <- car::recode(vdem$v2x_regime, recodes = c("0 = 'Closed autocra
 
 # 6. Rename ---------------------------------------------------------------
 
-names(vdem) <- ifelse(match(labels$variables_original, names(x)), labels$variables, NA)
+names(vdem) <- ifelse(match(labels$variables_original, names(vdem)), labels$variables, NA)
 
 # 7. Label ----------------------------------------------------------------
 
