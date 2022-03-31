@@ -23,8 +23,11 @@ googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0X
 
 
 
-
 ## ILO-EPLEX
+
+The ILO-EPLex database contains legal information about employment protection. In this database, we collected indicators about economic relationships and employment like the legal coverage of different jobs and characteristics of dismissal. These are available for 101 countries between 2010 and 2019.
+
+
 ```{r iloeplex, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #ilo-eplex
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:N350"), sheet= "Variables", col_names = F) %>% 

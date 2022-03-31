@@ -4,6 +4,9 @@ pacman::p_load(tidyverse,
 ```
 
 # DPI
+
+The Database of Political Institutions (DPI) presents institutional and electoral results data such as measures of tenure and stability of the government, identification of party affiliation and ideology, and fragmentation of opposition and government parties in the legislature. In this database, we included information about Democracy and Sociopolitical System like the electoral system and the political parties. These indicators are available in 50 countries between 1975 and 2017.
+
 ```{r dpi, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #dpi
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B310:N320"), sheet= "Variables", col_names = F) %>%

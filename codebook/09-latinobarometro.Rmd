@@ -5,6 +5,7 @@ pacman::p_load(tidyverse,
 
 # Latinobarometro
 
+Latinobarometro is a public opinion survey that researches the development of democracy and economies as well as societies, using indicators of opinion, attitudes, behaviour and values. In this database, we collected indicators about democracy and sociopolitical system like the perception of income distribution and confidence in political institutions. This data is available for 19 latin american countries. 
 
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 

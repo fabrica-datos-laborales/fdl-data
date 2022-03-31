@@ -5,6 +5,7 @@ pacman::p_load(tidyverse,
 
 # World Value Survey
 
+The World Values Survey (WVS) is an international research program devoted to the scientific and academic study of social, political, economic, religious and cultural values of people in the world. According to their website, the project’s goal is to assess which impact values stability or change over time has on the social, political and economic development of countries and societies. In this database, we included some indicators about political and social association like trust in unions, level union membership and belonging to labour unions. These are available for 47 countries and between 1981 and 2020.
 
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 

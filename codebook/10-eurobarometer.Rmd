@@ -5,6 +5,7 @@ pacman::p_load(tidyverse,
 
 # Eurobarometer
 
+Eurobarometer is, according to their website, the polling instrument used by the European Commission, the European Parliament and other EU institutions and agencies to monitor regularly the state of public opinion in Europe on issues related to the European Union as well as attitudes on subjects of political or social nature. In this database, we collected information about democracy and sociopolitical system with indicators about value orientation and expectation about strikes.
 
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
