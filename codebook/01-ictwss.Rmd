@@ -22,6 +22,3 @@ googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0X
 
 ```
 
-Overall, the data base contains information of 56 countries, some belong to the OECD and some do not. The countries that integrate the OECD are: Australia, Austria, Belgium, Canada, Chile, Colombia, Costa Rica, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Korea, Latvia, Lithuania, Luxembourg, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal,
-Slovak Republic, Slovenia, Spain, Sweden, Switzerland, Turkey, United Kingdom and United States. The other countries are: Albania, Argentina, Bosnia and Herzegovina, Brazil, Bulgaria, China, Cyprus, Croatia, India, Indonesia, Kosovo, Malta, Montenegro, North Macedonia, Russia, Romania, Serbia and South Africa.  
-However, for some variables especially the ones about the characteristics of unions, the series are available in average for 46 of the 56 countries. 

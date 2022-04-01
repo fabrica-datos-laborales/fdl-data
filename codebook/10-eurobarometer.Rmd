@@ -10,12 +10,12 @@ Eurobarometer is, according to their website, the polling instrument used by the
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B751:N756"), sheet= "Variables", col_names = F) %>%
-select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>%
  arrange(Label) %>%
    knitr::kable(.) %>% 
   pack_rows("Democracy and Sociopolitical System", 1, 6, bold = T) %>% 
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(8)
 
 
 ```

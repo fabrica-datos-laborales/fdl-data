@@ -10,12 +10,12 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
 ```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #vdem
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B696:N750"), sheet= "Variables", col_names = F) %>%
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, Label = 13) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>%
   pack_rows("Democracy and Sociopolitical System", 1, 49, bold = T) %>% 
   pack_rows("Economics Relationships and Employments", 50, 55, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(7)
 
 ```

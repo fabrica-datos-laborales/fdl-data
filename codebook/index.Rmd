@@ -1,7 +1,7 @@
 ---
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Codebook</center>"
-author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy"
+author: "Lead researcher: Pablo Pérez Ahumada <br> Assistant resarcher: Valentina Andrade <br> Research assistants: Emilia Cuadros y Nicolás Godoy"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -45,7 +45,7 @@ For this reason, the project has proposed the construction of a **global and tem
 
 With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).
 
-This database allows you to make comparative analysis between different countries and years. For country, we use iso3c classification.
+This database allows you to make comparative analysis between different countries and years. The year series of each variable are at a general level in this codebook. To see specifically for which variables it is available in a certain country and year, it must be consulted in the same database. For country, we use iso3c classification. 
 
 ```{r tabla iso3c}
 url <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3")
