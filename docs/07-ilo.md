@@ -12,17 +12,21 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <th style="text-align:left;"> Definition </th>
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
+   <th style="text-align:left;"> Regional coverage </th>
    
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="282"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+  <tr grouplength="282"><td colspan="8" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sh_agr_ilo </td>
    <td style="text-align:left;"> Employment share in agriculture sector </td>
    <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -31,6 +35,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -39,6 +45,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -47,6 +55,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Shares of total employment in agriculture, mining and construction, industry (manufacturing and utilities) and service sectors defined by International Standard Industrial Classification of All Economic Activities (ISIC) Rev. 3 (1990); Rev. 4 (2008). The indicator on employment shares by sector provides an economy-wide measure of the general type and level of skill demands for each country. Source: ILO Key Indicators of the Labour Market (KILM) </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -55,6 +65,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure. </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -63,6 +75,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Ratio of GDP per employed person in 1990 US dollars converted as PPPs. The labour productivity estimates are derived from the Total Economy Database of The Conference Board. To compute labour productivity per person engaged, GDP is divided by total employment. GDP estimates for OECD countries after 1990 are mostly obtained from the OECD National Accounts, Volumes I and II (annual issues) and the Eurostat New Cronos database. Employment estimates are primarily taken from OECD: Labour Force Statistics (annual issues); Eurostat’s New Cronos database; the ILO estimates on employment; and the Vienna Institute for Comparative Economic Studies (WIIW). For countries outside of the OECD, the national accounts and labour statistics which were assembled from national sources by international organizations such as the World Bank, the Asian Development Bank, the Food and Agriculture Organization (FAO), the ILO and the United Nations Statistical Office were used as the point of departure. </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
    
   </tr>
   <tr>
@@ -71,6 +85,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -79,6 +95,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of managers relate to the gross remuneration in cash and in kind paid to managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -87,6 +105,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of professionals relate to the gross remuneration in cash and in kind paid to professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -95,6 +115,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of technicians and associate professionals relate to the gross remuneration in cash and in kind paid to technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -103,6 +125,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of clerical support workers relate to the gross remuneration in cash and in kind paid to clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -111,6 +135,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of service and sales workers relate to the gross remuneration in cash and in kind paid to services and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -119,6 +145,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -127,6 +155,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of craft and related trades workers relate to the gross remuneration in cash and in kind paid to craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -135,6 +165,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -143,6 +175,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of elementary ocupations relate to the gross remuneration in cash and in kind paid to elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -151,6 +185,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of armed forces occupations relate to the gross remuneration in cash and in kind paid to armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -159,6 +195,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -167,6 +205,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men employees relate to the gross remuneration in cash and in kind paid to men employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -175,6 +215,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men managers relate to the gross remuneration in cash and in kind paid to men managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -183,6 +225,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men professionals relate to the gross remuneration in cash and in kind paid to men professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -191,6 +235,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men technicians and associated profesionals relate to the gross remuneration in cash and in kind paid to men  technicians and associated profesionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -199,6 +245,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men clerical support workers relate to the gross remuneration in cash and in kind paid to men clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -207,6 +255,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men service and sales workers relate to the gross remuneration in cash and in kind paid to men service and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -215,6 +265,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to men skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -223,6 +275,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men craft and related trades workers relate to the gross remuneration in cash and in kind paid to men craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -231,6 +285,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to men plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -239,6 +295,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men employed in elementary occupations relate to the gross remuneration in cash and in kind paid to men employed in elementary occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -247,6 +305,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men employed in armed forces occupations relate to the gross remuneration in cash and in kind paid to men employed in armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -255,6 +315,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men not elsewhere classified relate to the gross remuneration in cash and in kind paid to men not elsewhere classified, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -263,6 +325,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women employees relate to the gross remuneration in cash and in kind paid to women employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -271,6 +335,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women managers relate to the gross remuneration in cash and in kind paid to women managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -279,6 +345,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women professionals relate to the gross remuneration in cash and in kind paid to women professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -287,6 +355,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women technicians and associated profesionals relate to the gross remuneration in cash and in kind paid to women  technicians and associated profesionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -295,6 +365,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women clerical support workers relate to the gross remuneration in cash and in kind paid to women clerical support workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -303,6 +375,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women service and sales workers relate to the gross remuneration in cash and in kind paid to women service and sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -311,6 +385,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women skilled agricultural, forestry and fishery workers relate to the gross remuneration in cash and in kind paid to women skilled agricultural, forestry and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -319,6 +395,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women craft and related trades workers relate to the gross remuneration in cash and in kind paid to women craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -327,6 +405,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to women plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -335,6 +415,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women employed in elementary occupations relate to the gross remuneration in cash and in kind paid to women employed in elementary occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -343,6 +425,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women employed in armed forces occupations relate to the gross remuneration in cash and in kind paid to women employed in armed forces occupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -351,6 +435,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women not elsewhere classified relate to the gross remuneration in cash and in kind paid to women not elsewhere classified, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -359,6 +445,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -367,6 +455,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -375,6 +465,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of professionals relate to the gross remuneration in cash and in kind paid to professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -383,6 +475,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of technicians and associate professionals relate to the gross remuneration in cash and in kind paid to technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -391,6 +485,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of clerks relate to the gross remuneration in cash and in kind paid to clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -399,6 +495,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -407,6 +505,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -415,6 +515,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of craft and related trades workers relate to the gross remuneration in cash and in kind paid to craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -423,6 +525,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -431,6 +535,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of elementary ocupations relate to the gross remuneration in cash and in kind paid to elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -439,6 +545,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -447,6 +555,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men employees relate to the gross remuneration in cash and in kind paid to men employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -455,6 +565,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to men legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -463,6 +575,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men professionals relate to the gross remuneration in cash and in kind paid to men professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -471,6 +585,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men technicians and associate professionals relate to the gross remuneration in cash and in kind paid to men technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -479,6 +595,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men clerks relate to the gross remuneration in cash and in kind paid to men clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -487,6 +605,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to men service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -495,6 +615,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to men skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -503,6 +625,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men craft and related trades workers relate to the gross remuneration in cash and in kind paid to men craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -511,6 +635,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to men plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -519,6 +645,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men employed in elementary ocupations relate to the gross remuneration in cash and in kind paid to men employed in elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -527,6 +655,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of men not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to men not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -535,6 +665,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women employees relate to the gross remuneration in cash and in kind paid to women employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -543,6 +675,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women legislators, senior officials and managers relate to the gross remuneration in cash and in kind paid to women legislators, senior officials and managers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -551,6 +685,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women professionals relate to the gross remuneration in cash and in kind paid to women professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -559,6 +695,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women technicians and associate professionals relate to the gross remuneration in cash and in kind paid to women technicians and associate professionals, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -567,6 +705,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women clerks relate to the gross remuneration in cash and in kind paid to women clerks, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -575,6 +715,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women service workers and shop and market sales workers relate to the gross remuneration in cash and in kind paid to women service workers and shop and market sales workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -583,6 +725,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women skilled agricultural and fishery workers relate to the gross remuneration in cash and in kind paid to women skilled agricultural and fishery workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -591,6 +735,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women craft and related trades workers relate to the gross remuneration in cash and in kind paid to women craft and related trades workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -599,6 +745,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women plant and machine operators, and assemblers relate to the gross remuneration in cash and in kind paid to women plant and machine operators, and assemblers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -607,6 +755,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women employed in elementary ocupations relate to the gross remuneration in cash and in kind paid to women employed in elementary ocupations, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -615,6 +765,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The earnings of women not elsewhere classified workers relate to the gross remuneration in cash and in kind paid to women not elsewhere classified workers, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. This is a harmonized series: (1) data reported as weekly, monthly and yearly are converted to hourly using data on average weekly hours if available; and (2) data are converted to U.S. dollars as the common currency, using exchange rates or using 2017 purchasing power parity (PPP) rates for private consumption expenditures. The latter series allows for international comparisons by taking account of the differences in relative prices between countries. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2020 </td>
+   <td style="text-align:left;"> 122 countries </td>
    
   </tr>
   <tr>
@@ -623,6 +775,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Data on earnings are presented, whenever possible, in nominal terms and on the basis of the mean of monthly earnings of all employees. The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Earnings exclude employers' contributions in respect of their employees paid to social security and pension schemes and also the benefits received by employees under these schemes. Earnings also exclude severance and termination pay. Statistics of earnings relate to the gross remuneration of employees, i.e. the total before any deductions are made by the employer. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1990-2022 </td>
+   <td style="text-align:left;"> 32 countries </td>
    
   </tr>
   <tr>
@@ -631,6 +785,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings.The labour income share in GDP is the ratio, in percentage, between total labour income and gross domestic product (a measure of total output), both provided in nominal terms. Labour income includes the compensation of employees and part of the income of the self-employed. Self-employed workers earn from both their work and capital ownership. Total compensation of employees refers to the remuneration, in cash or in kind, payable by an enterprise to an employee in return for work done by the latter during the accounting period. The labour income of self-employed is imputed on the basis of a statistical analysis of employees of similar characteristics. The labour income share after accounting for the labour income of the self-employed is often referred to as the adjusted labour income share in GDP. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. We use data that comes from administrative data, imputed and modelled observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2004-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -639,6 +795,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 224 countries </td>
    
   </tr>
   <tr>
@@ -647,6 +805,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -655,6 +815,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise all persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -663,6 +825,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 224 countries </td>
    
   </tr>
   <tr>
@@ -671,6 +835,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -679,6 +845,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise male persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -687,6 +855,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are provided by institutional sector, which refers to disaggregations by public and private sector employment. Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 224 countries </td>
    
   </tr>
   <tr>
@@ -695,6 +865,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Public sector employment covers employment in the government sector plus employment in publicly-owned resident enterprises and companies, operating at central, state (or regional) and local levels of government. It covers all persons employed directly by those institutions, regardless of the particular type of employment contract. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -703,6 +875,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The employed comprise female persons of working age who, during a specified brief period, were in the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Private sector employment comprises employment in all resident units operated by private enterprises, that is, it excludes enterprises controlled or operated by the government sector. We exclude data that is unreliable, according to ILOSTAT observations. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976 - 2020 </td>
+   <td style="text-align:left;"> 184 countries </td>
    
   </tr>
   <tr>
@@ -711,6 +885,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -719,6 +895,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -727,6 +905,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -735,6 +915,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -743,6 +925,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise all persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -751,6 +935,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -759,6 +945,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -767,6 +955,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -775,6 +965,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -783,6 +975,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise male persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -791,6 +985,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -799,6 +995,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -807,6 +1005,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -815,6 +1015,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -823,6 +1025,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Imputed observations are not based on national data, are subject to high uncertainty and should not be used for country comparisons or rankings. The employed comprise female persons of working age who, during a specified brief period, were in one of the following categories: a) paid employment (whether at work or with a job but not at work); or b) self-employment (whether at work or with an enterprise but not at work). Data are disaggregated by status in employment according to the latest version of the International Standard Classification of Status in Employment (ICSE-93). Status in employment refers to the type of explicit or implicit contract of employment the person has with other persons or organizations. The basic criteria used to define the groups of the classification are the type of economic risk and the type of authority over establishments and other workers which the job incumbents have or will have. The series is part of the ILO modelled estimates and is harmonized to account for differences in national data and scope of coverage, collection and tabulation methodologies as well as for other country-specific factors. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1991-2019 </td>
+   <td style="text-align:left;"> 199 countries </td>
    
   </tr>
   <tr>
@@ -831,6 +1035,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -839,6 +1045,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -847,6 +1055,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -855,6 +1065,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -863,6 +1075,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -871,6 +1085,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -879,6 +1095,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -887,6 +1105,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -895,6 +1115,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -903,6 +1125,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -911,6 +1135,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -919,6 +1145,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -927,6 +1155,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -935,6 +1165,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -943,6 +1175,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -951,6 +1185,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -959,6 +1195,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -967,6 +1205,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -975,6 +1215,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -983,6 +1225,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -991,6 +1235,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -999,6 +1245,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1007,6 +1255,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1015,6 +1265,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1023,6 +1275,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1031,6 +1285,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1039,6 +1295,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1047,6 +1305,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1055,6 +1315,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1063,6 +1325,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1071,6 +1335,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1079,6 +1345,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1087,6 +1355,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1095,6 +1365,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1103,6 +1375,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1111,6 +1385,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1119,6 +1395,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1127,6 +1405,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1135,6 +1415,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1143,6 +1425,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1151,6 +1435,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1159,6 +1445,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1167,6 +1455,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1175,6 +1465,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1183,6 +1475,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1191,6 +1485,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1199,6 +1495,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1207,6 +1505,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1215,6 +1515,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1223,6 +1525,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1231,6 +1535,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1239,6 +1545,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1247,6 +1555,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1255,6 +1565,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> A strike is a temporary work stoppage carried out by one or more groups of workers with a view to enforcing or resisting demands or expressing grievances, or supporting other workers in their demands or grievances. A lockout is a total or partial temporary closure of one or more places of employment, or the hindering of the normal work activities of employees, by one or more employers with a view to enforcing or resisting demands or expressing grievances, or supporting other employers in their demands or grievances. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 124 countries </td>
    
   </tr>
   <tr>
@@ -1263,6 +1575,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1271,6 +1585,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1279,6 +1595,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1287,6 +1605,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1295,6 +1615,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1303,6 +1625,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1311,6 +1635,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1319,6 +1645,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1327,6 +1655,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1335,6 +1665,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1343,6 +1675,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1351,6 +1685,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1359,6 +1695,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1367,6 +1705,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1375,6 +1715,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1383,6 +1725,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1391,6 +1735,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1399,6 +1745,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1407,6 +1755,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1415,6 +1765,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1423,6 +1775,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1431,6 +1785,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1439,6 +1795,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1447,6 +1805,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1455,6 +1815,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1463,6 +1825,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1471,6 +1835,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1479,6 +1845,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1487,6 +1855,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1495,6 +1865,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1503,6 +1875,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1511,6 +1885,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1519,6 +1895,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1527,6 +1905,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1535,6 +1915,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1543,6 +1925,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1551,6 +1935,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1559,6 +1945,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1567,6 +1955,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1575,6 +1965,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1583,6 +1975,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1591,6 +1985,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1599,6 +1995,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1607,6 +2005,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1615,6 +2015,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1623,6 +2025,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1631,6 +2035,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1639,6 +2045,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1647,6 +2055,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1655,6 +2065,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1663,6 +2075,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1671,6 +2085,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1679,6 +2095,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1687,6 +2105,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1695,6 +2115,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1703,6 +2125,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1711,6 +2135,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1719,6 +2145,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1727,6 +2155,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1735,6 +2165,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Days not worked as a result of strikes and lockouts represent the total number of working days not worked as a result of strikes and lockouts in progress during the year. It is measured in terms of the sum of the actual working days during which work would normally have been carried out by each worker involved had there been no stoppage. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 114 countries </td>
    
   </tr>
   <tr>
@@ -1743,6 +2175,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1751,6 +2185,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1759,6 +2195,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1767,6 +2205,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1775,6 +2215,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1783,6 +2225,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1791,6 +2235,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1799,6 +2245,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1807,6 +2255,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1815,6 +2265,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1823,6 +2275,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1831,6 +2285,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1839,6 +2295,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1847,6 +2305,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1855,6 +2315,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1863,6 +2325,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1871,6 +2335,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1879,6 +2345,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1887,6 +2355,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1895,6 +2365,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1903,6 +2375,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1911,6 +2385,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1919,6 +2395,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1927,6 +2405,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1935,6 +2415,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1943,6 +2425,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1951,6 +2435,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1959,6 +2445,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1967,6 +2455,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1975,6 +2465,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1983,6 +2475,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1991,6 +2485,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -1999,6 +2495,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2007,6 +2505,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2015,6 +2515,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2023,6 +2525,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2031,6 +2535,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2039,6 +2545,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2047,6 +2555,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2055,6 +2565,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2063,6 +2575,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2071,6 +2585,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2079,6 +2595,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2087,6 +2605,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2095,6 +2615,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2103,6 +2625,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2111,6 +2635,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2119,6 +2645,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2127,6 +2655,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2135,6 +2665,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2143,6 +2675,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2151,6 +2685,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Workers involved in strikes and lockouts represents the number of workers implicated directly or indirectly at any time during a strike or lockout, whether the involvement was for the full duration of the strike or lockout or only part of it. Workers who are unable to work as a result of the secondary effects of strikes or lockouts should not be included. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1969-2020 </td>
+   <td style="text-align:left;"> 120 countries </td>
    
   </tr>
   <tr>
@@ -2159,6 +2695,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2167,6 +2705,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2175,6 +2715,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2183,6 +2725,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2191,6 +2735,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2199,6 +2745,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2207,6 +2755,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2215,6 +2765,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2223,6 +2775,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2231,6 +2785,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2239,6 +2795,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2247,6 +2805,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2255,6 +2815,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2263,6 +2825,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
   <tr>
@@ -2271,15 +2835,19 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> The unemployment rate conveys the number of persons who are unemployed as a percent of the labour force (i.e., the employed plus the unemployed). The unemployed comprise all persons of working age who were: a) without work during the reference period, i.e. were not in paid employment or self-employment; b) currently available for work, i.e. were available for paid employment or self-employment during the reference period; and c) seeking work, i.e. had taken specific steps in a specified recent period to seek paid employment or self-employment. We transformed the data with observations into NAs. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2000-2020 </td>
+   <td style="text-align:left;"> 220 countries </td>
    
   </tr>
-  <tr grouplength="2"><td colspan="6" style="border-bottom: 1px solid;"><strong>Political and Social Association</strong></td></tr>
+  <tr grouplength="2"><td colspan="8" style="border-bottom: 1px solid;"><strong>Political and Social Association</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ud_ilostat </td>
    <td style="text-align:left;"> Trade union density rate (%) </td>
    <td style="text-align:left;"> Percentage of employees who are members of a trade union. A trade union is defined as a workers' organization constituted for the purpose of furthering and defending the interests of workers. For the purposes of promoting international comparability of the statistics presented in ILOSTAT, trade union membership refers only to union members who are employees. That is, it excludes union members who are not in paid employment (self-employed, unemployed, retired, etc.) unless otherwise stated in the notes. </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2016 </td>
+   <td style="text-align:left;"> 104 countries </td>
    
   </tr>
   <tr>
@@ -2288,6 +2856,8 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
    <td style="text-align:left;"> Percentage of workers covered by collective bargaining, that is, all those workers whose pay and/or conditions of employment are determined by one or more collective agreement(s). Collective bargaining agreements refer to all agreements in writing regarding working conditions and terms of employment concluded between an employer, a group of emplores or one or more employers' organisations, on the one hand, and one or more representative workers' organisations, on the other. Collective bargaining coverage includes, to the extent possible, workers covered by collective agreements by virtue of their extension, as well as workers covered by collective agreements concluded in previous years but still in force. </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010-2016 </td>
+   <td style="text-align:left;"> 85 countries </td>
    
   </tr>
 </tbody>
@@ -2308,17 +2878,21 @@ The ILO-EPLex database contains legal information about employment protection. I
    <th style="text-align:left;"> Definition </th>
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
+   <th style="text-align:left;"> Regional coverage </th>
    
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="28"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+  <tr grouplength="28"><td colspan="8" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> ftc_reg_eplex </td>
    <td style="text-align:left;"> FTC regulated </td>
    <td style="text-align:left;"> Whether the fixed-term contracts are regulated or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2327,6 +2901,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Maximum cumulative duration of succesive Fixed-term contracts in months </td>
    <td style="text-align:left;"> 0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2009-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2335,6 +2911,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Maximum not-cumulative duration of succesive Fixed-term contracts in months </td>
    <td style="text-align:left;"> 0-72 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2009-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2343,6 +2921,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Valid reasons for fixed-term contracts use </td>
    <td style="text-align:left;"> 0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2009-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2351,6 +2931,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether mine workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2359,6 +2941,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether blue-collar workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2367,6 +2951,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether civil/public servants workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2375,6 +2961,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether domestic workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2383,6 +2971,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether dock workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2391,6 +2981,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether managerial/executive positions workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2399,6 +2991,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether agricultural workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2407,6 +3001,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether agricultural workers are protected by legal regulation or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2011-2020 </td>
+   <td style="text-align:left;"> 102 countries </td>
    
   </tr>
   <tr>
@@ -2415,6 +3011,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether pregnant women and/or women on maternity leave have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2423,6 +3021,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether workers with family responsibilities have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2431,6 +3031,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether older workers/workers on the verge of retirement have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2439,6 +3041,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether workers' representatives have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2447,6 +3051,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether workers with disabilities have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2455,6 +3061,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether workers on temporary leave following an occupational disease or a work injury have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2463,6 +3071,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether workers with a long period of service have a special protection against dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2471,6 +3081,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether the worker's conduct is a valid ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2479,6 +3091,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether the worker's capacities are a valid ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2487,6 +3101,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether economic reasons are a valid ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2495,6 +3111,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether the trade union membership is a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2503,6 +3121,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether the participation in a lawful strike is a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2511,6 +3131,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether the political opinion is a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2519,6 +3141,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether pregnancy is a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2527,6 +3151,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whether disabilities are a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
   <tr>
@@ -2535,6 +3161,8 @@ The ILO-EPLex database contains legal information about employment protection. I
    <td style="text-align:left;"> Whetherfilling a complaint against the employer is a prohibited ground for dismissal or not </td>
    <td style="text-align:left;"> 1= Yes, 2= No </td>
    <td style="text-align:left;"> factor </td>
+   <td style="text-align:left;"> 2010-2019 </td>
+   <td style="text-align:left;"> 101 countries </td>
    
   </tr>
 </tbody>

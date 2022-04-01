@@ -12,17 +12,21 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <th style="text-align:left;"> Definition </th>
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
+   <th style="text-align:left;"> Regional coverage </th>
    
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="6"><td colspan="6" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
+  <tr grouplength="6"><td colspan="8" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> value_post_mat_materialist_euro </td>
    <td style="text-align:left;"> Value orientation: Materialist </td>
    <td style="text-align:left;"> Share of people clasified as materialist according to Materialist/Post-materialist values index </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976-1977, 1979-1991 </td>
+   <td style="text-align:left;"> 16 countries </td>
    
   </tr>
   <tr>
@@ -31,6 +35,8 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <td style="text-align:left;"> Share of people clasified as mixed/neither according to Materialist/Post-materialist values index </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976-1977, 1979-1991 </td>
+   <td style="text-align:left;"> 16 countries </td>
    
   </tr>
   <tr>
@@ -39,6 +45,8 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <td style="text-align:left;"> Share of people clasified as post-materialist according to Materialist/Post-materialist values index </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1976-1977, 1979-1991 </td>
+   <td style="text-align:left;"> 16 countries </td>
    
   </tr>
   <tr>
@@ -47,6 +55,8 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <td style="text-align:left;"> Share of people who consider that there will be a higher amount of Strikes and Industrial Disputes the next year </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1980-1986, 1988 </td>
+   <td style="text-align:left;"> 13 countries </td>
    
   </tr>
   <tr>
@@ -55,6 +65,8 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <td style="text-align:left;"> Share of people who consider that there will be the same amount of Strikes and Industrial Disputes the next year </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1980-1986, 1988 </td>
+   <td style="text-align:left;"> 13 countries </td>
    
   </tr>
   <tr>
@@ -63,6 +75,8 @@ Eurobarometer is, according to their website, the polling instrument used by the
    <td style="text-align:left;"> Share of people who consider that there will be a lower amount of Strikes and Industrial Disputes the next year </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1980-1986, 1988 </td>
+   <td style="text-align:left;"> 13 countries </td>
    
   </tr>
 </tbody>

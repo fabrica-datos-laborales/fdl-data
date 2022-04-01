@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Investigador a cargo: Pablo Pérez Ahumada   Asistente de investigación: Valentina Andrade   Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy" />
+<meta name="author" content="Lead researcher: Pablo Pérez Ahumada   Assistant resarcher: Valentina Andrade   Research assistants: Emilia Cuadros y Nicolás Godoy" />
 
 
 
@@ -150,6 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>8</b> Varietys of Democracy<span></span></a></li>
 <li class="chapter" data-level="9" data-path="latinobarometro.html"><a href="latinobarometro.html"><i class="fa fa-check"></i><b>9</b> Latinobarometro<span></span></a></li>
 <li class="chapter" data-level="10" data-path="eurobarometer.html"><a href="eurobarometer.html"><i class="fa fa-check"></i><b>10</b> Eurobarometer<span></span></a></li>
+<li class="chapter" data-level="11" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>11</b> References<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/fabrica-datos-laborales" target="blank">Repositorio FDL</a></li>
 
@@ -175,7 +176,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="subtitle"><em><center>
 Codebook
 </center></em></h2>
-<p class="author"><em>Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy</em></p>
+<p class="author"><em>Lead researcher: Pablo Pérez Ahumada <br> Assistant resarcher: Valentina Andrade <br> Research assistants: Emilia Cuadros y Nicolás Godoy</em></p>
 <p class="date"><em>01 abril 2022</em></p>
 </div>
 <div id="presentation" class="section level1 unnumbered hasAnchor">
@@ -186,17 +187,7 @@ Codebook
 <p>The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up.</p>
 <p>For this reason, the project has proposed the construction of a <strong>global and temporary database</strong> on labour relations. This includes data on agreements and pacts between employers, unions and the government, political and social characteristics of workers’ unions and other associations, economic relations and employment in different branches and sectors of the economy, and variables on the sociopolitical system such as indices of democracy and confidence in various institutions, among others. Data is available for an average of 60 countries and from 1789 to 2020, in general. The main sources of information are <em>ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.</em></p>
 <p>With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).</p>
-<p>This database allows you to make comparative analysis between different countries and years. For country, we use iso3c classification.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">&quot;https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3&quot;</span>)</span>
-<span id="cb2-2"><a href="index.html#cb2-2" aria-hidden="true" tabindex="-1"></a>iso3c <span class="ot">&lt;-</span> url <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">&quot;span.monospaced&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()  </span>
-<span id="cb2-3"><a href="index.html#cb2-3" aria-hidden="true" tabindex="-1"></a>iso3c <span class="ot">&lt;-</span> iso3c[<span class="dv">1</span><span class="sc">:</span><span class="dv">249</span>]</span>
-<span id="cb2-4"><a href="index.html#cb2-4" aria-hidden="true" tabindex="-1"></a>country <span class="ot">&lt;-</span> url <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">&quot;li a&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_text</span>()</span>
-<span id="cb2-5"><a href="index.html#cb2-5" aria-hidden="true" tabindex="-1"></a>country <span class="ot">&lt;-</span> country[<span class="dv">15</span><span class="sc">:</span><span class="dv">263</span>]</span>
-<span id="cb2-6"><a href="index.html#cb2-6" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">iso3c =</span> iso3c, <span class="at">Country =</span> country)</span>
-<span id="cb2-7"><a href="index.html#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="index.html#cb2-8" aria-hidden="true" tabindex="-1"></a>table <span class="sc">%&gt;%</span> </span>
-<span id="cb2-9"><a href="index.html#cb2-9" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(.) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-10"><a href="index.html#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">font_size =</span> <span class="dv">10</span>) </span></code></pre></div>
+<p>This database allows you to make comparative analysis between different countries and years. The year series of each variable are at a general level in this codebook. To see specifically for which variables it is available in a certain country and year, it must be consulted in the same database. For country, we use iso3c classification.</p>
 <table>
 <thead>
 <tr class="header">

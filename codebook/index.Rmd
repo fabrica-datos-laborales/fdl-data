@@ -47,7 +47,7 @@ With this open database, we seek to promote the open science approach from a tra
 
 This database allows you to make comparative analysis between different countries and years. The year series of each variable are at a general level in this codebook. To see specifically for which variables it is available in a certain country and year, it must be consulted in the same database. For country, we use iso3c classification. 
 
-```{r tabla iso3c}
+```{r tabla iso3c, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 url <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3")
 iso3c <- url %>% html_nodes("span.monospaced") %>% html_text()  
 iso3c <- iso3c[1:249]

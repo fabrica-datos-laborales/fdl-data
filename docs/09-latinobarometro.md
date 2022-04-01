@@ -12,17 +12,21 @@ Latinobarometro is a public opinion survey that researches the development of de
    <th style="text-align:left;"> Definition </th>
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
+   <th style="text-align:left;"> Regional coverage </th>
    
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="58"><td colspan="6" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
+  <tr grouplength="58"><td colspan="8" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> distr_inc_fair_very_fair_lat </td>
    <td style="text-align:left;"> How fair is income distribution: Very Fair </td>
    <td style="text-align:left;"> Share of people who consider that income distribution in their country is very fair </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995, 1997, 2001-2002, 2010-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -31,6 +35,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that income distribution in their country is fair </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995, 1997, 2001-2002, 2010-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -39,6 +45,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that income distribution in their country is neither fair nor unfair </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995, 1997, 2001-2002, 2010-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -47,6 +55,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that income distribution in their country is unfair </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995, 1997, 2001-2002, 2010-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -55,6 +65,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that income distribution in their country is very unfair </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995, 1997, 2001-2002, 2010-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -63,6 +75,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that large companies are the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2000-2001, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -71,6 +85,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that trade unions are the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2000-2001, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -79,6 +95,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that mass media is the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2000, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -87,6 +105,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that banks are the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2001, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -95,6 +115,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that political parties are the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2001, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -103,6 +125,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that the government are the most powerful </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1995-1998, 2001, 2003-2007 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -111,6 +135,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on company associations </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2005-2006 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -119,6 +145,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on company associations </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2005-2006 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -127,6 +155,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on company associations </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2005-2006 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -135,6 +165,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on company associations </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2005-2006 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -143,6 +175,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on the government </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2002-2010, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -151,6 +185,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on the government </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2002-2010, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -159,6 +195,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on the government </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2002-2010, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -167,6 +205,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on the government </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2002-2010, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -175,6 +215,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on private companies </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2001-2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -183,6 +225,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on private companies </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2001-2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -191,6 +235,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on private companies </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2001-2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -199,6 +245,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on private companies </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2001-2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -207,6 +255,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on trade unions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2003-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -215,6 +265,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on trade unions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2003-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -223,6 +275,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on trade unions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2003-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -231,6 +285,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on trade unions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1996, 2003-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -239,6 +295,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who feel very protected by labor law </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1997, 2000 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -247,6 +305,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who feel fairly protected by labor law </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1997, 2000 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -255,6 +315,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who feel a little protected by labor law </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1997, 2000 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -263,6 +325,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who does not feel protected at all by labor law </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1997, 2000 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -271,6 +335,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who strongly agree that workers need strong trade unions to protect their wages and working conditions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -279,6 +345,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who agree that workers need strong trade unions to protect their wages and working conditions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -287,6 +355,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who disagree that workers need strong trade unions to protect their wages and working conditions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -295,6 +365,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who strongly disagree that workers need strong trade unions to protect their wages and working conditions </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -303,6 +375,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on banks </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -311,6 +385,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on banks </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -319,6 +395,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on banks </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -327,6 +405,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on banks </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2002-2006, 2008-2010, 2015, 2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -335,6 +415,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that their countries are being governed in benefit of powerful interests </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2004-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -343,6 +425,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider that their countries are being governed in benefit of all </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2004-2011, 2013, 2015-2018 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -351,6 +435,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a very strong conflict between managers and workers </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -359,6 +445,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a strong conflict between managers and workers </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -367,6 +455,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a weak conflict between managers and workers </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -375,6 +465,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive it does not exist conflict between managers and workers at all </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -383,6 +475,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a very strong conflict between rich and poor people </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -391,6 +485,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a strong conflict between rich and poor people </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -399,6 +495,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive a weak conflict between rich and poor people </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -407,6 +505,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who perceive it does not exist conflict between rich and poor people </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2008-2010 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -415,6 +515,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having a lot of confidence on the state </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -423,6 +525,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having some confidence on the state </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -431,6 +535,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having little confidence on the state </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -439,6 +545,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who declare having no confidence at all on the state </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2010, 2015 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -447,6 +555,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider belonging to upper class </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2013, 2015, 2017 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -455,6 +565,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider belonging to upper-middle class </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2013, 2015, 2017 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -463,6 +575,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider belonging to middle class </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2013, 2015, 2017 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -471,6 +585,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider belonging to lower-middle class </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2013, 2015, 2017 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
   <tr>
@@ -479,6 +595,8 @@ Latinobarometro is a public opinion survey that researches the development of de
    <td style="text-align:left;"> Share of people who consider belonging to lower class </td>
    <td style="text-align:left;"> 0-100 </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2013, 2015, 2017 </td>
+   <td style="text-align:left;"> 19 countries </td>
    
   </tr>
 </tbody>

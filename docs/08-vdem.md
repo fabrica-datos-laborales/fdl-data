@@ -12,17 +12,19 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <th style="text-align:left;"> Definition </th>
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
    
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="49"><td colspan="6" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
+  <tr grouplength="49"><td colspan="7" style="border-bottom: 1px solid;"><strong>Democracy and Sociopolitical System</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> elect_dem_vdem </td>
    <td style="text-align:left;"> Electoral democracy index </td>
    <td style="text-align:left;"> The electoral principle of democracy seeks to embody the core value of making rulers responsive to citizens, achieved through electoral competition for the electorate’s approval under circumstances when suffrage is extensive; political and civil society organizations can operate freely; elections are clean and not marred by fraud or systematic irregularities; and elections affect the composition of the chief executive of the country. In between elections, there is freedom of expression and an independent media capable of presenting alternative views on matters of political relevance. In the V-Dem conceptual scheme, electoral democracy is understood as an essential element of any other conception of representative democracy —liberal, participatory, deliberative, egalitarian, or some other. The index is formed by taking the average of, on the one hand, the weighted average of the indices measuring freedom of association thick (v2x_frassoc_thick), clean elections (v2xel_frefair), freedom of expression (v2x_freexp_altinf), elected officials (v2x_elecoff), and suffrage (v2x_suffr) and, on the other, the five-way multiplicative interaction between those indices. The index is aggregated using this formula: v2x_polyarchy = .5 * MPI + .5 * API = .5 * (v2x_elecoff * v2xel_frefair * v2x_frassoc_thick* v2x_suffr *v2x_freexp_altinf) + .5 * ((1/8) * v2x_elecoff + (1/4) * v2xel_frefair + (1/4) * v2x_frassoc_thick + (1/8) * v2x_suffr + (1/4) * v2x_freexp_altinf) </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -31,6 +33,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> The participatory principle of democracy emphasizes active participation by citizens in all political processes, electoral and non-electoral. It is motivated by uneasiness about a bedrock practice of electoral democracy: delegating authority to representatives. Thus, direct rule by citizens is preferred, wherever practicable. This model of democracy thus takes suffrage for granted, emphasizing engagement in civil society organizations, direct democracy, and subnational elected bodies. To make it a measure of participatory democracy, the index also takes the level of electoral democracy into account. The index is aggregated using this formula: v2x_partipdem = .25 * v2x_polyarchy^1.585 + .25 * v2x_partip + .5 * v2x_polyarchy^1.585 * v2x_partip </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -39,6 +42,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> The deliberative principle of democracy focuses on the process by which decisions are reached in a polity. A deliberative process is one in which public reasoning focused on the common good motivates political decisions—as contrasted with emotional appeals, solidary attachments, parochial interests, or coercion. According to this principle, democracy requires more than an aggregation of existing preferences. There should also be respectful dialogue at all levels—from preference formation to final decision—among informed and competent participants who are open to persuasion. To make it a measure of not only the deliberative principle but also of democracy, the index also takes the level of electoral democracy into account. The index is aggregated using this formula: v2x_delibdem = .25 * v2x_polyarchy^1.585 + .25 * v2x_delib + .5 * v2x_polyarchy^1.585 * v2x_delib </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -47,6 +51,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent does government respect press and media freedom, the freedom of ordinary people to discuss political matters at home and in the public sphere, as well as the freedom of academic and cultural expression. The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for media censorship effort (v2mecenefm), harassment of journalists (v2meharjrn), media bias (v2mebias), media self-censorship (v2meslfcen), print/broadcast media critical (v2mecrit), and print/broadcast media perspectives (v2merange), freedom of discussion for men/women (v2cldiscm, v2cldiscw), and freedom of academic and cultural expression (v2clacfree). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -55,6 +60,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> This question does not take into consideration restrictions based on age, residence, having been convicted for crime, or being legally incompetent. It covers legal de jure restrictions, not restrictions that may be operative in practice de facto. The adult population as defined by statute is defined by citizens in the case of independent countries or the people living in the territorial entity in the case of colonies. Universal suffrage is coded as 100%. Universal male suffrage only is coded as 50%. Years before electoral provisions are introduced are scored 0%. The scores do not reflect whether an electoral regime was interrupted or not. Only if new constitutions, electoral laws, or the like explicitly introduce new regulations of suffrage, the scores were adjusted accordingly if the changes suggested doing so. If qualifying criteria other than gender apply such as property, tax payments, income, literacy, region, race, ethnicity, religion, and/or ’economic independence’, estimates have been calculated by combining information on the restrictions with different kinds of statistical information on population size, age distribution, wealth distribution, literacy rates, size of ethnic groups, etc., secondary country-specific sources, and — in the case of very poor information — the conditions in similar countries or colonies. The scores reflect de jure provisions of suffrage extension in percentage of the adult population. If the suffrage law is revised in a way that affects the extension, the scores reflect this change as of the calendar year the law was enacted. Aggregation: v2elsuffrage/100 </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -63,6 +69,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Free and fair connotes an absence of registration fraud, systematic irregularities, government intimidation of the opposition, vote buying, and election violence.The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for EMB autonomy (v2elembaut), EMB capacity (v2elembcap), election voter registry (v2elrgstry), election vote buying (v2elvotbuy), election other voting irregularities (v2elirreg), election government intimidation (v2elintim), non state electoral violence (v2elpeace), and election free and fair (v2elfrfair). Since the bulk of these indicators are only observed in election years, the index scores have then been repeated within election regime periods as defined by v2x_elecreg. For the US and UK, the only two countries holding national elections prior to 1789 but with their first election within our sampling period occurring only in 1790, we have backfilled this index for 1789 with the value observed in 1790. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -71,6 +78,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> The sphere of civil society lies in the public space between the private sphere and the state. Here, citizens organize in groups to pursue their collective interests and ideals. We call these groups civil society organizations CSOs. CSOs include, but are by no means limited to, interest groups, labor unions, spiritual organizations if they are engaged in civic or political activities, social movements, professional associations, charities, and other non-governmental organizations. The core civil society index CCSI is designed to provide a measure of a robust civil society, understood as one that enjoys autonomy from the state and in which citizens freely and actively pursue their political and civic goals, however conceived. The index is formed by taking the point estimates from a Bayesian factor analysis model of the indicators for candidate selection — national/local (v2pscnslnl), CSO consultation (v2cscnsult), CSO participatory environment (v2csprtcpt), and CSO women participation (v2csgender). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -79,6 +87,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Whether voting is compulsory (for those eligible to vote) in national elections or not. </td>
    <td style="text-align:left;"> 1: Yes. But there are no sanctions or sanctions are not enforced. 2: Yes. Sanctions exist and are enforced, but they impose minimal costs upon the offending voter. 3: Yes. Sanctions exist, they are enforced, and they impose considerable costs upon the offending voter. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1990-2020 </td>
    
   </tr>
   <tr>
@@ -87,6 +96,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Whether women are aligible to vote in national elections or not </td>
    <td style="text-align:left;"> 0: No female suffrage. No women are allowed to vote, but some or all males vote. 1: Restricted female suffrage. Some women are allowed to vote, and face more or different restrictions than men 2: Universal female suffrage. All women are allowed to vote. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -95,6 +105,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Percentage (%) of the vote received by candidate eventually winning office, in the first or only round of presidential elections </td>
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1792-2020 </td>
    
   </tr>
   <tr>
@@ -103,6 +114,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Whether there are parties banned or not </td>
    <td style="text-align:left;"> 0: Yes. All parties except the state-sponsored party (and closely allied parties) are banned. 1: Yes. Elections are non-partisan or there are no officially recognized parties. 2: Yes. Many parties are banned. 3: Yes. But only a few parties are banned. 4: No. No parties are officially banned. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -111,6 +123,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Whether opposition parties are independent and autonomous of the ruling regime </td>
    <td style="text-align:left;"> 0: Opposition parties are not allowed. 1: There are no autonomous, independent opposition parties. Opposition parties are either selected or co-opted by the ruling regime. 2: At least some opposition parties are autonomous and independent of the ruling regime. 3: Most significant opposition parties are autonomous and independent of the ruling regime. 4: All opposition parties are autonomous and independent of the ruling regime. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -119,6 +132,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How do members of executive (the head of the state, the head of government, and cabinet ministers) respect the constitution </td>
    <td style="text-align:left;"> 0: Members of the executive violate the constitution whenever they want to, without legal consequences. 1: Members of the executive violate most provisions of the constitution without legal consequences, but still must respect certain provisions. 2: Somewhere in between (1) and (3). Members of the executive would face legal consequences for violating most provisions of the constitution, but can disregard some provisions without any legal consequences. 3: Members of the executive rarely violate the constitution, and when it happens they face legal charges. 4: Members of the executive never violate the constitution. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -127,6 +141,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Percentage share of the domestic adult (18+) population that belongs to the political regime's supporting groups </td>
    <td style="text-align:left;"> 0: Extremely small (About 1 percent of the population or less; examples of this could include regimes supported by — and needing the support from — a handful of higher-rank military officers, or by only a royal council and a few hundred landowners) 1: Very small (Between 1 percent and 5 percent of the population; examples of this could include regimes supported by — and needing the support from — higher ranking civil servants and the military, or by moderately sized business and agrarian elites) 2: Small (Between 5 percent and 15 percent; examples of this could include regimes supported by —and needing the support from — relatively small ethnic groups, or by urban elites and the urban middle classes in predominantly rural societies) 3: Moderate (Between 15 percent and 30 percent; examples of this could include regimes supported by — and needing the support from —moderately sized ethnic groups, by rural middle classes in rural societies, or by urban middle classes in urban societies) 4: Large (More than 30 percent; examples of this could include regimes supported by — and needing the support from — large ethnic groups (and then not only the elites/leaders of such groups), or by rural working classes in rural societies.) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -135,6 +150,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Percentage share of the domestic adult (18+) population that are noteworthy opposition actors to the current political regime </td>
    <td style="text-align:left;"> 0: Extremely small (About 1 percent of the population or less) 1: Very small (Between 1 percent and 5 percent of the population) 2: Small (Between 5 percent and 15 percent) 3: Moderate (Between 15 percent and 30 percent) 4: Large (More than 30 percent) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -143,6 +159,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How well represented are all the disadvantage groups in the country, as a whole, in the national legislature. Disadvantage refers to socioeconomic disadvantage. Specifically, in order to be considered disadvantaged members of a social group must have an average income that is significantly below the median national income. </td>
    <td style="text-align:left;"> 0 (1): They have no representation at all. 1 (2): They are highly under-represented relative to their proportion of the general population. 2 (3): They are slightly under-represented relative to their proportion of the general population. 3 (4): They are represented roughly equal relative to their proportion of the general population. 4 (5): They are over-represented relative to their proportion of the general population. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -151,6 +168,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> This question specifies the extent to which the level of civil liberties is generally the same across socioeconomic groups so that people with a low social status are not treated worse than people with high social status. Here, civil liberties are understood to include access to justice, private property rights, freedom of movement, and freedom from forced labor. </td>
    <td style="text-align:left;"> 0: Poor people enjoy much fewer civil liberties than rich people. 1: Poor people enjoy substantially fewer civil liberties than rich people. 2: Poor people enjoy moderately fewer civil liberties than rich people. 3: Poor people enjoy slightly fewer civil liberties than rich people. 4: Poor people enjoy the same level of civil liberties as rich people. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -159,6 +177,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Whether there is academic freedom and freedom of cultural expression related to political issues or not </td>
    <td style="text-align:left;"> 0: Not respected by public authorities. Censorship and intimidation are frequent. Academic activities and cultural expressions are severely restricted or controlled by the government. 1: Weakly respected by public authorities. Academic freedom and freedom of cultural expression are practiced occasionally, but direct criticism of the government is mostly met with repression. 2: Somewhat respected by public authorities. Academic freedom and freedom of cultural expression are practiced routinely, but strong criticism of the government is sometimes met with repression. 3: Mostly respected by public authorities. There are few limitations on academic freedom and freedom of cultural expression, and resulting sanctions tend to be infrequent and soft. 4: Fully respected by public authorities. There are no restrictions on academic freedom or cultural expression. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -167,6 +186,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the state own or directly control important sectors of the economy. Gauges the degree to which the state owns and controls capital (including land) in the industrial, agricultural, and service sectors. it dos not measure the extent of government revenue and expenditure as a share of total output; indeed, it is quite common for states with expansive fiscal policies to exercise little direct control (and virtually no ownership) over the economy </td>
    <td style="text-align:left;"> 0: Virtually all valuable capital belongs to the state or is directly controlled by the state. Private property may be officially prohibited. 1: Most valuable capital either belongs to the state or is directly controlled by the state. 2: Many sectors of the economy either belong to the state or are directly controlled by the state, but others remain relatively free of direct state control. 3: Some valuable capital either belongs to the state or is directly controlled by the state, but most remains free of direct state control. 4: Very little valuable capital belongs to the state or is directly controlled by the state. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -175,6 +195,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent the government does achieve control over entry and exit by civil society organizations (CSOs) into public life? </td>
    <td style="text-align:left;"> 0: Monopolistic control. The government exercises an explicit monopoly over CSOs. The only organizations allowed to engage in political activity such as endorsing parties or politicians, sponsoring public issues forums, organizing rallies or demonstrations, engaging in strikes, or publicly commenting on public officials and policies are government-sponsored organizations. The government actively represses those who attempt to defy its monopoly on political activity. 1: Substantial control. The government licenses all CSOs and uses political criteria to bar organizations that are likely to oppose the government. There are at least some citizen-based organizations that play a limited role in politics independent of the government. The government actively represses those who attempt to flout its political criteria and bars them from any political activity. 2: Moderate control. Whether the government ban on independent CSOs is partial or full, some prohibited organizations manage to play an active political role. Despite its ban on organizations of this sort, the government does not or cannot repress them, due to either its weakness or political expedience. 3: Minimal control. Whether or not the government licenses CSOs, there exist constitutional provisions that allow the government to ban organizations or movements that have a history of anti-democratic action in the past (e.g. the banning of neo-fascist or communist organizations in the Federal Republic of Germany). Such banning takes place under strict rule of law and conditions of judicial independence. 4: Unconstrained. Whether or not the government licenses CSOs, the government does not impede their formation and operation unless they are engaged in activities to violently overthrow the government. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -183,6 +204,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the government attempt to repress civil society organizations (CSOs) </td>
    <td style="text-align:left;"> 0: Severely. The government violently and actively pursues all real and even some imagined members of CSOs. They seek not only to deter the activity of such groups but to effectively liquidate them. Examples include Stalinist Russia, Nazi Germany, and Maoist China. 1: Substantially. In addition to the kinds of harassment outlined in responses 2 and 3 below, the government also arrests, tries, and imprisons leaders of and participants in oppositional CSOs who have acted lawfully. Other sanctions include disruption of public gatherings and violent sanctions of activists (beatings, threats to families, destruction of valuable property). Examples include Mugabe’s Zimbabwe, Poland under Martial Law, Serbia under Milosevic. 2: Moderately. In addition to material sanctions outlined in response 3 below, the government also engages in minor legal harassment (detentions, short-term incarceration) to dissuade CSOs from acting or expressing themselves. The government may also restrict the scope of their actions through measures that restrict association of civil society organizations with each other or political parties, bar civil society organizations from taking certain actions, or block international contacts. Examples include post-Martial Law Poland, Brazil in the early 1980s, the late Franco period in Spain. 3: Weakly. The government uses material sanctions (fines, firings, denial of social services) to deter oppositional CSOs from acting or expressing themselves. They may also use burdensome registration or incorporation procedures to slow the formation of new civil society organizations and sidetrack them from engagement. The government may also organize Government Organized Movements or NGOs (GONGOs) to crowd out independent organizations. One example would be Singapore in the post-Yew phase or Putin’s Russia. 4: No. Civil society organizations are free to organize, associate, strike, express themselves, and to criticize the government without fear of government sanctions or harassment. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -191,6 +213,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If major civil society organizations (CSOs) are routinely consulted by policymakers on policies relevant to their members </td>
    <td style="text-align:left;"> 0: No. There is a high degree of insulation of the government from CSO input. The government may sometimes enlist or mobilize CSOs after policies are adopted to sell them to the public at large. But it does not often consult with them in formulating policies. 1: To some degree. CSOs are but one set of voices that policymakers sometimes take into account.: Yes. Important CSOs are recognized as stakeholders in important policy areas and given voice on such issues. This can be accomplished through formal corporatist arrangements or through less formal arrangements. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -199,6 +222,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If women are prevented from participating in civil society organizations (CSOs). Please pay attention to both (A) whether women are prevented from participating in civil society organizations (CSOs) because of their gender and (B) whether CSOs pursuing women’s interests are prevented from taking part in associational life. </td>
    <td style="text-align:left;"> 0: Almost always. 1: Frequently. 2: About half the time. 3: Rarely. 4: Almost never. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -207,6 +231,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the government directly or indirectly attempts to censor the print or broadcast media. Indirect forms of censorship might include politically motivated awarding of broadcast frequencies, withdrawal of financial support, influence over printing facilities and distribution networks, selected distribution of advertising, onerous registration requirements, prohibitive tariffs, and bribery. We are not concerned with censorship of non-political topics such as child pornography, statements offensive to a particular religion, or defamatory speech unless this sort of censorship is used as a pretext for censoring political speech. </td>
    <td style="text-align:left;"> 0: Attempts to censor are direct and routine. 1: Attempts to censor are indirect but nevertheless routine. 2: Attempts to censor are direct but limited to especially sensitive issues. 3: Attempts to censor are indirect and limited to especially sensitive issues. 4: The government rarely attempts to censor major media in any way, and when such exceptional attempts are discovered, the responsible officials are usually punished. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -215,6 +240,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the government attempts to censor information (text, audio, or visuals) on the Internet. Censorship attempts include Internet filtering (blocking access to certain websites or browsers), denial-of-service attacks, and partial or total Internet shutdowns. We are not concerned with censorship of topics such as child pornography, highly classified information such as military or intelligence secrets, statements offensive to a particular religion, or defamatory speech unless this sort of censorship is used as a pretext for censoring political information or opinions. We are also not concerned with the extent of internet access, unless there is absolutely no access at all (in which case the coding should be 0). </td>
    <td style="text-align:left;"> 0 (1): The government successfully blocks Internet access except to sites that are pro-government or devoid of political content. 1 (2): The government attempts to block Internet access except to sites that are pro-government or devoid of political content, but many users are able to circumvent such controls. 2 (3): The government allows Internet access, including to some sites that are critical of the government, but blocks selected sites that deal with especially politically sensitive issues. 3 (4): The government allows Internet access that is unrestricted, with the exceptions mentioned above. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1993-2020 </td>
    
   </tr>
   <tr>
@@ -223,6 +249,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If political power is distributed according to socioeconomic position. All societies are characterized by some degree of economic (wealth and income) inequality. In some societies, income and wealth are distributed in a grossly unequal fashion. In others, the difference between rich and poor is not so great. Here, we are concerned not with the degree of social inequality but rather with the political effects of this inequality. Specifically, we are concerned with the extent to which wealth and income translates into political power. </td>
    <td style="text-align:left;"> 0: Wealthy people enjoy a virtual monopoly on political power. Average and poorer people have almost no influence. 1: Wealthy people enjoy a dominant hold on political power. People of average income have little say. Poorer people have essentially no influence. 2: Wealthy people have a very strong hold on political power. People of average or poorer income have some degree of influence but only on issues that matter less for wealthy people. 3: Wealthy people have more political power than others. But people of average income have almost as much influence and poor people also have a significant degree of political power. 4: Wealthy people have no more political power than those whose economic status is average or poor. Political power is more or less equally distributed across economic groups. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -231,6 +258,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If political power is distributed according to social groups. A social group is differentiated within a country by caste, ethnicity, language, race, region, religion, or some combination thereof. (It does not include identities grounded in sexual orientation or socioeconomic status.) Social group identity is contextually defined and is likely to vary across countries and through time. Social group identities are also likely to cross-cut, so that a given person could be defined in multiple ways, i.e., as part of multiple groups. Nonetheless, at any given point in time there are social groups within a society that are understood — by those residing within that society — to be different, in ways that may be politically relevant. </td>
    <td style="text-align:left;"> 0: Political power is monopolized by one social group comprising a minority of the population. This monopoly is institutionalized, i.e., not subject to frequent change. 1: Political power is monopolized by several social groups comprising a minority of the population. This monopoly is institutionalized, i.e., not subject to frequent change. 2: Political power is monopolized by several social groups comprising a majority of the population. This monopoly is institutionalized, i.e., not subject to frequent change. 3: Either all social groups possess some political power, with some groups having more power than others; or different social groups alternate in power, with one group controlling much of the political power for a period of time, followed by another — but all significant groups have a turn at the seat of power. 4: All social groups have roughly equal political power or there are no strong ethnic, caste, linguistic, racial, religious, or regional differences to speak of. Social group characteristics are not relevant to politics. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -239,6 +267,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If political power is distributed according to gender. </td>
    <td style="text-align:left;"> 0: Men have a near-monopoly on political power. 1: Men have a dominant hold on political power. Women have only marginal influence. 2: Men have much more political power but women have some areas of influence. 3: Men have somewhat more political power than women. 4: Men and women have roughly equal political power. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -247,6 +276,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent high quality basic education is guaranteed to all, sufficient to enable them to exercise their basic rights as adult citizens </td>
    <td style="text-align:left;"> 0: Extreme. Provision of high quality basic education is extremely unequal and at least 75 percent (%) of children receive such low-quality education that undermines their ability to exercise their basic rights as adult citizens. 1: Unequal. Provision of high quality basic education is extremely unequal and at least 25 percent (%) of children receive such low quality education that undermines their ability to exercise their basic rights as adult citizens. 2: Somewhat equal. Basic education is relatively equal in quality but ten to 25 percent (%) of children receive such low-quality education that undermines their ability to exercise their basic rights as adult citizens. 3: Relatively equal. Basic education is overall equal in quality but five to ten percent (%) of children receive such low-quality education that probably undermines their ability to exercise their basic rights as adult citizens. 4: Equal. Basic education is equal in quality and less than five percent (%) of children receive such low-quality education that probably undermines their ability to exercise their basic rights as adult citizens. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -255,6 +285,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the society is polarized into antagonistic, political camps. Here we refer to the extent to which political differences affect social relationships beyond political discussions. Societies are highly polarized if supporters of opposing political camps are reluctant to engage in friendly interactions, for example, in family functions, civic associations, their free time activities and workplaces </td>
    <td style="text-align:left;"> 0: Not at all. Supporters of opposing political camps generally interact in a friendly manner. 1: Mainly not. Supporters of opposing political camps are more likely to interact in a friendly than a hostile manner. 2: Somewhat. Supporters of opposing political camps are equally likely to interact in a friendly or hostile manner. 3: Yes, to noticeable extent. Supporters of opposing political camps are more likely to interact in a hostile than friendly manner. 4: Yes, to a large extent. Supporters of opposing political camps generally interact in a hostile manner. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -263,6 +294,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How often non-state actors have used political violence against persons this year. We understand political violence as the use of physical force to achieve political objectives by non-state actors. The restriction to political objectives excludes profit-driven crime-related violence, for instance. By non-state actors we refer to individuals or entities that are not formally part of the state. Thus, politically oriented militias and youth groups count as non-state actors even though they might potentially be informally affiliated with the ruling party or the state. Political violence against persons excludes psychological and symbolic violence (e.g. destruction of objects). </td>
    <td style="text-align:left;"> 0: Not at all. Non-state actors did not use political violence. 1: Rare. Non-state actors rarely used political violence. 2: Occasionally. Non-state actors occasionally used political violence. 3: Frequently. Non-state actors frequently used political violence. 4: Often. Non-state actors often used political violence. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -271,6 +303,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How frequent and large have events of mass mobilization been this year. This question concerns the mobilization of citizens for mass events such as demonstrations, strikes and sit-ins. These events are typically organized by non-state actors, but the question also concerns state-orchestrated rallies (e.g. to show support of an autocratic government). </td>
    <td style="text-align:left;"> 0: There have been virtually no events. 1: There have been several small-scale events. 2: There have been many small-scale events. 3: There have been several large-scale and small-scale events. 4: There have been many large-scale and small-scale events. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -279,6 +312,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If labor force enjoys the right to organiz freely and a bargain collectively. Refers to actual practice not formal (de jure) rights. If practices vary across the country, or across sectores, please consider the overall situation of labor. </td>
    <td style="text-align:left;"> 0: Independent labor unions (free from state or ruling party control) are not allowed. 1: Independent labor unions are allowed, at least in some sectors of the economy or some sections of the country. However, they are subject to harassment by the police, paramilitary groups, business associations, or other groups. Harassment refers to systematic beatings, imprisonment, outlawing of specific unions, and other actions that seriously impinge upon the ability of unions to organize and bargain collectively. 2: Independent labor unions are allowed and they do not face violent repression but the legal climate is not friendly (e.g., "closed shop" rules are widespread), making it difficult to organize and bargain collectively. 3: Independent labor unions are allowed and may organize freely in all sectors of the economy. </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2010 </td>
    
   </tr>
   <tr>
@@ -287,6 +321,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If there is a minimum wage </td>
    <td style="text-align:left;"> 0: No. 1: Yes, the state imposes a minimum wage (legislation, regulations). 2: Yes, there are corporate bargaining arrangements that effectively ensure a minimum wage. 3: Yes, there is a tripartite committee that sets the wage (representatives from union, employer, government). </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2015 </td>
    
   </tr>
   <tr>
@@ -295,6 +330,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How can the political regime overall be classified considering the competitiveness of acces to power (polyarchy) as well as liberal principles. Electoral democracies score above 2 on the indicators for multi–party (v2elmulpar_osp) and free and fair elections (v2elfrfair_osp), as well as above 0.5 on the Electoral Democracy Index (v2x_polyarchy). Liberal democracy meets the criteria for Electoral democracy but also satisfy the liberal dimensions by a score above 0.8 on the V–Dem Liberal Component index (v2x_liberal), as well as a score above 3 on transparent law enforcement (v2cltrnslw_osp), access to justice for men (v2clacjstm_osp) and women (v2clacjstw_osp). Electoral autocracies fail to meet one or more of the above–mentioned criteria of electoral democracies, but subject the chief executive and the legislature to de–jure multiparty elections as indicated by a score above 1 on the V–Dem multiparty elections indicator (v2elmulpar_osp). Closed autocracy if either no multiparty elections for the legislature take place (v2xlg_elecreg == 0) or the chief executive is not elected in direct or indirect multiparty elections. To identify whether this is the case, we take into account if there is no basic multiparty competition in elections (v2elmulpar_osp &lt; 1) and the relative power of the Head of State (HoS) and the Head of Government (HoG) as well as the appointment procedures. The V–Dem variable v2ex_hosw identifies if the HoS (v2ex_hosw&gt; 0.5) or HoG (v2ex_hosw &lt; or equal to 0.5) is the chief executive. If the HoG is the chief executive, the variable v2expathhg indicates whether the HoG is directly (8) or indirectly (7) elected or appointed by the HoS (6). In the first case, we consider whether executive elections (v2xex_elecreg == 0) take place, in the second case whether legislative elections take place (v2xlg_elecreg == 0) and in the third case how HoS is selected as follows. The variable v2expathhs indicates whether the HoS is directly (7) or indirectly (6) elected. Thus, in the first case, we consider whether executive elections (v2xex_elecreg) take place, in the second case whether legislative elections take place and the legislature approves on HoG (v2xlg_elecreg == 0 and v2exaphog == 0). This also applies for the cases if the HoS is the chief executive. </td>
    <td style="text-align:left;"> 0: Closed autocracy: No multiparty elections for the chief executive or the legislature. 1: Electoral autocracy: De-jure multiparty elections for the chief executive and the legislature, but failing to achieve that elections are free and fair, or de-facto multiparty, or a minimum level of Dahl’s institutional prerequisites of polyarchy as measured by V-Dem’s Electoral Democracy Index (v2x_polyarchy). 2: Electoral democracy: De-facto free and fair multiparty elections and a minimum level of Dahl’s institutional prerequisites for polyarchy as measured by V- Dem’s Electoral Democracy Index (v2x_polyarchy), but either access to justice, or transparent law enforcement, or liberal principles of respect for personal liberties, rule of law, and judicial as well as legislative constraints on the executive not satisfied as measured by V-Dem’s Liberal Component Index (v2x_liberal). 3: Liberal democracy: De-facto free and fair multiparty elections and a minimum level of Dahl’s institutional prerequisites for polyarchy as measured by V- Dem’s Electoral Democracy Index (v2x_polyarchy) are guaranteed as well as access to justice, transparent law enforcement and the liberal principles of respect for personal liberties, rule of law, and judicial as well as legislative constraints on the executive satisfied as measured by V-Dem’s Liberal Component Index (v2x_liberal). </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1900-2020 </td>
    
   </tr>
   <tr>
@@ -303,6 +339,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent the power base of the chief executive is determined by direct election. Representing one of five regime dimensions, each of which may be more or less present in any given case, this index taps into the extent to which the chief executive is appointed through direct popular election (regardless of the quality or extension of suffrage of that election). The index is based on whether the "chief executive" was directly elected. In nominally dual systems, where the head of state (HOS) and the head of government (HOG) are not the same individual, we determine who is the "chief executive" by comparing HOS and HOG powers over the appointment and dismissal of cabinet ministers. We aggregate across the two executives by taking the average weighted by their relative powers over cabinet formation and dismissal. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -311,6 +348,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent the power base of the chief executive is determined by hereditary succesion. Representing one of five regime dimensions, each of which may be more or less present in any given case, this index taps into the extent to which the appointment and dismissal of the chief executive is based on hereditary rule. The index is based on whether the "chief executive" was (a) appointed through hereditary sucession or by a royal council, and (b) can be dismissed by a royal council. Both condition (a) and (b) are coded as present (1) or not (0); we then average across the two. In nominally dual systems, where the head of state (HOS) and the head of government (HOG) are not the same individual, we determine who is the "chief executive" by comparing HOS and HOG powers over the appointment and dismissal of cabinet ministers. We aggregate across the two executives by taking the average weighted by their relative powers over cabinet formation and dismissal. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -319,6 +357,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent the power base of the chief executive is determined by the military. Representing one of five regime dimensions, each of which may be more or less present in any given case, this index taps into the extent to which the appointment and dismissal of the chief executive is based on the threat or actual use of military force.The index is based on whether the "chief executive" was (a) appointed through a coup, rebellion or by the miliyary, and (b) can be dismissed by a the military. Both condition (a) and (b) are coded as present (1) or not (0); we then average across the two. In nominally dual systems, where the head of state (HOS) and the head of government (HOG) are not the same individual, we determine who is the "chief executive" by comparing HOS and HOG powers over the appointment and dismissal of cabinet ministers. We aggregate across the two executives by taking the average weighted by their relative powers over cabinet formation and dismissal. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -327,6 +366,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent rule is based on personal authority. Neopatrimonial rule reflects the idea that personalistic forms of authority pervade formal regime institutions (Clapham, 1985). According to Bratton and Van de Walle (1997) a neopatrimonialism regime is one that combines clientelistic political relationships, strong and unconstrained presidents and the use of public resources for political legitimation. The index is constructed using Bayesian Factor Analysis of 16 indicators representing these three concepts. The sixteen indicators are those included in the three sub-indices: Clientelism, Presidentialism and Regime Corruption. The point estimates for this index have been reversed such that the directionality is opposite to the input variables. That is, lower scores indicate a normatively better situation (e.g. more democratic) and higher scores a normatively worse situation (e.g. less democratic). Note that this directionality is opposite of that of other V-Dem indices, which generally run from normatively worse to better. The index is formed by taking the reversed point estimates (so that higher scores = more neopatrimonialism) from a Bayesian factor analysis model of the indicators for vote buying (v2elvotbuy), particularistic vs. public goods (v2dlencmps), party linkages (v2psprlnks), executive respects constitution (v2exrescon), executive oversight (v2lgotovst), legislature controls resources (v2lgfunds), legislature investigates the executive in practice (v2lginvstp), high court independence (V2juhcind), low court independence (v2jucnind),compliance with high court (v2juhccomp), compliance with judiciary (v2jucomp), electoral management body autonomy (v2elembaut), executive embezzlement and theft (v2exembez), executive bribes and corrupt exchanges (v2exbribe), legislative corruption (v2lgcrrpt) and judicial corruption (v2jucorrdc). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -335,6 +375,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent politics are based on clientelistic relationships. Clientelistic relationships include the targeted, contingent distribution of resources (goods, services, jobs, money, etc) in exchange for political support. The point estimates for this index have been reversed such that the directionality is opposite to the input variables. That is, lower scores indicate a normatively better situation (e.g. more democratic) and higher scores a normatively worse situation (e.g. less democratic). Note that this directionality is opposite of that of other V-Dem indices, which generally run from normatively worse to better. The index is formed by taking the reversed point estimates (so that higher scores = more clientelism) from a Bayesian factor analysis model of the indicators for vote-buying (v2elvotbuy), particularistic vs. public goods (v2dlencmps) and whether party linkages are programmatic or clientelistic (v2psprlnks). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -343,6 +384,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent the regime is characterized by presidentialism. Presidentialism means the "systemic concentration of political power in the hands of one individual who resists delegating all but the most trivial decision making tasks" (Bratton and Van de Walle, 1997: 63). It relates closely to V-Dem’s index of Horizontal Accountability (v2x_horacc) but focuses more specifically on the extent to which the President is free from constraints by other institutions or actors. The point estimates for this index have been reversed such that the directionality is opposite to the input variables. That is, lower scores indicate a normatively better situation (e.g. more democratic) and higher scores a normatively worse situation (e.g. less democratic). Note that this directionality is opposite of that of other V-Dem indices, which generally run from normatively worse to better. The index is formed by taking the reversed point estimates (so that higher scores = more presidentialism) from a Bayesian factor analysis model of the indicators for executive respect for the constitution (v2exrescon), whether there are mechanisms for oversight of the executive other than the legislature (v2lgotovst). For legislative constraints, the index includes an indicator of whether the legislature controls its own resources (v2lgfunds) and investigates the executive in practice (v2lginvstp). There are four indicators of judicial constraints on the executive: high court independence (v2juhcind), lower court independence (v2jucnind), compliance with high court (v2juhccomp) and compliance with judiciary (v2jucomp). Finally, the index includes a measure of autonomy of the electoral management body (v2elembaut) that captures whether or not the President can influence its decisions and actions. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -351,6 +393,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent is civil liberty respected. Civil liberty is understood as liberal freedom, where freedom is a property of individuals. Civil liberty is constituted by the absence of physical violence committed by government agents and the absence of constraints of private liberties and political liberties by the government. The index is formed by taking the average of physical violence index (v2x_clphy), political civil liberties index (v2x_clpol), and private civil liberties (v2x_clpriv). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -359,6 +402,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> To what extent physical integrity is respected. Physical integrity is understood as freedom from political killings and torture by the government. Among the set of civil liberties, these liberal rights are the most relevant for political competition and accountability. The index is based on indicators that reflect violence committed by government agents and that are not directly referring to elections. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -367,6 +411,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How pervasive is political corruption. The directionality of the V-Dem corruption index runs from less corrupt to more corrupt unlike the other V-Dem variables that generally run from less democratic to more democratic situation. The corruption index includes measures of six distinct types of corruption that cover both different areas and levels of the polity realm, distinguishing between executive, legislative and judicial corruption. Within the executive realm, the measures also distinguish between corruption mostly pertaining to bribery and corruption due to embezzlement. Finally, they differentiate between corruption in the highest echelons of the executive at the level of the rulers/cabinet on the one hand, and in the public sector at large on the other. The measures thus tap into several distinguished types of corruption: both ‘petty’ and ‘grand’; both bribery and theft; both corruption aimed and influencing law making and that affecting implementation. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -375,6 +420,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How politically empowered are women. Women’s political empowerment is defined as a process of increasing capacity for women, leading to greater choice, agency, and participation in societal decision-making. It is understood to incorporate three equally-weighted dimensions: fundamental civil liberties, women’s open discussion of political issues and participation in civil society organizations, and the descriptive representation of women in formal political positions. The index is formed by taking the average of women’s civil liberties index (v2x_gencl), women’s civil society participation index (v2x_gencs), and women’s political participation index (v2x_genpp). </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2020 </td>
    
   </tr>
   <tr>
@@ -383,6 +429,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> If the country is democratic. Dichotomous democracy measure based on contestation and participation. Countries coded democratic have (1) political leaders that are chosen through free and fair elections and (2) a minimal level of suffrage. </td>
    <td style="text-align:left;"> 0= No, 1= Yes </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1800-2015 </td>
    
   </tr>
   <tr>
@@ -391,6 +438,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How many previous democratic breakdowns ocurred </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1800-2015 </td>
    
   </tr>
   <tr>
@@ -399,6 +447,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Average years of education among citizens older than 15. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1820-2020 </td>
    
   </tr>
   <tr>
@@ -407,15 +456,17 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> How unequal is the level of education achieved by the population aged 15 years and older. Gini coefficient of educational inequality estimated from average education data using the method as suggested by Thomas, Wang, and Fan (2000), Checchi (2004) and Castelló and Doménech (2000: 4). Van Leeuwen, van Leeuwen-Li, and Foldvari (N.d.) provide a more detailed explanation in the Clio-Infra codebook. </td>
    <td style="text-align:left;"> (0-1) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1850-2010 </td>
    
   </tr>
-  <tr grouplength="6"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+  <tr grouplength="6"><td colspan="7" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> exports_vdem </td>
    <td style="text-align:left;"> Exports </td>
    <td style="text-align:left;"> Total value of a country's exports in 2014 US millions of dollars </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1870-2014 </td>
    
   </tr>
   <tr>
@@ -424,6 +475,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Total value of a country's imports in 2014 US millions of dollars. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1870-2014 </td>
    
   </tr>
   <tr>
@@ -432,6 +484,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> GDP per capita, refering to gross domestic production, understood on a per capita basis </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2018 </td>
    
   </tr>
   <tr>
@@ -440,6 +493,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Annual inflation rate </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1789-2010 </td>
    
   </tr>
   <tr>
@@ -448,6 +502,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> The fertility rate (i.e. total fertility rate, period total fertility rate, total period fertility rate) of a population is the mean number of children that would be born to a woman over her lifetime if (a) she were to experience the current age-specific fertility rates through her lifetime, and (b) she were to survive through the end of her reproductive life. It is obtained by adding single-year age-specific rates at a given time. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1960-2018 </td>
    
   </tr>
   <tr>
@@ -456,6 +511,7 @@ Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and meas
    <td style="text-align:left;"> Total population in thousands </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1800-2000 </td>
    
   </tr>
 </tbody>
