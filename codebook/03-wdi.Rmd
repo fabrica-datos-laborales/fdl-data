@@ -12,12 +12,12 @@ In the following table, all indicators in our database are listed:
 ```{r wdi, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B268:N309"), sheet= "Variables", col_names = F) %>%
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>%
 filter(grepl("_wdi", Variable)) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 30, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(8)
 
 ```

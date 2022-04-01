@@ -11,14 +11,14 @@ The following variables are from the Institutional Characteristics of Trade Unio
 
 ```{r echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B7:N216"), sheet= "Variables", col_names = F) %>%
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 4, bold = T) %>% 
   pack_rows("Pacts and Agreements", 5, 59, bold = T) %>%
   pack_rows("Political and Social Association", 60, 210, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(8)
 
 ```
 

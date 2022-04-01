@@ -17,7 +17,7 @@ googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0X
   pack_rows("Economics Relationships and Employments", 1, 282, bold = T) %>% 
   pack_rows("Political and Social Association", 283, 284, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(9)
+  remove_column(8)
 
 ```
 
@@ -36,7 +36,7 @@ googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0X
   knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 28, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(9)
+  remove_column(8)
 
 ```
 
