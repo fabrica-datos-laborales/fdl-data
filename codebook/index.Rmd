@@ -1,6 +1,6 @@
 ---
 title: "Fábrica de Datos Laborales"
-subtitle: "<center>Libro de Códigos</center>"
+subtitle: "<center>Codebook</center>"
 author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 site: bookdown::bookdown_site
@@ -8,7 +8,7 @@ documentclass: book
 #bibliography: [book.bib] #packages.bib
 biblio-style: apalike
 link-citations: yes
-description: "Documento de trabajo del equipo <b>Open Access</b> para el Laboratorio de Ciencia Social Abierta"
+#description: ""
 #favicon: images/lisa.ico
 #cover-image: images/lisa-complete.png
 github-repo: fabrica-datos-laborales/fdl-data

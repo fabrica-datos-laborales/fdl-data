@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 8 ILO-EPLEX | Fábrica de Datos Laborales</title>
+  <meta name="description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 8 ILO-EPLEX | Fábrica de Datos Laborales" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/fabrica-datos-laborales/fdl-data" />
+  
+  <meta property="og:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 8 ILO-EPLEX | Fábrica de Datos Laborales" />
+  
+  <meta name="twitter:description" content="Documento de trabajo del equipo Open Access para el Laboratorio de Ciencia Social Abierta" />
+  
+
+<meta name="author" content="Investigador a cargo: Pablo Pérez Ahumada   Asistente de investigación: Valentina Andrade   Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ilostat.html"/>
+<link rel="next" href="varietys-of-democracy.html"/>
+<script src="libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Libro de códigos Fábrica de Datos Laborales</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#presentation">Presentation<span></span></a></li>
+<li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS<span></span></a></li>
+<li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD<span></span></a></li>
+<li class="chapter" data-level="3" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>3</b> World Bank<span></span></a></li>
+<li class="chapter" data-level="4" data-path="world-value-survey.html"><a href="world-value-survey.html"><i class="fa fa-check"></i><b>4</b> World Value Survey<span></span></a></li>
+<li class="chapter" data-level="5" data-path="international-social-survey-programme-issp.html"><a href="international-social-survey-programme-issp.html"><i class="fa fa-check"></i><b>5</b> International Social Survey Programme (ISSP)<span></span></a></li>
+<li class="chapter" data-level="6" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>6</b> DPI<span></span></a></li>
+<li class="chapter" data-level="7" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>7</b> ILOSTAT<span></span></a></li>
+<li class="chapter" data-level="8" data-path="ilo-eplex.html"><a href="ilo-eplex.html"><i class="fa fa-check"></i><b>8</b> ILO-EPLEX<span></span></a></li>
+<li class="chapter" data-level="9" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>9</b> Varietys of Democracy<span></span></a></li>
+<li class="chapter" data-level="10" data-path="latinobarometro.html"><a href="latinobarometro.html"><i class="fa fa-check"></i><b>10</b> Latinobarometro<span></span></a></li>
+<li class="chapter" data-level="11" data-path="eurobarometer.html"><a href="eurobarometer.html"><i class="fa fa-check"></i><b>11</b> Eurobarometer<span></span></a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/fabrica-datos-laborales" target="blank">Repositorio FDL</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fábrica de Datos Laborales</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ilo-eplex" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Capítulo 8</span> ILO-EPLEX<a href="ilo-eplex.html#ilo-eplex" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The ILO-EPLex database contains legal information about employment protection. In this database, we collected indicators about economic relationships and employment like the legal coverage of different jobs and characteristics of dismissal. These are available for 101 countries between 2010 and 2019.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Concept
+</th>
+<th style="text-align:left;">
+Definition
+</th>
+<th style="text-align:left;">
+Values
+</th>
+<th style="text-align:left;">
+Class
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="28">
+<td colspan="6" style="border-bottom: 1px solid;">
+<strong>Economics Relationships and Employments</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ftc_reg_eplex
+</td>
+<td style="text-align:left;">
+FTC regulated
+</td>
+<td style="text-align:left;">
+Whether the fixed-term contracts are regulated or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ftc_max_eplex
+</td>
+<td style="text-align:left;">
+Maximum cumulative duration of succesive FTCs
+</td>
+<td style="text-align:left;">
+Maximum cumulative duration of succesive Fixed-term contracts in months
+</td>
+<td style="text-align:left;">
+0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ftc_max_nocum_eplex
+</td>
+<td style="text-align:left;">
+Maximum not-cumulative duration of succesive FTCs
+</td>
+<td style="text-align:left;">
+Maximum not-cumulative duration of succesive Fixed-term contracts in months
+</td>
+<td style="text-align:left;">
+0-72
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ftc_valid_eplex
+</td>
+<td style="text-align:left;">
+Valid reasons for FTC use
+</td>
+<td style="text-align:left;">
+Valid reasons for fixed-term contracts use
+</td>
+<td style="text-align:left;">
+0= No limitation, 1= No limitation on first FTC, 2= Objective and material reasons
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_mine_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: mine workers
+</td>
+<td style="text-align:left;">
+Whether mine workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_bcollar_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: blue-collar workers
+</td>
+<td style="text-align:left;">
+Whether blue-collar workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_civilserv_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: civil/public servants
+</td>
+<td style="text-align:left;">
+Whether civil/public servants workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_domestic_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: domestic workers
+</td>
+<td style="text-align:left;">
+Whether domestic workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_dockers_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: dock workers
+</td>
+<td style="text-align:left;">
+Whether dock workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_managerial_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: managerial/executive positions
+</td>
+<td style="text-align:left;">
+Whether managerial/executive positions workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_agric_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: agricultural workers
+</td>
+<td style="text-align:left;">
+Whether agricultural workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+lc_teachers_eplex
+</td>
+<td style="text-align:left;">
+Legal coverage: teachers
+</td>
+<td style="text-align:left;">
+Whether agricultural workers are protected by legal regulation or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_pregnant_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: pregnant women and/or women on maternity leave
+</td>
+<td style="text-align:left;">
+Whether pregnant women and/or women on maternity leave have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_familyresp_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: workers with family responsibilities
+</td>
+<td style="text-align:left;">
+Whether workers with family responsibilities have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_older_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: older workers/workers on the verge of retirement
+</td>
+<td style="text-align:left;">
+Whether older workers/workers on the verge of retirement have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_wrep_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: workers’ representative
+</td>
+<td style="text-align:left;">
+Whether workers’ representatives have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_disab_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: workers with disabilities
+</td>
+<td style="text-align:left;">
+Whether workers with disabilities have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_occ_dis_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: workers on temporary leave following an occupational disease or a work injury
+</td>
+<td style="text-align:left;">
+Whether workers on temporary leave following an occupational disease or a work injury have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+spd_longperiod_eplex
+</td>
+<td style="text-align:left;">
+Special protection dismissal: workers with a long period of service
+</td>
+<td style="text-align:left;">
+Whether workers with a long period of service have a special protection against dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+vd_conduct_eplex
+</td>
+<td style="text-align:left;">
+Valid grounds for dismissal: worker’s conduct
+</td>
+<td style="text-align:left;">
+Whether the worker’s conduct is a valid ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+vd_capacity_eplex
+</td>
+<td style="text-align:left;">
+Valid grounds for dismissal: worker’s capacity
+</td>
+<td style="text-align:left;">
+Whether the worker’s capacities are a valid ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+vd_economic_eplex
+</td>
+<td style="text-align:left;">
+Valid grounds for dismissal: economic reasons
+</td>
+<td style="text-align:left;">
+Whether economic reasons are a valid ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_tum_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: trade union membership and activities
+</td>
+<td style="text-align:left;">
+Whether the trade union membership is a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_strike_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: participation in a lawful strike
+</td>
+<td style="text-align:left;">
+Whether the participation in a lawful strike is a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_pol_op_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: political opinion
+</td>
+<td style="text-align:left;">
+Whether the political opinion is a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_pregnant_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: pregnancy
+</td>
+<td style="text-align:left;">
+Whether pregnancy is a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_disab_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: disabilities
+</td>
+<td style="text-align:left;">
+Whether disabilities are a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+pd_complain_eplex
+</td>
+<td style="text-align:left;">
+Prohibited grounds for dismissal: filling a complaint against the employer
+</td>
+<td style="text-align:left;">
+Whetherfilling a complaint against the employer is a prohibited ground for dismissal or not
+</td>
+<td style="text-align:left;">
+1= Yes, 2= No
+</td>
+<td style="text-align:left;">
+factor
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ilostat.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="varietys-of-democracy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["codebook.pdf", "codebook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

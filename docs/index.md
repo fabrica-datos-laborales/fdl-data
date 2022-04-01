@@ -1,14 +1,14 @@
 ---
 title: "Fábrica de Datos Laborales"
-subtitle: "<center>Libro de Códigos</center>"
+subtitle: "<center>Codebook</center>"
 author: "Investigador a cargo: Pablo Pérez Ahumada <br> Asistente de investigación: Valentina Andrade <br> Ayudantes de investigación: Emilia Cuadros y Nicolás Godoy"
-date: "31 marzo 2022"
+date: "01 abril 2022"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib] #packages.bib
 biblio-style: apalike
 link-citations: yes
-description: "Documento de trabajo del equipo <b>Open Access</b> para el Laboratorio de Ciencia Social Abierta"
+#description: ""
 #favicon: images/lisa.ico
 #cover-image: images/lisa-complete.png
 github-repo: fabrica-datos-laborales/fdl-data
@@ -25,23 +25,286 @@ always_allow_html: yes
 
 # Presentation{-}
 
-This codebook was made with the variables and data bases that were used in "name investigation". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, Eurobarometer, Latinobarometer. The variables year and country were used in every single one of the data bases but won´t be listed in every item. For country, we use iso3c classification, in which every code means:
+This codebook was made with the variables and data bases that were used in "Fabrica de Datos Laborales". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer. This database allows you to make comparative analysis between different countries and years.
 
-"webscrapping de wikipedia"
+**Presentation**
+
+This document and database was made by Valentina Andrade, Emilia Cuadros y Nicolás Godoy for FONDECYT N°11190229 "Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada", leaded by Pablo Pérez Ahumada, assistant professor of the Department of Sociology of Universidad Alberto Hurtado (UAH) and associate investigator of the Centro de Estudios del Conflicto y Cohesión Social (COES). 
+
+The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up. 
+
+For this reason, the project has proposed the construction of a **global and temporary database** on labour relations. This includes data on agreements and pacts between employers, unions and the government, political and social characteristics of workers' unions and other associations, economic relations and employment in different branches and sectors of the economy, and variables on the sociopolitical system such as indices of democracy and confidence in various institutions, among others. Data is available for an average of 60 countries and from 1789 to 2020, in general. The main sources of information are *ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.*
+
+With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).
+
+This database allows you to make comparative analysis between different countries and years. For country, we use iso3c classification.
 
 
-**Presentación**
+```r
+url <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3")
+iso3c <- url %>% html_nodes("span.monospaced") %>% html_text()  
+iso3c <- iso3c[1:249]
+country <- url %>% html_nodes("li a") %>% html_text()
+country <- country[15:263]
+table <- data.frame(iso3c = iso3c, Country = country)
 
-Este documento y base de datos fue elaborada por Valentina Andrade, Emilia Cuadros y Nicolás Godoy para el proyecto FONDECYT N°11190229 "Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada", dirigido por Pablo Pérez Ahumada, profesor asistente del departamento de sociología de la Universidad Alberto Hurtado (UAH) e investigador asociado al Centro de Estudios del Conflicto y Cohesión Social (COES). 
+table %>% 
+  knitr::kable(.) %>% 
+  kable_styling(font_size = 10) 
+```
 
-El objetivo del proyecto es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para ello, se desarrolla un análisis comparado de los factores institucionales (regulaciones laborales) y políticos (relación entre partidos y movimiento sindical) que lo configuran.
 
-Por ello el **proyecto** se ha propuesto la construcción de una **base de datos a nivel mundial y temporal** sobre relaciones laborales. Esto incluye datos sobre acuerdos y pactos entre empresarios, sindicatos y el gobierno, características políticas y sociales sobre los sindicatos de trabajadores y otras asociaciones, relaciones económicas y empleo en distintas ramas y sectores de la economía, y variables sobre el sistema sociopolítico como índices de democracia y confianza sobre diversas instituciones, entre otras. Los datos están disponible para *número total de países promedio* desde *años*. Las fuentes de información principales *resumen de algunas son*
 
-Con esta base de datos abierta, buscamos promover el enfoque de ciencia abierta desde el diseño transparente, la apertura de datos, análisis reproducibles y publicaciones libres. Esto supone transparentar las decisiones metodológicas del estudio, disponer a la comunidad de los datos y recursos utilizados en la investigación, permitir que se puedan reproducir los datos obtenidos y dar libre acceso a los resultados y productos de la investigación (LISA, 2021). 
-
-(Profundizar sobre el enfoque de ciencia abierta, datos abiertos, costrucción transparente y reproducible)
-
-(Como citar la base de datos )
+|iso3c |Country                                              |
+|:-----|:----------------------------------------------------|
+|ABW   |Aruba                                                |
+|AFG   |Afghanistan                                          |
+|AGO   |Angola                                               |
+|AIA   |Anguilla                                             |
+|ALA   |Åland Islands                                        |
+|ALB   |Albania                                              |
+|AND   |Andorra                                              |
+|ARE   |United Arab Emirates                                 |
+|ARG   |Argentina                                            |
+|ARM   |Armenia                                              |
+|ASM   |American Samoa                                       |
+|ATA   |Antarctica                                           |
+|ATF   |French Southern Territories                          |
+|ATG   |Antigua and Barbuda                                  |
+|AUS   |Australia                                            |
+|AUT   |Austria                                              |
+|AZE   |Azerbaijan                                           |
+|BDI   |Burundi                                              |
+|BEL   |Belgium                                              |
+|BEN   |Benin                                                |
+|BES   |Bonaire, Sint Eustatius and Saba                     |
+|BFA   |Burkina Faso                                         |
+|BGD   |Bangladesh                                           |
+|BGR   |Bulgaria                                             |
+|BHR   |Bahrain                                              |
+|BHS   |Bahamas                                              |
+|BIH   |Bosnia and Herzegovina                               |
+|BLM   |Saint Barthélemy                                     |
+|BLR   |Belarus                                              |
+|BLZ   |Belize                                               |
+|BMU   |Bermuda                                              |
+|BOL   |Bolivia (Plurinational State of)                     |
+|BRA   |Brazil                                               |
+|BRB   |Barbados                                             |
+|BRN   |Brunei Darussalam                                    |
+|BTN   |Bhutan                                               |
+|BVT   |Bouvet Island                                        |
+|BWA   |Botswana                                             |
+|CAF   |Central African Republic                             |
+|CAN   |Canada                                               |
+|CCK   |Cocos (Keeling) Islands                              |
+|CHE   |Switzerland                                          |
+|CHL   |Chile                                                |
+|CHN   |China                                                |
+|CIV   |Côte d'Ivoire                                        |
+|CMR   |Cameroon                                             |
+|COD   |Congo, Democratic Republic of the                    |
+|COG   |Congo                                                |
+|COK   |Cook Islands                                         |
+|COL   |Colombia                                             |
+|COM   |Comoros                                              |
+|CPV   |Cabo Verde                                           |
+|CRI   |Costa Rica                                           |
+|CUB   |Cuba                                                 |
+|CUW   |Curaçao                                              |
+|CXR   |Christmas Island                                     |
+|CYM   |Cayman Islands                                       |
+|CYP   |Cyprus                                               |
+|CZE   |Czechia                                              |
+|DEU   |Germany                                              |
+|DJI   |Djibouti                                             |
+|DMA   |Dominica                                             |
+|DNK   |Denmark                                              |
+|DOM   |Dominican Republic                                   |
+|DZA   |Algeria                                              |
+|ECU   |Ecuador                                              |
+|EGY   |Egypt                                                |
+|ERI   |Eritrea                                              |
+|ESH   |Western Sahara                                       |
+|ESP   |Spain                                                |
+|EST   |Estonia                                              |
+|ETH   |Ethiopia                                             |
+|FIN   |Finland                                              |
+|FJI   |Fiji                                                 |
+|FLK   |Falkland Islands (Malvinas)                          |
+|FRA   |France                                               |
+|FRO   |Faroe Islands                                        |
+|FSM   |Micronesia (Federated States of)                     |
+|GAB   |Gabon                                                |
+|GBR   |United Kingdom of Great Britain and Northern Ireland |
+|GEO   |Georgia                                              |
+|GGY   |Guernsey                                             |
+|GHA   |Ghana                                                |
+|GIB   |Gibraltar                                            |
+|GIN   |Guinea                                               |
+|GLP   |Guadeloupe                                           |
+|GMB   |Gambia                                               |
+|GNB   |Guinea-Bissau                                        |
+|GNQ   |Equatorial Guinea                                    |
+|GRC   |Greece                                               |
+|GRD   |Grenada                                              |
+|GRL   |Greenland                                            |
+|GTM   |Guatemala                                            |
+|GUF   |French Guiana                                        |
+|GUM   |Guam                                                 |
+|GUY   |Guyana                                               |
+|HKG   |Hong Kong                                            |
+|HMD   |Heard Island and McDonald Islands                    |
+|HND   |Honduras                                             |
+|HRV   |Croatia                                              |
+|HTI   |Haiti                                                |
+|HUN   |Hungary                                              |
+|IDN   |Indonesia                                            |
+|IMN   |Isle of Man                                          |
+|IND   |India                                                |
+|IOT   |British Indian Ocean Territory                       |
+|IRL   |Ireland                                              |
+|IRN   |Iran (Islamic Republic of)                           |
+|IRQ   |Iraq                                                 |
+|ISL   |Iceland                                              |
+|ISR   |Israel                                               |
+|ITA   |Italy                                                |
+|JAM   |Jamaica                                              |
+|JEY   |Jersey                                               |
+|JOR   |Jordan                                               |
+|JPN   |Japan                                                |
+|KAZ   |Kazakhstan                                           |
+|KEN   |Kenya                                                |
+|KGZ   |Kyrgyzstan                                           |
+|KHM   |Cambodia                                             |
+|KIR   |Kiribati                                             |
+|KNA   |Saint Kitts and Nevis                                |
+|KOR   |Korea, Republic of                                   |
+|KWT   |Kuwait                                               |
+|LAO   |Lao People's Democratic Republic                     |
+|LBN   |Lebanon                                              |
+|LBR   |Liberia                                              |
+|LBY   |Libya                                                |
+|LCA   |Saint Lucia                                          |
+|LIE   |Liechtenstein                                        |
+|LKA   |Sri Lanka                                            |
+|LSO   |Lesotho                                              |
+|LTU   |Lithuania                                            |
+|LUX   |Luxembourg                                           |
+|LVA   |Latvia                                               |
+|MAC   |Macao                                                |
+|MAF   |Saint Martin (French part)                           |
+|MAR   |Morocco                                              |
+|MCO   |Monaco                                               |
+|MDA   |Moldova, Republic of                                 |
+|MDG   |Madagascar                                           |
+|MDV   |Maldives                                             |
+|MEX   |Mexico                                               |
+|MHL   |Marshall Islands                                     |
+|MKD   |North Macedonia                                      |
+|MLI   |Mali                                                 |
+|MLT   |Malta                                                |
+|MMR   |Myanmar                                              |
+|MNE   |Montenegro                                           |
+|MNG   |Mongolia                                             |
+|MNP   |Northern Mariana Islands                             |
+|MOZ   |Mozambique                                           |
+|MRT   |Mauritania                                           |
+|MSR   |Montserrat                                           |
+|MTQ   |Martinique                                           |
+|MUS   |Mauritius                                            |
+|MWI   |Malawi                                               |
+|MYS   |Malaysia                                             |
+|MYT   |Mayotte                                              |
+|NAM   |Namibia                                              |
+|NCL   |New Caledonia                                        |
+|NER   |Niger                                                |
+|NFK   |Norfolk Island                                       |
+|NGA   |Nigeria                                              |
+|NIC   |Nicaragua                                            |
+|NIU   |Niue                                                 |
+|NLD   |Netherlands                                          |
+|NOR   |Norway                                               |
+|NPL   |Nepal                                                |
+|NRU   |Nauru                                                |
+|NZL   |New Zealand                                          |
+|OMN   |Oman                                                 |
+|PAK   |Pakistan                                             |
+|PAN   |Panama                                               |
+|PCN   |Pitcairn                                             |
+|PER   |Peru                                                 |
+|PHL   |Philippines                                          |
+|PLW   |Palau                                                |
+|PNG   |Papua New Guinea                                     |
+|POL   |Poland                                               |
+|PRI   |Puerto Rico                                          |
+|PRK   |Korea (Democratic People's Republic of)              |
+|PRT   |Portugal                                             |
+|PRY   |Paraguay                                             |
+|PSE   |Palestine, State of                                  |
+|PYF   |French Polynesia                                     |
+|QAT   |Qatar                                                |
+|REU   |Réunion                                              |
+|ROU   |Romania                                              |
+|RUS   |Russian Federation                                   |
+|RWA   |Rwanda                                               |
+|SAU   |Saudi Arabia                                         |
+|SDN   |Sudan                                                |
+|SEN   |Senegal                                              |
+|SGP   |Singapore                                            |
+|SGS   |South Georgia and the South Sandwich Islands         |
+|SHN   |Saint Helena, Ascension and Tristan da Cunha         |
+|SJM   |Svalbard and Jan Mayen                               |
+|SLB   |Solomon Islands                                      |
+|SLE   |Sierra Leone                                         |
+|SLV   |El Salvador                                          |
+|SMR   |San Marino                                           |
+|SOM   |Somalia                                              |
+|SPM   |Saint Pierre and Miquelon                            |
+|SRB   |Serbia                                               |
+|SSD   |South Sudan                                          |
+|STP   |Sao Tome and Principe                                |
+|SUR   |Suriname                                             |
+|SVK   |Slovakia                                             |
+|SVN   |Slovenia                                             |
+|SWE   |Sweden                                               |
+|SWZ   |Eswatini                                             |
+|SXM   |Sint Maarten (Dutch part)                            |
+|SYC   |Seychelles                                           |
+|SYR   |Syrian Arab Republic                                 |
+|TCA   |Turks and Caicos Islands                             |
+|TCD   |Chad                                                 |
+|TGO   |Togo                                                 |
+|THA   |Thailand                                             |
+|TJK   |Tajikistan                                           |
+|TKL   |Tokelau                                              |
+|TKM   |Turkmenistan                                         |
+|TLS   |Timor-Leste                                          |
+|TON   |Tonga                                                |
+|TTO   |Trinidad and Tobago                                  |
+|TUN   |Tunisia                                              |
+|TUR   |Turkey                                               |
+|TUV   |Tuvalu                                               |
+|TWN   |Taiwan                                               |
+|TZA   |Province of China                                    |
+|UGA   |Tanzania, United Republic of                         |
+|UKR   |Uganda                                               |
+|UMI   |Ukraine                                              |
+|URY   |United States Minor Outlying Islands                 |
+|USA   |Uruguay                                              |
+|UZB   |United States of America                             |
+|VAT   |Uzbekistan                                           |
+|VCT   |Holy See                                             |
+|VEN   |Saint Vincent and the Grenadines                     |
+|VGB   |Venezuela (Bolivarian Republic of)                   |
+|VIR   |Virgin Islands (British)                             |
+|VNM   |Virgin Islands (U.S.)                                |
+|VUT   |Viet Nam                                             |
+|WLF   |Vanuatu                                              |
+|WSM   |Wallis and Futuna                                    |
+|YEM   |Samoa                                                |
+|ZAF   |Yemen                                                |
+|ZMB   |South Africa                                         |
+|ZWE   |Zambia                                               |
 
 

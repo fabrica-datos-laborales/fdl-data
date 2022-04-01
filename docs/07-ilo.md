@@ -620,7 +620,7 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> month_earn_ilostat_ilostat </td>
    <td style="text-align:left;"> Mean nominal monthly earning of employees (U.S. dollars) </td>
-   <td style="text-align:left;"> The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, paid monthly, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Data are converted to U.S. dollars as the common currency. </td>
+   <td style="text-align:left;"> Data on earnings are presented, whenever possible, in nominal terms and on the basis of the mean of monthly earnings of all employees. The earnings of employees relate to the gross remuneration in cash and in kind paid to employees, as a rule at regular intervals, for time worked or work done together with remuneration for time not worked, such as annual vacation, other type of paid leave or holidays. Earnings exclude employers' contributions in respect of their employees paid to social security and pension schemes and also the benefits received by employees under these schemes. Earnings also exclude severance and termination pay. Statistics of earnings relate to the gross remuneration of employees, i.e. the total before any deductions are made by the employer. Data are disaggregated by economic activity according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    
@@ -2295,8 +2295,11 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
 
 
 
+# ILO-EPLEX
 
-## ILO-EPLEX
+The ILO-EPLex database contains legal information about employment protection. In this database, we collected indicators about economic relationships and employment like the legal coverage of different jobs and characteristics of dismissal. These are available for 101 countries between 2010 and 2019.
+
+
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>

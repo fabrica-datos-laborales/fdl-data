@@ -1,6 +1,9 @@
 
 
 # DPI
+
+The Database of Political Institutions (DPI) presents institutional and electoral results data such as measures of tenure and stability of the government, identification of party affiliation and ideology, and fragmentation of opposition and government parties in the legislature. In this database, we included information about Democracy and Sociopolitical System like the electoral system and the political parties. These indicators are available in 50 countries between 1975 and 2017.
+
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>

@@ -10,20 +10,20 @@ ILOSTAT is the primary source of labour statistics, containing variables about E
 ```{r ilo, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #ilostat
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B262:N628"), sheet= "Variables", col_names = F) %>% 
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>%
   filter(grepl("_ilo", Variable)) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 282, bold = T) %>% 
   pack_rows("Political and Social Association", 283, 284, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(9)
 
 ```
 
 
 
-## ILO-EPLEX
+# ILO-EPLEX
 
 The ILO-EPLex database contains legal information about employment protection. In this database, we collected indicators about economic relationships and employment like the legal coverage of different jobs and characteristics of dismissal. These are available for 101 countries between 2010 and 2019.
 
@@ -31,12 +31,12 @@ The ILO-EPLex database contains legal information about employment protection. I
 ```{r iloeplex, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #ilo-eplex
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B323:N350"), sheet= "Variables", col_names = F) %>% 
-  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>% 
+  select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>% 
   arrange(Label) %>%
   knitr::kable(.) %>% 
   pack_rows("Economics Relationships and Employments", 1, 28, bold = T) %>%
   kable_styling(font_size = 10) %>% 
-  remove_column(6)
+  remove_column(9)
 
 ```
 

@@ -2,6 +2,8 @@
 
 # Varietys of Democracy
 
+Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and measuring democracy. According to their website, V-Dem reflects the complexity of the concept of democracy as a system of rule that goes beyond the simple presence of elections, distinguishing between five high-level principles of democracy: electoral, liberal, participatory, deliberative, and egalitarian, and collects data to measure these principles. In this database, we included information about democracy and sociopolitical system and economic relationships and employment from 202 countries. The following table contains the indicators collected in this database:
+
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
@@ -407,7 +409,7 @@
    <td style="text-align:left;"> numeric </td>
    
   </tr>
-  <tr grouplength="7"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+  <tr grouplength="6"><td colspan="6" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> exports_vdem </td>
    <td style="text-align:left;"> Exports </td>
@@ -420,14 +422,6 @@
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> imports_vdem </td>
    <td style="text-align:left;"> Imports </td>
    <td style="text-align:left;"> Total value of a country's imports in 2014 US millions of dollars. </td>
-   <td style="text-align:left;"> (0-Inf) </td>
-   <td style="text-align:left;"> numeric </td>
-   
-  </tr>
-  <tr>
-   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gdp_growth_vdem </td>
-   <td style="text-align:left;"> GDP growth </td>
-   <td style="text-align:left;"> GDP per capita growth rate, estimated from the variable GDP per capita. </td>
    <td style="text-align:left;"> (0-Inf) </td>
    <td style="text-align:left;"> numeric </td>
    

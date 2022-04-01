@@ -2,7 +2,9 @@
 
 # World Bank
 
-Some variables like employment share in different economic sectors, labour productivity and hourly labour productivity are from World Indicators of Skills for Employment (WISE) database. WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years from 1990 to the present.**CAMBIAR*
+The primary collection of development indicators of the World Bank is the World Development Indicators (WDI). In this database, we collect indicators for Economic Relationships and Employment like vulnerable employment and income share, among others. These are available for 246 countries and between 1968 and 2019.
+Also, we included variables from World Indicators of Skills for Employment (WISE) database. WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years. These variables are income inequality GINI, trade openess, total population and percentage of population that is female.They are available for 229 countries and between 2003 and 2014.
+In the following table, all indicators in our database are listed:
 
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>

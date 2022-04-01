@@ -2,6 +2,7 @@
 
 # International Social Survey Programme (ISSP)
 
+The International Social Survey Programme (ISSP) contains relevant information for the study and investigation in social sciences, with modules about work orientations and social inequality. In this database, we included information from 43 countries about class identity, subjective social status and class conflict perception. We categorize these indicators like political and social association. These indicators are available in 1987, 1989, 1992, 1997, 1999, 2005, 2009 and 2015.
 
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>
