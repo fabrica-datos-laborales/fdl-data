@@ -2,7 +2,7 @@
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Codebook</center>"
 author: "Lead researcher: Pablo Pérez Ahumada <br> Assistant resarcher: Valentina Andrade <br> Research assistants: Emilia Cuadros y Nicolás Godoy"
-date: "01 abril 2022"
+date: "07 julio 2022"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib] #packages.bib
@@ -25,11 +25,11 @@ always_allow_html: yes
 
 # Presentation{-}
 
-This codebook was made with the variables and data bases that were used in "Fabrica de Datos Laborales". The data bases are: ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer. This database allows you to make comparative analysis between different countries and years.
+The following codebook contains all the variables contained in the FDL database ("Fabrica de datos Laborales", or in English "Labor Data Factory"), variables coming from projects such as ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; and non-governmental organizations such as OECD and ILO. FDL has been organized in a way to allow comparative analysis for different country-years.
 
-**Presentation**
+The project was conducted by Valentina Andrade, and with the important research assistance of Nicolás Godoy and Emilia Cuadros, all of them under supervision of the principal investigator of FONDECYT N°11190229 *"Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada"*, Dr. Pablo Pérez Ahumada[^1].
 
-This document and database was made by Valentina Andrade, Emilia Cuadros y Nicolás Godoy for FONDECYT N°11190229 "Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada", leaded by Pablo Pérez Ahumada, assistant professor of the Department of Sociology of Universidad Alberto Hurtado (UAH) and associate investigator of the Centro de Estudios del Conflicto y Cohesión Social (COES). 
+[^1]: Assistant professor of the Department of Sociology, Universidad de Chile(FACSO-UCH) and Research Associate in *Centro de Estudios del Conflicto y Cohesión Social* (COES). 
 
 The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up. 
 
