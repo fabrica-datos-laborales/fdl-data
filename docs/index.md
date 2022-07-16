@@ -1,8 +1,8 @@
 ---
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Codebook</center>"
-author: "Lead researcher: Pablo Pérez Ahumada <br> Assistant resarcher: Valentina Andrade <br> Research assistants: Emilia Cuadros y Nicolás Godoy"
-date: "07 julio 2022"
+author: "PI: Pablo Pérez Ahumada <br> RA: Valentina Andrade <br> Collaborators: Emilia Cuadros y Nicolás Godoy"
+date: "16 julio 2022"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib] #packages.bib
@@ -268,7 +268,7 @@ This database allows you to make comparative analysis between different countrie
 |TON   |Tonga                                                |
 |TTO   |Trinidad and Tobago                                  |
 |TUN   |Tunisia                                              |
-|TUR   |Turkey                                               |
+|TUR   |Türkiye                                              |
 |TUV   |Tuvalu                                               |
 |TWN   |Taiwan                                               |
 |TZA   |Province of China                                    |

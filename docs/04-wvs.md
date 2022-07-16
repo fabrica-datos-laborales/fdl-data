@@ -13,10 +13,12 @@ The World Values Survey (WVS) is an international research program devoted to th
    <th style="text-align:left;"> Values </th>
    <th style="text-align:left;"> Class </th>
    
+   <th style="text-align:left;"> Regional coverage </th>
+   <th style="text-align:left;"> Label </th>
   </tr>
  </thead>
 <tbody>
-  <tr grouplength="9"><td colspan="6" style="border-bottom: 1px solid;"><strong>Political and Social Association</strong></td></tr>
+  <tr grouplength="9"><td colspan="8" style="border-bottom: 1px solid;"><strong>Political and Social Association</strong></td></tr>
 <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tu_great_deal_wvs </td>
    <td style="text-align:left;"> Trust in unions-A great deal </td>
@@ -24,6 +26,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tu_quite_lot_wvs </td>
@@ -32,6 +36,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tu_not_very_much_wvs </td>
@@ -40,6 +46,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tu_none_all_wvs </td>
@@ -48,6 +56,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> um_a_not_member_wvs </td>
@@ -56,6 +66,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> um_a_inactive_member_wvs </td>
@@ -64,6 +76,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> um_a_active_member_wvs </td>
@@ -72,6 +86,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> numeric </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> um_not_member_wvs </td>
@@ -80,6 +96,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> factor </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
   <tr>
    <td style="text-align:left;padding-left: 2em;" indentlevel="1"> um_member_wvs </td>
@@ -88,6 +106,8 @@ The World Values Survey (WVS) is an international research program devoted to th
    <td style="text-align:left;"> (0-100) </td>
    <td style="text-align:left;"> factor </td>
    
+   <td style="text-align:left;"> 47 countries </td>
+   <td style="text-align:left;"> Political and Social Association </td>
   </tr>
 </tbody>
 </table>
