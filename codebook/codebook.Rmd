@@ -176,7 +176,7 @@ knitr::kable(dpi, booktabs = T) %>%
 
 <!--chapter:end:06-references.Rmd-->
 
-# Varietys of Democracy
+# Varieties of Democracy
 
 ```{r echo=FALSE, eval=FALSE, warning=FALSE, error=FALSE, message=FALSE, results='hold'}
 #vdem
