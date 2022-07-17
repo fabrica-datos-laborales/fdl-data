@@ -2,7 +2,7 @@
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Codebook</center>"
 author: "PI: Pablo Pérez Ahumada <br> RA: Valentina Andrade <br> Collaborators: Emilia Cuadros y Nicolás Godoy"
-date: "16 julio 2022"
+date: "17 julio 2022"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib] #packages.bib
