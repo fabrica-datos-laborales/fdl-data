@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Fábrica de Datos Laborales</title>
   <meta name="description" content="Fábrica de Datos Laborales" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/fabrica-datos-laborales/fdl-data" />
   
   
   <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
@@ -31,8 +32,8 @@
   
 
 <link rel="next" href="ictwss.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,9 +49,7 @@
 
 
 
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -120,7 +119,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -137,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Libro de códigos Fábrica de Datos Laborales</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentation</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Presentación</a></li>
 <li class="chapter" data-level="1" data-path="ictwss.html"><a href="ictwss.html"><i class="fa fa-check"></i><b>1</b> ICTWSS</a></li>
 <li class="chapter" data-level="2" data-path="oecd.html"><a href="oecd.html"><i class="fa fa-check"></i><b>2</b> OECD</a></li>
 <li class="chapter" data-level="3" data-path="world-bank.html"><a href="world-bank.html"><i class="fa fa-check"></i><b>3</b> World Bank</a></li>
@@ -175,16 +173,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Codebook
 </center></em></h2>
 <p class="author"><em>PI: Pablo Pérez Ahumada <br> RA: Valentina Andrade <br> Collaborators: Emilia Cuadros y Nicolás Godoy</em></p>
-<p class="date"><em>17 julio 2022</em></p>
+<p class="date"><em>21 julio 2022</em></p>
 </div>
-<div id="presentation" class="section level1 unnumbered hasAnchor">
-<h1>Presentation<a href="index.html#presentation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The following codebook contains all the variables contained in the FDL database (“Fabrica de datos Laborales”, or in English “Labor Data Factory”), variables coming from projects such as ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; and non-governmental organizations such as OECD and ILO. FDL has been organized in a way to allow comparative analysis for different country-years.</p>
-<p>The project was conducted by Valentina Andrade, and with the important research assistance of Nicolás Godoy and Emilia Cuadros, all of them under supervision of the principal investigator of FONDECYT N°11190229 <em>“Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada”</em>, Dr. Pablo Pérez Ahumada<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
-<p>The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up.</p>
-<p>For this reason, the project has proposed the construction of a <strong>global and temporary database</strong> on labour relations. This includes data on agreements and pacts between employers, unions and the government, political and social characteristics of workers’ unions and other associations, economic relations and employment in different branches and sectors of the economy, and variables on the sociopolitical system such as indices of democracy and confidence in various institutions, among others. Data is available for an average of 60 countries and from 1789 to 2020, in general. The main sources of information are <em>ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.</em></p>
-<p>With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).</p>
-<p>This database allows you to make comparative analysis between different countries and years. The year series of each variable are at a general level in this codebook. To see specifically for which variables it is available in a certain country and year, it must be consulted in the same database. For country, we use iso3c classification.</p>
+<div id="presentación" class="section level1 unnumbered">
+<h1>Presentación</h1>
+<p>El siguiente libro de códigos contiene todas las variables presentes en la base de datos FDL (<em>“Fábrica de Datos Laborales<em>, o en inglés </em>”Labor Dara Factory"</em>), variables que proviene de proyectos como ICTWSS, ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; y organizaciones no gubernamentales como OCDE e ILO. FDL ha sido organizada de modo tal que permita hacer análisis comparativo en el tiempo para <em>países-año</em>.</p>
+<p>El proyecto fue liderado por Valentina Andrade, junto con la importante ayudantía de investigación de Nicolás Godoy y Emilia Cuadros, todo bajo la supervisión del investigador principal del FONDECYT N°11190229 <em>“Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada”</em>, Dr. Pablo Pérez Ahumada<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>El objetivo del proyecto FONDECYT es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para hacer esto, se conduce un análisis comparativo a nivel institucional (regulaciones laborales) y políticas (relaciones entre partidos y movimiento sindical)</p>
+<p>Por esta razón, el proyecto se ha propuesto la construcción de una base de datos <strong>temporal y mundial</strong> de relaciones laborales. Esto incluye datos soobre acuerdos y pactos entre empleadores, sindicatos y gobierno; características sociales y políticas de los sindicatos y otras asociaciones de trabajores, relaciones económicas y de empleo en diferentes sectores de la economía, y variables del sistema sociopolítico tales como índices de democracia y confianza en diferentes instituciones y actores sociales. Los datos están disponibles en promedio para 60 países, en general, desde 1879 hasta 2020. La principales fuentes de información fueron <em>ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.</em></p>
+<p>Con esta base de datos de construcción abierta y reproducible nosotros esperamos promover el enfoque de la ciencia abierta, con un diseño transparente, datos abiertos, análisis reproducible y publicaciones libres. Esto significa hacer una decisión metodológica de hacer este estudio transparente, promoviendo a la comunidad los recursos usados en este trabajo e investigación, tanto como los datos construidos de modo de hacer reproducibles y dar acceso libre a los resultados y productos de investigación (Laboratorio de Ciencia Social Abierta COES, 2021).</p>
+<p>Además, estos datos permiten hacer análisis comparativo entre diferentes países y años. Las series temporales están en general en años para cada variable. Para ver especificamente si los países y años están disponibles se debe consultar a la misma base de datos. Para la clasificación uniforme de los países ocupamos la clasificación ISO3C.</p>
 <table>
 <thead>
 <tr class="header">
@@ -1196,7 +1194,7 @@ Codebook
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>Assistant professor of the Department of Sociology, Universidad de Chile(FACSO-UCH) and Research Associate in <em>Centro de Estudios del Conflicto y Cohesión Social</em> (COES).<a href="index.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p>Profesor asistente del Departamento de Sociología, Universidad de Chile(FACSO-UCH) e Investigador Asociado en <em>Centro de Estudios del Conflicto y Cohesión Social</em> (COES).<a href="index.html#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -1209,6 +1207,7 @@ Codebook
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1227,7 +1226,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1248,10 +1246,6 @@ gitbook.start({
 "text": null
 },
 "download": ["codebook.pdf", "codebook.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
 "toc": {
 "collapse": "subsection"
 }

@@ -2,7 +2,7 @@
 title: "Fábrica de Datos Laborales"
 subtitle: "<center>Codebook</center>"
 author: "PI: Pablo Pérez Ahumada <br> RA: Valentina Andrade <br> Collaborators: Emilia Cuadros y Nicolás Godoy"
-date: "17 julio 2022"
+date: "21 julio 2022"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib] #packages.bib
@@ -23,21 +23,21 @@ always_allow_html: yes
 #devtools::install_github(repo="haozhu233/kableExtra", ref="a6af5c0") #para collapse rows
 ```
 
-# Presentation{-}
+# Presentación{-}
 
-The following codebook contains all the variables contained in the FDL database ("Fabrica de datos Laborales", or in English "Labor Data Factory"), variables coming from projects such as ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; and non-governmental organizations such as OECD and ILO. FDL has been organized in a way to allow comparative analysis for different country-years.
+El siguiente libro de códigos contiene todas las variables presentes en la base de datos FDL (*"Fábrica de Datos Laborales*, o en inglés *"Labor Dara Factory"*), variables que proviene de proyectos como ICTWSS, ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; y organizaciones no gubernamentales como OCDE e ILO.  FDL ha sido organizada de modo tal que permita hacer análisis comparativo en el tiempo para *países-año*.
 
-The project was conducted by Valentina Andrade, and with the important research assistance of Nicolás Godoy and Emilia Cuadros, all of them under supervision of the principal investigator of FONDECYT N°11190229 *"Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada"*, Dr. Pablo Pérez Ahumada[^1].
+El proyecto fue liderado por Valentina Andrade, junto con la importante ayudantía de investigación de Nicolás Godoy y Emilia Cuadros, todo bajo la supervisión del investigador principal del FONDECYT N°11190229 *"Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada"*, Dr. Pablo Pérez Ahumada[^1].
 
-[^1]: Assistant professor of the Department of Sociology, Universidad de Chile(FACSO-UCH) and Research Associate in *Centro de Estudios del Conflicto y Cohesión Social* (COES). 
+[^1]: Profesor asistente del Departamento de Sociología, Universidad de Chile(FACSO-UCH) e Investigador Asociado en *Centro de Estudios del Conflicto y Cohesión Social* (COES). 
 
-The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up. 
+El objetivo del proyecto FONDECYT es explicar las variaciones en el conflicto entre trabajadores y empresarios en Argentina y Chile. Para hacer esto, se conduce un análisis comparativo a nivel institucional (regulaciones laborales) y políticas (relaciones entre partidos y movimiento sindical)
 
-For this reason, the project has proposed the construction of a **global and temporary database** on labour relations. This includes data on agreements and pacts between employers, unions and the government, political and social characteristics of workers' unions and other associations, economic relations and employment in different branches and sectors of the economy, and variables on the sociopolitical system such as indices of democracy and confidence in various institutions, among others. Data is available for an average of 60 countries and from 1789 to 2020, in general. The main sources of information are *ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.*
+Por esta razón, el proyecto se ha propuesto la construcción de una base de datos **temporal y mundial** de relaciones laborales. Esto incluye datos soobre acuerdos y pactos entre empleadores, sindicatos y gobierno; características sociales y políticas de los sindicatos y otras asociaciones de trabajores,  relaciones económicas y de empleo en diferentes sectores de la economía, y variables del sistema sociopolítico tales como índices de democracia y confianza en diferentes instituciones y actores sociales. Los datos están disponibles en promedio para 60 países, en general, desde 1879 hasta 2020. La principales fuentes de información fueron  *ICTWSS, OECD, WDI, WVS, DPI, ILOSTAT, ILOEPLEX, VDemocracy, ISSP, Eurobarometer and Latinobarometer.*
 
-With this open database, we seek to promote the open science approach from a transparent design, open data, reproducible analysis, and free publication. This means making the methodological decisions of the study transparent, providing to the community the resources used in the research, as well as allowing the data obtained to be reproduced and giving free access to the results and products of the research (LISA, 2021).
+Con esta base de datos de construcción abierta y reproducible nosotros esperamos promover el enfoque de la ciencia abierta, con un diseño transparente, datos abiertos, análisis reproducible y publicaciones libres.  Esto significa hacer una decisión metodológica de hacer este estudio transparente, promoviendo a la comunidad los recursos usados en este trabajo e investigación, tanto como los datos construidos  de modo de hacer reproducibles y dar acceso libre a los resultados y productos de investigación (Laboratorio de Ciencia Social Abierta COES, 2021).
 
-This database allows you to make comparative analysis between different countries and years. The year series of each variable are at a general level in this codebook. To see specifically for which variables it is available in a certain country and year, it must be consulted in the same database. For country, we use iso3c classification. 
+Además, estos datos permiten hacer análisis comparativo entre diferentes países y años. Las series temporales están en general en años para cada variable.  Para ver especificamente si los países y años están disponibles se debe consultar a la misma base de datos. Para la clasificación uniforme de los países ocupamos la clasificación ISO3C. 
 
 
 |iso3c |Country                                              |
