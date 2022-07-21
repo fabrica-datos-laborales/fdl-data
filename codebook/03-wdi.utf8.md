@@ -1,0 +1,365 @@
+
+
+# World Bank
+
+The primary collection of development indicators of the World Bank is the World Development Indicators (WDI). In this database, we collect indicators for Economic Relationships and Employment like vulnerable employment and income share, among others. These are available for 246 countries and between 1968 and 2019.
+Also, we included variables from World Indicators of Skills for Employment (WISE) database. WISE was built with data from other well-known databases such as OECD and Eurostat to offer more statistical tools on skill development for different countries and in series of years. These variables are income inequality GINI, trade openess, total population and percentage of population that is female. They are available for 229 countries and between 2003 and 2014.
+In the following table, all indicators in our database are listed:
+
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Variable </th>
+   <th style="text-align:left;"> Concept </th>
+   <th style="text-align:left;"> Definition </th>
+   <th style="text-align:left;"> Values </th>
+   <th style="text-align:left;"> Class </th>
+   <th style="text-align:left;"> Temporal coverage </th>
+   <th style="text-align:left;"> Regional coverage </th>
+   
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="30"><td colspan="8" style="border-bottom: 1px solid;"><strong>Economics Relationships and Employments</strong></td></tr>
+<tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> tradeopen_wdi </td>
+   <td style="text-align:left;"> Trade Openess </td>
+   <td style="text-align:left;"> Trade in services is the sum of service exports and imports divided by the value of GDP, all in current U.S. dollars. The indicator provides a summary measure of globalisation which may have an impact on skill demands. Source: International Monetary Fund, Balance of Payments Statistics Yearbook and data files, and World Bank and OECD GDP estimates </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pop_wdi </td>
+   <td style="text-align:left;"> Total Population </td>
+   <td style="text-align:left;"> Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship--except for refugees not permanently settled in the country of asylum, who are generally considered part of the population of their country of origin. The values shown are midyear estimates. </td>
+   <td style="text-align:left;"> (0-Inf) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> pop_fem_wdi </td>
+   <td style="text-align:left;"> Percentage of population that is female </td>
+   <td style="text-align:left;"> Population, female (% of total) is the percentage of the population that is female </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gini_wdi </td>
+   <td style="text-align:left;"> Income inequality GINI </td>
+   <td style="text-align:left;"> Gini index measures the extent to which the distribution of income or consumption expenditure among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 2003-2014 </td>
+   <td style="text-align:left;"> 229 countries </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gdp_growth_wdi </td>
+   <td style="text-align:left;"> GDP growth (annual %) </td>
+   <td style="text-align:left;"> Annual percentage growth rate of GDP at market prices based on constant local currency. Aggregates are based on constant 2010 U.S. dollars. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gni_per_capita_wdi </td>
+   <td style="text-align:left;"> GNI per capita, Atlas method (current US$) </td>
+   <td style="text-align:left;"> GNI per capita (formerly GNP per capita) is the gross national income, converted to U.S. dollars using the World Bank Atlas method, divided by the midyear population. GNI is the sum of value added by all resident producers plus any product taxes (less subsidies) not included in the valuation of output plus net receipts of primary income (compensation of employees and property income) from abroad. GNI, calculated in national currency, is usually converted to U.S. dollars at official exchange rates for comparisons across economies, although an alternative rate is used when the official exchange rate is judged to diverge by an exceptionally large margin from the rate actually applied in international transactions. To smooth fluctuations in prices and exchange rates, a special Atlas method of conversion is used by the World Bank. This applies a conversion factor that averages the exchange rate for a given year and the two preceding years, adjusted for differences in rates of inflation between the country, and through 2000, the G-5 countries (France, Germany, Japan, the United Kingdom, and the United States). From 2001, these countries include the Euro area, Japan, the United Kingdom, and the United States. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gni_per_capita_ppp_wdi </td>
+   <td style="text-align:left;"> GNI per capita, PPP (current international $) </td>
+   <td style="text-align:left;"> This indicator provides per capita values for gross national income (GNI. Formerly GNP) expressed in current international dollars converted by purchasing power parity (PPP) conversion factor. GNI is the sum of value added by all resident producers plus any product taxes (less subsidies) not included in the valuation of output plus net receipts of primary income (compensation of employees and property income) from abroad. PPP conversion factor is a spatial price deflator and currency converter that eliminates the effects of the differences in price levels between countries. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> population_wdi </td>
+   <td style="text-align:left;"> Population, total </td>
+   <td style="text-align:left;"> Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates. Source: ( 1 ) United Nations Population Division. World Population Prospects: 2019 Revision. ( 2 ) Census reports and other statistical publications from national statistical offices, ( 3 ) Eurostat: Demographic Statistics, ( 4 ) United Nations Statistical Division. Population and Vital Statistics Reprot ( various years ), ( 5 ) U.S. Census Bureau: International Database, and ( 6 ) Secretariat of the Pacific Community: Statistics and Demography Programme. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_agr_wdi </td>
+   <td style="text-align:left;"> Employment in agriculture (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period or not at work due to temporary absence from a job, or to working-time arrangement. The agriculture sector consists of activities in agriculture, hunting, forestry and fishing, in accordance with division 1 (ISIC 2) or categories A-B (ISIC 3) or category A (ISIC 4). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_ind_wdi </td>
+   <td style="text-align:left;"> Employment in industry (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period or not at work due to temporary absence from a job, or to working-time arrangement. The industry sector consists of mining and quarrying, manufacturing, construction, and public utilities (electricity, gas, and water), in accordance with divisions 2-5 (ISIC 2) or categories C-F (ISIC 3) or categories B-F (ISIC 4). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_serv_wdi </td>
+   <td style="text-align:left;"> Employment in services (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period or not at work due to temporary absence from a job, or to working-time arrangement. The services sector consists of wholesale and retail trade and restaurants and hotels; transport, storage, and communications; financing, insurance, real estate, and business services; and community, social, and personal services, in accordance with divisions 6-9 (ISIC 2) or categories G-Q (ISIC 3) or categories G-U (ISIC 4). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_pop_wdi </td>
+   <td style="text-align:left;"> Employment to population ratio, 15+, total (%) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment to population ratio is the proportion of a country's population that is employed. Employment is defined as persons of working age who, during a short reference period, were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period (i.e. who worked in a job for at least one hour) or not at work due to temporary absence from a job, or to working-time arrangements. Ages 15 and older are generally considered the working-age population. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gini_in_wdi </td>
+   <td style="text-align:left;"> GINI index (World Bank estimate) </td>
+   <td style="text-align:left;"> Gini index measures the extent to which the distribution of income (or, in some cases, consumption expenditure) among individuals or households within an economy deviates from a perfectly equal distribution. A Lorenz curve plots the cumulative percentages of total income received against the cumulative number of recipients, starting with the poorest individual or household. The Gini index measures the area between the Lorenz curve and a hypothetical line of absolute equality, expressed as a percentage of the maximum area under the line. Thus a Gini index of 0 represents perfect equality, while an index of 100 implies perfect inequality. </td>
+   <td style="text-align:left;"> (0-1) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> income_sh_wdi </td>
+   <td style="text-align:left;"> Income share held by highest 10% </td>
+   <td style="text-align:left;"> Percentage share of income or consumption is the share that accrues to subgroups of population indicated by deciles or quintiles.Source: World Bank, Development Research Group. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are from the Luxembourg Income Study database. For more information and methodology, please see PovcalNet ( iresearch.worldbank.org/PovcalNet/index.htm ). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lfp_wdi </td>
+   <td style="text-align:left;"> Labor force participation rate, total (% of total population ages 15+) (national estimate) </td>
+   <td style="text-align:left;"> Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lfp_64_wdi </td>
+   <td style="text-align:left;"> Labor force participation rate, total (% of total population ages 15-64) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Labor force participation rate is the proportion of the population ages 15-64 that is economically active: all people who supply labor for the production of goods and services during a specified period. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> lf_educ_wdi </td>
+   <td style="text-align:left;"> Labor force with advanced education (% of total working-age population with advanced education) </td>
+   <td style="text-align:left;"> The percentage of the working age population with an advanced level of education who are in the labor force. Advanced education comprises short-cycle tertiary education, a bachelor’s degree or equivalent education level, a master’s degree or equivalent education level, or doctoral degree or equivalent education level according to the International Standard Classification of Education 2011 (ISCED 2011). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_self_wdi </td>
+   <td style="text-align:left;"> Self-employed, total (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Self-employed workers are those workers who, working on their own account or with one or a few partners or in cooperative, hold the type of jobs defined as a "self-employment jobs." i.e. jobs where the remuneration is directly dependent upon the profits derived from the goods and services produced. Self-employed workers include four sub-categories of employers, own-account workers, members of producers' cooperatives, and contributing family workers. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_wdi </td>
+   <td style="text-align:left;"> Unemployment, total (% of total labor force) (national estimate) </td>
+   <td style="text-align:left;"> Unemployment refers to the share of the labor force that is without work but available for and seeking employment. Definitions of labor force and unemployment differ by country. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> unemp_e_wdi </td>
+   <td style="text-align:left;"> Unemployment, total (% of total labor force) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Unemployment refers to the share of the labor force that is without work but available for and seeking employment. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_salaried_wdi </td>
+   <td style="text-align:left;"> Wage and salaried workers, total (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Wage and salaried workers (employees) are those workers who hold the type of jobs defined as "paid employment jobs," where the incumbents hold explicit (written or oral) or implicit employment contracts that give them a basic remuneration that is not directly dependent upon the revenue of the unit for which they work. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_vulnerable_wdi </td>
+   <td style="text-align:left;"> Vulnerable employment, total (% of total employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Vulnerable employment is contributing family workers and own-account workers as a percentage of total employment. Source: Derived using data from International Labour Organization, ILOSTAT database. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> gdp_percapita_wdi </td>
+   <td style="text-align:left;"> GDP per capita, PPP (constant 2011 international $) </td>
+   <td style="text-align:left;"> Annual percentage growth rate of GDP at market prices based on constant local currency. Aggregates are based on constant 2010 U.S. dollars. GDP is the sum of gross value added by all resident producers in the economy plus any product taxes and minus any subsidies not included in the value of the products. It is calculated without making deductions for depreciation of fabricated assets or for depletion and degradation of natural resources. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_pt_wdi </td>
+   <td style="text-align:left;"> Part time employment, total (% of total employment) </td>
+   <td style="text-align:left;"> Part time employment refers to regular employment in which working time is substantially less than normal. Definitions of part time employment differ by country. Source: International Labour Organization, ILOSTAT database. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_pt_wdi </td>
+   <td style="text-align:left;"> Part time employment, female (% of total female employment) </td>
+   <td style="text-align:left;"> Part time employment refers to regular employment in which working time is substantially less than normal. Definitions of part time employment differ by country. Source: International Labour Organization, ILOSTAT database. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_male_pt_wdi </td>
+   <td style="text-align:left;"> Part time employment, male (% of total male employment) </td>
+   <td style="text-align:left;"> Part time employment refers to regular employment in which working time is substantially less than normal. Definitions of part time employment differ by country.Source: International Labour Organization, ILOSTAT database. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_mat_wdi </td>
+   <td style="text-align:left;"> Maternity leave benefits (% of wages paid) </td>
+   <td style="text-align:left;"> Maternity leave benefits refers to the total percentage of wages covered by all sources during paid maternity leave. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sexratio_wdi </td>
+   <td style="text-align:left;"> Ratio of female to male labor force participation rate (%) (national estimate) </td>
+   <td style="text-align:left;"> Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period. Ratio of female to male labor force participation rate is calculated by dividing female labor force participation rate by male labor force participation rate and multiplying by 100. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_sexratio_e_wdi </td>
+   <td style="text-align:left;"> Ratio of female to male labor force participation rate (%) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Labor force participation rate is the proportion of the population ages 15 and older that is economically active: all people who supply labor for the production of goods and services during a specified period. Ratio of female to male labor force participation rate is calculated by dividing female labor force participation rate by male labor force participation rate and multiplying by 100. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;padding-left: 2em;" indentlevel="1"> emp_fem_serv_wdi </td>
+   <td style="text-align:left;"> Employment in services, female (% of female employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period or not at work due to temporary absence from a job, or to working-time arrangement. The services sector consists of wholesale and retail trade and restaurants and hotels; transport, storage, and communications; financing, insurance, real estate, and business services; and community, social, and personal services, in accordance with divisions 6-9 (ISIC 2) or categories G-Q (ISIC 3) or categories G-U (ISIC 4). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;"> emp_male_serv_wdi </td>
+   <td style="text-align:left;"> Employment in services, male (% of male employment) (modeled ILO estimate) </td>
+   <td style="text-align:left;"> Employment is defined as persons of working age who were engaged in any activity to produce goods or provide services for pay or profit, whether at work during the reference period or not at work due to temporary absence from a job, or to working-time arrangement. The services sector consists of wholesale and retail trade and restaurants and hotels; transport, storage, and communications; financing, insurance, real estate, and business services; and community, social, and personal services, in accordance with divisions 6-9 (ISIC 2) or categories G-Q (ISIC 3) or categories G-U (ISIC 4). </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;"> db_1720_wdi </td>
+   <td style="text-align:left;"> Ease of doing business score (DB17-20 methodology) </td>
+   <td style="text-align:left;"> The ease of doing business score is the simple average of the scores for each of the Doing Business topics: starting a business, dealing with construction permits, getting electricity, registering property, getting credit, protecting minority investors, paying taxes, trading across borders, enforcing contracts and resolving insolvency. The score is computed based on the methodology in the DB17-20 studies for topics that underwent methodology updates. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;"> db_wdi </td>
+   <td style="text-align:left;"> Ease of doing business score (0 = lowest performance to 100 = best performance) </td>
+   <td style="text-align:left;"> Distance to frontier score illustrates the distance of an economy to the "frontier," which represents the best performance observed on each Doing Business topic across all economies and years included since 2005. An economy's distance to frontier is indicated on a scale from 0 to 100, where 0 represents the lowest performance and 100 the frontier. For example, a score of 75 in 2012 means an economy was 25 percentage points away from the frontier constructed from the best performances across all economies and across time. A score of 80 in 2013 would indicate the economy is improving. </td>
+   <td style="text-align:left;"> (0-100) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+  <tr>
+   <td style="text-align:left;"> db_index_wdi </td>
+   <td style="text-align:left;"> Ease of doing business index (1=most business-friendly regulations) </td>
+   <td style="text-align:left;"> Ease of doing business ranks economies from 1 to 190, with first place being the best. A high ranking (a low numerical rank) means that the regulatory environment is conducive to business operation. The index averages the country's percentile rankings on 10 topics covered in the World Bank's Doing Business. The ranking on each topic is the simple average of the percentile rankings on its component indicators. </td>
+   <td style="text-align:left;"> (1-190) </td>
+   <td style="text-align:left;"> numeric </td>
+   <td style="text-align:left;"> 1968-2019 </td>
+   <td style="text-align:left;"> 246 observations, country/regional/global levels. </td>
+   
+  </tr>
+</tbody>
+</table>
