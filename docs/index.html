@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Fábrica de Datos Laborales</title>
   <meta name="description" content="Fábrica de Datos Laborales" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Fábrica de Datos Laborales" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://github.com/fabrica-datos-laborales/fdl-data" />
   
   
   <meta name="github-repo" content="fabrica-datos-laborales/fdl-data" />
@@ -21,7 +20,7 @@
   
   
 
-<meta name="author" content="Lead researcher: Pablo Pérez Ahumada   Assistant resarcher: Valentina Andrade   Research assistants: Emilia Cuadros y Nicolás Godoy" />
+<meta name="author" content="PI: Pablo Pérez Ahumada   RA: Valentina Andrade   Collaborators: Emilia Cuadros y Nicolás Godoy" />
 
 
 
@@ -32,8 +31,8 @@
   
 
 <link rel="next" href="ictwss.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +48,9 @@
 
 
 
-
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -119,6 +120,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -143,7 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5" data-path="international-social-survey-programme-issp.html"><a href="international-social-survey-programme-issp.html"><i class="fa fa-check"></i><b>5</b> International Social Survey Programme (ISSP)</a></li>
 <li class="chapter" data-level="6" data-path="dpi.html"><a href="dpi.html"><i class="fa fa-check"></i><b>6</b> DPI</a></li>
 <li class="chapter" data-level="7" data-path="ilostat.html"><a href="ilostat.html"><i class="fa fa-check"></i><b>7</b> ILOSTAT</a></li>
-<li class="chapter" data-level="8" data-path="varietys-of-democracy.html"><a href="varietys-of-democracy.html"><i class="fa fa-check"></i><b>8</b> Varietys of Democracy</a></li>
+<li class="chapter" data-level="8" data-path="varieties-of-democracy.html"><a href="varieties-of-democracy.html"><i class="fa fa-check"></i><b>8</b> Varieties of Democracy</a></li>
 <li class="chapter" data-level="9" data-path="latinobarometro.html"><a href="latinobarometro.html"><i class="fa fa-check"></i><b>9</b> Latinobarometro</a></li>
 <li class="chapter" data-level="10" data-path="eurobarometer.html"><a href="eurobarometer.html"><i class="fa fa-check"></i><b>10</b> Eurobarometer</a></li>
 <li class="chapter" data-level="11" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>11</b> References</a></li>
@@ -172,11 +174,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="subtitle"><em><center>
 Codebook
 </center></em></h2>
-<p class="author"><em>Lead researcher: Pablo Pérez Ahumada <br> Assistant resarcher: Valentina Andrade <br> Research assistants: Emilia Cuadros y Nicolás Godoy</em></p>
-<p class="date"><em>07 julio 2022</em></p>
+<p class="author"><em>PI: Pablo Pérez Ahumada <br> RA: Valentina Andrade <br> Collaborators: Emilia Cuadros y Nicolás Godoy</em></p>
+<p class="date"><em>17 julio 2022</em></p>
 </div>
-<div id="presentation" class="section level1 unnumbered">
-<h1>Presentation</h1>
+<div id="presentation" class="section level1 unnumbered hasAnchor">
+<h1>Presentation<a href="index.html#presentation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The following codebook contains all the variables contained in the FDL database (“Fabrica de datos Laborales”, or in English “Labor Data Factory”), variables coming from projects such as ICTWSS, WDI, WVS, DPI, VDemocracy, ISSP, Eurobarometer, Latinobarometro; and non-governmental organizations such as OECD and ILO. FDL has been organized in a way to allow comparative analysis for different country-years.</p>
 <p>The project was conducted by Valentina Andrade, and with the important research assistance of Nicolás Godoy and Emilia Cuadros, all of them under supervision of the principal investigator of FONDECYT N°11190229 <em>“Determinantes institucionales y políticos del conflicto entre empresarios y trabajadores: los casos de Argentina y Chile en perspectiva comparada”</em>, Dr. Pablo Pérez Ahumada<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <p>The objective is to explain the variations in the conflict between workers and employers in Argentina and Chile. To do this, we do a comparative analysis of the institutional (labour regulations) and political (relationship between parties and trade union movement) factors that make it up.</p>
@@ -1097,7 +1099,7 @@ Codebook
 </tr>
 <tr class="odd">
 <td align="left">TUR</td>
-<td align="left">Turkey</td>
+<td align="left">Türkiye</td>
 </tr>
 <tr class="even">
 <td align="left">TUV</td>
@@ -1207,7 +1209,6 @@ Codebook
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1226,6 +1227,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1246,6 +1248,10 @@ gitbook.start({
 "text": null
 },
 "download": ["codebook.pdf", "codebook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

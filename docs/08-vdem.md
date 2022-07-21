@@ -1,6 +1,6 @@
 
 
-# Varietys of Democracy
+# Varieties of Democracy
 
 Varieties of Democracy (V-Dem) is an unique approach to conceptualizing and measuring democracy. According to their website, V-Dem reflects the complexity of the concept of democracy as a system of rule that goes beyond the simple presence of elections, distinguishing between five high-level principles of democracy: electoral, liberal, participatory, deliberative, and egalitarian, and collects data to measure these principles. In this database, we included information about democracy and sociopolitical system and economic relationships and employment from 202 countries. The following table contains the indicators collected in this database:
 

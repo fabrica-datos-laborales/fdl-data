@@ -10,7 +10,7 @@ The World Values Survey (WVS) is an international research program devoted to th
 ```{r oecd, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 
 googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1aw_byhiC4b_0XPcTDtsCpCeJHabK38i4pCmkHshYMB8/edit#gid=0", range = c("B629:N637"), sheet= "Variables", col_names = F) %>%
-select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, Label = 13) %>%
+select(Variable = 1, Concept = 2, Definition = 4, Values = 5,  Class = 6, "Temporal coverage" = 7, "Regional coverage" = 8, Label = 13) %>%
  arrange(Label) %>% 
    knitr::kable(.) %>% 
   pack_rows("Political and Social Association", 1, 9, bold = T) %>% 
