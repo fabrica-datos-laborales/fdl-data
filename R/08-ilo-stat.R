@@ -1,6 +1,6 @@
 # Code: ILOSTAT --------------------------------------------------------
 # 1. Install packages -----------------------------------------------------
-pacman::p_load(Rilostat, tidyverse, googlesheets4, Hmisc)
+pacman::p_load(Rilostat, tidyverse, googlesheets4, Hmisc, stringr)
 
 # 2. Scrapping ------------------------------------------------------------
 # Trade union density rate (%) -----------------
@@ -76,15 +76,11 @@ month_earn <- Rilostat::get_ilostat("EAR_XEES_SEX_ECO_NB_M") %>%
 
 # Labour income share as a percent of GDP -----------------
 labor_inc_share	<- Rilostat::get_ilostat("LAP_2GDP_NOC_RT_A") %>%
-  select(iso3c = ref_area, year=time, labor_inc_share= obs_value, obs_status) %>%
-  pivot_wider(names_from = c("obs_status"), values_from = "labor_inc_share") %>%
-  group_by(iso3c, year) %>%
-  select(G=4, everything()) %>% 
-  mutate(labor_inc_share = if_else(is.na(I)&is.na(M), G,
-                                   if_else(is.na(I)&is.na(G), M,
-                                   if_else(is.na(M)&is.na(G), I, G)))) %>% 
+  select(iso3c = ref_area, year=time, labor_inc_share= obs_value) %>%
+  filter(!str_detect(iso3c, "^X")) %>% 
   mutate(year = as.numeric(year)) %>% 
   select(iso3c, year, labor_inc_share)
+  
 
 
 # Employment by sex and institutional sector (thousands) -----------------
@@ -103,6 +99,7 @@ emp_inst <- Rilostat::get_ilostat("EMP_TEMP_SEX_INS_NB_A") %>%
 emp_status <- Rilostat::get_ilostat("EMP_2EMP_SEX_STE_NB_A") %>% 
   select(iso3c = ref_area, year=time, emp_status= obs_value, sex, classif1) %>% 
   pivot_wider(names_from = c("sex", "classif1"), values_from = "emp_status") %>% 
+  filter(!str_detect(iso3c, "^X")) %>% 
   mutate(year = as.numeric(year)) %>% 
   select(iso3c, year, emp_total_icse93=SEX_T_STE_ICSE93_TOTAL, emp_total_icse93_1=SEX_T_STE_ICSE93_1, 
          emp_total_icse93_2=SEX_T_STE_ICSE93_2, emp_total_icse93_3=SEX_T_STE_ICSE93_3, 
@@ -201,16 +198,17 @@ nworkers_strikes	<- Rilostat::get_ilostat("STR_WORK_ECO_NB_A") %>%
 # Unemployment rate (%) -- Annual -----------------
 unemployment_rate	<- Rilostat::get_ilostat("SDG_0852_SEX_AGE_RT_A") %>% 
   select(iso3c = ref_area, year=time, unemployment_rate= obs_value, sex, classif1, obs_status) %>%
+  filter(!str_detect(iso3c, "^X")) %>% 
   group_by(iso3c, year) %>% 
   mutate(obs_status = NA) %>% 
   ungroup() %>%
   pivot_wider(names_from = c("classif1", "sex"), values_from = "unemployment_rate") %>% 
   mutate(year = as.numeric(year)) %>% 
-  select(iso3c, year, unemp_total_15="AGE_YTHADULT_YGE15_SEX_T", unemp_total_1564="AGE_YTHADULT_Y15-64_SEX_T", 
+  select(iso3c, year, unemp_total_15="AGE_YTHADULT_YGE15_SEX_T", 
          unemp_total_1524="AGE_YTHADULT_Y15-24_SEX_T", unemp_total_25="AGE_YTHADULT_YGE25_SEX_T", 
-         unemp_masc_15="AGE_YTHADULT_YGE15_SEX_M", unemp_masc_1564="AGE_YTHADULT_Y15-64_SEX_M", 
+         unemp_masc_15="AGE_YTHADULT_YGE15_SEX_M", 
          unemp_masc_1524="AGE_YTHADULT_Y15-24_SEX_M", unemp_masc_25="AGE_YTHADULT_YGE25_SEX_M", 
-         unemp_fem_15="AGE_YTHADULT_YGE15_SEX_F", unemp_fem_1564="AGE_YTHADULT_Y15-64_SEX_F", 
+         unemp_fem_15="AGE_YTHADULT_YGE15_SEX_F", 
          unemp_fem_1524="AGE_YTHADULT_Y15-24_SEX_F", unemp_fem_25="AGE_YTHADULT_YGE25_SEX_F", 
          unemp_other_15="AGE_YTHADULT_YGE15_SEX_O", unemp_other_1524="AGE_YTHADULT_Y15-24_SEX_O", 
          unemp_other_25="AGE_YTHADULT_YGE25_SEX_O")
