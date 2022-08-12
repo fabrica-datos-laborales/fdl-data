@@ -36,7 +36,8 @@ wvs <- wvs_dat %>%
   mutate(value = str_replace_all(tolower(value), "a_", ""),
          value = str_replace_all(tolower(value), "at_a", "a")) %>% 
   pivot_wider(names_from = c("variable", "value"),
-              values_from = "prop")
+              values_from = "prop") %>% 
+  mutate(year = as.numeric(year))
 
 # 6. Label -------------------------------------------------------------------
 # Llamar etiquetas (en slice se indican los tramos)
