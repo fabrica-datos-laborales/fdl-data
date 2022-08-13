@@ -41,4 +41,4 @@ Hmisc::label(fdl$year) <- "Year"
 
 # Save --------------------------------------------------------------------
 save(fdl, list_fdl, file = "output/data/fdl.RData")
-
+saveRDS(fdl, file = "output/data/fdl.rds")
