@@ -235,5 +235,5 @@ label(data_ilo) = as.list(var.labels[match(names(data_ilo), names(data_ilo))])
 # 5. Save -----------------------------------------------------------------
 ## save ilo-stat.rds
 rm(list = ls(pattern = "e|c|u"))
-saveRDS(data_ilo, file = "output/data/proc/ilo-stat.rds")
+saveRDS(data_ilo, file = "output/data/proc/ilo_stat.rds")
 

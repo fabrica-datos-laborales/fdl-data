@@ -62,6 +62,10 @@ vdem$v2x_regime <- car::recode(vdem$v2x_regime, recodes = c("0 = 'Closed autocra
 # 6. Rename ---------------------------------------------------------------
 
 names(vdem) <- ifelse(match(labels$variables_original, names(vdem)), labels$variables, NA)
+vdem <- vdem %>% 
+  rename_at(vars(ends_with("_vdem")),
+            ~(str_replace(., "_vdem", "")))
+
 
 # 7. Label ----------------------------------------------------------------
 
